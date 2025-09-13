@@ -1,4 +1,4 @@
-module github.com/bloxui/lucide
+module github.com/bloxui/icons
 
 go 1.25.1
 
