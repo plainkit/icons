@@ -1,0 +1,14 @@
+package lucide
+
+import x "github.com/bloxui/blox"
+
+// Brush creates a Brush Lucide icon.
+func Brush(args ...x.SvgArg) x.Component {
+	svgArgs := buildLucideArgs("lucide lucide-brush", args)
+	svgArgs = append(svgArgs,
+		x.Child(x.Path(x.D("m11 10 3 3"))),
+		x.Child(x.Path(x.D("M6.5 21A3.5 3.5 0 1 0 3 17.5a2.62 2.62 0 0 1-.708 1.792A1 1 0 0 0 3 21z"))),
+		x.Child(x.Path(x.D("M9.969 17.031 21.378 5.624a1 1 0 0 0-3.002-3.002L6.967 14.031"))),
+	)
+	return x.Svg(svgArgs...)
+}
