@@ -2,7 +2,7 @@ package lucide
 
 import x "github.com/bloxui/blox"
 
-// Ear creates an Ear Lucide icon.
+// Ear creates a Ear Lucide icon.
 func Ear(args ...x.SvgArg) x.Component {
 	svgArgs := buildLucideArgs("lucide lucide-ear", args)
 	svgArgs = append(svgArgs,

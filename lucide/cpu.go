@@ -18,8 +18,8 @@ func Cpu(args ...x.SvgArg) x.Component {
 		x.Child(x.Path(x.D("M20 7h2"))),
 		x.Child(x.Path(x.D("M7 20v2"))),
 		x.Child(x.Path(x.D("M7 2v2"))),
-		x.Child(x.Rect(x.X("4"), x.Y("4"), x.RectWidth("16"), x.RectHeight("16"), x.Rx("2"))),
-		x.Child(x.Rect(x.X("8"), x.Y("8"), x.RectWidth("8"), x.RectHeight("8"), x.Rx("1"))),
+		x.Child(x.Rect(x.RectWidth("16"), x.RectHeight("16"), x.X("4"), x.Y("4"), x.Rx("2"))),
+		x.Child(x.Rect(x.RectWidth("8"), x.RectHeight("8"), x.X("8"), x.Y("8"), x.Rx("1"))),
 	)
 	return x.Svg(svgArgs...)
 }

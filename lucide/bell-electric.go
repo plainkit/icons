@@ -11,7 +11,7 @@ func BellElectric(args ...x.SvgArg) x.Component {
 		x.Child(x.Path(x.D("M9 9h.01"))),
 		x.Child(x.Circle(x.Cx("20"), x.Cy("16"), x.R("2"))),
 		x.Child(x.Circle(x.Cx("9"), x.Cy("9"), x.R("7"))),
-		x.Child(x.Rect(x.X("4"), x.Y("16"), x.RectWidth("10"), x.RectHeight("6"), x.Rx("2"))),
+		x.Child(x.Rect(x.RectWidth("10"), x.RectHeight("6"), x.X("4"), x.Y("16"), x.Rx("2"))),
 	)
 	return x.Svg(svgArgs...)
 }

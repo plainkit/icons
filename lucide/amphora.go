@@ -2,7 +2,7 @@ package lucide
 
 import x "github.com/bloxui/blox"
 
-// Amphora creates an Amphora Lucide icon.
+// Amphora creates a Amphora Lucide icon.
 func Amphora(args ...x.SvgArg) x.Component {
 	svgArgs := buildLucideArgs("lucide lucide-amphora", args)
 	svgArgs = append(svgArgs,

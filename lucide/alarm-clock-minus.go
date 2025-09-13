@@ -2,7 +2,7 @@ package lucide
 
 import x "github.com/bloxui/blox"
 
-// AlarmClockMinus creates an Alarm Clock Minus Lucide icon.
+// AlarmClockMinus creates a Alarm Clock Minus Lucide icon.
 func AlarmClockMinus(args ...x.SvgArg) x.Component {
 	svgArgs := buildLucideArgs("lucide lucide-alarm-clock-minus", args)
 	svgArgs = append(svgArgs,

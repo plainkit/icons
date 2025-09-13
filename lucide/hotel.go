@@ -15,7 +15,7 @@ func Hotel(args ...x.SvgArg) x.Component {
 		x.Child(x.Path(x.D("M16 7h.01"))),
 		x.Child(x.Path(x.D("M8 11h.01"))),
 		x.Child(x.Path(x.D("M8 7h.01"))),
-		x.Child(x.Rect(x.X("4"), x.Y("2"), x.RectWidth("16"), x.RectHeight("20"), x.Rx("2"))),
+		x.Child(x.Rect(x.RectWidth("16"), x.RectHeight("20"), x.X("4"), x.Y("2"), x.Rx("2"))),
 	)
 	return x.Svg(svgArgs...)
 }

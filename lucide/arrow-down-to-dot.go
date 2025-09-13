@@ -2,7 +2,7 @@ package lucide
 
 import x "github.com/bloxui/blox"
 
-// ArrowDownToDot creates an Arrow Down To Dot Lucide icon.
+// ArrowDownToDot creates a Arrow Down To Dot Lucide icon.
 func ArrowDownToDot(args ...x.SvgArg) x.Component {
 	svgArgs := buildLucideArgs("lucide lucide-arrow-down-to-dot", args)
 	svgArgs = append(svgArgs,

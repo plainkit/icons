@@ -14,7 +14,7 @@ func Drone(args ...x.SvgArg) x.Component {
 		x.Child(x.Path(x.D("M19.637 14a4 4 0 1 1-5.432 5.868"))),
 		x.Child(x.Path(x.D("M4.367 10a4 4 0 1 1 5.438-5.862"))),
 		x.Child(x.Path(x.D("M9.795 19.862a4 4 0 1 1-5.429-5.873"))),
-		x.Child(x.Rect(x.X("10"), x.Y("8"), x.RectWidth("4"), x.RectHeight("8"), x.Rx("1"))),
+		x.Child(x.Rect(x.RectWidth("4"), x.RectHeight("8"), x.X("10"), x.Y("8"), x.Rx("1"))),
 	)
 	return x.Svg(svgArgs...)
 }

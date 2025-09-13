@@ -14,7 +14,7 @@ func Keyboard(args ...x.SvgArg) x.Component {
 		x.Child(x.Path(x.D("M6 8h.01"))),
 		x.Child(x.Path(x.D("M7 16h10"))),
 		x.Child(x.Path(x.D("M8 12h.01"))),
-		x.Child(x.Rect(x.X("2"), x.Y("4"), x.RectWidth("20"), x.RectHeight("16"), x.Rx("2"))),
+		x.Child(x.Rect(x.RectWidth("20"), x.RectHeight("16"), x.X("2"), x.Y("4"), x.Rx("2"))),
 	)
 	return x.Svg(svgArgs...)
 }

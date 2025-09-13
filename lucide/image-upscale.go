@@ -13,7 +13,7 @@ func ImageUpscale(args ...x.SvgArg) x.Component {
 		x.Child(x.Path(x.D("M3 7V5a2 2 0 0 1 2-2"))),
 		x.Child(x.Path(x.D("m5 21 4.144-4.144a1.21 1.21 0 0 1 1.712 0L13 19"))),
 		x.Child(x.Path(x.D("M9 3h3"))),
-		x.Child(x.Rect(x.X("3"), x.Y("11"), x.RectWidth("10"), x.RectHeight("10"), x.Rx("1"))),
+		x.Child(x.Rect(x.RectWidth("10"), x.RectHeight("10"), x.X("3"), x.Y("11"), x.Rx("1"))),
 	)
 	return x.Svg(svgArgs...)
 }

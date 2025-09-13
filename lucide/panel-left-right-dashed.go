@@ -14,7 +14,7 @@ func PanelLeftRightDashed(args ...x.SvgArg) x.Component {
 		x.Child(x.Path(x.D("M9 15v-1"))),
 		x.Child(x.Path(x.D("M9 21v-2"))),
 		x.Child(x.Path(x.D("M9 5V3"))),
-		x.Child(x.Rect(x.X("3"), x.Y("3"), x.RectWidth("18"), x.RectHeight("18"), x.Rx("2"))),
+		x.Child(x.Rect(x.RectWidth("18"), x.RectHeight("18"), x.X("3"), x.Y("3"), x.Rx("2"))),
 	)
 	return x.Svg(svgArgs...)
 }

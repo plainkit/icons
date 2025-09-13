@@ -8,7 +8,7 @@ func BatteryLow(args ...x.SvgArg) x.Component {
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M22 14v-4"))),
 		x.Child(x.Path(x.D("M6 14v-4"))),
-		x.Child(x.Rect(x.X("2"), x.Y("6"), x.RectWidth("16"), x.RectHeight("12"), x.Rx("2"))),
+		x.Child(x.Rect(x.RectWidth("16"), x.RectHeight("12"), x.X("2"), x.Y("6"), x.Rx("2"))),
 	)
 	return x.Svg(svgArgs...)
 }

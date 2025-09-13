@@ -2,7 +2,7 @@ package lucide
 
 import x "github.com/bloxui/blox"
 
-// Album creates an Album Lucide icon.
+// Album creates a Album Lucide icon.
 func Album(args ...x.SvgArg) x.Component {
 	svgArgs := buildLucideArgs("lucide lucide-album", args)
 	svgArgs = append(svgArgs,

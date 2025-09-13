@@ -10,8 +10,8 @@ func AlignVerticalDistributeCenter(args ...x.SvgArg) x.Component {
 		x.Child(x.Path(x.D("M22 7h-5"))),
 		x.Child(x.Path(x.D("M5 17H2"))),
 		x.Child(x.Path(x.D("M7 7H2"))),
-		x.Child(x.Rect(x.X("5"), x.Y("14"), x.RectWidth("14"), x.RectHeight("6"), x.Rx("2"))),
-		x.Child(x.Rect(x.X("7"), x.Y("4"), x.RectWidth("10"), x.RectHeight("6"), x.Rx("2"))),
+		x.Child(x.Rect(x.RectWidth("14"), x.RectHeight("6"), x.X("5"), x.Y("14"), x.Rx("2"))),
+		x.Child(x.Rect(x.RectWidth("10"), x.RectHeight("6"), x.X("7"), x.Y("4"), x.Rx("2"))),
 	)
 	return x.Svg(svgArgs...)
 }

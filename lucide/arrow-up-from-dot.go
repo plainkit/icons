@@ -2,7 +2,7 @@ package lucide
 
 import x "github.com/bloxui/blox"
 
-// ArrowUpFromDot creates an Arrow Up From Dot Lucide icon.
+// ArrowUpFromDot creates a Arrow Up From Dot Lucide icon.
 func ArrowUpFromDot(args ...x.SvgArg) x.Component {
 	svgArgs := buildLucideArgs("lucide lucide-arrow-up-from-dot", args)
 	svgArgs = append(svgArgs,

@@ -2,7 +2,7 @@ package lucide
 
 import x "github.com/bloxui/blox"
 
-// ArrowDownZA creates an Arrow Down Z A Lucide icon.
+// ArrowDownZA creates a Arrow Down Z A Lucide icon.
 func ArrowDownZA(args ...x.SvgArg) x.Component {
 	svgArgs := buildLucideArgs("lucide lucide-arrow-down-z-a", args)
 	svgArgs = append(svgArgs,

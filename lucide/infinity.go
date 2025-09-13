@@ -2,7 +2,7 @@ package lucide
 
 import x "github.com/bloxui/blox"
 
-// Infinity creates an Infinity Lucide icon.
+// Infinity creates a Infinity Lucide icon.
 func Infinity(args ...x.SvgArg) x.Component {
 	svgArgs := buildLucideArgs("lucide lucide-infinity", args)
 	svgArgs = append(svgArgs,

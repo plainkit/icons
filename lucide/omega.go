@@ -2,7 +2,7 @@ package lucide
 
 import x "github.com/bloxui/blox"
 
-// Omega creates an Omega Lucide icon.
+// Omega creates a Omega Lucide icon.
 func Omega(args ...x.SvgArg) x.Component {
 	svgArgs := buildLucideArgs("lucide lucide-omega", args)
 	svgArgs = append(svgArgs,

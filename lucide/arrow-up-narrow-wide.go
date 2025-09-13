@@ -2,7 +2,7 @@ package lucide
 
 import x "github.com/bloxui/blox"
 
-// ArrowUpNarrowWide creates an Arrow Up Narrow Wide Lucide icon.
+// ArrowUpNarrowWide creates a Arrow Up Narrow Wide Lucide icon.
 func ArrowUpNarrowWide(args ...x.SvgArg) x.Component {
 	svgArgs := buildLucideArgs("lucide lucide-arrow-up-narrow-wide", args)
 	svgArgs = append(svgArgs,

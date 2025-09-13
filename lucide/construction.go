@@ -6,7 +6,7 @@ import x "github.com/bloxui/blox"
 func Construction(args ...x.SvgArg) x.Component {
 	svgArgs := buildLucideArgs("lucide lucide-construction", args)
 	svgArgs = append(svgArgs,
-		x.Child(x.Rect(x.X("2"), x.Y("6"), x.RectWidth("20"), x.RectHeight("8"), x.Rx("1"))),
+		x.Child(x.Rect(x.RectWidth("20"), x.RectHeight("8"), x.X("2"), x.Y("6"), x.Rx("1"))),
 		x.Child(x.Path(x.D("M17 14v7"))),
 		x.Child(x.Path(x.D("M7 14v7"))),
 		x.Child(x.Path(x.D("M17 3v3"))),

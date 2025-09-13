@@ -2,7 +2,7 @@ package lucide
 
 import x "github.com/bloxui/blox"
 
-// Activity creates an Activity Lucide icon.
+// Activity creates a Activity Lucide icon.
 func Activity(args ...x.SvgArg) x.Component {
 	svgArgs := buildLucideArgs("lucide lucide-activity", args)
 	svgArgs = append(svgArgs,

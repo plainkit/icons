@@ -2,7 +2,7 @@ package lucide
 
 import x "github.com/bloxui/blox"
 
-// Airplay creates an Airplay Lucide icon.
+// Airplay creates a Airplay Lucide icon.
 func Airplay(args ...x.SvgArg) x.Component {
 	svgArgs := buildLucideArgs("lucide lucide-airplay", args)
 	svgArgs = append(svgArgs,

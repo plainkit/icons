@@ -2,7 +2,7 @@ package lucide
 
 import x "github.com/bloxui/blox"
 
-// ArchiveRestore creates an Archive Restore Lucide icon.
+// ArchiveRestore creates a Archive Restore Lucide icon.
 func ArchiveRestore(args ...x.SvgArg) x.Component {
 	svgArgs := buildLucideArgs("lucide lucide-archive-restore", args)
 	svgArgs = append(svgArgs,

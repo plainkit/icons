@@ -10,7 +10,7 @@ func EarOff(args ...x.SvgArg) x.Component {
 		x.Child(x.Path(x.D("M6 8.5c0-.75.13-1.47.36-2.14"))),
 		x.Child(x.Path(x.D("M8.8 3.15A6.5 6.5 0 0 1 19 8.5c0 1.63-.44 2.81-1.09 3.76"))),
 		x.Child(x.Path(x.D("M12.5 6A2.5 2.5 0 0 1 15 8.5M10 13a2 2 0 0 0 1.82-1.18"))),
-		x.Child(x.Line(x.X1("2"), x.Y1("2"), x.X2("22"), x.Y2("22"))),
+		x.Child(x.Line(x.X1("2"), x.X2("22"), x.Y1("2"), x.Y2("22"))),
 	)
 	return x.Svg(svgArgs...)
 }

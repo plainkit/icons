@@ -2,7 +2,7 @@ package lucide
 
 import x "github.com/bloxui/blox"
 
-// Armchair creates an Armchair Lucide icon.
+// Armchair creates a Armchair Lucide icon.
 func Armchair(args ...x.SvgArg) x.Component {
 	svgArgs := buildLucideArgs("lucide lucide-armchair", args)
 	svgArgs = append(svgArgs,

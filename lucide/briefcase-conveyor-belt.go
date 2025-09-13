@@ -12,7 +12,7 @@ func BriefcaseConveyorBelt(args ...x.SvgArg) x.Component {
 		x.Child(x.Path(x.D("M21 20H3"))),
 		x.Child(x.Path(x.D("M6 20v2"))),
 		x.Child(x.Path(x.D("M8 16V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v12"))),
-		x.Child(x.Rect(x.X("4"), x.Y("6"), x.RectWidth("16"), x.RectHeight("10"), x.Rx("2"))),
+		x.Child(x.Rect(x.RectWidth("16"), x.RectHeight("10"), x.X("4"), x.Y("6"), x.Rx("2"))),
 	)
 	return x.Svg(svgArgs...)
 }

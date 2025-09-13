@@ -2,7 +2,7 @@ package lucide
 
 import x "github.com/bloxui/blox"
 
-// ImageDown creates an Image Down Lucide icon.
+// ImageDown creates a Image Down Lucide icon.
 func ImageDown(args ...x.SvgArg) x.Component {
 	svgArgs := buildLucideArgs("lucide lucide-image-down", args)
 	svgArgs = append(svgArgs,

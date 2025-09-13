@@ -2,7 +2,7 @@ package lucide
 
 import x "github.com/bloxui/blox"
 
-// Anvil creates an Anvil Lucide icon.
+// Anvil creates a Anvil Lucide icon.
 func Anvil(args ...x.SvgArg) x.Component {
 	svgArgs := buildLucideArgs("lucide lucide-anvil", args)
 	svgArgs = append(svgArgs,

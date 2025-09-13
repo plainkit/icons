@@ -2,7 +2,7 @@ package lucide
 
 import x "github.com/bloxui/blox"
 
-// Annoyed creates an Annoyed Lucide icon.
+// Annoyed creates a Annoyed Lucide icon.
 func Annoyed(args ...x.SvgArg) x.Component {
 	svgArgs := buildLucideArgs("lucide lucide-annoyed", args)
 	svgArgs = append(svgArgs,

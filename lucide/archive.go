@@ -2,7 +2,7 @@ package lucide
 
 import x "github.com/bloxui/blox"
 
-// Archive creates an Archive Lucide icon.
+// Archive creates a Archive Lucide icon.
 func Archive(args ...x.SvgArg) x.Component {
 	svgArgs := buildLucideArgs("lucide lucide-archive", args)
 	svgArgs = append(svgArgs,

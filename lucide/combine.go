@@ -10,8 +10,8 @@ func Combine(args ...x.SvgArg) x.Component {
 		x.Child(x.Path(x.D("M14 2a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2"))),
 		x.Child(x.Path(x.D("M20 2a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2"))),
 		x.Child(x.Path(x.D("m7 21 3-3-3-3"))),
-		x.Child(x.Rect(x.X("14"), x.Y("14"), x.RectWidth("8"), x.RectHeight("8"), x.Rx("2"))),
-		x.Child(x.Rect(x.X("2"), x.Y("2"), x.RectWidth("8"), x.RectHeight("8"), x.Rx("2"))),
+		x.Child(x.Rect(x.RectWidth("8"), x.RectHeight("8"), x.X("14"), x.Y("14"), x.Rx("2"))),
+		x.Child(x.Rect(x.RectWidth("8"), x.RectHeight("8"), x.X("2"), x.Y("2"), x.Rx("2"))),
 	)
 	return x.Svg(svgArgs...)
 }

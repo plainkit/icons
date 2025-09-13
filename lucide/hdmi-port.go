@@ -2,7 +2,7 @@ package lucide
 
 import x "github.com/bloxui/blox"
 
-// HdmiPort creates a HDMI Port Lucide icon.
+// HdmiPort creates a Hdmi Port Lucide icon.
 func HdmiPort(args ...x.SvgArg) x.Component {
 	svgArgs := buildLucideArgs("lucide lucide-hdmi-port", args)
 	svgArgs = append(svgArgs,

@@ -2,7 +2,7 @@ package lucide
 
 import x "github.com/bloxui/blox"
 
-// Award creates an Award Lucide icon.
+// Award creates a Award Lucide icon.
 func Award(args ...x.SvgArg) x.Component {
 	svgArgs := buildLucideArgs("lucide lucide-award", args)
 	svgArgs = append(svgArgs,

@@ -2,7 +2,7 @@ package lucide
 
 import x "github.com/bloxui/blox"
 
-// Ampersand creates an Ampersand Lucide icon.
+// Ampersand creates a Ampersand Lucide icon.
 func Ampersand(args ...x.SvgArg) x.Component {
 	svgArgs := buildLucideArgs("lucide lucide-ampersand", args)
 	svgArgs = append(svgArgs,
