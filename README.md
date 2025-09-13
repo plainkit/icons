@@ -148,3 +148,10 @@ If you don’t depend on the `lucide` classes for styling, you can ignore this.
 - Type‑safe, chainable SVG options via `blox`
 - Small helpers: `Size`, `StrokeWidth`
 - Linker only keeps icons you actually reference
+
+## License
+
+- Go code in this repository: MIT © 2025 BloxUI Contributors
+- Icon assets and path data: Lucide (ISC); portions derived from Feather (MIT)
+
+See `LICENSE` for full texts and attribution details.
