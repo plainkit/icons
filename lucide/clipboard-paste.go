@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ClipboardPaste creates a Clipboard Paste Lucide icon.
-func ClipboardPaste(args ...x.SvgArg) x.Component {
+func ClipboardPaste(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-clipboard-paste", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M11 14h10"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // RemoveFormatting creates a Remove Formatting Lucide icon.
-func RemoveFormatting(args ...x.SvgArg) x.Component {
+func RemoveFormatting(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-remove-formatting", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M4 7V4h16v3"))),

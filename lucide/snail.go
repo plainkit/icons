@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Snail creates a Snail Lucide icon.
-func Snail(args ...x.SvgArg) x.Component {
+func Snail(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-snail", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M2 13a6 6 0 1 0 12 0 4 4 0 1 0-8 0 2 2 0 0 0 4 0"))),

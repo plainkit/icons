@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // BookAlert creates a Book Alert Lucide icon.
-func BookAlert(args ...x.SvgArg) x.Component {
+func BookAlert(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-book-alert", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 13h.01"))),

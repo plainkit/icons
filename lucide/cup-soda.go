@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // CupSoda creates a Cup Soda Lucide icon.
-func CupSoda(args ...x.SvgArg) x.Component {
+func CupSoda(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-cup-soda", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m6 8 1.75 12.28a2 2 0 0 0 2 1.72h4.54a2 2 0 0 0 2-1.72L18 8"))),

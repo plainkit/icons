@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // FoldVertical creates a Fold Vertical Lucide icon.
-func FoldVertical(args ...x.SvgArg) x.Component {
+func FoldVertical(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-fold-vertical", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 22v-6"))),

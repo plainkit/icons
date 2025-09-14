@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // MonitorPause creates a Monitor Pause Lucide icon.
-func MonitorPause(args ...x.SvgArg) x.Component {
+func MonitorPause(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-monitor-pause", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10 13V7"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // CalendarArrowDown creates a Calendar Arrow Down Lucide icon.
-func CalendarArrowDown(args ...x.SvgArg) x.Component {
+func CalendarArrowDown(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-calendar-arrow-down", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m14 18 4 4 4-4"))),

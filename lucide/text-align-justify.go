@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // TextAlignJustify creates a Text Align Justify Lucide icon.
-func TextAlignJustify(args ...x.SvgArg) x.Component {
+func TextAlignJustify(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-text-align-justify", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M3 5h18"))),

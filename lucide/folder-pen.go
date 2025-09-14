@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // FolderPen creates a Folder Pen Lucide icon.
-func FolderPen(args ...x.SvgArg) x.Component {
+func FolderPen(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-folder-pen", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M2 11.5V5a2 2 0 0 1 2-2h3.9c.7 0 1.3.3 1.7.9l.8 1.2c.4.6 1 .9 1.7.9H20a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-9.5"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Database creates a Database Lucide icon.
-func Database(args ...x.SvgArg) x.Component {
+func Database(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-database", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Ellipse(x.EllipseCx("12"), x.EllipseCy("5"), x.EllipseRx("9"), x.EllipseRy("3"))),

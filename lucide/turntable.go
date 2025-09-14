@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Turntable creates a Turntable Lucide icon.
-func Turntable(args ...x.SvgArg) x.Component {
+func Turntable(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-turntable", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10 12.01h.01"))),

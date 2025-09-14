@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Server creates a Server Lucide icon.
-func Server(args ...x.SvgArg) x.Component {
+func Server(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-server", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Rect(x.RectWidth("20"), x.RectHeight("8"), x.X("2"), x.Y("2"), x.Rx("2"), x.Ry("2"))),

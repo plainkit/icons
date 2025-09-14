@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // FileStack creates a File Stack Lucide icon.
-func FileStack(args ...x.SvgArg) x.Component {
+func FileStack(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-file-stack", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M11 21a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-8a1 1 0 0 1 1-1"))),

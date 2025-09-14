@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // CircleCheck creates a Circle Check Lucide icon.
-func CircleCheck(args ...x.SvgArg) x.Component {
+func CircleCheck(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-circle-check", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Circle(x.Cx("12"), x.Cy("12"), x.R("10"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // TextSelect creates a Text Select Lucide icon.
-func TextSelect(args ...x.SvgArg) x.Component {
+func TextSelect(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-text-select", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M14 21h1"))),

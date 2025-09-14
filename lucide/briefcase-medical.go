@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // BriefcaseMedical creates a Briefcase Medical Lucide icon.
-func BriefcaseMedical(args ...x.SvgArg) x.Component {
+func BriefcaseMedical(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-briefcase-medical", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 11v4"))),

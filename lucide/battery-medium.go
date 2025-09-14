@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // BatteryMedium creates a Battery Medium Lucide icon.
-func BatteryMedium(args ...x.SvgArg) x.Component {
+func BatteryMedium(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-battery-medium", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10 14v-4"))),

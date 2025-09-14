@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // PanelTopDashed creates a Panel Top Dashed Lucide icon.
-func PanelTopDashed(args ...x.SvgArg) x.Component {
+func PanelTopDashed(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-panel-top-dashed", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Rect(x.RectWidth("18"), x.RectHeight("18"), x.X("3"), x.Y("3"), x.Rx("2"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Languages creates a Languages Lucide icon.
-func Languages(args ...x.SvgArg) x.Component {
+func Languages(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-languages", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m5 8 6 6"))),

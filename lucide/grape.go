@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Grape creates a Grape Lucide icon.
-func Grape(args ...x.SvgArg) x.Component {
+func Grape(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-grape", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M22 5V2l-5.89 5.89"))),

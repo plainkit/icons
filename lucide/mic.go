@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Mic creates a Mic Lucide icon.
-func Mic(args ...x.SvgArg) x.Component {
+func Mic(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-mic", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 19v3"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // BugOff creates a Bug Off Lucide icon.
-func BugOff(args ...x.SvgArg) x.Component {
+func BugOff(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-bug-off", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 20v-8"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Ligature creates a Ligature Lucide icon.
-func Ligature(args ...x.SvgArg) x.Component {
+func Ligature(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-ligature", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M14 12h2v8"))),

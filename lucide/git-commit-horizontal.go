@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // GitCommitHorizontal creates a Git Commit Horizontal Lucide icon.
-func GitCommitHorizontal(args ...x.SvgArg) x.Component {
+func GitCommitHorizontal(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-git-commit-horizontal", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Circle(x.Cx("12"), x.Cy("12"), x.R("3"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Soup creates a Soup Lucide icon.
-func Soup(args ...x.SvgArg) x.Component {
+func Soup(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-soup", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 21a9 9 0 0 0 9-9H3a9 9 0 0 0 9 9Z"))),

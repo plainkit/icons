@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Hop creates a Hop Lucide icon.
-func Hop(args ...x.SvgArg) x.Component {
+func Hop(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-hop", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10.82 16.12c1.69.6 3.91.79 5.18.85.55.03 1-.42.97-.97-.06-1.27-.26-3.5-.85-5.18"))),

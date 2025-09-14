@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // BeerOff creates a Beer Off Lucide icon.
-func BeerOff(args ...x.SvgArg) x.Component {
+func BeerOff(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-beer-off", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M13 13v5"))),

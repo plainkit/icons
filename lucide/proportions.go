@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Proportions creates a Proportions Lucide icon.
-func Proportions(args ...x.SvgArg) x.Component {
+func Proportions(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-proportions", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Rect(x.RectWidth("20"), x.RectHeight("16"), x.X("2"), x.Y("4"), x.Rx("2"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ChartBarIncreasing creates a Chart Bar Increasing Lucide icon.
-func ChartBarIncreasing(args ...x.SvgArg) x.Component {
+func ChartBarIncreasing(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-chart-bar-increasing", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M3 3v16a2 2 0 0 0 2 2h16"))),

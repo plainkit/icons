@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ChartColumn creates a Chart Column Lucide icon.
-func ChartColumn(args ...x.SvgArg) x.Component {
+func ChartColumn(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-chart-column", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M3 3v16a2 2 0 0 0 2 2h16"))),

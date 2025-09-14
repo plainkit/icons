@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // CassetteTape creates a Cassette Tape Lucide icon.
-func CassetteTape(args ...x.SvgArg) x.Component {
+func CassetteTape(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-cassette-tape", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Rect(x.RectWidth("20"), x.RectHeight("16"), x.X("2"), x.Y("4"), x.Rx("2"))),

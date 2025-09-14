@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Ribbon creates a Ribbon Lucide icon.
-func Ribbon(args ...x.SvgArg) x.Component {
+func Ribbon(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-ribbon", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 11.22C11 9.997 10 9 10 8a2 2 0 0 1 4 0c0 1-.998 2.002-2.01 3.22"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // TextAlignEnd creates a Text Align End Lucide icon.
-func TextAlignEnd(args ...x.SvgArg) x.Component {
+func TextAlignEnd(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-text-align-end", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M21 5H3"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // PenTool creates a Pen Tool Lucide icon.
-func PenTool(args ...x.SvgArg) x.Component {
+func PenTool(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-pen-tool", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M15.707 21.293a1 1 0 0 1-1.414 0l-1.586-1.586a1 1 0 0 1 0-1.414l5.586-5.586a1 1 0 0 1 1.414 0l1.586 1.586a1 1 0 0 1 0 1.414z"))),

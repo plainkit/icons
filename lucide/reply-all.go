@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ReplyAll creates a Reply All Lucide icon.
-func ReplyAll(args ...x.SvgArg) x.Component {
+func ReplyAll(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-reply-all", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m12 17-5-5 5-5"))),

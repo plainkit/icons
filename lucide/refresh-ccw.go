@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // RefreshCcw creates a Refresh Ccw Lucide icon.
-func RefreshCcw(args ...x.SvgArg) x.Component {
+func RefreshCcw(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-refresh-ccw", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"))),

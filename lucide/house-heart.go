@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // HouseHeart creates a House Heart Lucide icon.
-func HouseHeart(args ...x.SvgArg) x.Component {
+func HouseHeart(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-house-heart", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M8.62 13.8A2.25 2.25 0 1 1 12 10.836a2.25 2.25 0 1 1 3.38 2.966l-2.626 2.856a.998.998 0 0 1-1.507 0z"))),

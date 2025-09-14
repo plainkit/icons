@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // WifiPen creates a Wifi Pen Lucide icon.
-func WifiPen(args ...x.SvgArg) x.Component {
+func WifiPen(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-wifi-pen", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M2 8.82a15 15 0 0 1 20 0"))),

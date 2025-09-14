@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Carrot creates a Carrot Lucide icon.
-func Carrot(args ...x.SvgArg) x.Component {
+func Carrot(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-carrot", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M2.27 21.7s9.87-3.5 12.73-6.36a4.5 4.5 0 0 0-6.36-6.37C5.77 11.84 2.27 21.7 2.27 21.7zM8.64 14l-2.05-2.04M15.34 15l-2.46-2.46"))),

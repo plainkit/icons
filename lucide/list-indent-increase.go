@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ListIndentIncrease creates a List Indent Increase Lucide icon.
-func ListIndentIncrease(args ...x.SvgArg) x.Component {
+func ListIndentIncrease(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-list-indent-increase", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M21 5H11"))),

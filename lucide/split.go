@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Split creates a Split Lucide icon.
-func Split(args ...x.SvgArg) x.Component {
+func Split(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-split", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M16 3h5v5"))),

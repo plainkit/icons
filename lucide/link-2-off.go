@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Link2Off creates a Link 2 Off Lucide icon.
-func Link2Off(args ...x.SvgArg) x.Component {
+func Link2Off(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-link-2-off", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M9 17H7A5 5 0 0 1 7 7"))),

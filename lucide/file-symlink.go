@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // FileSymlink creates a File Symlink Lucide icon.
-func FileSymlink(args ...x.SvgArg) x.Component {
+func FileSymlink(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-file-symlink", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m10 18 3-3-3-3"))),

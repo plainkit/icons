@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // BriefcaseBusiness creates a Briefcase Business Lucide icon.
-func BriefcaseBusiness(args ...x.SvgArg) x.Component {
+func BriefcaseBusiness(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-briefcase-business", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 12h.01"))),

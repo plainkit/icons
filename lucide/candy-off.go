@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // CandyOff creates a Candy Off Lucide icon.
-func CandyOff(args ...x.SvgArg) x.Component {
+func CandyOff(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-candy-off", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10 10v7.9"))),

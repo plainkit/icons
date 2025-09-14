@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // BatteryLow creates a Battery Low Lucide icon.
-func BatteryLow(args ...x.SvgArg) x.Component {
+func BatteryLow(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-battery-low", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M22 14v-4"))),

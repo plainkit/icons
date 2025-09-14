@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // SquircleDashed creates a Squircle Dashed Lucide icon.
-func SquircleDashed(args ...x.SvgArg) x.Component {
+func SquircleDashed(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-squircle-dashed", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M13.77 3.043a34 34 0 0 0-3.54 0"))),

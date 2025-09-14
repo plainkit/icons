@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // MessageSquareDashed creates a Message Square Dashed Lucide icon.
-func MessageSquareDashed(args ...x.SvgArg) x.Component {
+func MessageSquareDashed(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-message-square-dashed", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 19h.01"))),

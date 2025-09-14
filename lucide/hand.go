@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Hand creates a Hand Lucide icon.
-func Hand(args ...x.SvgArg) x.Component {
+func Hand(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-hand", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M18 11V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2"))),

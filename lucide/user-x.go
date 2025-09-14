@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // UserX creates a User X Lucide icon.
-func UserX(args ...x.SvgArg) x.Component {
+func UserX(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-user-x", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"))),

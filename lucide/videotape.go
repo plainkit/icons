@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Videotape creates a Videotape Lucide icon.
-func Videotape(args ...x.SvgArg) x.Component {
+func Videotape(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-videotape", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Rect(x.RectWidth("20"), x.RectHeight("16"), x.X("2"), x.Y("4"), x.Rx("2"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // MessageCircleCode creates a Message Circle Code Lucide icon.
-func MessageCircleCode(args ...x.SvgArg) x.Component {
+func MessageCircleCode(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-message-circle-code", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m10 9-3 3 3 3"))),

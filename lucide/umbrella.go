@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Umbrella creates a Umbrella Lucide icon.
-func Umbrella(args ...x.SvgArg) x.Component {
+func Umbrella(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-umbrella", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 13v7a2 2 0 0 0 4 0"))),

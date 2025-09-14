@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // HardDrive creates a Hard Drive Lucide icon.
-func HardDrive(args ...x.SvgArg) x.Component {
+func HardDrive(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-hard-drive", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Line(x.X1("22"), x.X2("2"), x.Y1("12"), x.Y2("12"))),

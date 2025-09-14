@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Radius creates a Radius Lucide icon.
-func Radius(args ...x.SvgArg) x.Component {
+func Radius(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-radius", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M20.34 17.52a10 10 0 1 0-2.82 2.82"))),

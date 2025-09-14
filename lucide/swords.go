@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Swords creates a Swords Lucide icon.
-func Swords(args ...x.SvgArg) x.Component {
+func Swords(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-swords", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Polyline(x.Points("14.5 17.5 3 6 3 3 6 3 17.5 14.5"))),

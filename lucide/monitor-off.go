@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // MonitorOff creates a Monitor Off Lucide icon.
-func MonitorOff(args ...x.SvgArg) x.Component {
+func MonitorOff(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-monitor-off", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M17 17H4a2 2 0 0 1-2-2V5c0-1.5 1-2 1-2"))),

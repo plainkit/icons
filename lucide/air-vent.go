@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // AirVent creates a Air Vent Lucide icon.
-func AirVent(args ...x.SvgArg) x.Component {
+func AirVent(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-air-vent", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M18 17.5a2.5 2.5 0 1 1-4 2.03V12"))),

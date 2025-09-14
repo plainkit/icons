@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // CarTaxiFront creates a Car Taxi Front Lucide icon.
-func CarTaxiFront(args ...x.SvgArg) x.Component {
+func CarTaxiFront(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-car-taxi-front", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10 2h4"))),

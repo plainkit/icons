@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // SatelliteDish creates a Satellite Dish Lucide icon.
-func SatelliteDish(args ...x.SvgArg) x.Component {
+func SatelliteDish(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-satellite-dish", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M4 10a7.31 7.31 0 0 0 10 10Z"))),

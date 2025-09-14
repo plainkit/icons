@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Sunset creates a Sunset Lucide icon.
-func Sunset(args ...x.SvgArg) x.Component {
+func Sunset(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-sunset", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 10V2"))),

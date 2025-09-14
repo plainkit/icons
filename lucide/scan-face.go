@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ScanFace creates a Scan Face Lucide icon.
-func ScanFace(args ...x.SvgArg) x.Component {
+func ScanFace(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-scan-face", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M3 7V5a2 2 0 0 1 2-2h2"))),

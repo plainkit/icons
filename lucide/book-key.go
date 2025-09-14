@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // BookKey creates a Book Key Lucide icon.
-func BookKey(args ...x.SvgArg) x.Component {
+func BookKey(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-book-key", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m19 3 1 1"))),

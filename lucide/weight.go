@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Weight creates a Weight Lucide icon.
-func Weight(args ...x.SvgArg) x.Component {
+func Weight(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-weight", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Circle(x.Cx("12"), x.Cy("5"), x.R("3"))),

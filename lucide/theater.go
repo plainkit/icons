@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Theater creates a Theater Lucide icon.
-func Theater(args ...x.SvgArg) x.Component {
+func Theater(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-theater", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M2 10s3-3 3-8"))),

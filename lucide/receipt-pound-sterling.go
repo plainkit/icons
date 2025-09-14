@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ReceiptPoundSterling creates a Receipt Pound Sterling Lucide icon.
-func ReceiptPoundSterling(args ...x.SvgArg) x.Component {
+func ReceiptPoundSterling(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-receipt-pound-sterling", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Bird creates a Bird Lucide icon.
-func Bird(args ...x.SvgArg) x.Component {
+func Bird(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-bird", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M16 7h.01"))),

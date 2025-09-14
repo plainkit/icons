@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Computer creates a Computer Lucide icon.
-func Computer(args ...x.SvgArg) x.Component {
+func Computer(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-computer", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Rect(x.RectWidth("14"), x.RectHeight("8"), x.X("5"), x.Y("2"), x.Rx("2"))),

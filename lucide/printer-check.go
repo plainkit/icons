@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // PrinterCheck creates a Printer Check Lucide icon.
-func PrinterCheck(args ...x.SvgArg) x.Component {
+func PrinterCheck(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-printer-check", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M13.5 22H7a1 1 0 0 1-1-1v-6a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v.5"))),

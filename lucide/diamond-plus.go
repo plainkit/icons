@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // DiamondPlus creates a Diamond Plus Lucide icon.
-func DiamondPlus(args ...x.SvgArg) x.Component {
+func DiamondPlus(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-diamond-plus", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 8v8"))),

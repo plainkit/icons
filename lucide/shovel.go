@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Shovel creates a Shovel Lucide icon.
-func Shovel(args ...x.SvgArg) x.Component {
+func Shovel(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-shovel", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M21.56 4.56a1.5 1.5 0 0 1 0 2.122l-.47.47a3 3 0 0 1-4.212-.03 3 3 0 0 1 0-4.243l.44-.44a1.5 1.5 0 0 1 2.121 0z"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ShoppingBag creates a Shopping Bag Lucide icon.
-func ShoppingBag(args ...x.SvgArg) x.Component {
+func ShoppingBag(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-shopping-bag", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M16 10a4 4 0 0 1-8 0"))),

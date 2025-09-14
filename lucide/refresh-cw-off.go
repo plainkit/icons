@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // RefreshCwOff creates a Refresh Cw Off Lucide icon.
-func RefreshCwOff(args ...x.SvgArg) x.Component {
+func RefreshCwOff(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-refresh-cw-off", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M21 8L18.74 5.74A9.75 9.75 0 0 0 12 3C11 3 10.03 3.16 9.13 3.47"))),

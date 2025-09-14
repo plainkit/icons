@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ContactRound creates a Contact Round Lucide icon.
-func ContactRound(args ...x.SvgArg) x.Component {
+func ContactRound(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-contact-round", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M16 2v2"))),

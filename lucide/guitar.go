@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Guitar creates a Guitar Lucide icon.
-func Guitar(args ...x.SvgArg) x.Component {
+func Guitar(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-guitar", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m11.9 12.1 4.514-4.514"))),

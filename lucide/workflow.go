@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Workflow creates a Workflow Lucide icon.
-func Workflow(args ...x.SvgArg) x.Component {
+func Workflow(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-workflow", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Rect(x.RectWidth("8"), x.RectHeight("8"), x.X("3"), x.Y("3"), x.Rx("2"))),

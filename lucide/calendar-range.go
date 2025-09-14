@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // CalendarRange creates a Calendar Range Lucide icon.
-func CalendarRange(args ...x.SvgArg) x.Component {
+func CalendarRange(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-calendar-range", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Rect(x.RectWidth("18"), x.RectHeight("18"), x.X("3"), x.Y("4"), x.Rx("2"))),

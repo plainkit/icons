@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // CirclePause creates a Circle Pause Lucide icon.
-func CirclePause(args ...x.SvgArg) x.Component {
+func CirclePause(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-circle-pause", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Circle(x.Cx("12"), x.Cy("12"), x.R("10"))),

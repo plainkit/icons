@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ListChecks creates a List Checks Lucide icon.
-func ListChecks(args ...x.SvgArg) x.Component {
+func ListChecks(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-list-checks", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M13 5h8"))),

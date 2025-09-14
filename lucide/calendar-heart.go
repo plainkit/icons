@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // CalendarHeart creates a Calendar Heart Lucide icon.
-func CalendarHeart(args ...x.SvgArg) x.Component {
+func CalendarHeart(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-calendar-heart", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12.127 22H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v5.125"))),

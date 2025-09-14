@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // RotateCcwKey creates a Rotate Ccw Key Lucide icon.
-func RotateCcwKey(args ...x.SvgArg) x.Component {
+func RotateCcwKey(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-rotate-ccw-key", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m14.5 9.5 1 1"))),

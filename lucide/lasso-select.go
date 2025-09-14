@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // LassoSelect creates a Lasso Select Lucide icon.
-func LassoSelect(args ...x.SvgArg) x.Component {
+func LassoSelect(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-lasso-select", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M7 22a5 5 0 0 1-2-4"))),

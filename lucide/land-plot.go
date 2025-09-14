@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // LandPlot creates a Land Plot Lucide icon.
-func LandPlot(args ...x.SvgArg) x.Component {
+func LandPlot(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-land-plot", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m12 8 6-3-6-3v10"))),

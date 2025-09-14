@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Maximize creates a Maximize Lucide icon.
-func Maximize(args ...x.SvgArg) x.Component {
+func Maximize(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-maximize", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M8 3H5a2 2 0 0 0-2 2v3"))),

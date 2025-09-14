@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // TrainTrack creates a Train Track Lucide icon.
-func TrainTrack(args ...x.SvgArg) x.Component {
+func TrainTrack(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-train-track", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M2 17 17 2"))),

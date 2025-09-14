@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // TicketsPlane creates a Tickets Plane Lucide icon.
-func TicketsPlane(args ...x.SvgArg) x.Component {
+func TicketsPlane(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-tickets-plane", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10.5 17h1.227a2 2 0 0 0 1.345-.52L18 12"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Barrel creates a Barrel Lucide icon.
-func Barrel(args ...x.SvgArg) x.Component {
+func Barrel(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-barrel", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10 3a41 41 0 0 0 0 18"))),

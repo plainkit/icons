@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // BellOff creates a Bell Off Lucide icon.
-func BellOff(args ...x.SvgArg) x.Component {
+func BellOff(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-bell-off", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10.268 21a2 2 0 0 0 3.464 0"))),

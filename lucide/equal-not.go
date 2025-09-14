@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // EqualNot creates a Equal Not Lucide icon.
-func EqualNot(args ...x.SvgArg) x.Component {
+func EqualNot(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-equal-not", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Line(x.X1("5"), x.X2("19"), x.Y1("9"), x.Y2("9"))),

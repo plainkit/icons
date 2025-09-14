@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Watch creates a Watch Lucide icon.
-func Watch(args ...x.SvgArg) x.Component {
+func Watch(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-watch", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 10v2.2l1.6 1"))),

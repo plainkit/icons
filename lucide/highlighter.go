@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Highlighter creates a Highlighter Lucide icon.
-func Highlighter(args ...x.SvgArg) x.Component {
+func Highlighter(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-highlighter", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m9 11-6 6v3h9l3-3"))),

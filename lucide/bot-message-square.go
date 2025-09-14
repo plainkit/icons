@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // BotMessageSquare creates a Bot Message Square Lucide icon.
-func BotMessageSquare(args ...x.SvgArg) x.Component {
+func BotMessageSquare(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-bot-message-square", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 6V2H8"))),

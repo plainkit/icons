@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Tangent creates a Tangent Lucide icon.
-func Tangent(args ...x.SvgArg) x.Component {
+func Tangent(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-tangent", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Circle(x.Cx("17"), x.Cy("4"), x.R("2"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // GitCompare creates a Git Compare Lucide icon.
-func GitCompare(args ...x.SvgArg) x.Component {
+func GitCompare(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-git-compare", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Circle(x.Cx("18"), x.Cy("18"), x.R("3"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Nfc creates a Nfc Lucide icon.
-func Nfc(args ...x.SvgArg) x.Component {
+func Nfc(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-nfc", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M6 8.32a7.43 7.43 0 0 1 0 7.36"))),

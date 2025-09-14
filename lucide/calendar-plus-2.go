@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // CalendarPlus2 creates a Calendar Plus 2 Lucide icon.
-func CalendarPlus2(args ...x.SvgArg) x.Component {
+func CalendarPlus2(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-calendar-plus-2", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M8 2v4"))),

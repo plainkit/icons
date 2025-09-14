@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Repeat2 creates a Repeat 2 Lucide icon.
-func Repeat2(args ...x.SvgArg) x.Component {
+func Repeat2(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-repeat-2", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m2 9 3-3 3 3"))),

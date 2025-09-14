@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // NotebookTabs creates a Notebook Tabs Lucide icon.
-func NotebookTabs(args ...x.SvgArg) x.Component {
+func NotebookTabs(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-notebook-tabs", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M2 6h4"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ArrowDownNarrowWide creates a Arrow Down Narrow Wide Lucide icon.
-func ArrowDownNarrowWide(args ...x.SvgArg) x.Component {
+func ArrowDownNarrowWide(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-arrow-down-narrow-wide", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m3 16 4 4 4-4"))),

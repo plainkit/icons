@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // TextAlignCenter creates a Text Align Center Lucide icon.
-func TextAlignCenter(args ...x.SvgArg) x.Component {
+func TextAlignCenter(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-text-align-center", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M21 5H3"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ArrowUp01 creates a Arrow Up 0 1 Lucide icon.
-func ArrowUp01(args ...x.SvgArg) x.Component {
+func ArrowUp01(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-arrow-up-0-1", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m3 8 4-4 4 4"))),

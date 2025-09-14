@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // FilePen creates a File Pen Lucide icon.
-func FilePen(args ...x.SvgArg) x.Component {
+func FilePen(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-file-pen", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12.5 22H18a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v9.5"))),

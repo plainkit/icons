@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // PartyPopper creates a Party Popper Lucide icon.
-func PartyPopper(args ...x.SvgArg) x.Component {
+func PartyPopper(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-party-popper", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M5.8 11.3 2 22l10.7-3.79"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // UserRoundCog creates a User Round Cog Lucide icon.
-func UserRoundCog(args ...x.SvgArg) x.Component {
+func UserRoundCog(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-user-round-cog", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m14.305 19.53.923-.382"))),

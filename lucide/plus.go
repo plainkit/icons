@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Plus creates a Plus Lucide icon.
-func Plus(args ...x.SvgArg) x.Component {
+func Plus(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-plus", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M5 12h14"))),

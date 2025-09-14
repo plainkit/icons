@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Tablets creates a Tablets Lucide icon.
-func Tablets(args ...x.SvgArg) x.Component {
+func Tablets(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-tablets", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Circle(x.Cx("7"), x.Cy("7"), x.R("5"))),

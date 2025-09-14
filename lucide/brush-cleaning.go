@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // BrushCleaning creates a Brush Cleaning Lucide icon.
-func BrushCleaning(args ...x.SvgArg) x.Component {
+func BrushCleaning(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-brush-cleaning", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m16 22-1-4"))),

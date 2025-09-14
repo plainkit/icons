@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // CircleCheckBig creates a Circle Check Big Lucide icon.
-func CircleCheckBig(args ...x.SvgArg) x.Component {
+func CircleCheckBig(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-circle-check-big", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M21.801 10A10 10 0 1 1 17 3.335"))),

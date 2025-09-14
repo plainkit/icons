@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Shrink creates a Shrink Lucide icon.
-func Shrink(args ...x.SvgArg) x.Component {
+func Shrink(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-shrink", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m15 15 6 6m-6-6v4.8m0-4.8h4.8"))),

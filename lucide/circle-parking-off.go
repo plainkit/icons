@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // CircleParkingOff creates a Circle Parking Off Lucide icon.
-func CircleParkingOff(args ...x.SvgArg) x.Component {
+func CircleParkingOff(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-circle-parking-off", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12.656 7H13a3 3 0 0 1 2.984 3.307"))),

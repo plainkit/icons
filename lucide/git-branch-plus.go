@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // GitBranchPlus creates a Git Branch Plus Lucide icon.
-func GitBranchPlus(args ...x.SvgArg) x.Component {
+func GitBranchPlus(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-git-branch-plus", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M6 3v12"))),

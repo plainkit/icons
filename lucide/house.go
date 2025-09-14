@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // House creates a House Lucide icon.
-func House(args ...x.SvgArg) x.Component {
+func House(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-house", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"))),

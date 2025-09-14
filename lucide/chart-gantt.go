@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ChartGantt creates a Chart Gantt Lucide icon.
-func ChartGantt(args ...x.SvgArg) x.Component {
+func ChartGantt(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-chart-gantt", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10 6h8"))),

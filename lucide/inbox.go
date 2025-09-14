@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Inbox creates a Inbox Lucide icon.
-func Inbox(args ...x.SvgArg) x.Component {
+func Inbox(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-inbox", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Polyline(x.Points("22 12 16 12 14 15 10 15 8 12 2 12"))),

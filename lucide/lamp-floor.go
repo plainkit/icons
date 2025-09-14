@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // LampFloor creates a Lamp Floor Lucide icon.
-func LampFloor(args ...x.SvgArg) x.Component {
+func LampFloor(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-lamp-floor", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 10v12"))),

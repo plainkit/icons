@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // DoorOpen creates a Door Open Lucide icon.
-func DoorOpen(args ...x.SvgArg) x.Component {
+func DoorOpen(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-door-open", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M11 20H2"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Contact creates a Contact Lucide icon.
-func Contact(args ...x.SvgArg) x.Component {
+func Contact(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-contact", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M16 2v2"))),

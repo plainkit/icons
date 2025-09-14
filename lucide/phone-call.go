@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // PhoneCall creates a Phone Call Lucide icon.
-func PhoneCall(args ...x.SvgArg) x.Component {
+func PhoneCall(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-phone-call", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M13 2a9 9 0 0 1 9 9"))),

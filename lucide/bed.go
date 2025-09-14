@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Bed creates a Bed Lucide icon.
-func Bed(args ...x.SvgArg) x.Component {
+func Bed(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-bed", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M2 4v16"))),

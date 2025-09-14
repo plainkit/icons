@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // CloudMoon creates a Cloud Moon Lucide icon.
-func CloudMoon(args ...x.SvgArg) x.Component {
+func CloudMoon(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-cloud-moon", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M13 16a3 3 0 0 1 0 6H7a5 5 0 1 1 4.9-6z"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Share creates a Share Lucide icon.
-func Share(args ...x.SvgArg) x.Component {
+func Share(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-share", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 2v13"))),

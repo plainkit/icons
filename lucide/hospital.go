@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Hospital creates a Hospital Lucide icon.
-func Hospital(args ...x.SvgArg) x.Component {
+func Hospital(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-hospital", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 7v4"))),

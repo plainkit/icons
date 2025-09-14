@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Monitor creates a Monitor Lucide icon.
-func Monitor(args ...x.SvgArg) x.Component {
+func Monitor(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-monitor", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Rect(x.RectWidth("20"), x.RectHeight("14"), x.X("2"), x.Y("3"), x.Rx("2"))),

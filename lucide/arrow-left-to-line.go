@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ArrowLeftToLine creates a Arrow Left To Line Lucide icon.
-func ArrowLeftToLine(args ...x.SvgArg) x.Component {
+func ArrowLeftToLine(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-arrow-left-to-line", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M3 19V5"))),

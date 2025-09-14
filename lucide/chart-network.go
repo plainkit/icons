@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ChartNetwork creates a Chart Network Lucide icon.
-func ChartNetwork(args ...x.SvgArg) x.Component {
+func ChartNetwork(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-chart-network", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m13.11 7.664 1.78 2.672"))),

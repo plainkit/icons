@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ChartNoAxesColumnDecreasing creates a Chart No Axes Column Decreasing Lucide icon.
-func ChartNoAxesColumnDecreasing(args ...x.SvgArg) x.Component {
+func ChartNoAxesColumnDecreasing(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-chart-no-axes-column-decreasing", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M5 21V3"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Captions creates a Captions Lucide icon.
-func Captions(args ...x.SvgArg) x.Component {
+func Captions(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-captions", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Rect(x.RectWidth("18"), x.RectHeight("14"), x.X("3"), x.Y("5"), x.Rx("2"), x.Ry("2"))),

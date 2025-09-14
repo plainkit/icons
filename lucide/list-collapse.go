@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ListCollapse creates a List Collapse Lucide icon.
-func ListCollapse(args ...x.SvgArg) x.Component {
+func ListCollapse(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-list-collapse", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10 5h11"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Shuffle creates a Shuffle Lucide icon.
-func Shuffle(args ...x.SvgArg) x.Component {
+func Shuffle(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-shuffle", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m18 14 4 4-4 4"))),

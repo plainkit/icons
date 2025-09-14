@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Torus creates a Torus Lucide icon.
-func Torus(args ...x.SvgArg) x.Component {
+func Torus(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-torus", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Ellipse(x.EllipseCx("12"), x.EllipseCy("11"), x.EllipseRx("3"), x.EllipseRy("2"))),

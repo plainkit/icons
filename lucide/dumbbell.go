@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Dumbbell creates a Dumbbell Lucide icon.
-func Dumbbell(args ...x.SvgArg) x.Component {
+func Dumbbell(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-dumbbell", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M17.596 12.768a2 2 0 1 0 2.829-2.829l-1.768-1.767a2 2 0 0 0 2.828-2.829l-2.828-2.828a2 2 0 0 0-2.829 2.828l-1.767-1.768a2 2 0 1 0-2.829 2.829z"))),

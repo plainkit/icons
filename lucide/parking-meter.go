@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ParkingMeter creates a Parking Meter Lucide icon.
-func ParkingMeter(args ...x.SvgArg) x.Component {
+func ParkingMeter(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-parking-meter", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M11 15h2"))),

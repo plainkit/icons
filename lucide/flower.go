@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Flower creates a Flower Lucide icon.
-func Flower(args ...x.SvgArg) x.Component {
+func Flower(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-flower", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Circle(x.Cx("12"), x.Cy("12"), x.R("3"))),

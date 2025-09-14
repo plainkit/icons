@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // BaggageClaim creates a Baggage Claim Lucide icon.
-func BaggageClaim(args ...x.SvgArg) x.Component {
+func BaggageClaim(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-baggage-claim", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M22 18H6a2 2 0 0 1-2-2V7a2 2 0 0 0-2-2"))),

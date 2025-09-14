@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Settings2 creates a Settings 2 Lucide icon.
-func Settings2(args ...x.SvgArg) x.Component {
+func Settings2(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-settings-2", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M14 17H5"))),

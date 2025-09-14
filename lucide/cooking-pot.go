@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // CookingPot creates a Cooking Pot Lucide icon.
-func CookingPot(args ...x.SvgArg) x.Component {
+func CookingPot(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-cooking-pot", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M2 12h20"))),

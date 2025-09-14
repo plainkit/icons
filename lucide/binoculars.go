@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Binoculars creates a Binoculars Lucide icon.
-func Binoculars(args ...x.SvgArg) x.Component {
+func Binoculars(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-binoculars", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10 10h4"))),

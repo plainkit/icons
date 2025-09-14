@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Shrimp creates a Shrimp Lucide icon.
-func Shrimp(args ...x.SvgArg) x.Component {
+func Shrimp(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-shrimp", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M11 12h.01"))),

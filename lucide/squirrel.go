@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Squirrel creates a Squirrel Lucide icon.
-func Squirrel(args ...x.SvgArg) x.Component {
+func Squirrel(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-squirrel", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M15.236 22a3 3 0 0 0-2.2-5"))),

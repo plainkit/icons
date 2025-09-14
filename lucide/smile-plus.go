@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // SmilePlus creates a Smile Plus Lucide icon.
-func SmilePlus(args ...x.SvgArg) x.Component {
+func SmilePlus(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-smile-plus", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M22 11v1a10 10 0 1 1-9-10"))),

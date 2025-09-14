@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ThermometerSnowflake creates a Thermometer Snowflake Lucide icon.
-func ThermometerSnowflake(args ...x.SvgArg) x.Component {
+func ThermometerSnowflake(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-thermometer-snowflake", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m10 20-1.25-2.5L6 18"))),

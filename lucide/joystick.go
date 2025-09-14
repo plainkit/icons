@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Joystick creates a Joystick Lucide icon.
-func Joystick(args ...x.SvgArg) x.Component {
+func Joystick(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-joystick", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M21 17a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-2Z"))),

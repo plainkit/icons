@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Lollipop creates a Lollipop Lucide icon.
-func Lollipop(args ...x.SvgArg) x.Component {
+func Lollipop(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-lollipop", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Circle(x.Cx("11"), x.Cy("11"), x.R("8"))),

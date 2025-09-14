@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Heater creates a Heater Lucide icon.
-func Heater(args ...x.SvgArg) x.Component {
+func Heater(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-heater", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M11 8c2-3-2-3 0-6"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Gavel creates a Gavel Lucide icon.
-func Gavel(args ...x.SvgArg) x.Component {
+func Gavel(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-gavel", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m14 13-8.381 8.38a1 1 0 0 1-3.001-3l8.384-8.381"))),

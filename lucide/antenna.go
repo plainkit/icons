@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Antenna creates a Antenna Lucide icon.
-func Antenna(args ...x.SvgArg) x.Component {
+func Antenna(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-antenna", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M2 12 7 2"))),

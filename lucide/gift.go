@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Gift creates a Gift Lucide icon.
-func Gift(args ...x.SvgArg) x.Component {
+func Gift(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-gift", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Rect(x.RectWidth("18"), x.RectHeight("4"), x.X("3"), x.Y("8"), x.Rx("1"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // TrainFront creates a Train Front Lucide icon.
-func TrainFront(args ...x.SvgArg) x.Component {
+func TrainFront(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-train-front", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M8 3.1V7a4 4 0 0 0 8 0V3.1"))),

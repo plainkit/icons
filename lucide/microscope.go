@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Microscope creates a Microscope Lucide icon.
-func Microscope(args ...x.SvgArg) x.Component {
+func Microscope(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-microscope", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M6 18h8"))),

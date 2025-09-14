@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Spline creates a Spline Lucide icon.
-func Spline(args ...x.SvgArg) x.Component {
+func Spline(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-spline", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Circle(x.Cx("19"), x.Cy("5"), x.R("2"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ArrowDown10 creates a Arrow Down 1 0 Lucide icon.
-func ArrowDown10(args ...x.SvgArg) x.Component {
+func ArrowDown10(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-arrow-down-1-0", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m3 16 4 4 4-4"))),

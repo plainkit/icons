@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // MemoryStick creates a Memory Stick Lucide icon.
-func MemoryStick(args ...x.SvgArg) x.Component {
+func MemoryStick(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-memory-stick", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M6 19v-3"))),

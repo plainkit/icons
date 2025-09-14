@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // SunMedium creates a Sun Medium Lucide icon.
-func SunMedium(args ...x.SvgArg) x.Component {
+func SunMedium(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-sun-medium", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Circle(x.Cx("12"), x.Cy("12"), x.R("4"))),

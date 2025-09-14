@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // LogOut creates a Log Out Lucide icon.
-func LogOut(args ...x.SvgArg) x.Component {
+func LogOut(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-log-out", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m16 17 5-5-5-5"))),

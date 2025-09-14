@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // CreativeCommons creates a Creative Commons Lucide icon.
-func CreativeCommons(args ...x.SvgArg) x.Component {
+func CreativeCommons(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-creative-commons", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Circle(x.Cx("12"), x.Cy("12"), x.R("10"))),

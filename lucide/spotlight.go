@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Spotlight creates a Spotlight Lucide icon.
-func Spotlight(args ...x.SvgArg) x.Component {
+func Spotlight(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-spotlight", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M15.295 19.562 16 22"))),

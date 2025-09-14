@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Venus creates a Venus Lucide icon.
-func Venus(args ...x.SvgArg) x.Component {
+func Venus(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-venus", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 15v7"))),

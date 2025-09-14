@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Linkedin creates a Linkedin Lucide icon.
-func Linkedin(args ...x.SvgArg) x.Component {
+func Linkedin(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-linkedin", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"))),

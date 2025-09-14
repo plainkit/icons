@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Heading3 creates a Heading 3 Lucide icon.
-func Heading3(args ...x.SvgArg) x.Component {
+func Heading3(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-heading-3", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M4 12h8"))),

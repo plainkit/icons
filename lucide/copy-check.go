@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // CopyCheck creates a Copy Check Lucide icon.
-func CopyCheck(args ...x.SvgArg) x.Component {
+func CopyCheck(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-copy-check", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m12 15 2 2 4-4"))),

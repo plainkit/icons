@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // SquareSlash creates a Square Slash Lucide icon.
-func SquareSlash(args ...x.SvgArg) x.Component {
+func SquareSlash(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-square-slash", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Rect(x.RectWidth("18"), x.RectHeight("18"), x.X("3"), x.Y("3"), x.Rx("2"))),

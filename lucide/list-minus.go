@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ListMinus creates a List Minus Lucide icon.
-func ListMinus(args ...x.SvgArg) x.Component {
+func ListMinus(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-list-minus", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M16 5H3"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Skull creates a Skull Lucide icon.
-func Skull(args ...x.SvgArg) x.Component {
+func Skull(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-skull", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m12.5 17-.5-1-.5 1h1z"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // MoveDiagonal creates a Move Diagonal Lucide icon.
-func MoveDiagonal(args ...x.SvgArg) x.Component {
+func MoveDiagonal(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-move-diagonal", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M11 19H5v-6"))),

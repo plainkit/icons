@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Gamepad2 creates a Gamepad 2 Lucide icon.
-func Gamepad2(args ...x.SvgArg) x.Component {
+func Gamepad2(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-gamepad-2", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Line(x.X1("6"), x.X2("10"), x.Y1("11"), x.Y2("11"))),

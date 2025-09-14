@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Candy creates a Candy Lucide icon.
-func Candy(args ...x.SvgArg) x.Component {
+func Candy(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-candy", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10 7v10.9"))),

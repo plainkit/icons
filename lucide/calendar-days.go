@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // CalendarDays creates a Calendar Days Lucide icon.
-func CalendarDays(args ...x.SvgArg) x.Component {
+func CalendarDays(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-calendar-days", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M8 2v4"))),

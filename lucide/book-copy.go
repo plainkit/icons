@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // BookCopy creates a Book Copy Lucide icon.
-func BookCopy(args ...x.SvgArg) x.Component {
+func BookCopy(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-book-copy", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M5 7a2 2 0 0 0-2 2v11"))),

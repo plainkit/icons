@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ArrowUpFromLine creates a Arrow Up From Line Lucide icon.
-func ArrowUpFromLine(args ...x.SvgArg) x.Component {
+func ArrowUpFromLine(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-arrow-up-from-line", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m18 9-6-6-6 6"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // AlarmClockOff creates a Alarm Clock Off Lucide icon.
-func AlarmClockOff(args ...x.SvgArg) x.Component {
+func AlarmClockOff(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-alarm-clock-off", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M6.87 6.87a8 8 0 1 0 11.26 11.26"))),

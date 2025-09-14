@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // WheatOff creates a Wheat Off Lucide icon.
-func WheatOff(args ...x.SvgArg) x.Component {
+func WheatOff(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-wheat-off", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m2 22 10-10"))),

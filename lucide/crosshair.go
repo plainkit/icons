@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Crosshair creates a Crosshair Lucide icon.
-func Crosshair(args ...x.SvgArg) x.Component {
+func Crosshair(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-crosshair", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Circle(x.Cx("12"), x.Cy("12"), x.R("10"))),

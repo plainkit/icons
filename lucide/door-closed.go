@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // DoorClosed creates a Door Closed Lucide icon.
-func DoorClosed(args ...x.SvgArg) x.Component {
+func DoorClosed(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-door-closed", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10 12h.01"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // PanelLeftRightDashed creates a Panel Left Right Dashed Lucide icon.
-func PanelLeftRightDashed(args ...x.SvgArg) x.Component {
+func PanelLeftRightDashed(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-panel-left-right-dashed", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M15 10V9"))),

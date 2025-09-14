@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // BanknoteArrowDown creates a Banknote Arrow Down Lucide icon.
-func BanknoteArrowDown(args ...x.SvgArg) x.Component {
+func BanknoteArrowDown(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-banknote-arrow-down", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 18H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5"))),

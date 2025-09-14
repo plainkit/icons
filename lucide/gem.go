@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Gem creates a Gem Lucide icon.
-func Gem(args ...x.SvgArg) x.Component {
+func Gem(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-gem", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10.5 3 8 9l4 13 4-13-2.5-6"))),

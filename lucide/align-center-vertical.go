@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // AlignCenterVertical creates a Align Center Vertical Lucide icon.
-func AlignCenterVertical(args ...x.SvgArg) x.Component {
+func AlignCenterVertical(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-align-center-vertical", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 2v20"))),

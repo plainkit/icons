@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Nut creates a Nut Lucide icon.
-func Nut(args ...x.SvgArg) x.Component {
+func Nut(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-nut", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 4V2"))),

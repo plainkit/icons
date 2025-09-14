@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Sandwich creates a Sandwich Lucide icon.
-func Sandwich(args ...x.SvgArg) x.Component {
+func Sandwich(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-sandwich", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m2.37 11.223 8.372-6.777a2 2 0 0 1 2.516 0l8.371 6.777"))),

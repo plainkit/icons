@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // SunSnow creates a Sun Snow Lucide icon.
-func SunSnow(args ...x.SvgArg) x.Component {
+func SunSnow(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-sun-snow", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10 21v-1"))),

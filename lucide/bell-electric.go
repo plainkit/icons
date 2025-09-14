@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // BellElectric creates a Bell Electric Lucide icon.
-func BellElectric(args ...x.SvgArg) x.Component {
+func BellElectric(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-bell-electric", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M18.518 17.347A7 7 0 0 1 14 19"))),

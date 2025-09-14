@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // CigaretteOff creates a Cigarette Off Lucide icon.
-func CigaretteOff(args ...x.SvgArg) x.Component {
+func CigaretteOff(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-cigarette-off", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 12H3a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h13"))),

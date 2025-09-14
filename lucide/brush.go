@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Brush creates a Brush Lucide icon.
-func Brush(args ...x.SvgArg) x.Component {
+func Brush(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-brush", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m11 10 3 3"))),

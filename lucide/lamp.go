@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Lamp creates a Lamp Lucide icon.
-func Lamp(args ...x.SvgArg) x.Component {
+func Lamp(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-lamp", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 12v6"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Cone creates a Cone Lucide icon.
-func Cone(args ...x.SvgArg) x.Component {
+func Cone(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-cone", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m20.9 18.55-8-15.98a1 1 0 0 0-1.8 0l-8 15.98"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // HandCoins creates a Hand Coins Lucide icon.
-func HandCoins(args ...x.SvgArg) x.Component {
+func HandCoins(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-hand-coins", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M11 15h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 17"))),

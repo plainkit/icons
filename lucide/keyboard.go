@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Keyboard creates a Keyboard Lucide icon.
-func Keyboard(args ...x.SvgArg) x.Component {
+func Keyboard(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-keyboard", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10 8h.01"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Merge creates a Merge Lucide icon.
-func Merge(args ...x.SvgArg) x.Component {
+func Merge(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-merge", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m8 6 4-4 4 4"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // AtSign creates a At Sign Lucide icon.
-func AtSign(args ...x.SvgArg) x.Component {
+func AtSign(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-at-sign", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Circle(x.Cx("12"), x.Cy("12"), x.R("4"))),

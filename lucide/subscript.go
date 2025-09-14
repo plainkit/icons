@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Subscript creates a Subscript Lucide icon.
-func Subscript(args ...x.SvgArg) x.Component {
+func Subscript(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-subscript", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m4 5 8 8"))),

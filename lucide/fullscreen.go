@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Fullscreen creates a Fullscreen Lucide icon.
-func Fullscreen(args ...x.SvgArg) x.Component {
+func Fullscreen(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-fullscreen", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M3 7V5a2 2 0 0 1 2-2h2"))),

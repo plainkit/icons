@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ClipboardType creates a Clipboard Type Lucide icon.
-func ClipboardType(args ...x.SvgArg) x.Component {
+func ClipboardType(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-clipboard-type", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Rect(x.RectWidth("8"), x.RectHeight("4"), x.X("8"), x.Y("2"), x.Rx("1"), x.Ry("1"))),

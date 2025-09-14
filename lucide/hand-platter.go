@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // HandPlatter creates a Hand Platter Lucide icon.
-func HandPlatter(args ...x.SvgArg) x.Component {
+func HandPlatter(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-hand-platter", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 3V2"))),

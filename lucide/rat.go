@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Rat creates a Rat Lucide icon.
-func Rat(args ...x.SvgArg) x.Component {
+func Rat(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-rat", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M13 22H4a2 2 0 0 1 0-4h12"))),

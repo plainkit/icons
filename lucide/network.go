@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Network creates a Network Lucide icon.
-func Network(args ...x.SvgArg) x.Component {
+func Network(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-network", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Rect(x.RectWidth("6"), x.RectHeight("6"), x.X("16"), x.Y("16"), x.Rx("1"))),

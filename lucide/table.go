@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Table creates a Table Lucide icon.
-func Table(args ...x.SvgArg) x.Component {
+func Table(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-table", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 3v18"))),

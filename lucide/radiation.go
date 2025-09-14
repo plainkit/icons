@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Radiation creates a Radiation Lucide icon.
-func Radiation(args ...x.SvgArg) x.Component {
+func Radiation(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-radiation", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 12h.01"))),

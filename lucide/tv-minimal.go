@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // TvMinimal creates a Tv Minimal Lucide icon.
-func TvMinimal(args ...x.SvgArg) x.Component {
+func TvMinimal(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-tv-minimal", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M7 21h10"))),

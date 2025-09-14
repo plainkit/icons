@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // LocateFixed creates a Locate Fixed Lucide icon.
-func LocateFixed(args ...x.SvgArg) x.Component {
+func LocateFixed(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-locate-fixed", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Line(x.X1("2"), x.X2("5"), x.Y1("12"), x.Y2("12"))),

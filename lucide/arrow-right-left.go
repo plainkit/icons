@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ArrowRightLeft creates a Arrow Right Left Lucide icon.
-func ArrowRightLeft(args ...x.SvgArg) x.Component {
+func ArrowRightLeft(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-arrow-right-left", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m16 3 4 4-4 4"))),

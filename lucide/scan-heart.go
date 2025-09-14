@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ScanHeart creates a Scan Heart Lucide icon.
-func ScanHeart(args ...x.SvgArg) x.Component {
+func ScanHeart(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-scan-heart", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M17 3h2a2 2 0 0 1 2 2v2"))),

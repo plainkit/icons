@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ClipboardPen creates a Clipboard Pen Lucide icon.
-func ClipboardPen(args ...x.SvgArg) x.Component {
+func ClipboardPen(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-clipboard-pen", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Rect(x.RectWidth("8"), x.RectHeight("4"), x.X("8"), x.Y("2"), x.Rx("1"))),

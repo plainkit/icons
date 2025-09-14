@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // BowArrow creates a Bow Arrow Lucide icon.
-func BowArrow(args ...x.SvgArg) x.Component {
+func BowArrow(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-bow-arrow", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M17 3h4v4"))),

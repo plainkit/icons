@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Meh creates a Meh Lucide icon.
-func Meh(args ...x.SvgArg) x.Component {
+func Meh(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-meh", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Circle(x.Cx("12"), x.Cy("12"), x.R("10"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // PinOff creates a Pin Off Lucide icon.
-func PinOff(args ...x.SvgArg) x.Component {
+func PinOff(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-pin-off", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 17v5"))),

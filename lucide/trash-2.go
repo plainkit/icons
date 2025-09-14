@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Trash2 creates a Trash 2 Lucide icon.
-func Trash2(args ...x.SvgArg) x.Component {
+func Trash2(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-trash-2", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10 11v6"))),

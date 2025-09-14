@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Cake creates a Cake Lucide icon.
-func Cake(args ...x.SvgArg) x.Component {
+func Cake(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-cake", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M20 21v-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8"))),

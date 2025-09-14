@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // MarsStroke creates a Mars Stroke Lucide icon.
-func MarsStroke(args ...x.SvgArg) x.Component {
+func MarsStroke(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-mars-stroke", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m14 6 4 4"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // MoonStar creates a Moon Star Lucide icon.
-func MoonStar(args ...x.SvgArg) x.Component {
+func MoonStar(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-moon-star", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M18 5h4"))),

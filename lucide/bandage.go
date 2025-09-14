@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Bandage creates a Bandage Lucide icon.
-func Bandage(args ...x.SvgArg) x.Component {
+func Bandage(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-bandage", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10 10.01h.01"))),

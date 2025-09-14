@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // SlidersVertical creates a Sliders Vertical Lucide icon.
-func SlidersVertical(args ...x.SvgArg) x.Component {
+func SlidersVertical(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-sliders-vertical", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10 8h4"))),

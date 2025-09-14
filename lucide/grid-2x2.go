@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Grid2x2 creates a Grid 2x2 Lucide icon.
-func Grid2x2(args ...x.SvgArg) x.Component {
+func Grid2x2(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-grid-2x2", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 3v18"))),

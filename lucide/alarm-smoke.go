@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // AlarmSmoke creates a Alarm Smoke Lucide icon.
-func AlarmSmoke(args ...x.SvgArg) x.Component {
+func AlarmSmoke(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-alarm-smoke", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M11 21c0-2.5 2-2.5 2-5"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // PointerOff creates a Pointer Off Lucide icon.
-func PointerOff(args ...x.SvgArg) x.Component {
+func PointerOff(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-pointer-off", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10 4.5V4a2 2 0 0 0-2.41-1.957"))),

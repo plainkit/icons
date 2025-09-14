@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Undo2 creates a Undo 2 Lucide icon.
-func Undo2(args ...x.SvgArg) x.Component {
+func Undo2(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-undo-2", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M9 14 4 9l5-5"))),

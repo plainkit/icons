@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // BookmarkMinus creates a Bookmark Minus Lucide icon.
-func BookmarkMinus(args ...x.SvgArg) x.Component {
+func BookmarkMinus(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-bookmark-minus", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"))),

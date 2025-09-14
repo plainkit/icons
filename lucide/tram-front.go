@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // TramFront creates a Tram Front Lucide icon.
-func TramFront(args ...x.SvgArg) x.Component {
+func TramFront(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-tram-front", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Rect(x.RectWidth("16"), x.RectHeight("16"), x.X("4"), x.Y("3"), x.Rx("2"))),

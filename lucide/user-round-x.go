@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // UserRoundX creates a User Round X Lucide icon.
-func UserRoundX(args ...x.SvgArg) x.Component {
+func UserRoundX(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-user-round-x", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M2 21a8 8 0 0 1 11.873-7"))),

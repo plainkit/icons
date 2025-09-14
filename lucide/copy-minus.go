@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // CopyMinus creates a Copy Minus Lucide icon.
-func CopyMinus(args ...x.SvgArg) x.Component {
+func CopyMinus(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-copy-minus", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Line(x.X1("12"), x.X2("18"), x.Y1("15"), x.Y2("15"))),

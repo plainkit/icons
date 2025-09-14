@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // CalendarCheck creates a Calendar Check Lucide icon.
-func CalendarCheck(args ...x.SvgArg) x.Component {
+func CalendarCheck(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-calendar-check", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M8 2v4"))),

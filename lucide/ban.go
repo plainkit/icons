@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Ban creates a Ban Lucide icon.
-func Ban(args ...x.SvgArg) x.Component {
+func Ban(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-ban", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M4.929 4.929 19.07 19.071"))),

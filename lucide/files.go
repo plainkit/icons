@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Files creates a Files Lucide icon.
-func Files(args ...x.SvgArg) x.Component {
+func Files(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-files", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M15 2a2 2 0 0 1 1.414.586l4 4A2 2 0 0 1 21 8v7a2 2 0 0 1-2 2h-8a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z"))),

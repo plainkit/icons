@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ClockAlert creates a Clock Alert Lucide icon.
-func ClockAlert(args ...x.SvgArg) x.Component {
+func ClockAlert(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-clock-alert", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 6v6l4 2"))),

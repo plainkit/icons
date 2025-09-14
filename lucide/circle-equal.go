@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // CircleEqual creates a Circle Equal Lucide icon.
-func CircleEqual(args ...x.SvgArg) x.Component {
+func CircleEqual(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-circle-equal", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M7 10h10"))),

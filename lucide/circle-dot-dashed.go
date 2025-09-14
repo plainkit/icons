@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // CircleDotDashed creates a Circle Dot Dashed Lucide icon.
-func CircleDotDashed(args ...x.SvgArg) x.Component {
+func CircleDotDashed(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-circle-dot-dashed", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10.1 2.18a9.93 9.93 0 0 1 3.8 0"))),

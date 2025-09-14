@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // SearchCheck creates a Search Check Lucide icon.
-func SearchCheck(args ...x.SvgArg) x.Component {
+func SearchCheck(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-search-check", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m8 11 2 2 4-4"))),

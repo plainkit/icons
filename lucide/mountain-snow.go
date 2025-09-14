@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // MountainSnow creates a Mountain Snow Lucide icon.
-func MountainSnow(args ...x.SvgArg) x.Component {
+func MountainSnow(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-mountain-snow", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m8 3 4 8 5-5 5 15H2L8 3z"))),

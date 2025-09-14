@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Wallpaper creates a Wallpaper Lucide icon.
-func Wallpaper(args ...x.SvgArg) x.Component {
+func Wallpaper(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-wallpaper", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 17v4"))),

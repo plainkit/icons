@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Salad creates a Salad Lucide icon.
-func Salad(args ...x.SvgArg) x.Component {
+func Salad(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-salad", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M7 21h10"))),

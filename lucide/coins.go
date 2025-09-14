@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Coins creates a Coins Lucide icon.
-func Coins(args ...x.SvgArg) x.Component {
+func Coins(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-coins", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Circle(x.Cx("8"), x.Cy("8"), x.R("6"))),

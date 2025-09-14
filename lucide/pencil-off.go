@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // PencilOff creates a Pencil Off Lucide icon.
-func PencilOff(args ...x.SvgArg) x.Component {
+func PencilOff(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-pencil-off", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m10 10-6.157 6.162a2 2 0 0 0-.5.833l-1.322 4.36a.5.5 0 0 0 .622.624l4.358-1.323a2 2 0 0 0 .83-.5L14 13.982"))),

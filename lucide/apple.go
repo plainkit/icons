@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Apple creates a Apple Lucide icon.
-func Apple(args ...x.SvgArg) x.Component {
+func Apple(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-apple", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 6.528V3a1 1 0 0 1 1-1h0"))),

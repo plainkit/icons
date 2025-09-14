@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Cast creates a Cast Lucide icon.
-func Cast(args ...x.SvgArg) x.Component {
+func Cast(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-cast", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M2 8V6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-6"))),

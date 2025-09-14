@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Rose creates a Rose Lucide icon.
-func Rose(args ...x.SvgArg) x.Component {
+func Rose(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-rose", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M17 10h-1a4 4 0 1 1 4-4v.534"))),

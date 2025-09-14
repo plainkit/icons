@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // WindArrowDown creates a Wind Arrow Down Lucide icon.
-func WindArrowDown(args ...x.SvgArg) x.Component {
+func WindArrowDown(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-wind-arrow-down", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10 2v8"))),

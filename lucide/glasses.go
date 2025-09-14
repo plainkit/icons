@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Glasses creates a Glasses Lucide icon.
-func Glasses(args ...x.SvgArg) x.Component {
+func Glasses(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-glasses", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Circle(x.Cx("6"), x.Cy("15"), x.R("4"))),

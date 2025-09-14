@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // BedDouble creates a Bed Double Lucide icon.
-func BedDouble(args ...x.SvgArg) x.Component {
+func BedDouble(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-bed-double", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M2 20v-8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v8"))),

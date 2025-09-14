@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Minimize2 creates a Minimize 2 Lucide icon.
-func Minimize2(args ...x.SvgArg) x.Component {
+func Minimize2(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-minimize-2", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m14 10 7-7"))),

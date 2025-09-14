@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // BringToFront creates a Bring To Front Lucide icon.
-func BringToFront(args ...x.SvgArg) x.Component {
+func BringToFront(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-bring-to-front", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Rect(x.RectWidth("8"), x.RectHeight("8"), x.X("8"), x.Y("8"), x.Rx("2"))),

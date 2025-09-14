@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // TableCellsMerge creates a Table Cells Merge Lucide icon.
-func TableCellsMerge(args ...x.SvgArg) x.Component {
+func TableCellsMerge(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-table-cells-merge", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 21v-6"))),

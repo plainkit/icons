@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // BookMarked creates a Book Marked Lucide icon.
-func BookMarked(args ...x.SvgArg) x.Component {
+func BookMarked(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-book-marked", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10 2v8l3-3 3 3V2"))),

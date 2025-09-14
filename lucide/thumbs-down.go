@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ThumbsDown creates a Thumbs Down Lucide icon.
-func ThumbsDown(args ...x.SvgArg) x.Component {
+func ThumbsDown(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-thumbs-down", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M17 14V2"))),

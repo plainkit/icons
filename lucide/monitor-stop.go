@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // MonitorStop creates a Monitor Stop Lucide icon.
-func MonitorStop(args ...x.SvgArg) x.Component {
+func MonitorStop(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-monitor-stop", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 17v4"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // UserRoundSearch creates a User Round Search Lucide icon.
-func UserRoundSearch(args ...x.SvgArg) x.Component {
+func UserRoundSearch(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-user-round-search", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Circle(x.Cx("10"), x.Cy("8"), x.R("5"))),

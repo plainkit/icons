@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Drone creates a Drone Lucide icon.
-func Drone(args ...x.SvgArg) x.Component {
+func Drone(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-drone", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10 10 7 7"))),

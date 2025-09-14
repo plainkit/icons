@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Printer creates a Printer Lucide icon.
-func Printer(args ...x.SvgArg) x.Component {
+func Printer(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-printer", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"))),

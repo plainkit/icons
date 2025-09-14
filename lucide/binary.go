@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Binary creates a Binary Lucide icon.
-func Binary(args ...x.SvgArg) x.Component {
+func Binary(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-binary", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Rect(x.RectWidth("4"), x.RectHeight("6"), x.X("14"), x.Y("14"), x.Rx("2"))),

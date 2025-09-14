@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ClipboardMinus creates a Clipboard Minus Lucide icon.
-func ClipboardMinus(args ...x.SvgArg) x.Component {
+func ClipboardMinus(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-clipboard-minus", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Rect(x.RectWidth("8"), x.RectHeight("4"), x.X("8"), x.Y("2"), x.Rx("1"), x.Ry("1"))),

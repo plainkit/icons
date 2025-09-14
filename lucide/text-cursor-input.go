@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // TextCursorInput creates a Text Cursor Input Lucide icon.
-func TextCursorInput(args ...x.SvgArg) x.Component {
+func TextCursorInput(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-text-cursor-input", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 20h-1a2 2 0 0 1-2-2 2 2 0 0 1-2 2H6"))),

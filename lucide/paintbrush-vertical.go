@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // PaintbrushVertical creates a Paintbrush Vertical Lucide icon.
-func PaintbrushVertical(args ...x.SvgArg) x.Component {
+func PaintbrushVertical(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-paintbrush-vertical", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10 2v2"))),

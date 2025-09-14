@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // BookPlus creates a Book Plus Lucide icon.
-func BookPlus(args ...x.SvgArg) x.Component {
+func BookPlus(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-book-plus", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 7v6"))),

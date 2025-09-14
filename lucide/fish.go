@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Fish creates a Fish Lucide icon.
-func Fish(args ...x.SvgArg) x.Component {
+func Fish(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-fish", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M6.5 12c.94-3.46 4.94-6 8.5-6 3.56 0 6.06 2.54 7 6-.94 3.47-3.44 6-7 6s-7.56-2.53-8.5-6Z"))),

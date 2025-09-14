@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // TableRowsSplit creates a Table Rows Split Lucide icon.
-func TableRowsSplit(args ...x.SvgArg) x.Component {
+func TableRowsSplit(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-table-rows-split", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M14 10h2"))),

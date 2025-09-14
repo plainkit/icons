@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ClockArrowUp creates a Clock Arrow Up Lucide icon.
-func ClockArrowUp(args ...x.SvgArg) x.Component {
+func ClockArrowUp(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-clock-arrow-up", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 6v6l1.56.78"))),

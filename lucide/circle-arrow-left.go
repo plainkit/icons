@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // CircleArrowLeft creates a Circle Arrow Left Lucide icon.
-func CircleArrowLeft(args ...x.SvgArg) x.Component {
+func CircleArrowLeft(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-circle-arrow-left", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Circle(x.Cx("12"), x.Cy("12"), x.R("10"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // FlashlightOff creates a Flashlight Off Lucide icon.
-func FlashlightOff(args ...x.SvgArg) x.Component {
+func FlashlightOff(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-flashlight-off", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M16 16v4a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2V10c0-2-2-2-2-4"))),

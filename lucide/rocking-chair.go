@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // RockingChair creates a Rocking Chair Lucide icon.
-func RockingChair(args ...x.SvgArg) x.Component {
+func RockingChair(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-rocking-chair", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Polyline(x.Points("3.5 2 6.5 12.5 18 12.5"))),

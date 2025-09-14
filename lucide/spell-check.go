@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // SpellCheck creates a Spell Check Lucide icon.
-func SpellCheck(args ...x.SvgArg) x.Component {
+func SpellCheck(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-spell-check", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m6 16 6-12 6 12"))),

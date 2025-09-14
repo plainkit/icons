@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // BookOpenCheck creates a Book Open Check Lucide icon.
-func BookOpenCheck(args ...x.SvgArg) x.Component {
+func BookOpenCheck(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-book-open-check", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 21V7"))),

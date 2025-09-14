@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // SquareUserRound creates a Square User Round Lucide icon.
-func SquareUserRound(args ...x.SvgArg) x.Component {
+func SquareUserRound(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-square-user-round", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M18 21a6 6 0 0 0-12 0"))),

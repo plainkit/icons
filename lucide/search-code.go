@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // SearchCode creates a Search Code Lucide icon.
-func SearchCode(args ...x.SvgArg) x.Component {
+func SearchCode(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-search-code", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m13 13.5 2-2.5-2-2.5"))),

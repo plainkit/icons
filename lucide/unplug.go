@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Unplug creates a Unplug Lucide icon.
-func Unplug(args ...x.SvgArg) x.Component {
+func Unplug(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-unplug", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m19 5 3-3"))),

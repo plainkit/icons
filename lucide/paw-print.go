@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // PawPrint creates a Paw Print Lucide icon.
-func PawPrint(args ...x.SvgArg) x.Component {
+func PawPrint(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-paw-print", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Circle(x.Cx("11"), x.Cy("4"), x.R("2"))),

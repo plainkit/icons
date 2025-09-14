@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // BoomBox creates a Boom Box Lucide icon.
-func BoomBox(args ...x.SvgArg) x.Component {
+func BoomBox(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-boom-box", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M4 9V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4"))),

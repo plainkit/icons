@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // FileVolume creates a File Volume Lucide icon.
-func FileVolume(args ...x.SvgArg) x.Component {
+func FileVolume(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-file-volume", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M11 11a5 5 0 0 1 0 6"))),

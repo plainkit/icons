@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Baby creates a Baby Lucide icon.
-func Baby(args ...x.SvgArg) x.Component {
+func Baby(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-baby", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10 16c.5.3 1.2.5 2 .5s1.5-.2 2-.5"))),

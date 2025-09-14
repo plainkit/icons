@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // MouseOff creates a Mouse Off Lucide icon.
-func MouseOff(args ...x.SvgArg) x.Component {
+func MouseOff(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-mouse-off", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 6v.343"))),

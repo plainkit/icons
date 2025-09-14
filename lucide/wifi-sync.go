@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // WifiSync creates a Wifi Sync Lucide icon.
-func WifiSync(args ...x.SvgArg) x.Component {
+func WifiSync(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-wifi-sync", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M11.965 10.105v4L13.5 12.5a5 5 0 0 1 8 1.5"))),

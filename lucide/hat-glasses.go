@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // HatGlasses creates a Hat Glasses Lucide icon.
-func HatGlasses(args ...x.SvgArg) x.Component {
+func HatGlasses(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-hat-glasses", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M14 18a2 2 0 0 0-4 0"))),

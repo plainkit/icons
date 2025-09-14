@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // FireExtinguisher creates a Fire Extinguisher Lucide icon.
-func FireExtinguisher(args ...x.SvgArg) x.Component {
+func FireExtinguisher(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-fire-extinguisher", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M15 6.5V3a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v3.5"))),

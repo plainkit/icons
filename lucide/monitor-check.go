@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // MonitorCheck creates a Monitor Check Lucide icon.
-func MonitorCheck(args ...x.SvgArg) x.Component {
+func MonitorCheck(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-monitor-check", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m9 10 2 2 4-4"))),

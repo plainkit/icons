@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // CircleFadingPlus creates a Circle Fading Plus Lucide icon.
-func CircleFadingPlus(args ...x.SvgArg) x.Component {
+func CircleFadingPlus(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-circle-fading-plus", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 2a10 10 0 0 1 7.38 16.75"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // FerrisWheel creates a Ferris Wheel Lucide icon.
-func FerrisWheel(args ...x.SvgArg) x.Component {
+func FerrisWheel(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-ferris-wheel", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Circle(x.Cx("12"), x.Cy("12"), x.R("2"))),

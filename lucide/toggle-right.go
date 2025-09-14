@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ToggleRight creates a Toggle Right Lucide icon.
-func ToggleRight(args ...x.SvgArg) x.Component {
+func ToggleRight(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-toggle-right", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Circle(x.Cx("15"), x.Cy("12"), x.R("3"))),

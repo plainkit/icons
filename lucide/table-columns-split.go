@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // TableColumnsSplit creates a Table Columns Split Lucide icon.
-func TableColumnsSplit(args ...x.SvgArg) x.Component {
+func TableColumnsSplit(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-table-columns-split", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M14 14v2"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Battery creates a Battery Lucide icon.
-func Battery(args ...x.SvgArg) x.Component {
+func Battery(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-battery", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M 22 14 L 22 10"))),

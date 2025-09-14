@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Fence creates a Fence Lucide icon.
-func Fence(args ...x.SvgArg) x.Component {
+func Fence(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-fence", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M4 3 2 5v15c0 .6.4 1 1 1h2c.6 0 1-.4 1-1V5Z"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // WebhookOff creates a Webhook Off Lucide icon.
-func WebhookOff(args ...x.SvgArg) x.Component {
+func WebhookOff(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-webhook-off", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M17 17h-5c-1.09-.02-1.94.92-2.5 1.9A3 3 0 1 1 2.57 15"))),

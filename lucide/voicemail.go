@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Voicemail creates a Voicemail Lucide icon.
-func Voicemail(args ...x.SvgArg) x.Component {
+func Voicemail(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-voicemail", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Circle(x.Cx("6"), x.Cy("12"), x.R("4"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Euro creates a Euro Lucide icon.
-func Euro(args ...x.SvgArg) x.Component {
+func Euro(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-euro", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M4 10h12"))),

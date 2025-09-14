@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Regex creates a Regex Lucide icon.
-func Regex(args ...x.SvgArg) x.Component {
+func Regex(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-regex", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M17 3v10"))),

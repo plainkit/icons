@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // CalendarSync creates a Calendar Sync Lucide icon.
-func CalendarSync(args ...x.SvgArg) x.Component {
+func CalendarSync(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-calendar-sync", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M11 10v4h4"))),

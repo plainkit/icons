@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ALargeSmall creates a A Large Small Lucide icon.
-func ALargeSmall(args ...x.SvgArg) x.Component {
+func ALargeSmall(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-a-large-small", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m15 16 2.536-7.328a1.02 1.02 1 0 1 1.928 0L22 16"))),

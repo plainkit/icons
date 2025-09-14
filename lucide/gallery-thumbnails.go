@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // GalleryThumbnails creates a Gallery Thumbnails Lucide icon.
-func GalleryThumbnails(args ...x.SvgArg) x.Component {
+func GalleryThumbnails(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-gallery-thumbnails", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Rect(x.RectWidth("18"), x.RectHeight("14"), x.X("3"), x.Y("3"), x.Rx("2"))),

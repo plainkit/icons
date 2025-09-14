@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ShowerHead creates a Shower Head Lucide icon.
-func ShowerHead(args ...x.SvgArg) x.Component {
+func ShowerHead(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-shower-head", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m4 4 2.5 2.5"))),

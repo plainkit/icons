@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // SendToBack creates a Send To Back Lucide icon.
-func SendToBack(args ...x.SvgArg) x.Component {
+func SendToBack(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-send-to-back", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Rect(x.RectWidth("8"), x.RectHeight("8"), x.X("14"), x.Y("14"), x.Rx("2"))),

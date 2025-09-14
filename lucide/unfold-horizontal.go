@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // UnfoldHorizontal creates a Unfold Horizontal Lucide icon.
-func UnfoldHorizontal(args ...x.SvgArg) x.Component {
+func UnfoldHorizontal(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-unfold-horizontal", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M16 12h6"))),

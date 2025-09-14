@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Drama creates a Drama Lucide icon.
-func Drama(args ...x.SvgArg) x.Component {
+func Drama(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-drama", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10 11h.01"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // CloudOff creates a Cloud Off Lucide icon.
-func CloudOff(args ...x.SvgArg) x.Component {
+func CloudOff(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-cloud-off", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m2 2 20 20"))),

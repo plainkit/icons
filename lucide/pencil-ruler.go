@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // PencilRuler creates a Pencil Ruler Lucide icon.
-func PencilRuler(args ...x.SvgArg) x.Component {
+func PencilRuler(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-pencil-ruler", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M13 7 8.7 2.7a2.41 2.41 0 0 0-3.4 0L2.7 5.3a2.41 2.41 0 0 0 0 3.4L7 13"))),

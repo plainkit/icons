@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Magnet creates a Magnet Lucide icon.
-func Magnet(args ...x.SvgArg) x.Component {
+func Magnet(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-magnet", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m12 15 4 4"))),

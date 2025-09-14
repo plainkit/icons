@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // CloudUpload creates a Cloud Upload Lucide icon.
-func CloudUpload(args ...x.SvgArg) x.Component {
+func CloudUpload(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-cloud-upload", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 13v8"))),

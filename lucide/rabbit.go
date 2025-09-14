@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Rabbit creates a Rabbit Lucide icon.
-func Rabbit(args ...x.SvgArg) x.Component {
+func Rabbit(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-rabbit", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M13 16a3 3 0 0 1 2.24 5"))),

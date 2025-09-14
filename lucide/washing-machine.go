@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // WashingMachine creates a Washing Machine Lucide icon.
-func WashingMachine(args ...x.SvgArg) x.Component {
+func WashingMachine(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-washing-machine", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M3 6h3"))),

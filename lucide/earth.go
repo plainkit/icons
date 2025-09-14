@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Earth creates a Earth Lucide icon.
-func Earth(args ...x.SvgArg) x.Component {
+func Earth(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-earth", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M21.54 15H17a2 2 0 0 0-2 2v4.54"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Hash creates a Hash Lucide icon.
-func Hash(args ...x.SvgArg) x.Component {
+func Hash(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-hash", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Line(x.X1("4"), x.X2("20"), x.Y1("9"), x.Y2("9"))),

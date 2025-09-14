@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // FolderKey creates a Folder Key Lucide icon.
-func FolderKey(args ...x.SvgArg) x.Component {
+func FolderKey(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-folder-key", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Circle(x.Cx("16"), x.Cy("20"), x.R("2"))),

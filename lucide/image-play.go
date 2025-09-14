@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ImagePlay creates a Image Play Lucide icon.
-func ImagePlay(args ...x.SvgArg) x.Component {
+func ImagePlay(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-image-play", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M15 15.003a1 1 0 0 1 1.517-.859l4.997 2.997a1 1 0 0 1 0 1.718l-4.997 2.997a1 1 0 0 1-1.517-.86z"))),

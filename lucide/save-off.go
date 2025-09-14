@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // SaveOff creates a Save Off Lucide icon.
-func SaveOff(args ...x.SvgArg) x.Component {
+func SaveOff(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-save-off", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M13 13H8a1 1 0 0 0-1 1v7"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // CloudMoonRain creates a Cloud Moon Rain Lucide icon.
-func CloudMoonRain(args ...x.SvgArg) x.Component {
+func CloudMoonRain(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-cloud-moon-rain", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M11 20v2"))),

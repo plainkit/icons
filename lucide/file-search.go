@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // FileSearch creates a File Search Lucide icon.
-func FileSearch(args ...x.SvgArg) x.Component {
+func FileSearch(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-file-search", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M14 2v4a2 2 0 0 0 2 2h4"))),

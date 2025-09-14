@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // LightbulbOff creates a Lightbulb Off Lucide icon.
-func LightbulbOff(args ...x.SvgArg) x.Component {
+func LightbulbOff(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-lightbulb-off", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M16.8 11.2c.8-.9 1.2-2 1.2-3.2a6 6 0 0 0-9.3-5"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Pizza creates a Pizza Lucide icon.
-func Pizza(args ...x.SvgArg) x.Component {
+func Pizza(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-pizza", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m12 14-1 1"))),

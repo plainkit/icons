@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // CircleOff creates a Circle Off Lucide icon.
-func CircleOff(args ...x.SvgArg) x.Component {
+func CircleOff(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-circle-off", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m2 2 20 20"))),

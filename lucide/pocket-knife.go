@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // PocketKnife creates a Pocket Knife Lucide icon.
-func PocketKnife(args ...x.SvgArg) x.Component {
+func PocketKnife(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-pocket-knife", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M3 2v1c0 1 2 1 2 2S3 6 3 7s2 1 2 2-2 1-2 2 2 1 2 2"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Diff creates a Diff Lucide icon.
-func Diff(args ...x.SvgArg) x.Component {
+func Diff(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-diff", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 3v14"))),

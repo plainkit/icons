@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // CalendarOff creates a Calendar Off Lucide icon.
-func CalendarOff(args ...x.SvgArg) x.Component {
+func CalendarOff(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-calendar-off", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M4.2 4.2A2 2 0 0 0 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 1.82-1.18"))),

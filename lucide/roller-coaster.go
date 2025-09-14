@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // RollerCoaster creates a Roller Coaster Lucide icon.
-func RollerCoaster(args ...x.SvgArg) x.Component {
+func RollerCoaster(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-roller-coaster", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M6 19V5"))),

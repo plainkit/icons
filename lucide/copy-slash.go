@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // CopySlash creates a Copy Slash Lucide icon.
-func CopySlash(args ...x.SvgArg) x.Component {
+func CopySlash(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-copy-slash", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Line(x.X1("12"), x.X2("18"), x.Y1("18"), x.Y2("12"))),

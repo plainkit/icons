@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // VectorSquare creates a Vector Square Lucide icon.
-func VectorSquare(args ...x.SvgArg) x.Component {
+func VectorSquare(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-vector-square", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M19.5 7a24 24 0 0 1 0 10"))),

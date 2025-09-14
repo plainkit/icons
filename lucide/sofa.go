@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Sofa creates a Sofa Lucide icon.
-func Sofa(args ...x.SvgArg) x.Component {
+func Sofa(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-sofa", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M20 9V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v3"))),

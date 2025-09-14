@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // SignpostBig creates a Signpost Big Lucide icon.
-func SignpostBig(args ...x.SvgArg) x.Component {
+func SignpostBig(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-signpost-big", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10 9H4L2 7l2-2h6"))),

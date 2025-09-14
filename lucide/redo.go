@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Redo creates a Redo Lucide icon.
-func Redo(args ...x.SvgArg) x.Component {
+func Redo(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-redo", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M21 7v6h-6"))),

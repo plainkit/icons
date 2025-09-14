@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ArrowDown creates a Arrow Down Lucide icon.
-func ArrowDown(args ...x.SvgArg) x.Component {
+func ArrowDown(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-arrow-down", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 5v14"))),

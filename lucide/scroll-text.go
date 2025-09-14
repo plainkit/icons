@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ScrollText creates a Scroll Text Lucide icon.
-func ScrollText(args ...x.SvgArg) x.Component {
+func ScrollText(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-scroll-text", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M15 12h-5"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // GalleryVertical creates a Gallery Vertical Lucide icon.
-func GalleryVertical(args ...x.SvgArg) x.Component {
+func GalleryVertical(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-gallery-vertical", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M3 2h18"))),

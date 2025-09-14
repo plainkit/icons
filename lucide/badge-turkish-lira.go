@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // BadgeTurkishLira creates a Badge Turkish Lira Lucide icon.
-func BadgeTurkishLira(args ...x.SvgArg) x.Component {
+func BadgeTurkishLira(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-badge-turkish-lira", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M11 7v10a5 5 0 0 0 5-5"))),

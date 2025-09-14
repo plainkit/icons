@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Video creates a Video Lucide icon.
-func Video(args ...x.SvgArg) x.Component {
+func Video(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-video", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"))),

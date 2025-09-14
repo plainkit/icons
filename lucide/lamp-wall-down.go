@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // LampWallDown creates a Lamp Wall Down Lucide icon.
-func LampWallDown(args ...x.SvgArg) x.Component {
+func LampWallDown(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-lamp-wall-down", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M19.929 18.629A1 1 0 0 1 19 20H9a1 1 0 0 1-.928-1.371l2-5A1 1 0 0 1 11 13h6a1 1 0 0 1 .928.629z"))),

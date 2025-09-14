@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Biohazard creates a Biohazard Lucide icon.
-func Biohazard(args ...x.SvgArg) x.Component {
+func Biohazard(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-biohazard", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Circle(x.Cx("12"), x.Cy("11.9"), x.R("2"))),

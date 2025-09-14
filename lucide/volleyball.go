@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Volleyball creates a Volleyball Lucide icon.
-func Volleyball(args ...x.SvgArg) x.Component {
+func Volleyball(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-volleyball", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M11.1 7.1a16.55 16.55 0 0 1 10.9 4"))),

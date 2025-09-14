@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // StarOff creates a Star Off Lucide icon.
-func StarOff(args ...x.SvgArg) x.Component {
+func StarOff(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-star-off", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M8.34 8.34 2 9.27l5 4.87L5.82 21 12 17.77 18.18 21l-.59-3.43"))),

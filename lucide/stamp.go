@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Stamp creates a Stamp Lucide icon.
-func Stamp(args ...x.SvgArg) x.Component {
+func Stamp(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-stamp", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M14 13V8.5C14 7 15 7 15 5a3 3 0 0 0-6 0c0 2 1 2 1 3.5V13"))),

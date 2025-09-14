@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Waypoints creates a Waypoints Lucide icon.
-func Waypoints(args ...x.SvgArg) x.Component {
+func Waypoints(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-waypoints", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Circle(x.Cx("12"), x.Cy("4.5"), x.R("2.5"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // MapPinned creates a Map Pinned Lucide icon.
-func MapPinned(args ...x.SvgArg) x.Component {
+func MapPinned(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-map-pinned", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M18 8c0 3.613-3.869 7.429-5.393 8.795a1 1 0 0 1-1.214 0C9.87 15.429 6 11.613 6 8a6 6 0 0 1 12 0"))),

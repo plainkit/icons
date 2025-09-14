@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // MilkOff creates a Milk Off Lucide icon.
-func MilkOff(args ...x.SvgArg) x.Component {
+func MilkOff(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-milk-off", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M8 2h8"))),

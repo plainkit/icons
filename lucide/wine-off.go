@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // WineOff creates a Wine Off Lucide icon.
-func WineOff(args ...x.SvgArg) x.Component {
+func WineOff(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-wine-off", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M8 22h8"))),

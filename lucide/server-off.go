@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ServerOff creates a Server Off Lucide icon.
-func ServerOff(args ...x.SvgArg) x.Component {
+func ServerOff(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-server-off", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M7 2h13a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-5"))),

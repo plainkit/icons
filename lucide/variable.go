@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Variable creates a Variable Lucide icon.
-func Variable(args ...x.SvgArg) x.Component {
+func Variable(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-variable", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M8 21s-4-3-4-9 4-9 4-9"))),

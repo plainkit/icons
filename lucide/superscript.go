@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Superscript creates a Superscript Lucide icon.
-func Superscript(args ...x.SvgArg) x.Component {
+func Superscript(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-superscript", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m4 19 8-8"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // AlignVerticalJustifyCenter creates a Align Vertical Justify Center Lucide icon.
-func AlignVerticalJustifyCenter(args ...x.SvgArg) x.Component {
+func AlignVerticalJustifyCenter(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-align-vertical-justify-center", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Rect(x.RectWidth("14"), x.RectHeight("6"), x.X("5"), x.Y("16"), x.Rx("2"))),

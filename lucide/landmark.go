@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Landmark creates a Landmark Lucide icon.
-func Landmark(args ...x.SvgArg) x.Component {
+func Landmark(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-landmark", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10 18v-7"))),

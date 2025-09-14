@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // HandHeart creates a Hand Heart Lucide icon.
-func HandHeart(args ...x.SvgArg) x.Component {
+func HandHeart(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-hand-heart", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M11 14h2a2 2 0 0 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 16"))),

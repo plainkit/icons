@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // LibraryBig creates a Library Big Lucide icon.
-func LibraryBig(args ...x.SvgArg) x.Component {
+func LibraryBig(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-library-big", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Rect(x.RectWidth("8"), x.RectHeight("18"), x.X("3"), x.Y("3"), x.Rx("1"))),

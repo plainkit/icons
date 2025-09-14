@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Disc3 creates a Disc 3 Lucide icon.
-func Disc3(args ...x.SvgArg) x.Component {
+func Disc3(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-disc-3", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Circle(x.Cx("12"), x.Cy("12"), x.R("10"))),

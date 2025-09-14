@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Import creates a Import Lucide icon.
-func Import(args ...x.SvgArg) x.Component {
+func Import(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-import", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 3v12"))),

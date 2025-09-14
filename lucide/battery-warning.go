@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // BatteryWarning creates a Battery Warning Lucide icon.
-func BatteryWarning(args ...x.SvgArg) x.Component {
+func BatteryWarning(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-battery-warning", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10 17h.01"))),

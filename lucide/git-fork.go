@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // GitFork creates a Git Fork Lucide icon.
-func GitFork(args ...x.SvgArg) x.Component {
+func GitFork(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-git-fork", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Circle(x.Cx("12"), x.Cy("18"), x.R("3"))),

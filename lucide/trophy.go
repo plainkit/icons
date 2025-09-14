@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Trophy creates a Trophy Lucide icon.
-func Trophy(args ...x.SvgArg) x.Component {
+func Trophy(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-trophy", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"))),

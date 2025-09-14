@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // AlignVerticalSpaceBetween creates a Align Vertical Space Between Lucide icon.
-func AlignVerticalSpaceBetween(args ...x.SvgArg) x.Component {
+func AlignVerticalSpaceBetween(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-align-vertical-space-between", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Rect(x.RectWidth("14"), x.RectHeight("6"), x.X("5"), x.Y("15"), x.Rx("2"))),

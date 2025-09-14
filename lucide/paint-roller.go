@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // PaintRoller creates a Paint Roller Lucide icon.
-func PaintRoller(args ...x.SvgArg) x.Component {
+func PaintRoller(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-paint-roller", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Rect(x.RectWidth("16"), x.RectHeight("6"), x.X("2"), x.Y("2"), x.Rx("2"))),

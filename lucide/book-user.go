@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // BookUser creates a Book User Lucide icon.
-func BookUser(args ...x.SvgArg) x.Component {
+func BookUser(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-book-user", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M15 13a3 3 0 1 0-6 0"))),

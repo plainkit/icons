@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // AlarmClockMinus creates a Alarm Clock Minus Lucide icon.
-func AlarmClockMinus(args ...x.SvgArg) x.Component {
+func AlarmClockMinus(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-alarm-clock-minus", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Circle(x.Cx("12"), x.Cy("13"), x.R("8"))),

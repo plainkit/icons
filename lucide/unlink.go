@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Unlink creates a Unlink Lucide icon.
-func Unlink(args ...x.SvgArg) x.Component {
+func Unlink(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-unlink", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m18.84 12.25 1.72-1.71h-.02a5.004 5.004 0 0 0-.12-7.07 5.006 5.006 0 0 0-6.95 0l-1.72 1.71"))),

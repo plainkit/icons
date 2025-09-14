@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // UserRoundPen creates a User Round Pen Lucide icon.
-func UserRoundPen(args ...x.SvgArg) x.Component {
+func UserRoundPen(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-user-round-pen", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M2 21a8 8 0 0 1 10.821-7.487"))),

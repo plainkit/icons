@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // SunMoon creates a Sun Moon Lucide icon.
-func SunMoon(args ...x.SvgArg) x.Component {
+func SunMoon(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-sun-moon", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 2v2"))),

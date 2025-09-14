@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Hamburger creates a Hamburger Lucide icon.
-func Hamburger(args ...x.SvgArg) x.Component {
+func Hamburger(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-hamburger", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 16H4a2 2 0 1 1 0-4h16a2 2 0 1 1 0 4h-4.25"))),

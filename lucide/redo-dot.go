@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // RedoDot creates a Redo Dot Lucide icon.
-func RedoDot(args ...x.SvgArg) x.Component {
+func RedoDot(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-redo-dot", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Circle(x.Cx("12"), x.Cy("17"), x.R("1"))),

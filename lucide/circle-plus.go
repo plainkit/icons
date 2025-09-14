@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // CirclePlus creates a Circle Plus Lucide icon.
-func CirclePlus(args ...x.SvgArg) x.Component {
+func CirclePlus(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-circle-plus", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Circle(x.Cx("12"), x.Cy("12"), x.R("10"))),

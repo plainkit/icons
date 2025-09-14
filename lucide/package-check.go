@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // PackageCheck creates a Package Check Lucide icon.
-func PackageCheck(args ...x.SvgArg) x.Component {
+func PackageCheck(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-package-check", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m16 16 2 2 4-4"))),

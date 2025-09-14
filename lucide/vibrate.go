@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Vibrate creates a Vibrate Lucide icon.
-func Vibrate(args ...x.SvgArg) x.Component {
+func Vibrate(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-vibrate", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m2 8 2 2-2 2 2 2-2 2"))),

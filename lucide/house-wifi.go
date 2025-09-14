@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // HouseWifi creates a House Wifi Lucide icon.
-func HouseWifi(args ...x.SvgArg) x.Component {
+func HouseWifi(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-house-wifi", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M9.5 13.866a4 4 0 0 1 5 .01"))),

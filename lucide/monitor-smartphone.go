@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // MonitorSmartphone creates a Monitor Smartphone Lucide icon.
-func MonitorSmartphone(args ...x.SvgArg) x.Component {
+func MonitorSmartphone(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-monitor-smartphone", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M18 8V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h8"))),

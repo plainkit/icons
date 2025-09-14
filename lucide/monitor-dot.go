@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // MonitorDot creates a Monitor Dot Lucide icon.
-func MonitorDot(args ...x.SvgArg) x.Component {
+func MonitorDot(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-monitor-dot", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 17v4"))),

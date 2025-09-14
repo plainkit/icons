@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Wand creates a Wand Lucide icon.
-func Wand(args ...x.SvgArg) x.Component {
+func Wand(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-wand", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M15 4V2"))),

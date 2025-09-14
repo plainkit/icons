@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // MonitorCog creates a Monitor Cog Lucide icon.
-func MonitorCog(args ...x.SvgArg) x.Component {
+func MonitorCog(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-monitor-cog", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 17v4"))),

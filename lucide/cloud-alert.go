@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // CloudAlert creates a Cloud Alert Lucide icon.
-func CloudAlert(args ...x.SvgArg) x.Component {
+func CloudAlert(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-cloud-alert", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 12v4"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // AlarmClockCheck creates a Alarm Clock Check Lucide icon.
-func AlarmClockCheck(args ...x.SvgArg) x.Component {
+func AlarmClockCheck(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-alarm-clock-check", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Circle(x.Cx("12"), x.Cy("13"), x.R("8"))),

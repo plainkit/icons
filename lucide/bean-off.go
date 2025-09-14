@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // BeanOff creates a Bean Off Lucide icon.
-func BeanOff(args ...x.SvgArg) x.Component {
+func BeanOff(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-bean-off", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M9 9c-.64.64-1.521.954-2.402 1.165A6 6 0 0 0 8 22a13.96 13.96 0 0 0 9.9-4.1"))),

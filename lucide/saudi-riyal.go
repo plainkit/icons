@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // SaudiRiyal creates a Saudi Riyal Lucide icon.
-func SaudiRiyal(args ...x.SvgArg) x.Component {
+func SaudiRiyal(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-saudi-riyal", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m20 19.5-5.5 1.2"))),

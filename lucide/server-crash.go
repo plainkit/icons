@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ServerCrash creates a Server Crash Lucide icon.
-func ServerCrash(args ...x.SvgArg) x.Component {
+func ServerCrash(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-server-crash", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M6 10H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-2"))),

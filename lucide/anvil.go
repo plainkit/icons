@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Anvil creates a Anvil Lucide icon.
-func Anvil(args ...x.SvgArg) x.Component {
+func Anvil(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-anvil", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M7 10H6a4 4 0 0 1-4-4 1 1 0 0 1 1-1h4"))),

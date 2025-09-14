@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // MapPinPen creates a Map Pin Pen Lucide icon.
-func MapPinPen(args ...x.SvgArg) x.Component {
+func MapPinPen(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-map-pin-pen", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M17.97 9.304A8 8 0 0 0 2 10c0 4.69 4.887 9.562 7.022 11.468"))),

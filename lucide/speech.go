@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Speech creates a Speech Lucide icon.
-func Speech(args ...x.SvgArg) x.Component {
+func Speech(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-speech", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M8.8 20v-4.1l1.9.2a2.3 2.3 0 0 0 2.164-2.1V8.3A5.37 5.37 0 0 0 2 8.25c0 2.8.656 3.054 1 4.55a5.77 5.77 0 0 1 .029 2.758L2 20"))),

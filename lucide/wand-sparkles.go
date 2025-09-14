@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // WandSparkles creates a Wand Sparkles Lucide icon.
-func WandSparkles(args ...x.SvgArg) x.Component {
+func WandSparkles(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-wand-sparkles", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m21.64 3.64-1.28-1.28a1.21 1.21 0 0 0-1.72 0L2.36 18.64a1.21 1.21 0 0 0 0 1.72l1.28 1.28a1.2 1.2 0 0 0 1.72 0L21.64 5.36a1.2 1.2 0 0 0 0-1.72"))),

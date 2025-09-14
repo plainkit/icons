@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // BetweenVerticalEnd creates a Between Vertical End Lucide icon.
-func BetweenVerticalEnd(args ...x.SvgArg) x.Component {
+func BetweenVerticalEnd(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-between-vertical-end", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Rect(x.RectWidth("7"), x.RectHeight("13"), x.X("3"), x.Y("3"), x.Rx("1"))),

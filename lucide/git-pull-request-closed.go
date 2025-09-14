@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // GitPullRequestClosed creates a Git Pull Request Closed Lucide icon.
-func GitPullRequestClosed(args ...x.SvgArg) x.Component {
+func GitPullRequestClosed(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-git-pull-request-closed", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Circle(x.Cx("6"), x.Cy("6"), x.R("3"))),

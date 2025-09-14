@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // SquareBottomDashedScissors creates a Square Bottom Dashed Scissors Lucide icon.
-func SquareBottomDashedScissors(args ...x.SvgArg) x.Component {
+func SquareBottomDashedScissors(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-square-bottom-dashed-scissors", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M4 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2"))),

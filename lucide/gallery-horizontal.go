@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // GalleryHorizontal creates a Gallery Horizontal Lucide icon.
-func GalleryHorizontal(args ...x.SvgArg) x.Component {
+func GalleryHorizontal(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-gallery-horizontal", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M2 3v18"))),

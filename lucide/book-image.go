@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // BookImage creates a Book Image Lucide icon.
-func BookImage(args ...x.SvgArg) x.Component {
+func BookImage(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-book-image", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m20 13.7-2.1-2.1a2 2 0 0 0-2.8 0L9.7 17"))),

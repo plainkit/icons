@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // CarFront creates a Car Front Lucide icon.
-func CarFront(args ...x.SvgArg) x.Component {
+func CarFront(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-car-front", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m21 8-2 2-1.5-3.7A2 2 0 0 0 15.646 5H8.4a2 2 0 0 0-1.903 1.257L5 10 3 8"))),

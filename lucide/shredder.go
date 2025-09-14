@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Shredder creates a Shredder Lucide icon.
-func Shredder(args ...x.SvgArg) x.Component {
+func Shredder(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-shredder", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10 22v-5"))),

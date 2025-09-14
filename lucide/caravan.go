@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Caravan creates a Caravan Lucide icon.
-func Caravan(args ...x.SvgArg) x.Component {
+func Caravan(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-caravan", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M18 19V9a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v8a2 2 0 0 0 2 2h2"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // CalendarCog creates a Calendar Cog Lucide icon.
-func CalendarCog(args ...x.SvgArg) x.Component {
+func CalendarCog(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-calendar-cog", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m15.228 16.852-.923-.383"))),

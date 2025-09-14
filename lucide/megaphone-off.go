@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // MegaphoneOff creates a Megaphone Off Lucide icon.
-func MegaphoneOff(args ...x.SvgArg) x.Component {
+func MegaphoneOff(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-megaphone-off", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M11.636 6A13 13 0 0 0 19.4 3.2 1 1 0 0 1 21 4v11.344"))),

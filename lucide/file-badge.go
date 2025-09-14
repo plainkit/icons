@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // FileBadge creates a File Badge Lucide icon.
-func FileBadge(args ...x.SvgArg) x.Component {
+func FileBadge(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-file-badge", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 22h6a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v3.072"))),

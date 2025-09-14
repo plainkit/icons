@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Warehouse creates a Warehouse Lucide icon.
-func Warehouse(args ...x.SvgArg) x.Component {
+func Warehouse(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-warehouse", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M18 21V10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v11"))),

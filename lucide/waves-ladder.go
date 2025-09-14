@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // WavesLadder creates a Waves Ladder Lucide icon.
-func WavesLadder(args ...x.SvgArg) x.Component {
+func WavesLadder(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-waves-ladder", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M19 5a2 2 0 0 0-2 2v11"))),

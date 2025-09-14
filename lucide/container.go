@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Container creates a Container Lucide icon.
-func Container(args ...x.SvgArg) x.Component {
+func Container(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-container", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M22 7.7c0-.6-.4-1.2-.8-1.5l-6.3-3.9a1.72 1.72 0 0 0-1.7 0l-10.3 6c-.5.2-.9.8-.9 1.4v6.6c0 .5.4 1.2.8 1.5l6.3 3.9a1.72 1.72 0 0 0 1.7 0l10.3-6c.5-.3.9-1 .9-1.5Z"))),

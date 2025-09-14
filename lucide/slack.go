@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Slack creates a Slack Lucide icon.
-func Slack(args ...x.SvgArg) x.Component {
+func Slack(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-slack", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Rect(x.RectWidth("3"), x.RectHeight("8"), x.X("13"), x.Y("2"), x.Rx("1.5"))),

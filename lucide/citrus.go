@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Citrus creates a Citrus Lucide icon.
-func Citrus(args ...x.SvgArg) x.Component {
+func Citrus(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-citrus", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M21.66 17.67a1.08 1.08 0 0 1-.04 1.6A12 12 0 0 1 4.73 2.38a1.1 1.1 0 0 1 1.61-.04z"))),

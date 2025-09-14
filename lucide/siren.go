@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Siren creates a Siren Lucide icon.
-func Siren(args ...x.SvgArg) x.Component {
+func Siren(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-siren", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M7 18v-6a5 5 0 1 1 10 0v6"))),

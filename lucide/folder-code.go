@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // FolderCode creates a Folder Code Lucide icon.
-func FolderCode(args ...x.SvgArg) x.Component {
+func FolderCode(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-folder-code", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10 10.5 8 13l2 2.5"))),

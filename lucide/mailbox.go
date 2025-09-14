@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Mailbox creates a Mailbox Lucide icon.
-func Mailbox(args ...x.SvgArg) x.Component {
+func Mailbox(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-mailbox", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M22 17a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9.5C2 7 4 5 6.5 5H18c2.2 0 4 1.8 4 4v8Z"))),

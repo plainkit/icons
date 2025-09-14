@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ChartNoAxesCombined creates a Chart No Axes Combined Lucide icon.
-func ChartNoAxesCombined(args ...x.SvgArg) x.Component {
+func ChartNoAxesCombined(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-chart-no-axes-combined", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 16v5"))),

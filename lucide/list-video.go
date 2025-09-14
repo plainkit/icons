@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ListVideo creates a List Video Lucide icon.
-func ListVideo(args ...x.SvgArg) x.Component {
+func ListVideo(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-list-video", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M21 5H3"))),

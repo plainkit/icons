@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Trees creates a Trees Lucide icon.
-func Trees(args ...x.SvgArg) x.Component {
+func Trees(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-trees", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10 10v.2A3 3 0 0 1 8.9 16H5a3 3 0 0 1-1-5.8V10a3 3 0 0 1 6 0Z"))),

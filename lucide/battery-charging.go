@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // BatteryCharging creates a Battery Charging Lucide icon.
-func BatteryCharging(args ...x.SvgArg) x.Component {
+func BatteryCharging(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-battery-charging", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m11 7-3 5h4l-3 5"))),

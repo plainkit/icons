@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // TrainFrontTunnel creates a Train Front Tunnel Lucide icon.
-func TrainFrontTunnel(args ...x.SvgArg) x.Component {
+func TrainFrontTunnel(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-train-front-tunnel", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M2 22V12a10 10 0 1 1 20 0v10"))),

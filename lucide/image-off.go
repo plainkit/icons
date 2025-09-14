@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ImageOff creates a Image Off Lucide icon.
-func ImageOff(args ...x.SvgArg) x.Component {
+func ImageOff(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-image-off", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Line(x.X1("2"), x.X2("22"), x.Y1("2"), x.Y2("22"))),

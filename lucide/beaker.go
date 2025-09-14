@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Beaker creates a Beaker Lucide icon.
-func Beaker(args ...x.SvgArg) x.Component {
+func Beaker(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-beaker", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M4.5 3h15"))),

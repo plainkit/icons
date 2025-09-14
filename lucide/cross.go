@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Cross creates a Cross Lucide icon.
-func Cross(args ...x.SvgArg) x.Component {
+func Cross(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-cross", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M4 9a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h4a1 1 0 0 1 1 1v4a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-4a1 1 0 0 1 1-1h4a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2h-4a1 1 0 0 1-1-1V4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4a1 1 0 0 1-1 1z"))),

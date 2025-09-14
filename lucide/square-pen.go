@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // SquarePen creates a Square Pen Lucide icon.
-func SquarePen(args ...x.SvgArg) x.Component {
+func SquarePen(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-square-pen", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"))),

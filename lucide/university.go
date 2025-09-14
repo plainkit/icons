@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // University creates a University Lucide icon.
-func University(args ...x.SvgArg) x.Component {
+func University(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-university", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M14 21v-3a2 2 0 0 0-4 0v3"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // BluetoothOff creates a Bluetooth Off Lucide icon.
-func BluetoothOff(args ...x.SvgArg) x.Component {
+func BluetoothOff(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-bluetooth-off", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m17 17-5 5V12l-5 5"))),

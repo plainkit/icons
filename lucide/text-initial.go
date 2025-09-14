@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // TextInitial creates a Text Initial Lucide icon.
-func TextInitial(args ...x.SvgArg) x.Component {
+func TextInitial(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-text-initial", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M15 5h6"))),

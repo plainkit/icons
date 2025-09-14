@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // SquareRadical creates a Square Radical Lucide icon.
-func SquareRadical(args ...x.SvgArg) x.Component {
+func SquareRadical(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-square-radical", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M7 12h2l2 5 2-10h4"))),

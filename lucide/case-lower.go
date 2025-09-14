@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // CaseLower creates a Case Lower Lucide icon.
-func CaseLower(args ...x.SvgArg) x.Component {
+func CaseLower(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-case-lower", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10 9v7"))),

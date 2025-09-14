@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Group creates a Group Lucide icon.
-func Group(args ...x.SvgArg) x.Component {
+func Group(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-group", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M3 7V5c0-1.1.9-2 2-2h2"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // FlipVertical2 creates a Flip Vertical 2 Lucide icon.
-func FlipVertical2(args ...x.SvgArg) x.Component {
+func FlipVertical2(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-flip-vertical-2", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m17 3-5 5-5-5h10"))),

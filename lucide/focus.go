@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Focus creates a Focus Lucide icon.
-func Focus(args ...x.SvgArg) x.Component {
+func Focus(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-focus", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Circle(x.Cx("12"), x.Cy("12"), x.R("3"))),

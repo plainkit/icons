@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // BookUp2 creates a Book Up 2 Lucide icon.
-func BookUp2(args ...x.SvgArg) x.Component {
+func BookUp2(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-book-up-2", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 13V7"))),

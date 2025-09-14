@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // LampCeiling creates a Lamp Ceiling Lucide icon.
-func LampCeiling(args ...x.SvgArg) x.Component {
+func LampCeiling(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-lamp-ceiling", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 2v5"))),

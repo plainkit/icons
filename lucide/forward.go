@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Forward creates a Forward Lucide icon.
-func Forward(args ...x.SvgArg) x.Component {
+func Forward(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-forward", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m15 17 5-5-5-5"))),

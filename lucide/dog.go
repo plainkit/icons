@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Dog creates a Dog Lucide icon.
-func Dog(args ...x.SvgArg) x.Component {
+func Dog(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-dog", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M11.25 16.25h1.5L12 17z"))),

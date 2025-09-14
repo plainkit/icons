@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Percent creates a Percent Lucide icon.
-func Percent(args ...x.SvgArg) x.Component {
+func Percent(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-percent", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Line(x.X1("19"), x.X2("5"), x.Y1("5"), x.Y2("19"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Banana creates a Banana Lucide icon.
-func Banana(args ...x.SvgArg) x.Component {
+func Banana(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-banana", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M4 13c3.5-2 8-2 10 2a5.5 5.5 0 0 1 8 5"))),

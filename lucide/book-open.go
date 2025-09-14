@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // BookOpen creates a Book Open Lucide icon.
-func BookOpen(args ...x.SvgArg) x.Component {
+func BookOpen(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-book-open", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 7v14"))),

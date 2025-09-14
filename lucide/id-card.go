@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // IdCard creates a Id Card Lucide icon.
-func IdCard(args ...x.SvgArg) x.Component {
+func IdCard(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-id-card", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M16 10h2"))),

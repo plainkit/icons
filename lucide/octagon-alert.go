@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // OctagonAlert creates a Octagon Alert Lucide icon.
-func OctagonAlert(args ...x.SvgArg) x.Component {
+func OctagonAlert(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-octagon-alert", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 16h.01"))),

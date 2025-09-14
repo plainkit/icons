@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // SquareSplitHorizontal creates a Square Split Horizontal Lucide icon.
-func SquareSplitHorizontal(args ...x.SvgArg) x.Component {
+func SquareSplitHorizontal(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-square-split-horizontal", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M8 19H5c-1 0-2-1-2-2V7c0-1 1-2 2-2h3"))),

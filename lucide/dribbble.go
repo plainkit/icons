@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Dribbble creates a Dribbble Lucide icon.
-func Dribbble(args ...x.SvgArg) x.Component {
+func Dribbble(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-dribbble", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Circle(x.Cx("12"), x.Cy("12"), x.R("10"))),

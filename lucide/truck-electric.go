@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // TruckElectric creates a Truck Electric Lucide icon.
-func TruckElectric(args ...x.SvgArg) x.Component {
+func TruckElectric(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-truck-electric", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M14 19V7a2 2 0 0 0-2-2H9"))),

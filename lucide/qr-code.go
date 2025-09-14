@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // QrCode creates a Qr Code Lucide icon.
-func QrCode(args ...x.SvgArg) x.Component {
+func QrCode(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-qr-code", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Rect(x.RectWidth("5"), x.RectHeight("5"), x.X("3"), x.Y("3"), x.Rx("1"))),

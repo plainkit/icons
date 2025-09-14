@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ListChevronsUpDown creates a List Chevrons Up Down Lucide icon.
-func ListChevronsUpDown(args ...x.SvgArg) x.Component {
+func ListChevronsUpDown(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-list-chevrons-up-down", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M3 5h8"))),

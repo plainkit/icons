@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // MapPinHouse creates a Map Pin House Lucide icon.
-func MapPinHouse(args ...x.SvgArg) x.Component {
+func MapPinHouse(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-map-pin-house", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M15 22a1 1 0 0 1-1-1v-4a1 1 0 0 1 .445-.832l3-2a1 1 0 0 1 1.11 0l3 2A1 1 0 0 1 22 17v4a1 1 0 0 1-1 1z"))),

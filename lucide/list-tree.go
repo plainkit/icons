@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ListTree creates a List Tree Lucide icon.
-func ListTree(args ...x.SvgArg) x.Component {
+func ListTree(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-list-tree", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M8 5h13"))),

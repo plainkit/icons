@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // FolderTree creates a Folder Tree Lucide icon.
-func FolderTree(args ...x.SvgArg) x.Component {
+func FolderTree(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-folder-tree", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M20 10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2.5a1 1 0 0 1-.8-.4l-.9-1.2A1 1 0 0 0 15 3h-2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // SquareArrowLeft creates a Square Arrow Left Lucide icon.
-func SquareArrowLeft(args ...x.SvgArg) x.Component {
+func SquareArrowLeft(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-square-arrow-left", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Rect(x.RectWidth("18"), x.RectHeight("18"), x.X("3"), x.Y("3"), x.Rx("2"))),

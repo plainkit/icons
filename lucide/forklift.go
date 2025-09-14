@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Forklift creates a Forklift Lucide icon.
-func Forklift(args ...x.SvgArg) x.Component {
+func Forklift(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-forklift", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 12H5a2 2 0 0 0-2 2v5"))),

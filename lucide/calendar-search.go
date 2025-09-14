@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // CalendarSearch creates a Calendar Search Lucide icon.
-func CalendarSearch(args ...x.SvgArg) x.Component {
+func CalendarSearch(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-calendar-search", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M16 2v4"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Hourglass creates a Hourglass Lucide icon.
-func Hourglass(args ...x.SvgArg) x.Component {
+func Hourglass(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-hourglass", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M5 22h14"))),

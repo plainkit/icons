@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // MapPinOff creates a Map Pin Off Lucide icon.
-func MapPinOff(args ...x.SvgArg) x.Component {
+func MapPinOff(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-map-pin-off", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12.75 7.09a3 3 0 0 1 2.16 2.16"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Pilcrow creates a Pilcrow Lucide icon.
-func Pilcrow(args ...x.SvgArg) x.Component {
+func Pilcrow(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-pilcrow", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M13 4v16"))),

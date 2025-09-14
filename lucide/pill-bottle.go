@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // PillBottle creates a Pill Bottle Lucide icon.
-func PillBottle(args ...x.SvgArg) x.Component {
+func PillBottle(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-pill-bottle", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M18 11h-4a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h4"))),

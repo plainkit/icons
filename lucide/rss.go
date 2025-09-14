@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Rss creates a Rss Lucide icon.
-func Rss(args ...x.SvgArg) x.Component {
+func Rss(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-rss", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M4 11a9 9 0 0 1 9 9"))),

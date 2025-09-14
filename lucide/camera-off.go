@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // CameraOff creates a Camera Off Lucide icon.
-func CameraOff(args ...x.SvgArg) x.Component {
+func CameraOff(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-camera-off", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M14.564 14.558a3 3 0 1 1-4.122-4.121"))),

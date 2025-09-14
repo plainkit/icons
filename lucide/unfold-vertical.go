@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // UnfoldVertical creates a Unfold Vertical Lucide icon.
-func UnfoldVertical(args ...x.SvgArg) x.Component {
+func UnfoldVertical(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-unfold-vertical", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 22v-6"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Lasso creates a Lasso Lucide icon.
-func Lasso(args ...x.SvgArg) x.Component {
+func Lasso(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-lasso", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M3.704 14.467A10 8 0 0 1 2 10a10 8 0 0 1 20 0 10 8 0 0 1-10 8 10 8 0 0 1-5.181-1.158"))),

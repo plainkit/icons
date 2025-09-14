@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ChevronsLeftRightEllipsis creates a Chevrons Left Right Ellipsis Lucide icon.
-func ChevronsLeftRightEllipsis(args ...x.SvgArg) x.Component {
+func ChevronsLeftRightEllipsis(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-chevrons-left-right-ellipsis", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 12h.01"))),

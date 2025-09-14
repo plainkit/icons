@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ListTodo creates a List Todo Lucide icon.
-func ListTodo(args ...x.SvgArg) x.Component {
+func ListTodo(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-list-todo", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M13 5h8"))),

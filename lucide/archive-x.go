@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ArchiveX creates a Archive X Lucide icon.
-func ArchiveX(args ...x.SvgArg) x.Component {
+func ArchiveX(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-archive-x", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Rect(x.RectWidth("20"), x.RectHeight("5"), x.X("2"), x.Y("3"), x.Rx("1"))),

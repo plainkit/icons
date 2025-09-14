@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // HeartOff creates a Heart Off Lucide icon.
-func HeartOff(args ...x.SvgArg) x.Component {
+func HeartOff(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-heart-off", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10.5 4.893a5.5 5.5 0 0 1 1.091.931.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 1.872-1.002 3.356-2.187 4.655"))),

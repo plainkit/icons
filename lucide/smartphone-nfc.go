@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // SmartphoneNfc creates a Smartphone Nfc Lucide icon.
-func SmartphoneNfc(args ...x.SvgArg) x.Component {
+func SmartphoneNfc(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-smartphone-nfc", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Rect(x.RectWidth("7"), x.RectHeight("12"), x.X("2"), x.Y("6"), x.Rx("1"))),

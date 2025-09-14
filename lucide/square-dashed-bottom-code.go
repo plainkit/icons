@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // SquareDashedBottomCode creates a Square Dashed Bottom Code Lucide icon.
-func SquareDashedBottomCode(args ...x.SvgArg) x.Component {
+func SquareDashedBottomCode(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-square-dashed-bottom-code", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10 9.5 8 12l2 2.5"))),

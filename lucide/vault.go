@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Vault creates a Vault Lucide icon.
-func Vault(args ...x.SvgArg) x.Component {
+func Vault(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-vault", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Rect(x.RectWidth("18"), x.RectHeight("18"), x.X("3"), x.Y("3"), x.Rx("2"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Pi creates a Pi Lucide icon.
-func Pi(args ...x.SvgArg) x.Component {
+func Pi(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-pi", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Line(x.X1("9"), x.X2("9"), x.Y1("4"), x.Y2("20"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Tv creates a Tv Lucide icon.
-func Tv(args ...x.SvgArg) x.Component {
+func Tv(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-tv", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m17 2-5 5-5-5"))),

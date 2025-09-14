@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ScanQrCode creates a Scan Qr Code Lucide icon.
-func ScanQrCode(args ...x.SvgArg) x.Component {
+func ScanQrCode(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-scan-qr-code", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M17 12v4a1 1 0 0 1-1 1h-4"))),

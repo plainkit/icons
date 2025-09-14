@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Podcast creates a Podcast Lucide icon.
-func Podcast(args ...x.SvgArg) x.Component {
+func Podcast(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-podcast", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M13 17a1 1 0 1 0-2 0l.5 4.5a0.5 0.5 0 0 0 1 0z"), x.Fill("currentColor"))),

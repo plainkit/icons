@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // AudioLines creates a Audio Lines Lucide icon.
-func AudioLines(args ...x.SvgArg) x.Component {
+func AudioLines(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-audio-lines", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M2 10v3"))),

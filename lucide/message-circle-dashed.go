@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // MessageCircleDashed creates a Message Circle Dashed Lucide icon.
-func MessageCircleDashed(args ...x.SvgArg) x.Component {
+func MessageCircleDashed(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-message-circle-dashed", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10.1 2.182a10 10 0 0 1 3.8 0"))),

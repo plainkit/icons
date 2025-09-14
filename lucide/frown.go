@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Frown creates a Frown Lucide icon.
-func Frown(args ...x.SvgArg) x.Component {
+func Frown(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-frown", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Circle(x.Cx("12"), x.Cy("12"), x.R("10"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // FileOutput creates a File Output Lucide icon.
-func FileOutput(args ...x.SvgArg) x.Component {
+func FileOutput(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-file-output", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M14 2v4a2 2 0 0 0 2 2h4"))),

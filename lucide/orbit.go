@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Orbit creates a Orbit Lucide icon.
-func Orbit(args ...x.SvgArg) x.Component {
+func Orbit(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-orbit", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M20.341 6.484A10 10 0 0 1 10.266 21.85"))),

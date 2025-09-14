@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // AlignStartHorizontal creates a Align Start Horizontal Lucide icon.
-func AlignStartHorizontal(args ...x.SvgArg) x.Component {
+func AlignStartHorizontal(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-align-start-horizontal", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Rect(x.RectWidth("6"), x.RectHeight("16"), x.X("4"), x.Y("6"), x.Rx("2"))),

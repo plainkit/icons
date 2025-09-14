@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // CloudCheck creates a Cloud Check Lucide icon.
-func CloudCheck(args ...x.SvgArg) x.Component {
+func CloudCheck(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-cloud-check", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m17 15-5.5 5.5L9 18"))),

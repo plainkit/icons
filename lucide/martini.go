@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Martini creates a Martini Lucide icon.
-func Martini(args ...x.SvgArg) x.Component {
+func Martini(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-martini", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M8 22h8"))),

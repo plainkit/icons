@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Gauge creates a Gauge Lucide icon.
-func Gauge(args ...x.SvgArg) x.Component {
+func Gauge(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-gauge", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m12 14 4-4"))),

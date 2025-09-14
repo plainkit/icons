@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Bus creates a Bus Lucide icon.
-func Bus(args ...x.SvgArg) x.Component {
+func Bus(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-bus", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M8 6v6"))),

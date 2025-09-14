@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // MailWarning creates a Mail Warning Lucide icon.
-func MailWarning(args ...x.SvgArg) x.Component {
+func MailWarning(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-mail-warning", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M22 10.5V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h12.5"))),

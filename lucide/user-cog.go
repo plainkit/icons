@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // UserCog creates a User Cog Lucide icon.
-func UserCog(args ...x.SvgArg) x.Component {
+func UserCog(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-user-cog", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10 15H6a4 4 0 0 0-4 4v2"))),

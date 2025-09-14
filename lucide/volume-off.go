@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // VolumeOff creates a Volume Off Lucide icon.
-func VolumeOff(args ...x.SvgArg) x.Component {
+func VolumeOff(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-volume-off", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M16 9a5 5 0 0 1 .95 2.293"))),

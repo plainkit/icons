@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Frame creates a Frame Lucide icon.
-func Frame(args ...x.SvgArg) x.Component {
+func Frame(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-frame", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Line(x.X1("22"), x.X2("2"), x.Y1("6"), x.Y2("6"))),

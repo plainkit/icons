@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Move creates a Move Lucide icon.
-func Move(args ...x.SvgArg) x.Component {
+func Move(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-move", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 2v20"))),

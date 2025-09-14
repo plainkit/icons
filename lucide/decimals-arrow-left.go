@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // DecimalsArrowLeft creates a Decimals Arrow Left Lucide icon.
-func DecimalsArrowLeft(args ...x.SvgArg) x.Component {
+func DecimalsArrowLeft(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-decimals-arrow-left", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m13 21-3-3 3-3"))),

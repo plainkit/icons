@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // CloudSun creates a Cloud Sun Lucide icon.
-func CloudSun(args ...x.SvgArg) x.Component {
+func CloudSun(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-cloud-sun", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 2v2"))),

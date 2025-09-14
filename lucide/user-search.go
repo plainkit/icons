@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // UserSearch creates a User Search Lucide icon.
-func UserSearch(args ...x.SvgArg) x.Component {
+func UserSearch(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-user-search", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Circle(x.Cx("10"), x.Cy("7"), x.R("4"))),

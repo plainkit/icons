@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Download creates a Download Lucide icon.
-func Download(args ...x.SvgArg) x.Component {
+func Download(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-download", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 15V3"))),

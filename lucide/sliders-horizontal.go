@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // SlidersHorizontal creates a Sliders Horizontal Lucide icon.
-func SlidersHorizontal(args ...x.SvgArg) x.Component {
+func SlidersHorizontal(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-sliders-horizontal", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10 5H3"))),

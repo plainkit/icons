@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ListEnd creates a List End Lucide icon.
-func ListEnd(args ...x.SvgArg) x.Component {
+func ListEnd(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-list-end", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M16 5H3"))),

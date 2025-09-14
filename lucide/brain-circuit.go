@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // BrainCircuit creates a Brain Circuit Lucide icon.
-func BrainCircuit(args ...x.SvgArg) x.Component {
+func BrainCircuit(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-brain-circuit", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"))),

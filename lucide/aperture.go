@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Aperture creates a Aperture Lucide icon.
-func Aperture(args ...x.SvgArg) x.Component {
+func Aperture(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-aperture", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Circle(x.Cx("12"), x.Cy("12"), x.R("10"))),

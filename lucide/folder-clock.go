@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // FolderClock creates a Folder Clock Lucide icon.
-func FolderClock(args ...x.SvgArg) x.Component {
+func FolderClock(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-folder-clock", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M16 14v2.2l1.6 1"))),

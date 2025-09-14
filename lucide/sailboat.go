@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Sailboat creates a Sailboat Lucide icon.
-func Sailboat(args ...x.SvgArg) x.Component {
+func Sailboat(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-sailboat", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10 2v15"))),

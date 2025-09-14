@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ToolCase creates a Tool Case Lucide icon.
-func ToolCase(args ...x.SvgArg) x.Component {
+func ToolCase(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-tool-case", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10 15h4"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // PanelRightClose creates a Panel Right Close Lucide icon.
-func PanelRightClose(args ...x.SvgArg) x.Component {
+func PanelRightClose(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-panel-right-close", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Rect(x.RectWidth("18"), x.RectHeight("18"), x.X("3"), x.Y("3"), x.Rx("2"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Diameter creates a Diameter Lucide icon.
-func Diameter(args ...x.SvgArg) x.Component {
+func Diameter(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-diameter", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Circle(x.Cx("19"), x.Cy("19"), x.R("2"))),

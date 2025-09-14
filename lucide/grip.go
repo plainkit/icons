@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Grip creates a Grip Lucide icon.
-func Grip(args ...x.SvgArg) x.Component {
+func Grip(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-grip", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Circle(x.Cx("12"), x.Cy("5"), x.R("1"))),

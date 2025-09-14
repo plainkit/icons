@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Divide creates a Divide Lucide icon.
-func Divide(args ...x.SvgArg) x.Component {
+func Divide(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-divide", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Circle(x.Cx("12"), x.Cy("6"), x.R("1"))),

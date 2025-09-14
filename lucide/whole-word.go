@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // WholeWord creates a Whole Word Lucide icon.
-func WholeWord(args ...x.SvgArg) x.Component {
+func WholeWord(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-whole-word", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Circle(x.Cx("7"), x.Cy("12"), x.R("3"))),

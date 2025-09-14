@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // HandGrab creates a Hand Grab Lucide icon.
-func HandGrab(args ...x.SvgArg) x.Component {
+func HandGrab(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-hand-grab", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M18 11.5V9a2 2 0 0 0-2-2a2 2 0 0 0-2 2v1.4"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // WalletMinimal creates a Wallet Minimal Lucide icon.
-func WalletMinimal(args ...x.SvgArg) x.Component {
+func WalletMinimal(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-wallet-minimal", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M17 14h.01"))),

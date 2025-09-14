@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // EggOff creates a Egg Off Lucide icon.
-func EggOff(args ...x.SvgArg) x.Component {
+func EggOff(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-egg-off", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m2 2 20 20"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Tent creates a Tent Lucide icon.
-func Tent(args ...x.SvgArg) x.Component {
+func Tent(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-tent", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M3.5 21 14 3"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ListRestart creates a List Restart Lucide icon.
-func ListRestart(args ...x.SvgArg) x.Component {
+func ListRestart(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-list-restart", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M21 5H3"))),

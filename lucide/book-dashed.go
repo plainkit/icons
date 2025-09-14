@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // BookDashed creates a Book Dashed Lucide icon.
-func BookDashed(args ...x.SvgArg) x.Component {
+func BookDashed(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-book-dashed", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 17h1.5"))),

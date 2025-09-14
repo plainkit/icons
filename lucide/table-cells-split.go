@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // TableCellsSplit creates a Table Cells Split Lucide icon.
-func TableCellsSplit(args ...x.SvgArg) x.Component {
+func TableCellsSplit(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-table-cells-split", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 15V9"))),

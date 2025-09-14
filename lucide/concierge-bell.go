@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ConciergeBell creates a Concierge Bell Lucide icon.
-func ConciergeBell(args ...x.SvgArg) x.Component {
+func ConciergeBell(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-concierge-bell", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M3 20a1 1 0 0 1-1-1v-1a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v1a1 1 0 0 1-1 1Z"))),

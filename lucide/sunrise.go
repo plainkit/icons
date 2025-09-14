@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Sunrise creates a Sunrise Lucide icon.
-func Sunrise(args ...x.SvgArg) x.Component {
+func Sunrise(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-sunrise", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 2v8"))),

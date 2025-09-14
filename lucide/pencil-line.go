@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // PencilLine creates a Pencil Line Lucide icon.
-func PencilLine(args ...x.SvgArg) x.Component {
+func PencilLine(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-pencil-line", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M13 21h8"))),

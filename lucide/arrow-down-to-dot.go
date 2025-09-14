@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ArrowDownToDot creates a Arrow Down To Dot Lucide icon.
-func ArrowDownToDot(args ...x.SvgArg) x.Component {
+func ArrowDownToDot(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-arrow-down-to-dot", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 2v14"))),

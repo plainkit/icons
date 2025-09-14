@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // FolderCog creates a Folder Cog Lucide icon.
-func FolderCog(args ...x.SvgArg) x.Component {
+func FolderCog(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-folder-cog", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10.3 20H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.98a2 2 0 0 1 1.69.9l.66 1.2A2 2 0 0 0 12 6h8a2 2 0 0 1 2 2v3.3"))),

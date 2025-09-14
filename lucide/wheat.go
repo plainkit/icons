@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Wheat creates a Wheat Lucide icon.
-func Wheat(args ...x.SvgArg) x.Component {
+func Wheat(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-wheat", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M2 22 16 8"))),

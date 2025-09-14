@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // NavigationOff creates a Navigation Off Lucide icon.
-func NavigationOff(args ...x.SvgArg) x.Component {
+func NavigationOff(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-navigation-off", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M8.43 8.43 3 11l8 2 2 8 2.57-5.43"))),

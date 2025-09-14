@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ChartColumnStacked creates a Chart Column Stacked Lucide icon.
-func ChartColumnStacked(args ...x.SvgArg) x.Component {
+func ChartColumnStacked(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-chart-column-stacked", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M11 13H7"))),

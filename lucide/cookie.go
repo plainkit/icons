@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Cookie creates a Cookie Lucide icon.
-func Cookie(args ...x.SvgArg) x.Component {
+func Cookie(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-cookie", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"))),

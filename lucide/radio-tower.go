@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // RadioTower creates a Radio Tower Lucide icon.
-func RadioTower(args ...x.SvgArg) x.Component {
+func RadioTower(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-radio-tower", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M4.9 16.1C1 12.2 1 5.8 4.9 1.9"))),

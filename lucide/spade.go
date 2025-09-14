@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Spade creates a Spade Lucide icon.
-func Spade(args ...x.SvgArg) x.Component {
+func Spade(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-spade", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 18v4"))),

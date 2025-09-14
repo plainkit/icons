@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Italic creates a Italic Lucide icon.
-func Italic(args ...x.SvgArg) x.Component {
+func Italic(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-italic", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Line(x.X1("19"), x.X2("10"), x.Y1("4"), x.Y2("4"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ChartBarStacked creates a Chart Bar Stacked Lucide icon.
-func ChartBarStacked(args ...x.SvgArg) x.Component {
+func ChartBarStacked(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-chart-bar-stacked", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M11 13v4"))),

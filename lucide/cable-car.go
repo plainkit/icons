@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // CableCar creates a Cable Car Lucide icon.
-func CableCar(args ...x.SvgArg) x.Component {
+func CableCar(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-cable-car", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10 3h.01"))),

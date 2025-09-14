@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ScissorsLineDashed creates a Scissors Line Dashed Lucide icon.
-func ScissorsLineDashed(args ...x.SvgArg) x.Component {
+func ScissorsLineDashed(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-scissors-line-dashed", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M5.42 9.42 8 12"))),

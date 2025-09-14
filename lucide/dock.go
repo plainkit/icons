@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Dock creates a Dock Lucide icon.
-func Dock(args ...x.SvgArg) x.Component {
+func Dock(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-dock", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M2 8h20"))),

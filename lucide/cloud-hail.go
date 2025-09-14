@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // CloudHail creates a Cloud Hail Lucide icon.
-func CloudHail(args ...x.SvgArg) x.Component {
+func CloudHail(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-cloud-hail", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"))),

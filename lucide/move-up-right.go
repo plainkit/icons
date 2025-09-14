@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // MoveUpRight creates a Move Up Right Lucide icon.
-func MoveUpRight(args ...x.SvgArg) x.Component {
+func MoveUpRight(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-move-up-right", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M13 5H19V11"))),

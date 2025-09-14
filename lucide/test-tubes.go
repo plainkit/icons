@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // TestTubes creates a Test Tubes Lucide icon.
-func TestTubes(args ...x.SvgArg) x.Component {
+func TestTubes(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-test-tubes", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M9 2v17.5A2.5 2.5 0 0 1 6.5 22A2.5 2.5 0 0 1 4 19.5V2"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ClipboardClock creates a Clipboard Clock Lucide icon.
-func ClipboardClock(args ...x.SvgArg) x.Component {
+func ClipboardClock(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-clipboard-clock", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M16 14v2.2l1.6 1"))),

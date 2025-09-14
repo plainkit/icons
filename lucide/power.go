@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Power creates a Power Lucide icon.
-func Power(args ...x.SvgArg) x.Component {
+func Power(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-power", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 2v10"))),

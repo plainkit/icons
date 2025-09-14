@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // TreePalm creates a Tree Palm Lucide icon.
-func TreePalm(args ...x.SvgArg) x.Component {
+func TreePalm(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-tree-palm", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M13 8c0-2.76-2.46-5-5.5-5S2 5.24 2 8h2l1-1 1 1h4"))),

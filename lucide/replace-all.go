@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ReplaceAll creates a Replace All Lucide icon.
-func ReplaceAll(args ...x.SvgArg) x.Component {
+func ReplaceAll(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-replace-all", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M14 14a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2"))),

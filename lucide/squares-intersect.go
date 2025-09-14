@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // SquaresIntersect creates a Squares Intersect Lucide icon.
-func SquaresIntersect(args ...x.SvgArg) x.Component {
+func SquaresIntersect(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-squares-intersect", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10 22a2 2 0 0 1-2-2"))),

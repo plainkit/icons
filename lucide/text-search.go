@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // TextSearch creates a Text Search Lucide icon.
-func TextSearch(args ...x.SvgArg) x.Component {
+func TextSearch(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-text-search", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M21 5H3"))),

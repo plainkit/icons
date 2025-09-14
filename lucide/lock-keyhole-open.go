@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // LockKeyholeOpen creates a Lock Keyhole Open Lucide icon.
-func LockKeyholeOpen(args ...x.SvgArg) x.Component {
+func LockKeyholeOpen(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-lock-keyhole-open", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Circle(x.Cx("12"), x.Cy("16"), x.R("1"))),

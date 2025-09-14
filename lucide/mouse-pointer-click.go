@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // MousePointerClick creates a Mouse Pointer Click Lucide icon.
-func MousePointerClick(args ...x.SvgArg) x.Component {
+func MousePointerClick(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-mouse-pointer-click", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M14 4.1 12 6"))),

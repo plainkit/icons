@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // CaptionsOff creates a Captions Off Lucide icon.
-func CaptionsOff(args ...x.SvgArg) x.Component {
+func CaptionsOff(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-captions-off", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10.5 5H19a2 2 0 0 1 2 2v8.5"))),

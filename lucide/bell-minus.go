@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // BellMinus creates a Bell Minus Lucide icon.
-func BellMinus(args ...x.SvgArg) x.Component {
+func BellMinus(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-bell-minus", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10.268 21a2 2 0 0 0 3.464 0"))),

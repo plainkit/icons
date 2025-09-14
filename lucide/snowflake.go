@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Snowflake creates a Snowflake Lucide icon.
-func Snowflake(args ...x.SvgArg) x.Component {
+func Snowflake(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-snowflake", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m10 20-1.25-2.5L6 18"))),

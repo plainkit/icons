@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Croissant creates a Croissant Lucide icon.
-func Croissant(args ...x.SvgArg) x.Component {
+func Croissant(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-croissant", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10.2 18H4.774a1.5 1.5 0 0 1-1.352-.97 11 11 0 0 1 .132-6.487"))),

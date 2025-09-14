@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Footprints creates a Footprints Lucide icon.
-func Footprints(args ...x.SvgArg) x.Component {
+func Footprints(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-footprints", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M4 16v-2.38C4 11.5 2.97 10.5 3 8c.03-2.72 1.49-6 4.5-6C9.37 2 10 3.8 10 5.5c0 3.11-2 5.66-2 8.68V16a2 2 0 1 1-4 0Z"))),

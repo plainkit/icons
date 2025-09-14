@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // SaveAll creates a Save All Lucide icon.
-func SaveAll(args ...x.SvgArg) x.Component {
+func SaveAll(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-save-all", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10 2v3a1 1 0 0 0 1 1h5"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Hammer creates a Hammer Lucide icon.
-func Hammer(args ...x.SvgArg) x.Component {
+func Hammer(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-hammer", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m15 12-9.373 9.373a1 1 0 0 1-3.001-3L12 9"))),

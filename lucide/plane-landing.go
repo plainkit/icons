@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // PlaneLanding creates a Plane Landing Lucide icon.
-func PlaneLanding(args ...x.SvgArg) x.Component {
+func PlaneLanding(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-plane-landing", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M2 22h20"))),

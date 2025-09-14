@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // CirclePower creates a Circle Power Lucide icon.
-func CirclePower(args ...x.SvgArg) x.Component {
+func CirclePower(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-circle-power", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 7v4"))),

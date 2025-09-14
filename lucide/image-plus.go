@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ImagePlus creates a Image Plus Lucide icon.
-func ImagePlus(args ...x.SvgArg) x.Component {
+func ImagePlus(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-image-plus", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M16 5h6"))),

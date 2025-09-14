@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Armchair creates a Armchair Lucide icon.
-func Armchair(args ...x.SvgArg) x.Component {
+func Armchair(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-armchair", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M19 9V6a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v3"))),

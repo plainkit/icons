@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // FlagOff creates a Flag Off Lucide icon.
-func FlagOff(args ...x.SvgArg) x.Component {
+func FlagOff(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-flag-off", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // UserRoundCheck creates a User Round Check Lucide icon.
-func UserRoundCheck(args ...x.SvgArg) x.Component {
+func UserRoundCheck(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-user-round-check", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M2 21a8 8 0 0 1 13.292-6"))),

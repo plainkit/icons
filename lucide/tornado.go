@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Tornado creates a Tornado Lucide icon.
-func Tornado(args ...x.SvgArg) x.Component {
+func Tornado(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-tornado", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M21 4H3"))),

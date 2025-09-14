@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Radio creates a Radio Lucide icon.
-func Radio(args ...x.SvgArg) x.Component {
+func Radio(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-radio", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M16.247 7.761a6 6 0 0 1 0 8.478"))),

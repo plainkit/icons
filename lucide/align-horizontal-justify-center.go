@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // AlignHorizontalJustifyCenter creates a Align Horizontal Justify Center Lucide icon.
-func AlignHorizontalJustifyCenter(args ...x.SvgArg) x.Component {
+func AlignHorizontalJustifyCenter(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-align-horizontal-justify-center", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Rect(x.RectWidth("6"), x.RectHeight("14"), x.X("2"), x.Y("5"), x.Rx("2"))),

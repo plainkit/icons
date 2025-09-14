@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // SquareTerminal creates a Square Terminal Lucide icon.
-func SquareTerminal(args ...x.SvgArg) x.Component {
+func SquareTerminal(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-square-terminal", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m7 11 2-2-2-2"))),

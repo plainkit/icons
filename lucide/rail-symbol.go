@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // RailSymbol creates a Rail Symbol Lucide icon.
-func RailSymbol(args ...x.SvgArg) x.Component {
+func RailSymbol(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-rail-symbol", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M5 15h14"))),

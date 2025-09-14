@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // FlaskConicalOff creates a Flask Conical Off Lucide icon.
-func FlaskConicalOff(args ...x.SvgArg) x.Component {
+func FlaskConicalOff(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-flask-conical-off", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10 2v2.343"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // OctagonX creates a Octagon X Lucide icon.
-func OctagonX(args ...x.SvgArg) x.Component {
+func OctagonX(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-octagon-x", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m15 9-6 6"))),

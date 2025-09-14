@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Usb creates a Usb Lucide icon.
-func Usb(args ...x.SvgArg) x.Component {
+func Usb(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-usb", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Circle(x.Cx("10"), x.Cy("7"), x.R("1"))),

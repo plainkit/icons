@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Haze creates a Haze Lucide icon.
-func Haze(args ...x.SvgArg) x.Component {
+func Haze(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-haze", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m5.2 6.2 1.4 1.4"))),

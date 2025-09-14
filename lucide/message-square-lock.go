@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // MessageSquareLock creates a Message Square Lock Lucide icon.
-func MessageSquareLock(args ...x.SvgArg) x.Component {
+func MessageSquareLock(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-message-square-lock", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M22 8.5V5a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v16.286a.71.71 0 0 0 1.212.502l2.202-2.202A2 2 0 0 1 6.828 19H10"))),

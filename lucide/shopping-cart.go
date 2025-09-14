@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ShoppingCart creates a Shopping Cart Lucide icon.
-func ShoppingCart(args ...x.SvgArg) x.Component {
+func ShoppingCart(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-shopping-cart", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Circle(x.Cx("8"), x.Cy("21"), x.R("1"))),

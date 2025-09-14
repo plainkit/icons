@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Cable creates a Cable Lucide icon.
-func Cable(args ...x.SvgArg) x.Component {
+func Cable(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-cable", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M17 19a1 1 0 0 1-1-1v-2a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2a1 1 0 0 1-1 1z"))),

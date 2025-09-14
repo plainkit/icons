@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // AlignVerticalDistributeEnd creates a Align Vertical Distribute End Lucide icon.
-func AlignVerticalDistributeEnd(args ...x.SvgArg) x.Component {
+func AlignVerticalDistributeEnd(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-align-vertical-distribute-end", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Rect(x.RectWidth("14"), x.RectHeight("6"), x.X("5"), x.Y("14"), x.Rx("2"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // CornerDownRight creates a Corner Down Right Lucide icon.
-func CornerDownRight(args ...x.SvgArg) x.Component {
+func CornerDownRight(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-corner-down-right", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m15 10 5 5-5 5"))),

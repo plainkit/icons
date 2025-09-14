@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // EggFried creates a Egg Fried Lucide icon.
-func EggFried(args ...x.SvgArg) x.Component {
+func EggFried(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-egg-fried", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Circle(x.Cx("11.5"), x.Cy("12.5"), x.R("3.5"))),

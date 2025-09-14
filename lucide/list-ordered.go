@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ListOrdered creates a List Ordered Lucide icon.
-func ListOrdered(args ...x.SvgArg) x.Component {
+func ListOrdered(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-list-ordered", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M11 5h10"))),

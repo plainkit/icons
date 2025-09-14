@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // PhoneIncoming creates a Phone Incoming Lucide icon.
-func PhoneIncoming(args ...x.SvgArg) x.Component {
+func PhoneIncoming(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-phone-incoming", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M16 2v6h6"))),

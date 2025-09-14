@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Vote creates a Vote Lucide icon.
-func Vote(args ...x.SvgArg) x.Component {
+func Vote(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-vote", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m9 12 2 2 4-4"))),

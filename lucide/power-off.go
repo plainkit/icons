@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // PowerOff creates a Power Off Lucide icon.
-func PowerOff(args ...x.SvgArg) x.Component {
+func PowerOff(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-power-off", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M18.36 6.64A9 9 0 0 1 20.77 15"))),

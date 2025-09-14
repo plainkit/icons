@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // CircleSlash2 creates a Circle Slash 2 Lucide icon.
-func CircleSlash2(args ...x.SvgArg) x.Component {
+func CircleSlash2(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-circle-slash-2", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M22 2 2 22"))),

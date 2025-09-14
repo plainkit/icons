@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // KeyboardOff creates a Keyboard Off Lucide icon.
-func KeyboardOff(args ...x.SvgArg) x.Component {
+func KeyboardOff(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-keyboard-off", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M 20 4 A2 2 0 0 1 22 6"))),

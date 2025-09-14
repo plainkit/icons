@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // SquarePower creates a Square Power Lucide icon.
-func SquarePower(args ...x.SvgArg) x.Component {
+func SquarePower(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-square-power", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 7v4"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ScanSearch creates a Scan Search Lucide icon.
-func ScanSearch(args ...x.SvgArg) x.Component {
+func ScanSearch(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-scan-search", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M3 7V5a2 2 0 0 1 2-2h2"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ToyBrick creates a Toy Brick Lucide icon.
-func ToyBrick(args ...x.SvgArg) x.Component {
+func ToyBrick(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-toy-brick", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Rect(x.RectWidth("18"), x.RectHeight("12"), x.X("3"), x.Y("8"), x.Rx("1"))),

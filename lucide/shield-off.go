@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ShieldOff creates a Shield Off Lucide icon.
-func ShieldOff(args ...x.SvgArg) x.Component {
+func ShieldOff(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-shield-off", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m2 2 20 20"))),

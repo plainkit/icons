@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // NotebookText creates a Notebook Text Lucide icon.
-func NotebookText(args ...x.SvgArg) x.Component {
+func NotebookText(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-notebook-text", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M2 6h4"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // CirclePoundSterling creates a Circle Pound Sterling Lucide icon.
-func CirclePoundSterling(args ...x.SvgArg) x.Component {
+func CirclePoundSterling(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-circle-pound-sterling", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10 16V9.5a1 1 0 0 1 5 0"))),

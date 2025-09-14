@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // OctagonPause creates a Octagon Pause Lucide icon.
-func OctagonPause(args ...x.SvgArg) x.Component {
+func OctagonPause(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-octagon-pause", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10 15V9"))),

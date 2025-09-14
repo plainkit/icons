@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // PictureInPicture creates a Picture In Picture Lucide icon.
-func PictureInPicture(args ...x.SvgArg) x.Component {
+func PictureInPicture(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-picture-in-picture", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M2 10h6V4"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // SquareParkingOff creates a Square Parking Off Lucide icon.
-func SquareParkingOff(args ...x.SvgArg) x.Component {
+func SquareParkingOff(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-square-parking-off", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M3.6 3.6A2 2 0 0 1 5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-.59 1.41"))),

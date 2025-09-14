@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // DatabaseZap creates a Database Zap Lucide icon.
-func DatabaseZap(args ...x.SvgArg) x.Component {
+func DatabaseZap(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-database-zap", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Ellipse(x.EllipseCx("12"), x.EllipseCy("5"), x.EllipseRx("9"), x.EllipseRy("3"))),

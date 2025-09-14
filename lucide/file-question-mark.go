@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // FileQuestionMark creates a File Question Mark Lucide icon.
-func FileQuestionMark(args ...x.SvgArg) x.Component {
+func FileQuestionMark(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-file-question-mark", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 17h.01"))),

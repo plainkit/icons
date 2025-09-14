@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Handshake creates a Handshake Lucide icon.
-func Handshake(args ...x.SvgArg) x.Component {
+func Handshake(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-handshake", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m11 17 2 2a1 1 0 1 0 3-3"))),

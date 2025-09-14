@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Instagram creates a Instagram Lucide icon.
-func Instagram(args ...x.SvgArg) x.Component {
+func Instagram(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-instagram", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Rect(x.RectWidth("20"), x.RectHeight("20"), x.X("2"), x.Y("2"), x.Rx("5"), x.Ry("5"))),

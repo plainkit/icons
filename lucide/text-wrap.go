@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // TextWrap creates a Text Wrap Lucide icon.
-func TextWrap(args ...x.SvgArg) x.Component {
+func TextWrap(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-text-wrap", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m16 16-3 3 3 3"))),

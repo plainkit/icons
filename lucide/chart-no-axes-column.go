@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ChartNoAxesColumn creates a Chart No Axes Column Lucide icon.
-func ChartNoAxesColumn(args ...x.SvgArg) x.Component {
+func ChartNoAxesColumn(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-chart-no-axes-column", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M5 21v-6"))),

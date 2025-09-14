@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // HardHat creates a Hard Hat Lucide icon.
-func HardHat(args ...x.SvgArg) x.Component {
+func HardHat(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-hard-hat", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10 10V5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5"))),

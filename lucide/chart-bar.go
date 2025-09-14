@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ChartBar creates a Chart Bar Lucide icon.
-func ChartBar(args ...x.SvgArg) x.Component {
+func ChartBar(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-chart-bar", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M3 3v16a2 2 0 0 0 2 2h16"))),

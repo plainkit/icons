@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Milestone creates a Milestone Lucide icon.
-func Milestone(args ...x.SvgArg) x.Component {
+func Milestone(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-milestone", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 13v8"))),

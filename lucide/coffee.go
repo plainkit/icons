@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Coffee creates a Coffee Lucide icon.
-func Coffee(args ...x.SvgArg) x.Component {
+func Coffee(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-coffee", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10 2v2"))),

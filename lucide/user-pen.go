@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // UserPen creates a User Pen Lucide icon.
-func UserPen(args ...x.SvgArg) x.Component {
+func UserPen(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-user-pen", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M11.5 15H7a4 4 0 0 0-4 4v2"))),

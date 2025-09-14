@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // FileText creates a File Text Lucide icon.
-func FileText(args ...x.SvgArg) x.Component {
+func FileText(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-file-text", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"))),

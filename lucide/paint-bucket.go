@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // PaintBucket creates a Paint Bucket Lucide icon.
-func PaintBucket(args ...x.SvgArg) x.Component {
+func PaintBucket(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-paint-bucket", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m19 11-8-8-8.6 8.6a2 2 0 0 0 0 2.8l5.2 5.2c.8.8 2 .8 2.8 0L19 11Z"))),

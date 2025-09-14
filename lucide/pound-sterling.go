@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // PoundSterling creates a Pound Sterling Lucide icon.
-func PoundSterling(args ...x.SvgArg) x.Component {
+func PoundSterling(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-pound-sterling", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M18 7c0-5.333-8-5.333-8 0"))),

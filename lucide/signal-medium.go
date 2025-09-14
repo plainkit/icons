@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // SignalMedium creates a Signal Medium Lucide icon.
-func SignalMedium(args ...x.SvgArg) x.Component {
+func SignalMedium(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-signal-medium", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M2 20h.01"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ListStart creates a List Start Lucide icon.
-func ListStart(args ...x.SvgArg) x.Component {
+func ListStart(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-list-start", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M3 5h6"))),

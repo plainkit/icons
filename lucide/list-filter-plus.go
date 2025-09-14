@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ListFilterPlus creates a List Filter Plus Lucide icon.
-func ListFilterPlus(args ...x.SvgArg) x.Component {
+func ListFilterPlus(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-list-filter-plus", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 5H2"))),

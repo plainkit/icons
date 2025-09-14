@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // FileCog creates a File Cog Lucide icon.
-func FileCog(args ...x.SvgArg) x.Component {
+func FileCog(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-file-cog", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M14 2v4a2 2 0 0 0 2 2h4"))),

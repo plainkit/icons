@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Kayak creates a Kayak Lucide icon.
-func Kayak(args ...x.SvgArg) x.Component {
+func Kayak(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-kayak", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M18 17a1 1 0 0 0-1 1v1a2 2 0 1 0 2-2z"))),

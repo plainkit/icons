@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // CircleArrowOutDownRight creates a Circle Arrow Out Down Right Lucide icon.
-func CircleArrowOutDownRight(args ...x.SvgArg) x.Component {
+func CircleArrowOutDownRight(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-circle-arrow-out-down-right", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 22a10 10 0 1 1 10-10"))),

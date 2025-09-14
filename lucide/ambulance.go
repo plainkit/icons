@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Ambulance creates a Ambulance Lucide icon.
-func Ambulance(args ...x.SvgArg) x.Component {
+func Ambulance(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-ambulance", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10 10H6"))),

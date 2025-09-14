@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // FolderPlus creates a Folder Plus Lucide icon.
-func FolderPlus(args ...x.SvgArg) x.Component {
+func FolderPlus(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-folder-plus", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 10v6"))),

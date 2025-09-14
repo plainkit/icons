@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Shrub creates a Shrub Lucide icon.
-func Shrub(args ...x.SvgArg) x.Component {
+func Shrub(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-shrub", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 22v-5.172a2 2 0 0 0-.586-1.414L9.5 13.5"))),

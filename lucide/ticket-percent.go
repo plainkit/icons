@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // TicketPercent creates a Ticket Percent Lucide icon.
-func TicketPercent(args ...x.SvgArg) x.Component {
+func TicketPercent(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-ticket-percent", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M2 9a3 3 0 1 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 1 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"))),

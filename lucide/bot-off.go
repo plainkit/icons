@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // BotOff creates a Bot Off Lucide icon.
-func BotOff(args ...x.SvgArg) x.Component {
+func BotOff(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-bot-off", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M13.67 8H18a2 2 0 0 1 2 2v4.33"))),

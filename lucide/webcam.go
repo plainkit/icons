@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Webcam creates a Webcam Lucide icon.
-func Webcam(args ...x.SvgArg) x.Component {
+func Webcam(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-webcam", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Circle(x.Cx("12"), x.Cy("10"), x.R("8"))),

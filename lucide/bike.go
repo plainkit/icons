@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Bike creates a Bike Lucide icon.
-func Bike(args ...x.SvgArg) x.Component {
+func Bike(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-bike", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Circle(x.Cx("18.5"), x.Cy("17.5"), x.R("3.5"))),

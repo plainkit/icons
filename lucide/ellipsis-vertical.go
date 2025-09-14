@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // EllipsisVertical creates a Ellipsis Vertical Lucide icon.
-func EllipsisVertical(args ...x.SvgArg) x.Component {
+func EllipsisVertical(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-ellipsis-vertical", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Circle(x.Cx("12"), x.Cy("12"), x.R("1"))),

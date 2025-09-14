@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // PhoneMissed creates a Phone Missed Lucide icon.
-func PhoneMissed(args ...x.SvgArg) x.Component {
+func PhoneMissed(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-phone-missed", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m16 2 6 6"))),

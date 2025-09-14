@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Beef creates a Beef Lucide icon.
-func Beef(args ...x.SvgArg) x.Component {
+func Beef(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-beef", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M16.4 13.7A6.5 6.5 0 1 0 6.28 6.6c-1.1 3.13-.78 3.9-3.18 6.08A3 3 0 0 0 5 18c4 0 8.4-1.8 11.4-4.3"))),

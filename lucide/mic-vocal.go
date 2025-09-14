@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // MicVocal creates a Mic Vocal Lucide icon.
-func MicVocal(args ...x.SvgArg) x.Component {
+func MicVocal(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-mic-vocal", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m11 7.601-5.994 8.19a1 1 0 0 0 .1 1.298l.817.818a1 1 0 0 0 1.314.087L15.09 12"))),

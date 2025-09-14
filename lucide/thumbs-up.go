@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ThumbsUp creates a Thumbs Up Lucide icon.
-func ThumbsUp(args ...x.SvgArg) x.Component {
+func ThumbsUp(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-thumbs-up", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M7 10v12"))),

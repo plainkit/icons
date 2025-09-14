@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Columns3Cog creates a Columns 3 Cog Lucide icon.
-func Columns3Cog(args ...x.SvgArg) x.Component {
+func Columns3Cog(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-columns-3-cog", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10.5 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v5.5"))),

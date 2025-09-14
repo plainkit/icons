@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Codepen creates a Codepen Lucide icon.
-func Codepen(args ...x.SvgArg) x.Component {
+func Codepen(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-codepen", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Polygon(x.Points("12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"))),

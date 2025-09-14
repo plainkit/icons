@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Utensils creates a Utensils Lucide icon.
-func Utensils(args ...x.SvgArg) x.Component {
+func Utensils(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-utensils", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"))),

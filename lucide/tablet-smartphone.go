@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // TabletSmartphone creates a Tablet Smartphone Lucide icon.
-func TabletSmartphone(args ...x.SvgArg) x.Component {
+func TabletSmartphone(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-tablet-smartphone", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Rect(x.RectWidth("10"), x.RectHeight("14"), x.X("3"), x.Y("8"), x.Rx("2"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ReceiptCent creates a Receipt Cent Lucide icon.
-func ReceiptCent(args ...x.SvgArg) x.Component {
+func ReceiptCent(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-receipt-cent", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"))),

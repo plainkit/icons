@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // PanelTopBottomDashed creates a Panel Top Bottom Dashed Lucide icon.
-func PanelTopBottomDashed(args ...x.SvgArg) x.Component {
+func PanelTopBottomDashed(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-panel-top-bottom-dashed", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M14 15h1"))),

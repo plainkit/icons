@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Pin creates a Pin Lucide icon.
-func Pin(args ...x.SvgArg) x.Component {
+func Pin(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-pin", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 17v5"))),

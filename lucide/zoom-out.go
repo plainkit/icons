@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ZoomOut creates a Zoom Out Lucide icon.
-func ZoomOut(args ...x.SvgArg) x.Component {
+func ZoomOut(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-zoom-out", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Circle(x.Cx("11"), x.Cy("11"), x.R("8"))),

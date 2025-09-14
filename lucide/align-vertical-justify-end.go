@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // AlignVerticalJustifyEnd creates a Align Vertical Justify End Lucide icon.
-func AlignVerticalJustifyEnd(args ...x.SvgArg) x.Component {
+func AlignVerticalJustifyEnd(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-align-vertical-justify-end", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Rect(x.RectWidth("14"), x.RectHeight("6"), x.X("5"), x.Y("12"), x.Rx("2"))),

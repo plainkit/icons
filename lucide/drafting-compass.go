@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // DraftingCompass creates a Drafting Compass Lucide icon.
-func DraftingCompass(args ...x.SvgArg) x.Component {
+func DraftingCompass(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-drafting-compass", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m12.99 6.74 1.93 3.44"))),

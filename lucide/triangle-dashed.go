@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // TriangleDashed creates a Triangle Dashed Lucide icon.
-func TriangleDashed(args ...x.SvgArg) x.Component {
+func TriangleDashed(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-triangle-dashed", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10.17 4.193a2 2 0 0 1 3.666.013"))),

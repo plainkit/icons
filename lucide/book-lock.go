@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // BookLock creates a Book Lock Lucide icon.
-func BookLock(args ...x.SvgArg) x.Component {
+func BookLock(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-book-lock", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M18 6V4a2 2 0 1 0-4 0v2"))),

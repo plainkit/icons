@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Accessibility creates a Accessibility Lucide icon.
-func Accessibility(args ...x.SvgArg) x.Component {
+func Accessibility(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-accessibility", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Circle(x.Cx("16"), x.Cy("4"), x.R("1"))),

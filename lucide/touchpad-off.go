@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // TouchpadOff creates a Touchpad Off Lucide icon.
-func TouchpadOff(args ...x.SvgArg) x.Component {
+func TouchpadOff(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-touchpad-off", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 20v-6"))),

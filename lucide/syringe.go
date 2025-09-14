@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Syringe creates a Syringe Lucide icon.
-func Syringe(args ...x.SvgArg) x.Component {
+func Syringe(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-syringe", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m18 2 4 4"))),

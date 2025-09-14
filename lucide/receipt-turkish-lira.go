@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ReceiptTurkishLira creates a Receipt Turkish Lira Lucide icon.
-func ReceiptTurkishLira(args ...x.SvgArg) x.Component {
+func ReceiptTurkishLira(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-receipt-turkish-lira", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10 6.5v11a5.5 5.5 0 0 0 5.5-5.5"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // SearchX creates a Search X Lucide icon.
-func SearchX(args ...x.SvgArg) x.Component {
+func SearchX(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-search-x", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m13.5 8.5-5 5"))),

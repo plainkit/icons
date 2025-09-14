@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // FileCode creates a File Code Lucide icon.
-func FileCode(args ...x.SvgArg) x.Component {
+func FileCode(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-file-code", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10 12.5 8 15l2 2.5"))),

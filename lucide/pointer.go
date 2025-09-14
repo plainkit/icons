@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Pointer creates a Pointer Lucide icon.
-func Pointer(args ...x.SvgArg) x.Component {
+func Pointer(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-pointer", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M22 14a8 8 0 0 1-8 8"))),

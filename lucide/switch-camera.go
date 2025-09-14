@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // SwitchCamera creates a Switch Camera Lucide icon.
-func SwitchCamera(args ...x.SvgArg) x.Component {
+func SwitchCamera(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-switch-camera", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M11 19H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h5"))),

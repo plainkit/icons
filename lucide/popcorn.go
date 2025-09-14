@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Popcorn creates a Popcorn Lucide icon.
-func Popcorn(args ...x.SvgArg) x.Component {
+func Popcorn(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-popcorn", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M18 8a2 2 0 0 0 0-4 2 2 0 0 0-4 0 2 2 0 0 0-4 0 2 2 0 0 0-4 0 2 2 0 0 0 0 4"))),

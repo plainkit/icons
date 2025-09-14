@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Anchor creates a Anchor Lucide icon.
-func Anchor(args ...x.SvgArg) x.Component {
+func Anchor(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-anchor", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 22V8"))),

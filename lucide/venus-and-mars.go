@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // VenusAndMars creates a Venus And Mars Lucide icon.
-func VenusAndMars(args ...x.SvgArg) x.Component {
+func VenusAndMars(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-venus-and-mars", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10 20h4"))),

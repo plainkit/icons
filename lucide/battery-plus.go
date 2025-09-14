@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // BatteryPlus creates a Battery Plus Lucide icon.
-func BatteryPlus(args ...x.SvgArg) x.Component {
+func BatteryPlus(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-battery-plus", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10 9v6"))),

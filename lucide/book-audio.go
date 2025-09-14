@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // BookAudio creates a Book Audio Lucide icon.
-func BookAudio(args ...x.SvgArg) x.Component {
+func BookAudio(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-book-audio", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 6v7"))),

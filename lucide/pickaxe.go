@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Pickaxe creates a Pickaxe Lucide icon.
-func Pickaxe(args ...x.SvgArg) x.Component {
+func Pickaxe(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-pickaxe", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m14 13-8.381 8.38a1 1 0 0 1-3.001-3L11 9.999"))),

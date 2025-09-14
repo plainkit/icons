@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // IterationCcw creates a Iteration Ccw Lucide icon.
-func IterationCcw(args ...x.SvgArg) x.Component {
+func IterationCcw(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-iteration-ccw", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m16 14 4 4-4 4"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Tally5 creates a Tally 5 Lucide icon.
-func Tally5(args ...x.SvgArg) x.Component {
+func Tally5(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-tally-5", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M4 4v16"))),

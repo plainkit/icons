@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // LocateOff creates a Locate Off Lucide icon.
-func LocateOff(args ...x.SvgArg) x.Component {
+func LocateOff(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-locate-off", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 19v3"))),

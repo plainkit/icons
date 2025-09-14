@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // NotebookPen creates a Notebook Pen Lucide icon.
-func NotebookPen(args ...x.SvgArg) x.Component {
+func NotebookPen(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-notebook-pen", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M13.4 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7.4"))),

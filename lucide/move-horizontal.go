@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // MoveHorizontal creates a Move Horizontal Lucide icon.
-func MoveHorizontal(args ...x.SvgArg) x.Component {
+func MoveHorizontal(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-move-horizontal", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m18 8 4 4-4 4"))),

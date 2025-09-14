@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Strikethrough creates a Strikethrough Lucide icon.
-func Strikethrough(args ...x.SvgArg) x.Component {
+func Strikethrough(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-strikethrough", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M16 4H9a3 3 0 0 0-2.83 4"))),

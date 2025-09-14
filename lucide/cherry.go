@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Cherry creates a Cherry Lucide icon.
-func Cherry(args ...x.SvgArg) x.Component {
+func Cherry(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-cherry", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M2 17a5 5 0 0 0 10 0c0-2.76-2.5-5-5-3-2.5-2-5 .24-5 3Z"))),

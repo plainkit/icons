@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // SprayCan creates a Spray Can Lucide icon.
-func SprayCan(args ...x.SvgArg) x.Component {
+func SprayCan(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-spray-can", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M3 3h.01"))),

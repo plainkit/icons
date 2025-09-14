@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Dna creates a Dna Lucide icon.
-func Dna(args ...x.SvgArg) x.Component {
+func Dna(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-dna", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m10 16 1.5 1.5"))),

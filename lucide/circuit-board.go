@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // CircuitBoard creates a Circuit Board Lucide icon.
-func CircuitBoard(args ...x.SvgArg) x.Component {
+func CircuitBoard(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-circuit-board", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Rect(x.RectWidth("18"), x.RectHeight("18"), x.X("3"), x.Y("3"), x.Rx("2"))),

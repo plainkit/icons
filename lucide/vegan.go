@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Vegan creates a Vegan Lucide icon.
-func Vegan(args ...x.SvgArg) x.Component {
+func Vegan(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-vegan", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M16 8q6 0 6-6-6 0-6 6"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // CirclePercent creates a Circle Percent Lucide icon.
-func CirclePercent(args ...x.SvgArg) x.Component {
+func CirclePercent(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-circle-percent", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Circle(x.Cx("12"), x.Cy("12"), x.R("10"))),

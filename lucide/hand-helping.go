@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // HandHelping creates a Hand Helping Lucide icon.
-func HandHelping(args ...x.SvgArg) x.Component {
+func HandHelping(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-hand-helping", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M11 12h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 14"))),

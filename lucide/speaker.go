@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Speaker creates a Speaker Lucide icon.
-func Speaker(args ...x.SvgArg) x.Component {
+func Speaker(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-speaker", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Rect(x.RectWidth("16"), x.RectHeight("20"), x.X("4"), x.Y("2"), x.Rx("2"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // CardSim creates a Card Sim Lucide icon.
-func CardSim(args ...x.SvgArg) x.Component {
+func CardSim(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-card-sim", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 14v4"))),

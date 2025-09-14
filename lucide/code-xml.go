@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // CodeXml creates a Code Xml Lucide icon.
-func CodeXml(args ...x.SvgArg) x.Component {
+func CodeXml(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-code-xml", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m18 16 4-4-4-4"))),

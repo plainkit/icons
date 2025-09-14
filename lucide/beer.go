@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Beer creates a Beer Lucide icon.
-func Beer(args ...x.SvgArg) x.Component {
+func Beer(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-beer", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M17 11h1a3 3 0 0 1 0 6h-1"))),

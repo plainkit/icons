@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Cannabis creates a Cannabis Lucide icon.
-func Cannabis(args ...x.SvgArg) x.Component {
+func Cannabis(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-cannabis", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 22v-4"))),

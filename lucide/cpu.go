@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Cpu creates a Cpu Lucide icon.
-func Cpu(args ...x.SvgArg) x.Component {
+func Cpu(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-cpu", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 20v2"))),

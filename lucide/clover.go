@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Clover creates a Clover Lucide icon.
-func Clover(args ...x.SvgArg) x.Component {
+func Clover(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-clover", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M16.17 7.83 2 22"))),

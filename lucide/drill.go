@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Drill creates a Drill Lucide icon.
-func Drill(args ...x.SvgArg) x.Component {
+func Drill(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-drill", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10 18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H5a3 3 0 0 1-3-3 1 1 0 0 1 1-1z"))),

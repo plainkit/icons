@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Angry creates a Angry Lucide icon.
-func Angry(args ...x.SvgArg) x.Component {
+func Angry(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-angry", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Circle(x.Cx("12"), x.Cy("12"), x.R("10"))),

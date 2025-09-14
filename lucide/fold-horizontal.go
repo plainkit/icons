@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // FoldHorizontal creates a Fold Horizontal Lucide icon.
-func FoldHorizontal(args ...x.SvgArg) x.Component {
+func FoldHorizontal(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-fold-horizontal", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M2 12h6"))),

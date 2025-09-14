@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Worm creates a Worm Lucide icon.
-func Worm(args ...x.SvgArg) x.Component {
+func Worm(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-worm", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m19 12-1.5 3"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Radar creates a Radar Lucide icon.
-func Radar(args ...x.SvgArg) x.Component {
+func Radar(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-radar", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M19.07 4.93A10 10 0 0 0 6.99 3.34"))),

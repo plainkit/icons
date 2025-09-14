@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // WifiCog creates a Wifi Cog Lucide icon.
-func WifiCog(args ...x.SvgArg) x.Component {
+func WifiCog(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-wifi-cog", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m14.305 19.53.923-.382"))),

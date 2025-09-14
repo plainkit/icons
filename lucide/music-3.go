@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Music3 creates a Music 3 Lucide icon.
-func Music3(args ...x.SvgArg) x.Component {
+func Music3(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-music-3", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Circle(x.Cx("12"), x.Cy("18"), x.R("4"))),

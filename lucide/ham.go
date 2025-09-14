@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Ham creates a Ham Lucide icon.
-func Ham(args ...x.SvgArg) x.Component {
+func Ham(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-ham", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M13.144 21.144A7.274 10.445 45 1 0 2.856 10.856"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // BusFront creates a Bus Front Lucide icon.
-func BusFront(args ...x.SvgArg) x.Component {
+func BusFront(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-bus-front", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M4 6 2 7"))),

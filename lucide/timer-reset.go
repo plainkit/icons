@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // TimerReset creates a Timer Reset Lucide icon.
-func TimerReset(args ...x.SvgArg) x.Component {
+func TimerReset(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-timer-reset", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10 2h4"))),

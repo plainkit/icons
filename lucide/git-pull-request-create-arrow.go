@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // GitPullRequestCreateArrow creates a Git Pull Request Create Arrow Lucide icon.
-func GitPullRequestCreateArrow(args ...x.SvgArg) x.Component {
+func GitPullRequestCreateArrow(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-git-pull-request-create-arrow", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Circle(x.Cx("5"), x.Cy("6"), x.R("3"))),

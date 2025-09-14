@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Castle creates a Castle Lucide icon.
-func Castle(args ...x.SvgArg) x.Component {
+func Castle(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-castle", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10 5V3"))),

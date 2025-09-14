@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // LogIn creates a Log In Lucide icon.
-func LogIn(args ...x.SvgArg) x.Component {
+func LogIn(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-log-in", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m10 17 5-5-5-5"))),

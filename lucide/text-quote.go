@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // TextQuote creates a Text Quote Lucide icon.
-func TextQuote(args ...x.SvgArg) x.Component {
+func TextQuote(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-text-quote", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M17 5H3"))),

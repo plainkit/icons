@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // RulerDimensionLine creates a Ruler Dimension Line Lucide icon.
-func RulerDimensionLine(args ...x.SvgArg) x.Component {
+func RulerDimensionLine(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-ruler-dimension-line", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 15v-3.014"))),

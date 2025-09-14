@@ -75,9 +75,7 @@ func normalizeNode(n xmlNode) xmlNode {
 	// but not present in the reference SVGs (class on root)
 	// We only drop class when present on the root <svg>.
 	if n.Name.Local == "svg" {
-		if _, ok := n.Attrs["class"]; ok {
-			delete(n.Attrs, "class")
-		}
+		delete(n.Attrs, "class")
 	}
 	// No reordering of children: order matters
 	// Attribute order is irrelevant due to map representation

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Dam creates a Dam Lucide icon.
-func Dam(args ...x.SvgArg) x.Component {
+func Dam(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-dam", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M11 11.31c1.17.56 1.54 1.69 3.5 1.69 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // EarthLock creates a Earth Lock Lucide icon.
-func EarthLock(args ...x.SvgArg) x.Component {
+func EarthLock(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-earth-lock", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M7 3.34V5a3 3 0 0 0 3 3"))),

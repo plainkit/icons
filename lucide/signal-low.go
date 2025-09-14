@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // SignalLow creates a Signal Low Lucide icon.
-func SignalLow(args ...x.SvgArg) x.Component {
+func SignalLow(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-signal-low", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M2 20h.01"))),

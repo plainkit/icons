@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // TrafficCone creates a Traffic Cone Lucide icon.
-func TrafficCone(args ...x.SvgArg) x.Component {
+func TrafficCone(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-traffic-cone", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M16.05 10.966a5 2.5 0 0 1-8.1 0"))),

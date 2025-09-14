@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Projector creates a Projector Lucide icon.
-func Projector(args ...x.SvgArg) x.Component {
+func Projector(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-projector", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M5 7 3 5"))),

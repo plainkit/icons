@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Fingerprint creates a Fingerprint Lucide icon.
-func Fingerprint(args ...x.SvgArg) x.Component {
+func Fingerprint(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-fingerprint", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 10a2 2 0 0 0-2 2c0 1.02-.1 2.51-.26 4"))),

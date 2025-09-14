@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // BrainCog creates a Brain Cog Lucide icon.
-func BrainCog(args ...x.SvgArg) x.Component {
+func BrainCog(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-brain-cog", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m10.852 14.772-.383.923"))),

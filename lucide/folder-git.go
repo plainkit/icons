@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // FolderGit creates a Folder Git Lucide icon.
-func FolderGit(args ...x.SvgArg) x.Component {
+func FolderGit(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-folder-git", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Circle(x.Cx("12"), x.Cy("13"), x.R("2"))),

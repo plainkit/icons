@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Dices creates a Dices Lucide icon.
-func Dices(args ...x.SvgArg) x.Component {
+func Dices(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-dices", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Rect(x.RectWidth("12"), x.RectHeight("12"), x.X("2"), x.Y("10"), x.Rx("2"), x.Ry("2"))),

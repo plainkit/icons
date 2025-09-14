@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Origami creates a Origami Lucide icon.
-func Origami(args ...x.SvgArg) x.Component {
+func Origami(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-origami", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 12V4a1 1 0 0 1 1-1h6.297a1 1 0 0 1 .651 1.759l-4.696 4.025"))),

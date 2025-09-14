@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // PersonStanding creates a Person Standing Lucide icon.
-func PersonStanding(args ...x.SvgArg) x.Component {
+func PersonStanding(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-person-standing", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Circle(x.Cx("12"), x.Cy("5"), x.R("1"))),

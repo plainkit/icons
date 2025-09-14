@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Milk creates a Milk Lucide icon.
-func Milk(args ...x.SvgArg) x.Component {
+func Milk(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-milk", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M8 2h8"))),

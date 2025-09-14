@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // GalleryVerticalEnd creates a Gallery Vertical End Lucide icon.
-func GalleryVerticalEnd(args ...x.SvgArg) x.Component {
+func GalleryVerticalEnd(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-gallery-vertical-end", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M7 2h10"))),

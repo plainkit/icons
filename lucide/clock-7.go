@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Clock7 creates a Clock 7 Lucide icon.
-func Clock7(args ...x.SvgArg) x.Component {
+func Clock7(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-clock-7", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 6v6l-2 4"))),

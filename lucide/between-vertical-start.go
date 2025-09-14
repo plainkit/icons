@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // BetweenVerticalStart creates a Between Vertical Start Lucide icon.
-func BetweenVerticalStart(args ...x.SvgArg) x.Component {
+func BetweenVerticalStart(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-between-vertical-start", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Rect(x.RectWidth("7"), x.RectHeight("13"), x.X("3"), x.Y("8"), x.Rx("1"))),

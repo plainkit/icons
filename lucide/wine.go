@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Wine creates a Wine Lucide icon.
-func Wine(args ...x.SvgArg) x.Component {
+func Wine(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-wine", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M8 22h8"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // TrendingDown creates a Trending Down Lucide icon.
-func TrendingDown(args ...x.SvgArg) x.Component {
+func TrendingDown(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-trending-down", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M16 17h6v-6"))),

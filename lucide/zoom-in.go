@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ZoomIn creates a Zoom In Lucide icon.
-func ZoomIn(args ...x.SvgArg) x.Component {
+func ZoomIn(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-zoom-in", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Circle(x.Cx("11"), x.Cy("11"), x.R("8"))),

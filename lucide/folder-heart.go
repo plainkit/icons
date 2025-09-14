@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // FolderHeart creates a Folder Heart Lucide icon.
-func FolderHeart(args ...x.SvgArg) x.Component {
+func FolderHeart(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-folder-heart", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10.638 20H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H20a2 2 0 0 1 2 2v3.417"))),

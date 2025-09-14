@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // FolderArchive creates a Folder Archive Lucide icon.
-func FolderArchive(args ...x.SvgArg) x.Component {
+func FolderArchive(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-folder-archive", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Circle(x.Cx("15"), x.Cy("19"), x.R("2"))),

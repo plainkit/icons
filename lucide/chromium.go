@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Chromium creates a Chromium Lucide icon.
-func Chromium(args ...x.SvgArg) x.Component {
+func Chromium(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-chromium", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10.88 21.94 15.46 14"))),

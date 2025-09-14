@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ArrowsUpFromLine creates a Arrows Up From Line Lucide icon.
-func ArrowsUpFromLine(args ...x.SvgArg) x.Component {
+func ArrowsUpFromLine(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-arrows-up-from-line", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m4 6 3-3 3 3"))),

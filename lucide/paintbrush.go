@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Paintbrush creates a Paintbrush Lucide icon.
-func Paintbrush(args ...x.SvgArg) x.Component {
+func Paintbrush(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-paintbrush", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m14.622 17.897-10.68-2.913"))),

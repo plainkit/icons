@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // BugPlay creates a Bug Play Lucide icon.
-func BugPlay(args ...x.SvgArg) x.Component {
+func BugPlay(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-bug-play", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10 19.655A6 6 0 0 1 6 14v-3a4 4 0 0 1 4-4h4a4 4 0 0 1 4 3.97"))),

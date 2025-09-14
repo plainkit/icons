@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // BriefcaseConveyorBelt creates a Briefcase Conveyor Belt Lucide icon.
-func BriefcaseConveyorBelt(args ...x.SvgArg) x.Component {
+func BriefcaseConveyorBelt(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-briefcase-conveyor-belt", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10 20v2"))),

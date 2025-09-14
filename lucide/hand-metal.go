@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // HandMetal creates a Hand Metal Lucide icon.
-func HandMetal(args ...x.SvgArg) x.Component {
+func HandMetal(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-hand-metal", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M18 12.5V10a2 2 0 0 0-2-2a2 2 0 0 0-2 2v1.4"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Recycle creates a Recycle Lucide icon.
-func Recycle(args ...x.SvgArg) x.Component {
+func Recycle(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-recycle", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M7 19H4.815a1.83 1.83 0 0 1-1.57-.881 1.785 1.785 0 0 1-.004-1.784L7.196 9.5"))),

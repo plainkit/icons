@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // HousePlug creates a House Plug Lucide icon.
-func HousePlug(args ...x.SvgArg) x.Component {
+func HousePlug(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-house-plug", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10 12V8.964"))),

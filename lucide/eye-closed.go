@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // EyeClosed creates a Eye Closed Lucide icon.
-func EyeClosed(args ...x.SvgArg) x.Component {
+func EyeClosed(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-eye-closed", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m15 18-.722-3.25"))),

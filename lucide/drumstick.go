@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Drumstick creates a Drumstick Lucide icon.
-func Drumstick(args ...x.SvgArg) x.Component {
+func Drumstick(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-drumstick", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M15.4 15.63a7.875 6 135 1 1 6.23-6.23 4.5 3.43 135 0 0-6.23 6.23"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // SoapDispenserDroplet creates a Soap Dispenser Droplet Lucide icon.
-func SoapDispenserDroplet(args ...x.SvgArg) x.Component {
+func SoapDispenserDroplet(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-soap-dispenser-droplet", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10.5 2v4"))),

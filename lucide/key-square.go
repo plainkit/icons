@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // KeySquare creates a Key Square Lucide icon.
-func KeySquare(args ...x.SvgArg) x.Component {
+func KeySquare(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-key-square", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12.4 2.7a2.5 2.5 0 0 1 3.4 0l5.5 5.5a2.5 2.5 0 0 1 0 3.4l-3.7 3.7a2.5 2.5 0 0 1-3.4 0L8.7 9.8a2.5 2.5 0 0 1 0-3.4z"))),

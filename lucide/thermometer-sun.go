@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // ThermometerSun creates a Thermometer Sun Lucide icon.
-func ThermometerSun(args ...x.SvgArg) x.Component {
+func ThermometerSun(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-thermometer-sun", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 9a4 4 0 0 0-2 7.5"))),

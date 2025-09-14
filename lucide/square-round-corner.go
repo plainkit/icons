@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // SquareRoundCorner creates a Square Round Corner Lucide icon.
-func SquareRoundCorner(args ...x.SvgArg) x.Component {
+func SquareRoundCorner(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-square-round-corner", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M21 11a8 8 0 0 0-8-8"))),

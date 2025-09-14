@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // PhoneForwarded creates a Phone Forwarded Lucide icon.
-func PhoneForwarded(args ...x.SvgArg) x.Component {
+func PhoneForwarded(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-phone-forwarded", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M14 6h8"))),

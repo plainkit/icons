@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Combine creates a Combine Lucide icon.
-func Combine(args ...x.SvgArg) x.Component {
+func Combine(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-combine", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10 18H5a3 3 0 0 1-3-3v-1"))),

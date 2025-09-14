@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // SquareDashedKanban creates a Square Dashed Kanban Lucide icon.
-func SquareDashedKanban(args ...x.SvgArg) x.Component {
+func SquareDashedKanban(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-square-dashed-kanban", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M8 7v7"))),

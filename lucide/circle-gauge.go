@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // CircleGauge creates a Circle Gauge Lucide icon.
-func CircleGauge(args ...x.SvgArg) x.Component {
+func CircleGauge(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-circle-gauge", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M15.6 2.7a10 10 0 1 0 5.7 5.7"))),

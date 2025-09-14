@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // DnaOff creates a Dna Off Lucide icon.
-func DnaOff(args ...x.SvgArg) x.Component {
+func DnaOff(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-dna-off", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M15 2c-1.35 1.5-2.092 3-2.5 4.5L14 8"))),

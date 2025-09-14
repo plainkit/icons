@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Boxes creates a Boxes Lucide icon.
-func Boxes(args ...x.SvgArg) x.Component {
+func Boxes(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-boxes", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z"))),

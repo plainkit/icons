@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // LaptopMinimalCheck creates a Laptop Minimal Check Lucide icon.
-func LaptopMinimalCheck(args ...x.SvgArg) x.Component {
+func LaptopMinimalCheck(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-laptop-minimal-check", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M2 20h20"))),

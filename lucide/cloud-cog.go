@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // CloudCog creates a Cloud Cog Lucide icon.
-func CloudCog(args ...x.SvgArg) x.Component {
+func CloudCog(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-cloud-cog", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m10.852 19.772-.383.924"))),

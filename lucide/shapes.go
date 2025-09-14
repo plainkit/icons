@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Shapes creates a Shapes Lucide icon.
-func Shapes(args ...x.SvgArg) x.Component {
+func Shapes(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-shapes", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M8.3 10a.7.7 0 0 1-.626-1.079L11.4 3a.7.7 0 0 1 1.198-.043L16.3 8.9a.7.7 0 0 1-.572 1.1Z"))),

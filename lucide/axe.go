@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Axe creates a Axe Lucide icon.
-func Axe(args ...x.SvgArg) x.Component {
+func Axe(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-axe", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m14 12-8.381 8.38a1 1 0 0 1-3.001-3L11 9"))),

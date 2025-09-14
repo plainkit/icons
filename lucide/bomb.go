@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Bomb creates a Bomb Lucide icon.
-func Bomb(args ...x.SvgArg) x.Component {
+func Bomb(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-bomb", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Circle(x.Cx("11"), x.Cy("13"), x.R("9"))),

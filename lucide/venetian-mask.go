@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // VenetianMask creates a Venetian Mask Lucide icon.
-func VenetianMask(args ...x.SvgArg) x.Component {
+func VenetianMask(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-venetian-mask", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M18 11c-1.5 0-2.5.5-3 2"))),

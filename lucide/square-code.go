@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // SquareCode creates a Square Code Lucide icon.
-func SquareCode(args ...x.SvgArg) x.Component {
+func SquareCode(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-square-code", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m10 9-3 3 3 3"))),

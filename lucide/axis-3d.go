@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Axis3d creates a Axis 3d Lucide icon.
-func Axis3d(args ...x.SvgArg) x.Component {
+func Axis3d(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-axis-3d", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M13.5 10.5 15 9"))),

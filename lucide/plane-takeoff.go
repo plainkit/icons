@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // PlaneTakeoff creates a Plane Takeoff Lucide icon.
-func PlaneTakeoff(args ...x.SvgArg) x.Component {
+func PlaneTakeoff(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-plane-takeoff", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M2 22h20"))),

@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // UtensilsCrossed creates a Utensils Crossed Lucide icon.
-func UtensilsCrossed(args ...x.SvgArg) x.Component {
+func UtensilsCrossed(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-utensils-crossed", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("m16 2-2.3 2.3a3 3 0 0 0 0 4.2l1.8 1.8a3 3 0 0 0 4.2 0L22 8"))),

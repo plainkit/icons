@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // EarOff creates a Ear Off Lucide icon.
-func EarOff(args ...x.SvgArg) x.Component {
+func EarOff(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-ear-off", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M6 18.5a3.5 3.5 0 1 0 7 0c0-1.57.92-2.52 2.04-3.46"))),

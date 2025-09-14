@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // IndianRupee creates a Indian Rupee Lucide icon.
-func IndianRupee(args ...x.SvgArg) x.Component {
+func IndianRupee(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-indian-rupee", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M6 3h12"))),

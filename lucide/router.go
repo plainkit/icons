@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Router creates a Router Lucide icon.
-func Router(args ...x.SvgArg) x.Component {
+func Router(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-router", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Rect(x.RectWidth("20"), x.RectHeight("8"), x.X("2"), x.Y("14"), x.Rx("2"))),

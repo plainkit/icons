@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // MailQuestionMark creates a Mail Question Mark Lucide icon.
-func MailQuestionMark(args ...x.SvgArg) x.Component {
+func MailQuestionMark(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-mail-question-mark", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M22 10.5V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h12.5"))),

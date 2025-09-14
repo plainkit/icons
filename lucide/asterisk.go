@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Asterisk creates a Asterisk Lucide icon.
-func Asterisk(args ...x.SvgArg) x.Component {
+func Asterisk(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-asterisk", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M12 6v12"))),

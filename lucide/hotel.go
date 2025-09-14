@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // Hotel creates a Hotel Lucide icon.
-func Hotel(args ...x.SvgArg) x.Component {
+func Hotel(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-hotel", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M10 22v-6.57"))),

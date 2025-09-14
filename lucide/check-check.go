@@ -3,7 +3,7 @@ package lucide
 import x "github.com/bloxui/blox"
 
 // CheckCheck creates a Check Check Lucide icon.
-func CheckCheck(args ...x.SvgArg) x.Component {
+func CheckCheck(args ...x.SvgArg) x.Node {
 	svgArgs := buildLucideArgs("lucide lucide-check-check", args)
 	svgArgs = append(svgArgs,
 		x.Child(x.Path(x.D("M18 6 7 17l-5-5"))),
