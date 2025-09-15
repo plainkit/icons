@@ -1,11 +1,9 @@
 module github.com/bloxui/icons
 
-go 1.25.1
-
-replace github.com/bloxui/blox => ./../blox
+go 1.18
 
 require (
-	github.com/bloxui/blox v0.1.0
+	github.com/bloxui/blox v0.4.0
 	github.com/stretchr/testify v1.11.1
 )
 
