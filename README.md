@@ -1,4 +1,4 @@
-# Blox Lucide Icons
+# Plain Lucide Icons
 
 Type‑safe Lucide SVG icons for Go, built on top of `github.com/plainkit/blox`. Each icon is a simple Go function that returns a `blox.Component`, so you compose icons directly in your views with zero runtime templating.
 
@@ -151,7 +151,7 @@ If you don’t depend on the `lucide` classes for styling, you can ignore this.
 
 ## License
 
-- Go code in this repository: MIT © 2025 BloxUI Contributors
+- Go code in this repository: MIT © 2025 Plain Contributors
 - Icon assets and path data: Lucide (ISC); portions derived from Feather (MIT)
 
 See `LICENSE` for full texts and attribution details.
