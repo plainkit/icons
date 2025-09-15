@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Dice4 creates a Dice 4 Lucide icon.
 func Dice4(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // WifiSync creates a Wifi Sync Lucide icon.
 func WifiSync(args ...x.SvgArg) x.Node {

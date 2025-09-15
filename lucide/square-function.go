@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // SquareFunction creates a Square Function Lucide icon.
 func SquareFunction(args ...x.SvgArg) x.Node {

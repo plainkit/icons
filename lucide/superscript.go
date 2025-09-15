@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Superscript creates a Superscript Lucide icon.
 func Superscript(args ...x.SvgArg) x.Node {

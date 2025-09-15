@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // CircleParking creates a Circle Parking Lucide icon.
 func CircleParking(args ...x.SvgArg) x.Node {

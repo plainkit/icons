@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // CalendarCog creates a Calendar Cog Lucide icon.
 func CalendarCog(args ...x.SvgArg) x.Node {

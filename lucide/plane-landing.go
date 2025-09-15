@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // PlaneLanding creates a Plane Landing Lucide icon.
 func PlaneLanding(args ...x.SvgArg) x.Node {

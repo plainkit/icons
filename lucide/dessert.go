@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Dessert creates a Dessert Lucide icon.
 func Dessert(args ...x.SvgArg) x.Node {

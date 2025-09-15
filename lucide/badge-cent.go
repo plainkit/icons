@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // BadgeCent creates a Badge Cent Lucide icon.
 func BadgeCent(args ...x.SvgArg) x.Node {

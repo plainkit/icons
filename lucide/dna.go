@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Dna creates a Dna Lucide icon.
 func Dna(args ...x.SvgArg) x.Node {

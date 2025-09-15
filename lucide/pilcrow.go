@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Pilcrow creates a Pilcrow Lucide icon.
 func Pilcrow(args ...x.SvgArg) x.Node {

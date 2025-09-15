@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // SquareEqual creates a Square Equal Lucide icon.
 func SquareEqual(args ...x.SvgArg) x.Node {

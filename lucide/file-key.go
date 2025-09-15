@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // FileKey creates a File Key Lucide icon.
 func FileKey(args ...x.SvgArg) x.Node {

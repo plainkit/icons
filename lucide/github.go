@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Github creates a Github Lucide icon.
 func Github(args ...x.SvgArg) x.Node {

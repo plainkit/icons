@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // FileInput creates a File Input Lucide icon.
 func FileInput(args ...x.SvgArg) x.Node {

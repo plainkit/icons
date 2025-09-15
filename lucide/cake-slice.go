@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // CakeSlice creates a Cake Slice Lucide icon.
 func CakeSlice(args ...x.SvgArg) x.Node {

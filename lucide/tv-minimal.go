@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // TvMinimal creates a Tv Minimal Lucide icon.
 func TvMinimal(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Hospital creates a Hospital Lucide icon.
 func Hospital(args ...x.SvgArg) x.Node {

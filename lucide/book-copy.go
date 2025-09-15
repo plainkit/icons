@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // BookCopy creates a Book Copy Lucide icon.
 func BookCopy(args ...x.SvgArg) x.Node {

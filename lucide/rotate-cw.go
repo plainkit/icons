@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // RotateCw creates a Rotate Cw Lucide icon.
 func RotateCw(args ...x.SvgArg) x.Node {

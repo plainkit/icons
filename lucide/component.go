@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Component creates a Component Lucide icon.
 func Component(args ...x.SvgArg) x.Node {

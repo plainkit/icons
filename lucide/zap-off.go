@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // ZapOff creates a Zap Off Lucide icon.
 func ZapOff(args ...x.SvgArg) x.Node {

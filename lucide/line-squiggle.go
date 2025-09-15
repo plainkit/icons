@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // LineSquiggle creates a Line Squiggle Lucide icon.
 func LineSquiggle(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // AlarmSmoke creates a Alarm Smoke Lucide icon.
 func AlarmSmoke(args ...x.SvgArg) x.Node {

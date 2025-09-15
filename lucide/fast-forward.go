@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // FastForward creates a Fast Forward Lucide icon.
 func FastForward(args ...x.SvgArg) x.Node {

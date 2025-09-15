@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // ClockArrowDown creates a Clock Arrow Down Lucide icon.
 func ClockArrowDown(args ...x.SvgArg) x.Node {

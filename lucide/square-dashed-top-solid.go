@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // SquareDashedTopSolid creates a Square Dashed Top Solid Lucide icon.
 func SquareDashedTopSolid(args ...x.SvgArg) x.Node {

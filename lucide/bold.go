@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Bold creates a Bold Lucide icon.
 func Bold(args ...x.SvgArg) x.Node {

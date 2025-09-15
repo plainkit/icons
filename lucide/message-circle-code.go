@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // MessageCircleCode creates a Message Circle Code Lucide icon.
 func MessageCircleCode(args ...x.SvgArg) x.Node {

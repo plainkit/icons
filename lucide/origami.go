@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Origami creates a Origami Lucide icon.
 func Origami(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Map creates a Map Lucide icon.
 func Map(args ...x.SvgArg) x.Node {

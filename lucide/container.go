@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Container creates a Container Lucide icon.
 func Container(args ...x.SvgArg) x.Node {

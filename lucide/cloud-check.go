@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // CloudCheck creates a Cloud Check Lucide icon.
 func CloudCheck(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // FishSymbol creates a Fish Symbol Lucide icon.
 func FishSymbol(args ...x.SvgArg) x.Node {

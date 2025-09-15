@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Framer creates a Framer Lucide icon.
 func Framer(args ...x.SvgArg) x.Node {

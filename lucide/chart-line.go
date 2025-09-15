@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // ChartLine creates a Chart Line Lucide icon.
 func ChartLine(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // SquareCheck creates a Square Check Lucide icon.
 func SquareCheck(args ...x.SvgArg) x.Node {

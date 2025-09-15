@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // FlagTriangleLeft creates a Flag Triangle Left Lucide icon.
 func FlagTriangleLeft(args ...x.SvgArg) x.Node {

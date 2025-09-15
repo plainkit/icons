@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Ship creates a Ship Lucide icon.
 func Ship(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // RectangleGoggles creates a Rectangle Goggles Lucide icon.
 func RectangleGoggles(args ...x.SvgArg) x.Node {

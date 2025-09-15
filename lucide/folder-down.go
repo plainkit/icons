@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // FolderDown creates a Folder Down Lucide icon.
 func FolderDown(args ...x.SvgArg) x.Node {

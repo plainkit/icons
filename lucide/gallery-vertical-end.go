@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // GalleryVerticalEnd creates a Gallery Vertical End Lucide icon.
 func GalleryVerticalEnd(args ...x.SvgArg) x.Node {

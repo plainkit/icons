@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // ServerOff creates a Server Off Lucide icon.
 func ServerOff(args ...x.SvgArg) x.Node {

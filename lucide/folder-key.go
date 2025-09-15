@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // FolderKey creates a Folder Key Lucide icon.
 func FolderKey(args ...x.SvgArg) x.Node {

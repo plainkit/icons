@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Group creates a Group Lucide icon.
 func Group(args ...x.SvgArg) x.Node {

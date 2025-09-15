@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // FlaskConicalOff creates a Flask Conical Off Lucide icon.
 func FlaskConicalOff(args ...x.SvgArg) x.Node {

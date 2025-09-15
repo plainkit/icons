@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Keyboard creates a Keyboard Lucide icon.
 func Keyboard(args ...x.SvgArg) x.Node {

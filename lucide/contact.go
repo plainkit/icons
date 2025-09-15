@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Contact creates a Contact Lucide icon.
 func Contact(args ...x.SvgArg) x.Node {

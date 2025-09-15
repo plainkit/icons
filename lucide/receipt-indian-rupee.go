@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // ReceiptIndianRupee creates a Receipt Indian Rupee Lucide icon.
 func ReceiptIndianRupee(args ...x.SvgArg) x.Node {

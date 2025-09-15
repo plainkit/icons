@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // DatabaseBackup creates a Database Backup Lucide icon.
 func DatabaseBackup(args ...x.SvgArg) x.Node {

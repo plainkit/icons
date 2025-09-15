@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // MessageCircleOff creates a Message Circle Off Lucide icon.
 func MessageCircleOff(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Gauge creates a Gauge Lucide icon.
 func Gauge(args ...x.SvgArg) x.Node {

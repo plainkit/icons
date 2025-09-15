@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // RulerDimensionLine creates a Ruler Dimension Line Lucide icon.
 func RulerDimensionLine(args ...x.SvgArg) x.Node {

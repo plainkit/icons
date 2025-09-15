@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // SmartphoneNfc creates a Smartphone Nfc Lucide icon.
 func SmartphoneNfc(args ...x.SvgArg) x.Node {

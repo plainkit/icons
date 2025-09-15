@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // ArrowDownZA creates a Arrow Down Z A Lucide icon.
 func ArrowDownZA(args ...x.SvgArg) x.Node {

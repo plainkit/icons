@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // SquaresIntersect creates a Squares Intersect Lucide icon.
 func SquaresIntersect(args ...x.SvgArg) x.Node {

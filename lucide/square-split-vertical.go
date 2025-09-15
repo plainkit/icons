@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // SquareSplitVertical creates a Square Split Vertical Lucide icon.
 func SquareSplitVertical(args ...x.SvgArg) x.Node {

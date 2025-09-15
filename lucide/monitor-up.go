@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // MonitorUp creates a Monitor Up Lucide icon.
 func MonitorUp(args ...x.SvgArg) x.Node {

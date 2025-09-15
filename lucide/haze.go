@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Haze creates a Haze Lucide icon.
 func Haze(args ...x.SvgArg) x.Node {

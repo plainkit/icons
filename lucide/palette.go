@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Palette creates a Palette Lucide icon.
 func Palette(args ...x.SvgArg) x.Node {

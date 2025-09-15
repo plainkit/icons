@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Pointer creates a Pointer Lucide icon.
 func Pointer(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // ArrowBigDownDash creates a Arrow Big Down Dash Lucide icon.
 func ArrowBigDownDash(args ...x.SvgArg) x.Node {

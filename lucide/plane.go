@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Plane creates a Plane Lucide icon.
 func Plane(args ...x.SvgArg) x.Node {

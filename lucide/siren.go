@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Siren creates a Siren Lucide icon.
 func Siren(args ...x.SvgArg) x.Node {

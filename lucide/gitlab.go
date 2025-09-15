@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Gitlab creates a Gitlab Lucide icon.
 func Gitlab(args ...x.SvgArg) x.Node {

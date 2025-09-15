@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Wrench creates a Wrench Lucide icon.
 func Wrench(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Navigation2Off creates a Navigation 2 Off Lucide icon.
 func Navigation2Off(args ...x.SvgArg) x.Node {

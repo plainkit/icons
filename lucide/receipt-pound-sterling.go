@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // ReceiptPoundSterling creates a Receipt Pound Sterling Lucide icon.
 func ReceiptPoundSterling(args ...x.SvgArg) x.Node {

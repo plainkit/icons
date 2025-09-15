@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Hexagon creates a Hexagon Lucide icon.
 func Hexagon(args ...x.SvgArg) x.Node {

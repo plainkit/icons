@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // PanelRightClose creates a Panel Right Close Lucide icon.
 func PanelRightClose(args ...x.SvgArg) x.Node {

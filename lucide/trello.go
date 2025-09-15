@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Trello creates a Trello Lucide icon.
 func Trello(args ...x.SvgArg) x.Node {

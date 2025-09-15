@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Tent creates a Tent Lucide icon.
 func Tent(args ...x.SvgArg) x.Node {

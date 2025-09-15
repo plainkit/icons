@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Trash2 creates a Trash 2 Lucide icon.
 func Trash2(args ...x.SvgArg) x.Node {

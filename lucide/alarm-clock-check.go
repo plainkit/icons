@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // AlarmClockCheck creates a Alarm Clock Check Lucide icon.
 func AlarmClockCheck(args ...x.SvgArg) x.Node {

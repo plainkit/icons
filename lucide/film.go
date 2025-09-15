@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Film creates a Film Lucide icon.
 func Film(args ...x.SvgArg) x.Node {

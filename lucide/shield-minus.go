@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // ShieldMinus creates a Shield Minus Lucide icon.
 func ShieldMinus(args ...x.SvgArg) x.Node {

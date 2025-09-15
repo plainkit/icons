@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // ChefHat creates a Chef Hat Lucide icon.
 func ChefHat(args ...x.SvgArg) x.Node {

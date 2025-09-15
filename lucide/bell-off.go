@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // BellOff creates a Bell Off Lucide icon.
 func BellOff(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // BotOff creates a Bot Off Lucide icon.
 func BotOff(args ...x.SvgArg) x.Node {

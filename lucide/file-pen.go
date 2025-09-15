@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // FilePen creates a File Pen Lucide icon.
 func FilePen(args ...x.SvgArg) x.Node {

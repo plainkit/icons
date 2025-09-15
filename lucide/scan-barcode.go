@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // ScanBarcode creates a Scan Barcode Lucide icon.
 func ScanBarcode(args ...x.SvgArg) x.Node {

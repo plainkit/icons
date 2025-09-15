@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // CameraOff creates a Camera Off Lucide icon.
 func CameraOff(args ...x.SvgArg) x.Node {

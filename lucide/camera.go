@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Camera creates a Camera Lucide icon.
 func Camera(args ...x.SvgArg) x.Node {

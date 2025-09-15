@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // ServerCog creates a Server Cog Lucide icon.
 func ServerCog(args ...x.SvgArg) x.Node {

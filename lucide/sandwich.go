@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Sandwich creates a Sandwich Lucide icon.
 func Sandwich(args ...x.SvgArg) x.Node {

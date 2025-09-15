@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // CopyMinus creates a Copy Minus Lucide icon.
 func CopyMinus(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Presentation creates a Presentation Lucide icon.
 func Presentation(args ...x.SvgArg) x.Node {

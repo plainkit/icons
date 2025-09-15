@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // ListFilter creates a List Filter Lucide icon.
 func ListFilter(args ...x.SvgArg) x.Node {

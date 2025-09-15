@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // School creates a School Lucide icon.
 func School(args ...x.SvgArg) x.Node {

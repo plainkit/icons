@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Paperclip creates a Paperclip Lucide icon.
 func Paperclip(args ...x.SvgArg) x.Node {

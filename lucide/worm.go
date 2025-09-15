@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Worm creates a Worm Lucide icon.
 func Worm(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // CircleDivide creates a Circle Divide Lucide icon.
 func CircleDivide(args ...x.SvgArg) x.Node {

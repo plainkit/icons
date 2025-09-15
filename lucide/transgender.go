@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Transgender creates a Transgender Lucide icon.
 func Transgender(args ...x.SvgArg) x.Node {

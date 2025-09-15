@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // BrickWallShield creates a Brick Wall Shield Lucide icon.
 func BrickWallShield(args ...x.SvgArg) x.Node {

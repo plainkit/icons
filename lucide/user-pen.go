@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // UserPen creates a User Pen Lucide icon.
 func UserPen(args ...x.SvgArg) x.Node {

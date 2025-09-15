@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // SquareMenu creates a Square Menu Lucide icon.
 func SquareMenu(args ...x.SvgArg) x.Node {

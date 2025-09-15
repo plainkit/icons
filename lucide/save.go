@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Save creates a Save Lucide icon.
 func Save(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Italic creates a Italic Lucide icon.
 func Italic(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // CloudDrizzle creates a Cloud Drizzle Lucide icon.
 func CloudDrizzle(args ...x.SvgArg) x.Node {

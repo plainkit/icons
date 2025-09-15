@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Unplug creates a Unplug Lucide icon.
 func Unplug(args ...x.SvgArg) x.Node {

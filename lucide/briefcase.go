@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Briefcase creates a Briefcase Lucide icon.
 func Briefcase(args ...x.SvgArg) x.Node {

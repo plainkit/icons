@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // BottleWine creates a Bottle Wine Lucide icon.
 func BottleWine(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // ConciergeBell creates a Concierge Bell Lucide icon.
 func ConciergeBell(args ...x.SvgArg) x.Node {

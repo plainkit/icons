@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // ExternalLink creates a External Link Lucide icon.
 func ExternalLink(args ...x.SvgArg) x.Node {

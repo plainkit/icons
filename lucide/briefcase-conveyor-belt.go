@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // BriefcaseConveyorBelt creates a Briefcase Conveyor Belt Lucide icon.
 func BriefcaseConveyorBelt(args ...x.SvgArg) x.Node {

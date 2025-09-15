@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Cloudy creates a Cloudy Lucide icon.
 func Cloudy(args ...x.SvgArg) x.Node {

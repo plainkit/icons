@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // WebhookOff creates a Webhook Off Lucide icon.
 func WebhookOff(args ...x.SvgArg) x.Node {

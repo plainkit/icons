@@ -74,7 +74,7 @@ import (
     "strings"
     "testing"
 
-    x "github.com/bloxui/blox"
+    x "github.com/plainkit/blox"
     "github.com/stretchr/testify/require"
 )
 

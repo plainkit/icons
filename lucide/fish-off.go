@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // FishOff creates a Fish Off Lucide icon.
 func FishOff(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Luggage creates a Luggage Lucide icon.
 func Luggage(args ...x.SvgArg) x.Node {

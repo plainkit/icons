@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // TriangleDashed creates a Triangle Dashed Lucide icon.
 func TriangleDashed(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // PhoneOff creates a Phone Off Lucide icon.
 func PhoneOff(args ...x.SvgArg) x.Node {

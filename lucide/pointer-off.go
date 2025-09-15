@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // PointerOff creates a Pointer Off Lucide icon.
 func PointerOff(args ...x.SvgArg) x.Node {

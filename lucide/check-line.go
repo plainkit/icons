@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // CheckLine creates a Check Line Lucide icon.
 func CheckLine(args ...x.SvgArg) x.Node {

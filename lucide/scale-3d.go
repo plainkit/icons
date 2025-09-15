@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Scale3d creates a Scale 3d Lucide icon.
 func Scale3d(args ...x.SvgArg) x.Node {

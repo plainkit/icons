@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Forklift creates a Forklift Lucide icon.
 func Forklift(args ...x.SvgArg) x.Node {

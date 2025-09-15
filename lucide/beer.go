@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Beer creates a Beer Lucide icon.
 func Beer(args ...x.SvgArg) x.Node {

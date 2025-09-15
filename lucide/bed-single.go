@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // BedSingle creates a Bed Single Lucide icon.
 func BedSingle(args ...x.SvgArg) x.Node {

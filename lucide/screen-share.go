@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // ScreenShare creates a Screen Share Lucide icon.
 func ScreenShare(args ...x.SvgArg) x.Node {

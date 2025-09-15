@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // EggOff creates a Egg Off Lucide icon.
 func EggOff(args ...x.SvgArg) x.Node {

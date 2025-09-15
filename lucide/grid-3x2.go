@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Grid3x2 creates a Grid 3x2 Lucide icon.
 func Grid3x2(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // CloudLightning creates a Cloud Lightning Lucide icon.
 func CloudLightning(args ...x.SvgArg) x.Node {

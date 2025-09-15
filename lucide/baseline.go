@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Baseline creates a Baseline Lucide icon.
 func Baseline(args ...x.SvgArg) x.Node {

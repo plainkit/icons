@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Recycle creates a Recycle Lucide icon.
 func Recycle(args ...x.SvgArg) x.Node {

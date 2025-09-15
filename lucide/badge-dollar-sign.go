@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // BadgeDollarSign creates a Badge Dollar Sign Lucide icon.
 func BadgeDollarSign(args ...x.SvgArg) x.Node {

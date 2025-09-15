@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // ChevronDown creates a Chevron Down Lucide icon.
 func ChevronDown(args ...x.SvgArg) x.Node {

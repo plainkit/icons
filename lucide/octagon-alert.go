@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // OctagonAlert creates a Octagon Alert Lucide icon.
 func OctagonAlert(args ...x.SvgArg) x.Node {

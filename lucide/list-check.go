@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // ListCheck creates a List Check Lucide icon.
 func ListCheck(args ...x.SvgArg) x.Node {

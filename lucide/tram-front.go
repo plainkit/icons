@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // TramFront creates a Tram Front Lucide icon.
 func TramFront(args ...x.SvgArg) x.Node {

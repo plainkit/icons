@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Laugh creates a Laugh Lucide icon.
 func Laugh(args ...x.SvgArg) x.Node {

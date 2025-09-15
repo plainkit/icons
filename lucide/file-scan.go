@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // FileScan creates a File Scan Lucide icon.
 func FileScan(args ...x.SvgArg) x.Node {

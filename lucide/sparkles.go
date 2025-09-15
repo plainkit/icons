@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Sparkles creates a Sparkles Lucide icon.
 func Sparkles(args ...x.SvgArg) x.Node {

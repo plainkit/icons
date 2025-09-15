@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // TableProperties creates a Table Properties Lucide icon.
 func TableProperties(args ...x.SvgArg) x.Node {

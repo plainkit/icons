@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // FolderClosed creates a Folder Closed Lucide icon.
 func FolderClosed(args ...x.SvgArg) x.Node {

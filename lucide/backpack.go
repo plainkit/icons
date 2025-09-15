@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Backpack creates a Backpack Lucide icon.
 func Backpack(args ...x.SvgArg) x.Node {

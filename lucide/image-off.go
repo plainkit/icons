@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // ImageOff creates a Image Off Lucide icon.
 func ImageOff(args ...x.SvgArg) x.Node {

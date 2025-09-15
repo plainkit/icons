@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // PinOff creates a Pin Off Lucide icon.
 func PinOff(args ...x.SvgArg) x.Node {

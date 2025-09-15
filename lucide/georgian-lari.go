@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // GeorgianLari creates a Georgian Lari Lucide icon.
 func GeorgianLari(args ...x.SvgArg) x.Node {

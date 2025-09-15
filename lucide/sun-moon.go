@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // SunMoon creates a Sun Moon Lucide icon.
 func SunMoon(args ...x.SvgArg) x.Node {

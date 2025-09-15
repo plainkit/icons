@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // HeartOff creates a Heart Off Lucide icon.
 func HeartOff(args ...x.SvgArg) x.Node {

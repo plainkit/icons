@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Slack creates a Slack Lucide icon.
 func Slack(args ...x.SvgArg) x.Node {

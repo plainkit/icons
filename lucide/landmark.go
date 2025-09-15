@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Landmark creates a Landmark Lucide icon.
 func Landmark(args ...x.SvgArg) x.Node {

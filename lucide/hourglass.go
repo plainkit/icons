@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Hourglass creates a Hourglass Lucide icon.
 func Hourglass(args ...x.SvgArg) x.Node {

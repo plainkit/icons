@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // CloudUpload creates a Cloud Upload Lucide icon.
 func CloudUpload(args ...x.SvgArg) x.Node {

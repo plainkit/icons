@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Handbag creates a Handbag Lucide icon.
 func Handbag(args ...x.SvgArg) x.Node {

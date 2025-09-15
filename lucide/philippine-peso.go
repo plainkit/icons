@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // PhilippinePeso creates a Philippine Peso Lucide icon.
 func PhilippinePeso(args ...x.SvgArg) x.Node {

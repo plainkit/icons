@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Cuboid creates a Cuboid Lucide icon.
 func Cuboid(args ...x.SvgArg) x.Node {

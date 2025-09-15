@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // LockOpen creates a Lock Open Lucide icon.
 func LockOpen(args ...x.SvgArg) x.Node {

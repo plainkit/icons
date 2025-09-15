@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Guitar creates a Guitar Lucide icon.
 func Guitar(args ...x.SvgArg) x.Node {

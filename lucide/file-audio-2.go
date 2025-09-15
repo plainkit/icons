@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // FileAudio2 creates a File Audio 2 Lucide icon.
 func FileAudio2(args ...x.SvgArg) x.Node {

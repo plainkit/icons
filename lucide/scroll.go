@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Scroll creates a Scroll Lucide icon.
 func Scroll(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // View creates a View Lucide icon.
 func View(args ...x.SvgArg) x.Node {

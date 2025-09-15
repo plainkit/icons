@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // CircleChevronRight creates a Circle Chevron Right Lucide icon.
 func CircleChevronRight(args ...x.SvgArg) x.Node {

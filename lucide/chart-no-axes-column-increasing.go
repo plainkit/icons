@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // ChartNoAxesColumnIncreasing creates a Chart No Axes Column Increasing Lucide icon.
 func ChartNoAxesColumnIncreasing(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Twitch creates a Twitch Lucide icon.
 func Twitch(args ...x.SvgArg) x.Node {

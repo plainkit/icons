@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Tally5 creates a Tally 5 Lucide icon.
 func Tally5(args ...x.SvgArg) x.Node {

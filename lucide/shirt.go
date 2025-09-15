@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Shirt creates a Shirt Lucide icon.
 func Shirt(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // ChartScatter creates a Chart Scatter Lucide icon.
 func ChartScatter(args ...x.SvgArg) x.Node {

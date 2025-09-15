@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // MessageSquareX creates a Message Square X Lucide icon.
 func MessageSquareX(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Orbit creates a Orbit Lucide icon.
 func Orbit(args ...x.SvgArg) x.Node {

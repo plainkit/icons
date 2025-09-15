@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // FileChartColumn creates a File Chart Column Lucide icon.
 func FileChartColumn(args ...x.SvgArg) x.Node {

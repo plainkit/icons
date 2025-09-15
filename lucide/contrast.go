@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Contrast creates a Contrast Lucide icon.
 func Contrast(args ...x.SvgArg) x.Node {

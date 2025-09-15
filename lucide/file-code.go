@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // FileCode creates a File Code Lucide icon.
 func FileCode(args ...x.SvgArg) x.Node {

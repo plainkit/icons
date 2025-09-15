@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // BusFront creates a Bus Front Lucide icon.
 func BusFront(args ...x.SvgArg) x.Node {

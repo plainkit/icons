@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Trophy creates a Trophy Lucide icon.
 func Trophy(args ...x.SvgArg) x.Node {

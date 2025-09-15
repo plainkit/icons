@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // WavesLadder creates a Waves Ladder Lucide icon.
 func WavesLadder(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // ScanFace creates a Scan Face Lucide icon.
 func ScanFace(args ...x.SvgArg) x.Node {

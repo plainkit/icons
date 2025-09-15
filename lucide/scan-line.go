@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // ScanLine creates a Scan Line Lucide icon.
 func ScanLine(args ...x.SvgArg) x.Node {

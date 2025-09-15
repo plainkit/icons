@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // ImageUpscale creates a Image Upscale Lucide icon.
 func ImageUpscale(args ...x.SvgArg) x.Node {

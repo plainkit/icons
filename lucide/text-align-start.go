@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // TextAlignStart creates a Text Align Start Lucide icon.
 func TextAlignStart(args ...x.SvgArg) x.Node {

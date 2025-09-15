@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // MoveDownRight creates a Move Down Right Lucide icon.
 func MoveDownRight(args ...x.SvgArg) x.Node {

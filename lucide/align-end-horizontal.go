@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // AlignEndHorizontal creates a Align End Horizontal Lucide icon.
 func AlignEndHorizontal(args ...x.SvgArg) x.Node {

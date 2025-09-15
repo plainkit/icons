@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // ScanEye creates a Scan Eye Lucide icon.
 func ScanEye(args ...x.SvgArg) x.Node {

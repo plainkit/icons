@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // UserX creates a User X Lucide icon.
 func UserX(args ...x.SvgArg) x.Node {

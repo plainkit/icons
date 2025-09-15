@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // CircleMinus creates a Circle Minus Lucide icon.
 func CircleMinus(args ...x.SvgArg) x.Node {

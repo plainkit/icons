@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Calculator creates a Calculator Lucide icon.
 func Calculator(args ...x.SvgArg) x.Node {

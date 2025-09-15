@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // CircleSmall creates a Circle Small Lucide icon.
 func CircleSmall(args ...x.SvgArg) x.Node {

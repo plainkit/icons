@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // BellElectric creates a Bell Electric Lucide icon.
 func BellElectric(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Flag creates a Flag Lucide icon.
 func Flag(args ...x.SvgArg) x.Node {

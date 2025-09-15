@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // MonitorStop creates a Monitor Stop Lucide icon.
 func MonitorStop(args ...x.SvgArg) x.Node {

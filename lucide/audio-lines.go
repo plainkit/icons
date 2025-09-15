@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // AudioLines creates a Audio Lines Lucide icon.
 func AudioLines(args ...x.SvgArg) x.Node {

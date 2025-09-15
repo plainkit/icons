@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Send creates a Send Lucide icon.
 func Send(args ...x.SvgArg) x.Node {

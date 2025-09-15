@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // BookMarked creates a Book Marked Lucide icon.
 func BookMarked(args ...x.SvgArg) x.Node {

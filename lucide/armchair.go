@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Armchair creates a Armchair Lucide icon.
 func Armchair(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // PocketKnife creates a Pocket Knife Lucide icon.
 func PocketKnife(args ...x.SvgArg) x.Node {

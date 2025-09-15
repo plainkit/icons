@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // FolderLock creates a Folder Lock Lucide icon.
 func FolderLock(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // SpellCheck2 creates a Spell Check 2 Lucide icon.
 func SpellCheck2(args ...x.SvgArg) x.Node {

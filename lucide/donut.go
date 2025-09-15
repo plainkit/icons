@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Donut creates a Donut Lucide icon.
 func Donut(args ...x.SvgArg) x.Node {

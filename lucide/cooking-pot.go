@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // CookingPot creates a Cooking Pot Lucide icon.
 func CookingPot(args ...x.SvgArg) x.Node {

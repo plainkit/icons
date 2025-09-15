@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // BadgeEuro creates a Badge Euro Lucide icon.
 func BadgeEuro(args ...x.SvgArg) x.Node {

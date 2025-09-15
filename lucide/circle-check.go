@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // CircleCheck creates a Circle Check Lucide icon.
 func CircleCheck(args ...x.SvgArg) x.Node {

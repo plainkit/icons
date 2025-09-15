@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Heading creates a Heading Lucide icon.
 func Heading(args ...x.SvgArg) x.Node {

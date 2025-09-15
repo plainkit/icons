@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // BookHeadphones creates a Book Headphones Lucide icon.
 func BookHeadphones(args ...x.SvgArg) x.Node {

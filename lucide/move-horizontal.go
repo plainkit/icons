@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // MoveHorizontal creates a Move Horizontal Lucide icon.
 func MoveHorizontal(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // TurkishLira creates a Turkish Lira Lucide icon.
 func TurkishLira(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Vote creates a Vote Lucide icon.
 func Vote(args ...x.SvgArg) x.Node {

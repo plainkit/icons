@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Code creates a Code Lucide icon.
 func Code(args ...x.SvgArg) x.Node {

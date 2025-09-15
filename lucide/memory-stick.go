@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // MemoryStick creates a Memory Stick Lucide icon.
 func MemoryStick(args ...x.SvgArg) x.Node {

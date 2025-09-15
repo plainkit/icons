@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Venus creates a Venus Lucide icon.
 func Venus(args ...x.SvgArg) x.Node {

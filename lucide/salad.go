@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Salad creates a Salad Lucide icon.
 func Salad(args ...x.SvgArg) x.Node {

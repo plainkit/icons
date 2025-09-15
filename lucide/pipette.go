@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Pipette creates a Pipette Lucide icon.
 func Pipette(args ...x.SvgArg) x.Node {

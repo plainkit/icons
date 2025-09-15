@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Cross creates a Cross Lucide icon.
 func Cross(args ...x.SvgArg) x.Node {

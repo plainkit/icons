@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Gem creates a Gem Lucide icon.
 func Gem(args ...x.SvgArg) x.Node {

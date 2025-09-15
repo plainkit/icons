@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Clock8 creates a Clock 8 Lucide icon.
 func Clock8(args ...x.SvgArg) x.Node {

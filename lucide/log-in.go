@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // LogIn creates a Log In Lucide icon.
 func LogIn(args ...x.SvgArg) x.Node {

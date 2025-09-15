@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // ChartGantt creates a Chart Gantt Lucide icon.
 func ChartGantt(args ...x.SvgArg) x.Node {

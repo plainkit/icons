@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // WandSparkles creates a Wand Sparkles Lucide icon.
 func WandSparkles(args ...x.SvgArg) x.Node {

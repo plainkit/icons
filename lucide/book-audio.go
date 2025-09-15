@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // BookAudio creates a Book Audio Lucide icon.
 func BookAudio(args ...x.SvgArg) x.Node {

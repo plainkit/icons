@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // SquareChevronDown creates a Square Chevron Down Lucide icon.
 func SquareChevronDown(args ...x.SvgArg) x.Node {

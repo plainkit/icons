@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // MonitorCog creates a Monitor Cog Lucide icon.
 func MonitorCog(args ...x.SvgArg) x.Node {

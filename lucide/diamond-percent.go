@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // DiamondPercent creates a Diamond Percent Lucide icon.
 func DiamondPercent(args ...x.SvgArg) x.Node {

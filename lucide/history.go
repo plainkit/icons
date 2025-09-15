@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // History creates a History Lucide icon.
 func History(args ...x.SvgArg) x.Node {

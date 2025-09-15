@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // BluetoothOff creates a Bluetooth Off Lucide icon.
 func BluetoothOff(args ...x.SvgArg) x.Node {

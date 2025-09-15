@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // DraftingCompass creates a Drafting Compass Lucide icon.
 func DraftingCompass(args ...x.SvgArg) x.Node {

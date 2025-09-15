@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // BookDashed creates a Book Dashed Lucide icon.
 func BookDashed(args ...x.SvgArg) x.Node {

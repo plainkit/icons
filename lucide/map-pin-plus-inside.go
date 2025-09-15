@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // MapPinPlusInside creates a Map Pin Plus Inside Lucide icon.
 func MapPinPlusInside(args ...x.SvgArg) x.Node {

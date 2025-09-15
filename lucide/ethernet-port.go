@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // EthernetPort creates a Ethernet Port Lucide icon.
 func EthernetPort(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Laptop creates a Laptop Lucide icon.
 func Laptop(args ...x.SvgArg) x.Node {

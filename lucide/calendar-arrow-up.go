@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // CalendarArrowUp creates a Calendar Arrow Up Lucide icon.
 func CalendarArrowUp(args ...x.SvgArg) x.Node {

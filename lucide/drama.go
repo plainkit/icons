@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Drama creates a Drama Lucide icon.
 func Drama(args ...x.SvgArg) x.Node {

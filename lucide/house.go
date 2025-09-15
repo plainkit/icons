@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // House creates a House Lucide icon.
 func House(args ...x.SvgArg) x.Node {

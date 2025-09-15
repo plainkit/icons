@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // LeafyGreen creates a Leafy Green Lucide icon.
 func LeafyGreen(args ...x.SvgArg) x.Node {

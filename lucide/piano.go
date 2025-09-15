@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Piano creates a Piano Lucide icon.
 func Piano(args ...x.SvgArg) x.Node {

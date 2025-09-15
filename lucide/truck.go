@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Truck creates a Truck Lucide icon.
 func Truck(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // WifiLow creates a Wifi Low Lucide icon.
 func WifiLow(args ...x.SvgArg) x.Node {

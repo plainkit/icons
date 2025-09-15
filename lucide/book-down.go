@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // BookDown creates a Book Down Lucide icon.
 func BookDown(args ...x.SvgArg) x.Node {

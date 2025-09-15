@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // PaintbrushVertical creates a Paintbrush Vertical Lucide icon.
 func PaintbrushVertical(args ...x.SvgArg) x.Node {

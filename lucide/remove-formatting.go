@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // RemoveFormatting creates a Remove Formatting Lucide icon.
 func RemoveFormatting(args ...x.SvgArg) x.Node {

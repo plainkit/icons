@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // CircleDollarSign creates a Circle Dollar Sign Lucide icon.
 func CircleDollarSign(args ...x.SvgArg) x.Node {

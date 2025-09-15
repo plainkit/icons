@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // HeartCrack creates a Heart Crack Lucide icon.
 func HeartCrack(args ...x.SvgArg) x.Node {

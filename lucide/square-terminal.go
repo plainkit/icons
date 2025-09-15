@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // SquareTerminal creates a Square Terminal Lucide icon.
 func SquareTerminal(args ...x.SvgArg) x.Node {

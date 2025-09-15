@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Snowflake creates a Snowflake Lucide icon.
 func Snowflake(args ...x.SvgArg) x.Node {

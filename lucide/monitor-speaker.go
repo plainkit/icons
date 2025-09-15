@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // MonitorSpeaker creates a Monitor Speaker Lucide icon.
 func MonitorSpeaker(args ...x.SvgArg) x.Node {

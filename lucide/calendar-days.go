@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // CalendarDays creates a Calendar Days Lucide icon.
 func CalendarDays(args ...x.SvgArg) x.Node {

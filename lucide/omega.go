@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Omega creates a Omega Lucide icon.
 func Omega(args ...x.SvgArg) x.Node {

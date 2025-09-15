@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Ham creates a Ham Lucide icon.
 func Ham(args ...x.SvgArg) x.Node {

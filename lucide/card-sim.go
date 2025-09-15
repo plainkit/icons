@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // CardSim creates a Card Sim Lucide icon.
 func CardSim(args ...x.SvgArg) x.Node {

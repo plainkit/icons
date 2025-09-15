@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Compass creates a Compass Lucide icon.
 func Compass(args ...x.SvgArg) x.Node {

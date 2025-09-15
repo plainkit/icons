@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Cat creates a Cat Lucide icon.
 func Cat(args ...x.SvgArg) x.Node {

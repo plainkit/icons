@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Rotate3d creates a Rotate 3d Lucide icon.
 func Rotate3d(args ...x.SvgArg) x.Node {

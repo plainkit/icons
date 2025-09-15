@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Facebook creates a Facebook Lucide icon.
 func Facebook(args ...x.SvgArg) x.Node {

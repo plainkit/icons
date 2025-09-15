@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // UserCheck creates a User Check Lucide icon.
 func UserCheck(args ...x.SvgArg) x.Node {

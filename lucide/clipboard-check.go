@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // ClipboardCheck creates a Clipboard Check Lucide icon.
 func ClipboardCheck(args ...x.SvgArg) x.Node {

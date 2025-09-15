@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // FileMusic creates a File Music Lucide icon.
 func FileMusic(args ...x.SvgArg) x.Node {

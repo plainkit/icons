@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // ShieldUser creates a Shield User Lucide icon.
 func ShieldUser(args ...x.SvgArg) x.Node {

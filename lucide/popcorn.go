@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Popcorn creates a Popcorn Lucide icon.
 func Popcorn(args ...x.SvgArg) x.Node {

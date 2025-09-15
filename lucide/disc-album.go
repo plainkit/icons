@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // DiscAlbum creates a Disc Album Lucide icon.
 func DiscAlbum(args ...x.SvgArg) x.Node {

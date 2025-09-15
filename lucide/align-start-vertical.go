@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // AlignStartVertical creates a Align Start Vertical Lucide icon.
 func AlignStartVertical(args ...x.SvgArg) x.Node {

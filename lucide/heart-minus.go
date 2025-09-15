@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // HeartMinus creates a Heart Minus Lucide icon.
 func HeartMinus(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Binoculars creates a Binoculars Lucide icon.
 func Binoculars(args ...x.SvgArg) x.Node {

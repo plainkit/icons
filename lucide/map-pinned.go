@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // MapPinned creates a Map Pinned Lucide icon.
 func MapPinned(args ...x.SvgArg) x.Node {

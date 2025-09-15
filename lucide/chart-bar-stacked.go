@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // ChartBarStacked creates a Chart Bar Stacked Lucide icon.
 func ChartBarStacked(args ...x.SvgArg) x.Node {

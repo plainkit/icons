@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // MessageSquareDiff creates a Message Square Diff Lucide icon.
 func MessageSquareDiff(args ...x.SvgArg) x.Node {

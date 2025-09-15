@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Baby creates a Baby Lucide icon.
 func Baby(args ...x.SvgArg) x.Node {

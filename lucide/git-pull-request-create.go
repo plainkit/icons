@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // GitPullRequestCreate creates a Git Pull Request Create Lucide icon.
 func GitPullRequestCreate(args ...x.SvgArg) x.Node {

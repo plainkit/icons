@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // MessageSquareOff creates a Message Square Off Lucide icon.
 func MessageSquareOff(args ...x.SvgArg) x.Node {

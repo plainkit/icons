@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Tv creates a Tv Lucide icon.
 func Tv(args ...x.SvgArg) x.Node {

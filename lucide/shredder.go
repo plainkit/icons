@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Shredder creates a Shredder Lucide icon.
 func Shredder(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Merge creates a Merge Lucide icon.
 func Merge(args ...x.SvgArg) x.Node {

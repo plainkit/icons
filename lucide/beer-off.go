@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // BeerOff creates a Beer Off Lucide icon.
 func BeerOff(args ...x.SvgArg) x.Node {

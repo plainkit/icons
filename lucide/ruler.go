@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Ruler creates a Ruler Lucide icon.
 func Ruler(args ...x.SvgArg) x.Node {

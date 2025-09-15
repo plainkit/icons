@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Trees creates a Trees Lucide icon.
 func Trees(args ...x.SvgArg) x.Node {

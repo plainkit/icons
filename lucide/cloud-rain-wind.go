@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // CloudRainWind creates a Cloud Rain Wind Lucide icon.
 func CloudRainWind(args ...x.SvgArg) x.Node {

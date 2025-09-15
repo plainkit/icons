@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Speaker creates a Speaker Lucide icon.
 func Speaker(args ...x.SvgArg) x.Node {

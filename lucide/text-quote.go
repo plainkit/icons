@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // TextQuote creates a Text Quote Lucide icon.
 func TextQuote(args ...x.SvgArg) x.Node {

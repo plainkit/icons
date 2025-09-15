@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // MapPinOff creates a Map Pin Off Lucide icon.
 func MapPinOff(args ...x.SvgArg) x.Node {

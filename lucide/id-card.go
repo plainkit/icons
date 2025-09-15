@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // IdCard creates a Id Card Lucide icon.
 func IdCard(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // FileImage creates a File Image Lucide icon.
 func FileImage(args ...x.SvgArg) x.Node {

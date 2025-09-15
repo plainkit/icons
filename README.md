@@ -1,12 +1,12 @@
 # Blox Lucide Icons
 
-Type‑safe Lucide SVG icons for Go, built on top of `github.com/bloxui/blox`. Each icon is a simple Go function that returns a `blox.Component`, so you compose icons directly in your views with zero runtime templating.
+Type‑safe Lucide SVG icons for Go, built on top of `github.com/plainkit/blox`. Each icon is a simple Go function that returns a `blox.Component`, so you compose icons directly in your views with zero runtime templating.
 
 ## Install
 
 ```
-go get github.com/bloxui/blox
-go get github.com/bloxui/lucide
+go get github.com/plainkit/blox
+go get github.com/plainkit/lucide
 ```
 
 ## Quick Start
@@ -16,8 +16,8 @@ package main
 
 import (
     "fmt"
-    x "github.com/bloxui/blox"
-    "github.com/bloxui/lucide"
+    x "github.com/plainkit/blox"
+    "github.com/plainkit/lucide"
 )
 
 func main() {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Drum creates a Drum Lucide icon.
 func Drum(args ...x.SvgArg) x.Node {

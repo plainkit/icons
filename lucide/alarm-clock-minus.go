@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // AlarmClockMinus creates a Alarm Clock Minus Lucide icon.
 func AlarmClockMinus(args ...x.SvgArg) x.Node {

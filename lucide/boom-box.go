@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // BoomBox creates a Boom Box Lucide icon.
 func BoomBox(args ...x.SvgArg) x.Node {

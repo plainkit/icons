@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // FileSearch creates a File Search Lucide icon.
 func FileSearch(args ...x.SvgArg) x.Node {

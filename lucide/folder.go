@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Folder creates a Folder Lucide icon.
 func Folder(args ...x.SvgArg) x.Node {

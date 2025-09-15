@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // BookKey creates a Book Key Lucide icon.
 func BookKey(args ...x.SvgArg) x.Node {

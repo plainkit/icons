@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Popsicle creates a Popsicle Lucide icon.
 func Popsicle(args ...x.SvgArg) x.Node {

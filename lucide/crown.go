@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Crown creates a Crown Lucide icon.
 func Crown(args ...x.SvgArg) x.Node {

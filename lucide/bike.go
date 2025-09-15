@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Bike creates a Bike Lucide icon.
 func Bike(args ...x.SvgArg) x.Node {

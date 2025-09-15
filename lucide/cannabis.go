@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Cannabis creates a Cannabis Lucide icon.
 func Cannabis(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // MailCheck creates a Mail Check Lucide icon.
 func MailCheck(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // TreePalm creates a Tree Palm Lucide icon.
 func TreePalm(args ...x.SvgArg) x.Node {

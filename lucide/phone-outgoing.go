@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // PhoneOutgoing creates a Phone Outgoing Lucide icon.
 func PhoneOutgoing(args ...x.SvgArg) x.Node {

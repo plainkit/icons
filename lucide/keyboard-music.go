@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // KeyboardMusic creates a Keyboard Music Lucide icon.
 func KeyboardMusic(args ...x.SvgArg) x.Node {

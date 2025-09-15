@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Infinity creates a Infinity Lucide icon.
 func Infinity(args ...x.SvgArg) x.Node {

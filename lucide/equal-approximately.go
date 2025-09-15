@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // EqualApproximately creates a Equal Approximately Lucide icon.
 func EqualApproximately(args ...x.SvgArg) x.Node {

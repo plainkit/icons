@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // PaintRoller creates a Paint Roller Lucide icon.
 func PaintRoller(args ...x.SvgArg) x.Node {

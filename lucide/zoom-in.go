@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // ZoomIn creates a Zoom In Lucide icon.
 func ZoomIn(args ...x.SvgArg) x.Node {

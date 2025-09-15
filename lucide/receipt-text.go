@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // ReceiptText creates a Receipt Text Lucide icon.
 func ReceiptText(args ...x.SvgArg) x.Node {

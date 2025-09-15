@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // MoveUpLeft creates a Move Up Left Lucide icon.
 func MoveUpLeft(args ...x.SvgArg) x.Node {

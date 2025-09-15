@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // BookHeart creates a Book Heart Lucide icon.
 func BookHeart(args ...x.SvgArg) x.Node {

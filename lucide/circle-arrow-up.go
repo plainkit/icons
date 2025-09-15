@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // CircleArrowUp creates a Circle Arrow Up Lucide icon.
 func CircleArrowUp(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // AlignHorizontalSpaceAround creates a Align Horizontal Space Around Lucide icon.
 func AlignHorizontalSpaceAround(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Newspaper creates a Newspaper Lucide icon.
 func Newspaper(args ...x.SvgArg) x.Node {

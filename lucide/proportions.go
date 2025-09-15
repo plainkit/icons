@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Proportions creates a Proportions Lucide icon.
 func Proportions(args ...x.SvgArg) x.Node {

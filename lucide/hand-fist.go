@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // HandFist creates a Hand Fist Lucide icon.
 func HandFist(args ...x.SvgArg) x.Node {

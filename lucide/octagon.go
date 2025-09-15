@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Octagon creates a Octagon Lucide icon.
 func Octagon(args ...x.SvgArg) x.Node {

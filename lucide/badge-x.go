@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // BadgeX creates a Badge X Lucide icon.
 func BadgeX(args ...x.SvgArg) x.Node {

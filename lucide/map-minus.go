@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // MapMinus creates a Map Minus Lucide icon.
 func MapMinus(args ...x.SvgArg) x.Node {

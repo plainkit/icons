@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // BetweenVerticalEnd creates a Between Vertical End Lucide icon.
 func BetweenVerticalEnd(args ...x.SvgArg) x.Node {

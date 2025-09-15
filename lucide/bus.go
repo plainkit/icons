@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Bus creates a Bus Lucide icon.
 func Bus(args ...x.SvgArg) x.Node {

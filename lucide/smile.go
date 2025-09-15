@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Smile creates a Smile Lucide icon.
 func Smile(args ...x.SvgArg) x.Node {

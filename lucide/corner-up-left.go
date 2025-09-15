@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // CornerUpLeft creates a Corner Up Left Lucide icon.
 func CornerUpLeft(args ...x.SvgArg) x.Node {

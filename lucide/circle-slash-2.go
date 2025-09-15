@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // CircleSlash2 creates a Circle Slash 2 Lucide icon.
 func CircleSlash2(args ...x.SvgArg) x.Node {

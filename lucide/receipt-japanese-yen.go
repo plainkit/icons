@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // ReceiptJapaneseYen creates a Receipt Japanese Yen Lucide icon.
 func ReceiptJapaneseYen(args ...x.SvgArg) x.Node {

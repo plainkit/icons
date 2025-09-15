@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // MoveRight creates a Move Right Lucide icon.
 func MoveRight(args ...x.SvgArg) x.Node {

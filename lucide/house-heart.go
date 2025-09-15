@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // HouseHeart creates a House Heart Lucide icon.
 func HouseHeart(args ...x.SvgArg) x.Node {

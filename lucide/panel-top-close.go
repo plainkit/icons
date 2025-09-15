@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // PanelTopClose creates a Panel Top Close Lucide icon.
 func PanelTopClose(args ...x.SvgArg) x.Node {

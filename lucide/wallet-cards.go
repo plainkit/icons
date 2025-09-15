@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // WalletCards creates a Wallet Cards Lucide icon.
 func WalletCards(args ...x.SvgArg) x.Node {

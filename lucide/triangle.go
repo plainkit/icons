@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Triangle creates a Triangle Lucide icon.
 func Triangle(args ...x.SvgArg) x.Node {

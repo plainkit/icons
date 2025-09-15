@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // MailSearch creates a Mail Search Lucide icon.
 func MailSearch(args ...x.SvgArg) x.Node {

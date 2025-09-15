@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // LayoutPanelTop creates a Layout Panel Top Lucide icon.
 func LayoutPanelTop(args ...x.SvgArg) x.Node {

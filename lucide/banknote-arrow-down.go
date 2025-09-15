@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // BanknoteArrowDown creates a Banknote Arrow Down Lucide icon.
 func BanknoteArrowDown(args ...x.SvgArg) x.Node {

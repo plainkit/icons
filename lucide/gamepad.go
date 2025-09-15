@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Gamepad creates a Gamepad Lucide icon.
 func Gamepad(args ...x.SvgArg) x.Node {

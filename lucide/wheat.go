@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Wheat creates a Wheat Lucide icon.
 func Wheat(args ...x.SvgArg) x.Node {

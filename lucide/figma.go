@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Figma creates a Figma Lucide icon.
 func Figma(args ...x.SvgArg) x.Node {

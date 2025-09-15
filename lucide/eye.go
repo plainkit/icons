@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Eye creates a Eye Lucide icon.
 func Eye(args ...x.SvgArg) x.Node {

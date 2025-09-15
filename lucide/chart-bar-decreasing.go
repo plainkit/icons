@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // ChartBarDecreasing creates a Chart Bar Decreasing Lucide icon.
 func ChartBarDecreasing(args ...x.SvgArg) x.Node {

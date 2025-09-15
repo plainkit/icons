@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // PawPrint creates a Paw Print Lucide icon.
 func PawPrint(args ...x.SvgArg) x.Node {

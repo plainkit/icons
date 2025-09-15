@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Computer creates a Computer Lucide icon.
 func Computer(args ...x.SvgArg) x.Node {

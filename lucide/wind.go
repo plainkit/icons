@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Wind creates a Wind Lucide icon.
 func Wind(args ...x.SvgArg) x.Node {

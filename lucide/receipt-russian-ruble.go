@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // ReceiptRussianRuble creates a Receipt Russian Ruble Lucide icon.
 func ReceiptRussianRuble(args ...x.SvgArg) x.Node {

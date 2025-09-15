@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // WheatOff creates a Wheat Off Lucide icon.
 func WheatOff(args ...x.SvgArg) x.Node {

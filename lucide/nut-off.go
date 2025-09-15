@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // NutOff creates a Nut Off Lucide icon.
 func NutOff(args ...x.SvgArg) x.Node {

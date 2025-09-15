@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // ChevronLast creates a Chevron Last Lucide icon.
 func ChevronLast(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Redo creates a Redo Lucide icon.
 func Redo(args ...x.SvgArg) x.Node {

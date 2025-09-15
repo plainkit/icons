@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // EyeClosed creates a Eye Closed Lucide icon.
 func EyeClosed(args ...x.SvgArg) x.Node {

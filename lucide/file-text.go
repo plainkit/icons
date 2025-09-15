@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // FileText creates a File Text Lucide icon.
 func FileText(args ...x.SvgArg) x.Node {

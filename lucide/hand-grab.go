@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // HandGrab creates a Hand Grab Lucide icon.
 func HandGrab(args ...x.SvgArg) x.Node {

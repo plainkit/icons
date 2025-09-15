@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // MessageCircleWarning creates a Message Circle Warning Lucide icon.
 func MessageCircleWarning(args ...x.SvgArg) x.Node {

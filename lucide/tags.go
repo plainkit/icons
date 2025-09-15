@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Tags creates a Tags Lucide icon.
 func Tags(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // SunDim creates a Sun Dim Lucide icon.
 func SunDim(args ...x.SvgArg) x.Node {

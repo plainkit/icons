@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // SprayCan creates a Spray Can Lucide icon.
 func SprayCan(args ...x.SvgArg) x.Node {

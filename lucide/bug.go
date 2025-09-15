@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Bug creates a Bug Lucide icon.
 func Bug(args ...x.SvgArg) x.Node {

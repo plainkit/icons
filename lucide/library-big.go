@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // LibraryBig creates a Library Big Lucide icon.
 func LibraryBig(args ...x.SvgArg) x.Node {

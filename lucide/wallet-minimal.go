@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // WalletMinimal creates a Wallet Minimal Lucide icon.
 func WalletMinimal(args ...x.SvgArg) x.Node {

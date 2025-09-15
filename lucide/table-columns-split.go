@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // TableColumnsSplit creates a Table Columns Split Lucide icon.
 func TableColumnsSplit(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // BaggageClaim creates a Baggage Claim Lucide icon.
 func BaggageClaim(args ...x.SvgArg) x.Node {

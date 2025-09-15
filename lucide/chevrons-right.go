@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // ChevronsRight creates a Chevrons Right Lucide icon.
 func ChevronsRight(args ...x.SvgArg) x.Node {

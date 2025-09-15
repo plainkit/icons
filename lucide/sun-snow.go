@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // SunSnow creates a Sun Snow Lucide icon.
 func SunSnow(args ...x.SvgArg) x.Node {

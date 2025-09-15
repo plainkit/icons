@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // EggFried creates a Egg Fried Lucide icon.
 func EggFried(args ...x.SvgArg) x.Node {

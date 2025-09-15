@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // ClockFading creates a Clock Fading Lucide icon.
 func ClockFading(args ...x.SvgArg) x.Node {

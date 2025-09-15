@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // MountainSnow creates a Mountain Snow Lucide icon.
 func MountainSnow(args ...x.SvgArg) x.Node {

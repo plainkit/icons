@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // AlignVerticalSpaceAround creates a Align Vertical Space Around Lucide icon.
 func AlignVerticalSpaceAround(args ...x.SvgArg) x.Node {

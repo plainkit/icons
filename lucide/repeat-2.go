@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Repeat2 creates a Repeat 2 Lucide icon.
 func Repeat2(args ...x.SvgArg) x.Node {

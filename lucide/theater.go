@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Theater creates a Theater Lucide icon.
 func Theater(args ...x.SvgArg) x.Node {

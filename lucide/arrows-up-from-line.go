@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // ArrowsUpFromLine creates a Arrows Up From Line Lucide icon.
 func ArrowsUpFromLine(args ...x.SvgArg) x.Node {

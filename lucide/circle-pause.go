@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // CirclePause creates a Circle Pause Lucide icon.
 func CirclePause(args ...x.SvgArg) x.Node {

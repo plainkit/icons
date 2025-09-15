@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // PenTool creates a Pen Tool Lucide icon.
 func PenTool(args ...x.SvgArg) x.Node {

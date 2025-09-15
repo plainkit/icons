@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Diameter creates a Diameter Lucide icon.
 func Diameter(args ...x.SvgArg) x.Node {

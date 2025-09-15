@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Fence creates a Fence Lucide icon.
 func Fence(args ...x.SvgArg) x.Node {

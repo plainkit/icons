@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // HopOff creates a Hop Off Lucide icon.
 func HopOff(args ...x.SvgArg) x.Node {

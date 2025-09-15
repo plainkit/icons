@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Mouse creates a Mouse Lucide icon.
 func Mouse(args ...x.SvgArg) x.Node {

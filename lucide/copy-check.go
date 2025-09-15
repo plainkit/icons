@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // CopyCheck creates a Copy Check Lucide icon.
 func CopyCheck(args ...x.SvgArg) x.Node {

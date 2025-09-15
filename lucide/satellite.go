@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Satellite creates a Satellite Lucide icon.
 func Satellite(args ...x.SvgArg) x.Node {

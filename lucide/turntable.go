@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Turntable creates a Turntable Lucide icon.
 func Turntable(args ...x.SvgArg) x.Node {

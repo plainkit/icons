@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Rss creates a Rss Lucide icon.
 func Rss(args ...x.SvgArg) x.Node {

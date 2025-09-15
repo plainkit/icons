@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Croissant creates a Croissant Lucide icon.
 func Croissant(args ...x.SvgArg) x.Node {

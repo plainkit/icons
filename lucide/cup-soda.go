@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // CupSoda creates a Cup Soda Lucide icon.
 func CupSoda(args ...x.SvgArg) x.Node {

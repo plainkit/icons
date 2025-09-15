@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Barrel creates a Barrel Lucide icon.
 func Barrel(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // SquareAsterisk creates a Square Asterisk Lucide icon.
 func SquareAsterisk(args ...x.SvgArg) x.Node {

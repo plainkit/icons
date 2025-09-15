@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Hamburger creates a Hamburger Lucide icon.
 func Hamburger(args ...x.SvgArg) x.Node {

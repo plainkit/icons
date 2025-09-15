@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // FoldHorizontal creates a Fold Horizontal Lucide icon.
 func FoldHorizontal(args ...x.SvgArg) x.Node {

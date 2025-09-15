@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // ChartColumnBig creates a Chart Column Big Lucide icon.
 func ChartColumnBig(args ...x.SvgArg) x.Node {

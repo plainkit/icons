@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Cookie creates a Cookie Lucide icon.
 func Cookie(args ...x.SvgArg) x.Node {

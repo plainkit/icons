@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Pi creates a Pi Lucide icon.
 func Pi(args ...x.SvgArg) x.Node {

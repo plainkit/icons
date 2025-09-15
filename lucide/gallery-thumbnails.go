@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // GalleryThumbnails creates a Gallery Thumbnails Lucide icon.
 func GalleryThumbnails(args ...x.SvgArg) x.Node {

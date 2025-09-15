@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Lock creates a Lock Lucide icon.
 func Lock(args ...x.SvgArg) x.Node {

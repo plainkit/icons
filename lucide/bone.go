@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Bone creates a Bone Lucide icon.
 func Bone(args ...x.SvgArg) x.Node {

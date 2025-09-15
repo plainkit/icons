@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // ImageMinus creates a Image Minus Lucide icon.
 func ImageMinus(args ...x.SvgArg) x.Node {

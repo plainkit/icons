@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // LampWallUp creates a Lamp Wall Up Lucide icon.
 func LampWallUp(args ...x.SvgArg) x.Node {

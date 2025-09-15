@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // SwissFranc creates a Swiss Franc Lucide icon.
 func SwissFranc(args ...x.SvgArg) x.Node {

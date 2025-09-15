@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // RectangleCircle creates a Rectangle Circle Lucide icon.
 func RectangleCircle(args ...x.SvgArg) x.Node {

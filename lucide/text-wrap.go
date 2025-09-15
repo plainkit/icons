@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // TextWrap creates a Text Wrap Lucide icon.
 func TextWrap(args ...x.SvgArg) x.Node {

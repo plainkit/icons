@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // RectangleVertical creates a Rectangle Vertical Lucide icon.
 func RectangleVertical(args ...x.SvgArg) x.Node {

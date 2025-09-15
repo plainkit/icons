@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // BookAlert creates a Book Alert Lucide icon.
 func BookAlert(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Share creates a Share Lucide icon.
 func Share(args ...x.SvgArg) x.Node {

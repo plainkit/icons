@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // PencilLine creates a Pencil Line Lucide icon.
 func PencilLine(args ...x.SvgArg) x.Node {

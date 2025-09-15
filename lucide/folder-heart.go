@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // FolderHeart creates a Folder Heart Lucide icon.
 func FolderHeart(args ...x.SvgArg) x.Node {

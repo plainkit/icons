@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // MousePointerBan creates a Mouse Pointer Ban Lucide icon.
 func MousePointerBan(args ...x.SvgArg) x.Node {

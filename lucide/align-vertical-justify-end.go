@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // AlignVerticalJustifyEnd creates a Align Vertical Justify End Lucide icon.
 func AlignVerticalJustifyEnd(args ...x.SvgArg) x.Node {

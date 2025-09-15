@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // ChartArea creates a Chart Area Lucide icon.
 func ChartArea(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // HardHat creates a Hard Hat Lucide icon.
 func HardHat(args ...x.SvgArg) x.Node {

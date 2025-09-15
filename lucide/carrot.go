@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Carrot creates a Carrot Lucide icon.
 func Carrot(args ...x.SvgArg) x.Node {

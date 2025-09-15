@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Gpu creates a Gpu Lucide icon.
 func Gpu(args ...x.SvgArg) x.Node {

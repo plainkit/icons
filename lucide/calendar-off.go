@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // CalendarOff creates a Calendar Off Lucide icon.
 func CalendarOff(args ...x.SvgArg) x.Node {

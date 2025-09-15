@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // BookOpenText creates a Book Open Text Lucide icon.
 func BookOpenText(args ...x.SvgArg) x.Node {

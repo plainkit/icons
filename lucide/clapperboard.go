@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Clapperboard creates a Clapperboard Lucide icon.
 func Clapperboard(args ...x.SvgArg) x.Node {

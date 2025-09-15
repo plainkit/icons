@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // MonitorSmartphone creates a Monitor Smartphone Lucide icon.
 func MonitorSmartphone(args ...x.SvgArg) x.Node {

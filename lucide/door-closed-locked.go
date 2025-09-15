@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // DoorClosedLocked creates a Door Closed Locked Lucide icon.
 func DoorClosedLocked(args ...x.SvgArg) x.Node {

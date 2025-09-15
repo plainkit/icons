@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // UserRoundCog creates a User Round Cog Lucide icon.
 func UserRoundCog(args ...x.SvgArg) x.Node {

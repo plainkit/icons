@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // BookUp creates a Book Up Lucide icon.
 func BookUp(args ...x.SvgArg) x.Node {

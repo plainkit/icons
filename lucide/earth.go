@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Earth creates a Earth Lucide icon.
 func Earth(args ...x.SvgArg) x.Node {

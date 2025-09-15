@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // VenetianMask creates a Venetian Mask Lucide icon.
 func VenetianMask(args ...x.SvgArg) x.Node {

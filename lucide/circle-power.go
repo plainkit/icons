@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // CirclePower creates a Circle Power Lucide icon.
 func CirclePower(args ...x.SvgArg) x.Node {

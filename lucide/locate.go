@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Locate creates a Locate Lucide icon.
 func Locate(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // CandyCane creates a Candy Cane Lucide icon.
 func CandyCane(args ...x.SvgArg) x.Node {

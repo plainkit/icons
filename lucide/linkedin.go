@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Linkedin creates a Linkedin Lucide icon.
 func Linkedin(args ...x.SvgArg) x.Node {

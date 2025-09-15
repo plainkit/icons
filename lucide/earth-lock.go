@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // EarthLock creates a Earth Lock Lucide icon.
 func EarthLock(args ...x.SvgArg) x.Node {

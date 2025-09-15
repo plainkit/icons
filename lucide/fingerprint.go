@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Fingerprint creates a Fingerprint Lucide icon.
 func Fingerprint(args ...x.SvgArg) x.Node {

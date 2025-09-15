@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // DiamondMinus creates a Diamond Minus Lucide icon.
 func DiamondMinus(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // GitCommitVertical creates a Git Commit Vertical Lucide icon.
 func GitCommitVertical(args ...x.SvgArg) x.Node {

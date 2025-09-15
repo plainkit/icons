@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // UnfoldVertical creates a Unfold Vertical Lucide icon.
 func UnfoldVertical(args ...x.SvgArg) x.Node {

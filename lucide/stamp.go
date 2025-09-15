@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Stamp creates a Stamp Lucide icon.
 func Stamp(args ...x.SvgArg) x.Node {

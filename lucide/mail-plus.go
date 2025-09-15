@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // MailPlus creates a Mail Plus Lucide icon.
 func MailPlus(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // BugPlay creates a Bug Play Lucide icon.
 func BugPlay(args ...x.SvgArg) x.Node {

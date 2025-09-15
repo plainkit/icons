@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Webhook creates a Webhook Lucide icon.
 func Webhook(args ...x.SvgArg) x.Node {

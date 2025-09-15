@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Lamp creates a Lamp Lucide icon.
 func Lamp(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // FlaskRound creates a Flask Round Lucide icon.
 func FlaskRound(args ...x.SvgArg) x.Node {

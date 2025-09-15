@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Star creates a Star Lucide icon.
 func Star(args ...x.SvgArg) x.Node {

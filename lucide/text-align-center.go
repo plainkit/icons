@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // TextAlignCenter creates a Text Align Center Lucide icon.
 func TextAlignCenter(args ...x.SvgArg) x.Node {

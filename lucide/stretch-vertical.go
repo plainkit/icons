@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // StretchVertical creates a Stretch Vertical Lucide icon.
 func StretchVertical(args ...x.SvgArg) x.Node {

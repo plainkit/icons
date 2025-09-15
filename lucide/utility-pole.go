@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // UtilityPole creates a Utility Pole Lucide icon.
 func UtilityPole(args ...x.SvgArg) x.Node {

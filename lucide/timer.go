@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Timer creates a Timer Lucide icon.
 func Timer(args ...x.SvgArg) x.Node {

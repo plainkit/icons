@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // FolderKanban creates a Folder Kanban Lucide icon.
 func FolderKanban(args ...x.SvgArg) x.Node {

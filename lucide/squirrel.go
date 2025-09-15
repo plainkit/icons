@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Squirrel creates a Squirrel Lucide icon.
 func Squirrel(args ...x.SvgArg) x.Node {

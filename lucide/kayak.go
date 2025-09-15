@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Kayak creates a Kayak Lucide icon.
 func Kayak(args ...x.SvgArg) x.Node {

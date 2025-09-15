@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // TabletSmartphone creates a Tablet Smartphone Lucide icon.
 func TabletSmartphone(args ...x.SvgArg) x.Node {

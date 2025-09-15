@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // MoveVertical creates a Move Vertical Lucide icon.
 func MoveVertical(args ...x.SvgArg) x.Node {

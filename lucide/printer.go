@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Printer creates a Printer Lucide icon.
 func Printer(args ...x.SvgArg) x.Node {

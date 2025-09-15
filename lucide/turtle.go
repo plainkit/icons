@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Turtle creates a Turtle Lucide icon.
 func Turtle(args ...x.SvgArg) x.Node {

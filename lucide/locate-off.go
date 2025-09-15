@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // LocateOff creates a Locate Off Lucide icon.
 func LocateOff(args ...x.SvgArg) x.Node {

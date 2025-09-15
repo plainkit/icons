@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // BadgePercent creates a Badge Percent Lucide icon.
 func BadgePercent(args ...x.SvgArg) x.Node {

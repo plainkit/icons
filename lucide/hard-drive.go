@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // HardDrive creates a Hard Drive Lucide icon.
 func HardDrive(args ...x.SvgArg) x.Node {

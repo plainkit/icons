@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // BookImage creates a Book Image Lucide icon.
 func BookImage(args ...x.SvgArg) x.Node {

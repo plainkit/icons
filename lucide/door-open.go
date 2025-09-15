@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // DoorOpen creates a Door Open Lucide icon.
 func DoorOpen(args ...x.SvgArg) x.Node {

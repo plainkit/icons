@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // SquareMousePointer creates a Square Mouse Pointer Lucide icon.
 func SquareMousePointer(args ...x.SvgArg) x.Node {

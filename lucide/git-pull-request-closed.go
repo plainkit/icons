@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // GitPullRequestClosed creates a Git Pull Request Closed Lucide icon.
 func GitPullRequestClosed(args ...x.SvgArg) x.Node {

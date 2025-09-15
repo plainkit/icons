@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // TrainFront creates a Train Front Lucide icon.
 func TrainFront(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // UndoDot creates a Undo Dot Lucide icon.
 func UndoDot(args ...x.SvgArg) x.Node {

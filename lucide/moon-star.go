@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // MoonStar creates a Moon Star Lucide icon.
 func MoonStar(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // BadgePoundSterling creates a Badge Pound Sterling Lucide icon.
 func BadgePoundSterling(args ...x.SvgArg) x.Node {

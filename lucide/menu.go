@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Menu creates a Menu Lucide icon.
 func Menu(args ...x.SvgArg) x.Node {

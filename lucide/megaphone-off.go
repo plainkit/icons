@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // MegaphoneOff creates a Megaphone Off Lucide icon.
 func MegaphoneOff(args ...x.SvgArg) x.Node {

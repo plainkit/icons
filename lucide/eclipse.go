@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Eclipse creates a Eclipse Lucide icon.
 func Eclipse(args ...x.SvgArg) x.Node {

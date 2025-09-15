@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Shrink creates a Shrink Lucide icon.
 func Shrink(args ...x.SvgArg) x.Node {

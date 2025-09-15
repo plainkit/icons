@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Volume2 creates a Volume 2 Lucide icon.
 func Volume2(args ...x.SvgArg) x.Node {

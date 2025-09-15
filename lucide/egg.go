@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Egg creates a Egg Lucide icon.
 func Egg(args ...x.SvgArg) x.Node {

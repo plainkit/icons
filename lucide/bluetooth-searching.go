@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // BluetoothSearching creates a Bluetooth Searching Lucide icon.
 func BluetoothSearching(args ...x.SvgArg) x.Node {

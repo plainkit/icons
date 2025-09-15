@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // AlignHorizontalJustifyCenter creates a Align Horizontal Justify Center Lucide icon.
 func AlignHorizontalJustifyCenter(args ...x.SvgArg) x.Node {

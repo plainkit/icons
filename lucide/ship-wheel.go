@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // ShipWheel creates a Ship Wheel Lucide icon.
 func ShipWheel(args ...x.SvgArg) x.Node {

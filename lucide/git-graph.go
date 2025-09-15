@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // GitGraph creates a Git Graph Lucide icon.
 func GitGraph(args ...x.SvgArg) x.Node {

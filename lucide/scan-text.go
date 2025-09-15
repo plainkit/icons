@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // ScanText creates a Scan Text Lucide icon.
 func ScanText(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // BookLock creates a Book Lock Lucide icon.
 func BookLock(args ...x.SvgArg) x.Node {

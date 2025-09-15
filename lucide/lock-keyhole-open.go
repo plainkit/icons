@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // LockKeyholeOpen creates a Lock Keyhole Open Lucide icon.
 func LockKeyholeOpen(args ...x.SvgArg) x.Node {

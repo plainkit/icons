@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // University creates a University Lucide icon.
 func University(args ...x.SvgArg) x.Node {

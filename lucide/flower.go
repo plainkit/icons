@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Flower creates a Flower Lucide icon.
 func Flower(args ...x.SvgArg) x.Node {

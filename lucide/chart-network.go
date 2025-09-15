@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // ChartNetwork creates a Chart Network Lucide icon.
 func ChartNetwork(args ...x.SvgArg) x.Node {

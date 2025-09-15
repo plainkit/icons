@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Wallpaper creates a Wallpaper Lucide icon.
 func Wallpaper(args ...x.SvgArg) x.Node {

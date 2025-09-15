@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Radical creates a Radical Lucide icon.
 func Radical(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // StarHalf creates a Star Half Lucide icon.
 func StarHalf(args ...x.SvgArg) x.Node {

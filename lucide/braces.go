@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Braces creates a Braces Lucide icon.
 func Braces(args ...x.SvgArg) x.Node {

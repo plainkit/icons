@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // TextCursor creates a Text Cursor Lucide icon.
 func TextCursor(args ...x.SvgArg) x.Node {

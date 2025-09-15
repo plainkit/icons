@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // BookMinus creates a Book Minus Lucide icon.
 func BookMinus(args ...x.SvgArg) x.Node {

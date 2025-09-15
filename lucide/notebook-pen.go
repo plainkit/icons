@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // NotebookPen creates a Notebook Pen Lucide icon.
 func NotebookPen(args ...x.SvgArg) x.Node {

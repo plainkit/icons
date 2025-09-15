@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // ChartCandlestick creates a Chart Candlestick Lucide icon.
 func ChartCandlestick(args ...x.SvgArg) x.Node {

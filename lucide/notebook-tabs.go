@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // NotebookTabs creates a Notebook Tabs Lucide icon.
 func NotebookTabs(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // MonitorDot creates a Monitor Dot Lucide icon.
 func MonitorDot(args ...x.SvgArg) x.Node {

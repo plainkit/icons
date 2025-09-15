@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Dock creates a Dock Lucide icon.
 func Dock(args ...x.SvgArg) x.Node {

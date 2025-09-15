@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Axe creates a Axe Lucide icon.
 func Axe(args ...x.SvgArg) x.Node {

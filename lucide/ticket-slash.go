@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // TicketSlash creates a Ticket Slash Lucide icon.
 func TicketSlash(args ...x.SvgArg) x.Node {

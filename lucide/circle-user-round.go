@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // CircleUserRound creates a Circle User Round Lucide icon.
 func CircleUserRound(args ...x.SvgArg) x.Node {

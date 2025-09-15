@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Pocket creates a Pocket Lucide icon.
 func Pocket(args ...x.SvgArg) x.Node {

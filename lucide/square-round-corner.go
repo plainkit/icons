@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // SquareRoundCorner creates a Square Round Corner Lucide icon.
 func SquareRoundCorner(args ...x.SvgArg) x.Node {

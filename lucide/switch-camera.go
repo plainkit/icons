@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // SwitchCamera creates a Switch Camera Lucide icon.
 func SwitchCamera(args ...x.SvgArg) x.Node {

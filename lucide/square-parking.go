@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // SquareParking creates a Square Parking Lucide icon.
 func SquareParking(args ...x.SvgArg) x.Node {

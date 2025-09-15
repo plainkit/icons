@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Play creates a Play Lucide icon.
 func Play(args ...x.SvgArg) x.Node {

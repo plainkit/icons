@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Layers creates a Layers Lucide icon.
 func Layers(args ...x.SvgArg) x.Node {

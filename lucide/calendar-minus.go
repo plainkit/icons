@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // CalendarMinus creates a Calendar Minus Lucide icon.
 func CalendarMinus(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // KeySquare creates a Key Square Lucide icon.
 func KeySquare(args ...x.SvgArg) x.Node {

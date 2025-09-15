@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // MailOpen creates a Mail Open Lucide icon.
 func MailOpen(args ...x.SvgArg) x.Node {

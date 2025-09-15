@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // BeanOff creates a Bean Off Lucide icon.
 func BeanOff(args ...x.SvgArg) x.Node {

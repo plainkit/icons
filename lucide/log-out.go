@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // LogOut creates a Log Out Lucide icon.
 func LogOut(args ...x.SvgArg) x.Node {

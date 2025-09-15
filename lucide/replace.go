@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Replace creates a Replace Lucide icon.
 func Replace(args ...x.SvgArg) x.Node {

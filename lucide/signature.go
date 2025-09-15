@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Signature creates a Signature Lucide icon.
 func Signature(args ...x.SvgArg) x.Node {

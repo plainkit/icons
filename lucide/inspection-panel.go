@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // InspectionPanel creates a Inspection Panel Lucide icon.
 func InspectionPanel(args ...x.SvgArg) x.Node {

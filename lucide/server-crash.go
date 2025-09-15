@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // ServerCrash creates a Server Crash Lucide icon.
 func ServerCrash(args ...x.SvgArg) x.Node {

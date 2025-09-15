@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Route creates a Route Lucide icon.
 func Route(args ...x.SvgArg) x.Node {

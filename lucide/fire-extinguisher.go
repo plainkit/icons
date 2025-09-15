@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // FireExtinguisher creates a Fire Extinguisher Lucide icon.
 func FireExtinguisher(args ...x.SvgArg) x.Node {

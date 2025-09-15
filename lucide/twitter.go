@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Twitter creates a Twitter Lucide icon.
 func Twitter(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // RefreshCw creates a Refresh Cw Lucide icon.
 func RefreshCw(args ...x.SvgArg) x.Node {

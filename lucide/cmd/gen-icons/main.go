@@ -314,7 +314,7 @@ func toElemCall(elem string) string {
 func renderIconFile(funcName, docTitle, className string, children []childCall) string {
 	var b bytes.Buffer
 	b.WriteString("package lucide\n\n")
-	b.WriteString("import x \"github.com/bloxui/blox\"\n\n")
+	b.WriteString("import x \"github.com/plainkit/blox\"\n\n")
 	fmt.Fprintf(&b, "// %s creates a %s Lucide icon.\n", funcName, docTitle)
 	fmt.Fprintf(&b, "func %s(args ...x.SvgArg) x.Node {\n", funcName)
 	fmt.Fprintf(&b, "\tsvgArgs := buildLucideArgs(\"%s\", args)\n", className)

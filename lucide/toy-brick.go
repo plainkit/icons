@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // ToyBrick creates a Toy Brick Lucide icon.
 func ToyBrick(args ...x.SvgArg) x.Node {

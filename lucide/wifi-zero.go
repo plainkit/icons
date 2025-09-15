@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // WifiZero creates a Wifi Zero Lucide icon.
 func WifiZero(args ...x.SvgArg) x.Node {

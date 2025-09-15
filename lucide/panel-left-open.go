@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // PanelLeftOpen creates a Panel Left Open Lucide icon.
 func PanelLeftOpen(args ...x.SvgArg) x.Node {

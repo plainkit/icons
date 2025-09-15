@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // UserStar creates a User Star Lucide icon.
 func UserStar(args ...x.SvgArg) x.Node {

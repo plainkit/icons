@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // ChartPie creates a Chart Pie Lucide icon.
 func ChartPie(args ...x.SvgArg) x.Node {

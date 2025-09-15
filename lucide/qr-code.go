@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // QrCode creates a Qr Code Lucide icon.
 func QrCode(args ...x.SvgArg) x.Node {

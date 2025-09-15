@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Sigma creates a Sigma Lucide icon.
 func Sigma(args ...x.SvgArg) x.Node {

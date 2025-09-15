@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Ampersand creates a Ampersand Lucide icon.
 func Ampersand(args ...x.SvgArg) x.Node {

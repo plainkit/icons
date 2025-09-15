@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // CircleOff creates a Circle Off Lucide icon.
 func CircleOff(args ...x.SvgArg) x.Node {

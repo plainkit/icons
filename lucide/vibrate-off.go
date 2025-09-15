@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // VibrateOff creates a Vibrate Off Lucide icon.
 func VibrateOff(args ...x.SvgArg) x.Node {

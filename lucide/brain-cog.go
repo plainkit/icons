@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // BrainCog creates a Brain Cog Lucide icon.
 func BrainCog(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // CodeXml creates a Code Xml Lucide icon.
 func CodeXml(args ...x.SvgArg) x.Node {

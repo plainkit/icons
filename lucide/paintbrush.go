@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Paintbrush creates a Paintbrush Lucide icon.
 func Paintbrush(args ...x.SvgArg) x.Node {

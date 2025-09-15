@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // MilkOff creates a Milk Off Lucide icon.
 func MilkOff(args ...x.SvgArg) x.Node {

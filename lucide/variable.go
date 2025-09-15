@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Variable creates a Variable Lucide icon.
 func Variable(args ...x.SvgArg) x.Node {

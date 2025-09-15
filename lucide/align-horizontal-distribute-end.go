@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // AlignHorizontalDistributeEnd creates a Align Horizontal Distribute End Lucide icon.
 func AlignHorizontalDistributeEnd(args ...x.SvgArg) x.Node {

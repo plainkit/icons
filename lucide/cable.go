@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Cable creates a Cable Lucide icon.
 func Cable(args ...x.SvgArg) x.Node {

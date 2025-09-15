@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // WindArrowDown creates a Wind Arrow Down Lucide icon.
 func WindArrowDown(args ...x.SvgArg) x.Node {

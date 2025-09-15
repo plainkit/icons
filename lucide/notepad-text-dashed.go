@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // NotepadTextDashed creates a Notepad Text Dashed Lucide icon.
 func NotepadTextDashed(args ...x.SvgArg) x.Node {

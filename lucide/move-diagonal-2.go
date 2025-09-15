@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // MoveDiagonal2 creates a Move Diagonal 2 Lucide icon.
 func MoveDiagonal2(args ...x.SvgArg) x.Node {

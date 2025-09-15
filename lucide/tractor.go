@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Tractor creates a Tractor Lucide icon.
 func Tractor(args ...x.SvgArg) x.Node {

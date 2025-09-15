@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // ToolCase creates a Tool Case Lucide icon.
 func ToolCase(args ...x.SvgArg) x.Node {

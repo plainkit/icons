@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Anchor creates a Anchor Lucide icon.
 func Anchor(args ...x.SvgArg) x.Node {

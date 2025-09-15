@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Lectern creates a Lectern Lucide icon.
 func Lectern(args ...x.SvgArg) x.Node {

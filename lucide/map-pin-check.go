@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // MapPinCheck creates a Map Pin Check Lucide icon.
 func MapPinCheck(args ...x.SvgArg) x.Node {

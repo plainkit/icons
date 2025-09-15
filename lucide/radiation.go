@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Radiation creates a Radiation Lucide icon.
 func Radiation(args ...x.SvgArg) x.Node {

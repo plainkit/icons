@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // ImageUp creates a Image Up Lucide icon.
 func ImageUp(args ...x.SvgArg) x.Node {

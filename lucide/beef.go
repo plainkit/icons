@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Beef creates a Beef Lucide icon.
 func Beef(args ...x.SvgArg) x.Node {

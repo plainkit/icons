@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // SquarePower creates a Square Power Lucide icon.
 func SquarePower(args ...x.SvgArg) x.Node {

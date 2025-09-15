@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // MonitorDown creates a Monitor Down Lucide icon.
 func MonitorDown(args ...x.SvgArg) x.Node {

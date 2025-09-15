@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // ShieldAlert creates a Shield Alert Lucide icon.
 func ShieldAlert(args ...x.SvgArg) x.Node {

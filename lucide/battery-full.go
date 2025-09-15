@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // BatteryFull creates a Battery Full Lucide icon.
 func BatteryFull(args ...x.SvgArg) x.Node {

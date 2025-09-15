@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // BringToFront creates a Bring To Front Lucide icon.
 func BringToFront(args ...x.SvgArg) x.Node {

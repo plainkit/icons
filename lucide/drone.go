@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Drone creates a Drone Lucide icon.
 func Drone(args ...x.SvgArg) x.Node {

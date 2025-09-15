@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // SignalMedium creates a Signal Medium Lucide icon.
 func SignalMedium(args ...x.SvgArg) x.Node {

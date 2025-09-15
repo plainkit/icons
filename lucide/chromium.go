@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Chromium creates a Chromium Lucide icon.
 func Chromium(args ...x.SvgArg) x.Node {

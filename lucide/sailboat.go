@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Sailboat creates a Sailboat Lucide icon.
 func Sailboat(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Factory creates a Factory Lucide icon.
 func Factory(args ...x.SvgArg) x.Node {

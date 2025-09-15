@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // ChartColumnIncreasing creates a Chart Column Increasing Lucide icon.
 func ChartColumnIncreasing(args ...x.SvgArg) x.Node {

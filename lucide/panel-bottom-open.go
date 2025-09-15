@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // PanelBottomOpen creates a Panel Bottom Open Lucide icon.
 func PanelBottomOpen(args ...x.SvgArg) x.Node {

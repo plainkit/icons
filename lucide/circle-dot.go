@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // CircleDot creates a Circle Dot Lucide icon.
 func CircleDot(args ...x.SvgArg) x.Node {

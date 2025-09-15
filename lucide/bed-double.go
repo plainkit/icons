@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // BedDouble creates a Bed Double Lucide icon.
 func BedDouble(args ...x.SvgArg) x.Node {

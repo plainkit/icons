@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // UserSearch creates a User Search Lucide icon.
 func UserSearch(args ...x.SvgArg) x.Node {

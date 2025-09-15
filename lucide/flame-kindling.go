@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // FlameKindling creates a Flame Kindling Lucide icon.
 func FlameKindling(args ...x.SvgArg) x.Node {

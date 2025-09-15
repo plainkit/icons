@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Columns3 creates a Columns 3 Lucide icon.
 func Columns3(args ...x.SvgArg) x.Node {

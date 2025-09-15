@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // StepBack creates a Step Back Lucide icon.
 func StepBack(args ...x.SvgArg) x.Node {

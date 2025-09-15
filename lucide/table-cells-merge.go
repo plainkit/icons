@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // TableCellsMerge creates a Table Cells Merge Lucide icon.
 func TableCellsMerge(args ...x.SvgArg) x.Node {

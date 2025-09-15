@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Tally1 creates a Tally 1 Lucide icon.
 func Tally1(args ...x.SvgArg) x.Node {

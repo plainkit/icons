@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Bot creates a Bot Lucide icon.
 func Bot(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // BetweenVerticalStart creates a Between Vertical Start Lucide icon.
 func BetweenVerticalStart(args ...x.SvgArg) x.Node {

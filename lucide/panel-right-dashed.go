@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // PanelRightDashed creates a Panel Right Dashed Lucide icon.
 func PanelRightDashed(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // CarFront creates a Car Front Lucide icon.
 func CarFront(args ...x.SvgArg) x.Node {

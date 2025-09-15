@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // ListRestart creates a List Restart Lucide icon.
 func ListRestart(args ...x.SvgArg) x.Node {

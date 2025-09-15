@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Drill creates a Drill Lucide icon.
 func Drill(args ...x.SvgArg) x.Node {

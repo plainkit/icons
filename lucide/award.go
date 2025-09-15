@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Award creates a Award Lucide icon.
 func Award(args ...x.SvgArg) x.Node {

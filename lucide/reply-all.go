@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // ReplyAll creates a Reply All Lucide icon.
 func ReplyAll(args ...x.SvgArg) x.Node {

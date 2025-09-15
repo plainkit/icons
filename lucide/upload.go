@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Upload creates a Upload Lucide icon.
 func Upload(args ...x.SvgArg) x.Node {

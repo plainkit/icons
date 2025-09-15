@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Mars creates a Mars Lucide icon.
 func Mars(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Cone creates a Cone Lucide icon.
 func Cone(args ...x.SvgArg) x.Node {

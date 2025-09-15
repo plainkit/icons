@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // iconSizeArg represents a size argument that sets both width and height to the same value.
 type iconSizeArg struct {

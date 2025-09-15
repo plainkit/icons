@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // TextSelect creates a Text Select Lucide icon.
 func TextSelect(args ...x.SvgArg) x.Node {

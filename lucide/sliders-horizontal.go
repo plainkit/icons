@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // SlidersHorizontal creates a Sliders Horizontal Lucide icon.
 func SlidersHorizontal(args ...x.SvgArg) x.Node {

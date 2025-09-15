@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // JapaneseYen creates a Japanese Yen Lucide icon.
 func JapaneseYen(args ...x.SvgArg) x.Node {

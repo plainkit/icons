@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // PartyPopper creates a Party Popper Lucide icon.
 func PartyPopper(args ...x.SvgArg) x.Node {

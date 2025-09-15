@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // ArrowBigLeft creates a Arrow Big Left Lucide icon.
 func ArrowBigLeft(args ...x.SvgArg) x.Node {

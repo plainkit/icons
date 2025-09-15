@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // DecimalsArrowLeft creates a Decimals Arrow Left Lucide icon.
 func DecimalsArrowLeft(args ...x.SvgArg) x.Node {

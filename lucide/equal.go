@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Equal creates a Equal Lucide icon.
 func Equal(args ...x.SvgArg) x.Node {

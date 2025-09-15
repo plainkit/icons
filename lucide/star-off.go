@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // StarOff creates a Star Off Lucide icon.
 func StarOff(args ...x.SvgArg) x.Node {

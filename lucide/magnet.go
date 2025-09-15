@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Magnet creates a Magnet Lucide icon.
 func Magnet(args ...x.SvgArg) x.Node {

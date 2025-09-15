@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // MicVocal creates a Mic Vocal Lucide icon.
 func MicVocal(args ...x.SvgArg) x.Node {

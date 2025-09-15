@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // ChevronsLeftRightEllipsis creates a Chevrons Left Right Ellipsis Lucide icon.
 func ChevronsLeftRightEllipsis(args ...x.SvgArg) x.Node {

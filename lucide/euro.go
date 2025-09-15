@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Euro creates a Euro Lucide icon.
 func Euro(args ...x.SvgArg) x.Node {

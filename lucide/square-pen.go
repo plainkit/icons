@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // SquarePen creates a Square Pen Lucide icon.
 func SquarePen(args ...x.SvgArg) x.Node {

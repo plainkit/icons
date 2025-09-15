@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Cloud creates a Cloud Lucide icon.
 func Cloud(args ...x.SvgArg) x.Node {

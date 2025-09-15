@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Brackets creates a Brackets Lucide icon.
 func Brackets(args ...x.SvgArg) x.Node {

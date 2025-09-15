@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // PillBottle creates a Pill Bottle Lucide icon.
 func PillBottle(args ...x.SvgArg) x.Node {

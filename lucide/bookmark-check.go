@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // BookmarkCheck creates a Bookmark Check Lucide icon.
 func BookmarkCheck(args ...x.SvgArg) x.Node {

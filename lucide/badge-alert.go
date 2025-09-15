@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // BadgeAlert creates a Badge Alert Lucide icon.
 func BadgeAlert(args ...x.SvgArg) x.Node {

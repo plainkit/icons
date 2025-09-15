@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // SendToBack creates a Send To Back Lucide icon.
 func SendToBack(args ...x.SvgArg) x.Node {

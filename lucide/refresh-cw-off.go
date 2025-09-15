@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // RefreshCwOff creates a Refresh Cw Off Lucide icon.
 func RefreshCwOff(args ...x.SvgArg) x.Node {

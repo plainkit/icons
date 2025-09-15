@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // TentTree creates a Tent Tree Lucide icon.
 func TentTree(args ...x.SvgArg) x.Node {

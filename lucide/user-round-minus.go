@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // UserRoundMinus creates a User Round Minus Lucide icon.
 func UserRoundMinus(args ...x.SvgArg) x.Node {

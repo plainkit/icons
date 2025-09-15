@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // AppWindowMac creates a App Window Mac Lucide icon.
 func AppWindowMac(args ...x.SvgArg) x.Node {

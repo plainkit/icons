@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Drumstick creates a Drumstick Lucide icon.
 func Drumstick(args ...x.SvgArg) x.Node {

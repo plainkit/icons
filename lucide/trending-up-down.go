@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // TrendingUpDown creates a Trending Up Down Lucide icon.
 func TrendingUpDown(args ...x.SvgArg) x.Node {

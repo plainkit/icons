@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Blinds creates a Blinds Lucide icon.
 func Blinds(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // VectorSquare creates a Vector Square Lucide icon.
 func VectorSquare(args ...x.SvgArg) x.Node {

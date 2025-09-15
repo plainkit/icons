@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Regex creates a Regex Lucide icon.
 func Regex(args ...x.SvgArg) x.Node {

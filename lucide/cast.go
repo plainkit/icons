@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Cast creates a Cast Lucide icon.
 func Cast(args ...x.SvgArg) x.Node {

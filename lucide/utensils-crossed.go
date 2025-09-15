@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // UtensilsCrossed creates a Utensils Crossed Lucide icon.
 func UtensilsCrossed(args ...x.SvgArg) x.Node {

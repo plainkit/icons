@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Zap creates a Zap Lucide icon.
 func Zap(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // ScrollText creates a Scroll Text Lucide icon.
 func ScrollText(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // SquareBottomDashedScissors creates a Square Bottom Dashed Scissors Lucide icon.
 func SquareBottomDashedScissors(args ...x.SvgArg) x.Node {

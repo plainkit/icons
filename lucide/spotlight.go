@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Spotlight creates a Spotlight Lucide icon.
 func Spotlight(args ...x.SvgArg) x.Node {

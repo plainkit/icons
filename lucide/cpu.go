@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Cpu creates a Cpu Lucide icon.
 func Cpu(args ...x.SvgArg) x.Node {

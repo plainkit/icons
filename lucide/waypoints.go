@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Waypoints creates a Waypoints Lucide icon.
 func Waypoints(args ...x.SvgArg) x.Node {

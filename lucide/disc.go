@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Disc creates a Disc Lucide icon.
 func Disc(args ...x.SvgArg) x.Node {

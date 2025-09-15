@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // SkipForward creates a Skip Forward Lucide icon.
 func SkipForward(args ...x.SvgArg) x.Node {

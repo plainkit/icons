@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // TableOfContents creates a Table Of Contents Lucide icon.
 func TableOfContents(args ...x.SvgArg) x.Node {

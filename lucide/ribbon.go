@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Ribbon creates a Ribbon Lucide icon.
 func Ribbon(args ...x.SvgArg) x.Node {

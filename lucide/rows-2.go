@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Rows2 creates a Rows 2 Lucide icon.
 func Rows2(args ...x.SvgArg) x.Node {

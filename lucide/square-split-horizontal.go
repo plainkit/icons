@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // SquareSplitHorizontal creates a Square Split Horizontal Lucide icon.
 func SquareSplitHorizontal(args ...x.SvgArg) x.Node {

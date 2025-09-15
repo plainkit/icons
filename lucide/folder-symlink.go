@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // FolderSymlink creates a Folder Symlink Lucide icon.
 func FolderSymlink(args ...x.SvgArg) x.Node {

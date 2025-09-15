@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // ClosedCaption creates a Closed Caption Lucide icon.
 func ClosedCaption(args ...x.SvgArg) x.Node {

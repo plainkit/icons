@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Leaf creates a Leaf Lucide icon.
 func Leaf(args ...x.SvgArg) x.Node {

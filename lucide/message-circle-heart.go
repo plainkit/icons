@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // MessageCircleHeart creates a Message Circle Heart Lucide icon.
 func MessageCircleHeart(args ...x.SvgArg) x.Node {

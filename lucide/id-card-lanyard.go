@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // IdCardLanyard creates a Id Card Lanyard Lucide icon.
 func IdCardLanyard(args ...x.SvgArg) x.Node {

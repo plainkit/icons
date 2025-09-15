@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // EllipsisVertical creates a Ellipsis Vertical Lucide icon.
 func EllipsisVertical(args ...x.SvgArg) x.Node {

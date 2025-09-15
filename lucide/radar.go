@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Radar creates a Radar Lucide icon.
 func Radar(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // ArrowUpFromDot creates a Arrow Up From Dot Lucide icon.
 func ArrowUpFromDot(args ...x.SvgArg) x.Node {

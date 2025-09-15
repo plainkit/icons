@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // AtSign creates a At Sign Lucide icon.
 func AtSign(args ...x.SvgArg) x.Node {

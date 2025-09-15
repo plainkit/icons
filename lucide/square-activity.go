@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // SquareActivity creates a Square Activity Lucide icon.
 func SquareActivity(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // MouseOff creates a Mouse Off Lucide icon.
 func MouseOff(args ...x.SvgArg) x.Node {

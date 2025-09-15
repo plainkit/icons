@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Sprout creates a Sprout Lucide icon.
 func Sprout(args ...x.SvgArg) x.Node {

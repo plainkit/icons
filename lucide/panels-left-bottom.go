@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // PanelsLeftBottom creates a Panels Left Bottom Lucide icon.
 func PanelsLeftBottom(args ...x.SvgArg) x.Node {

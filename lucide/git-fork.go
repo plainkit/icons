@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // GitFork creates a Git Fork Lucide icon.
 func GitFork(args ...x.SvgArg) x.Node {

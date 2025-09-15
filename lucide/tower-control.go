@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // TowerControl creates a Tower Control Lucide icon.
 func TowerControl(args ...x.SvgArg) x.Node {

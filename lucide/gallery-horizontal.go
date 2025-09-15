@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // GalleryHorizontal creates a Gallery Horizontal Lucide icon.
 func GalleryHorizontal(args ...x.SvgArg) x.Node {

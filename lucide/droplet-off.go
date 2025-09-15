@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // DropletOff creates a Droplet Off Lucide icon.
 func DropletOff(args ...x.SvgArg) x.Node {

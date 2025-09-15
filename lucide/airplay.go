@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Airplay creates a Airplay Lucide icon.
 func Airplay(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // TouchpadOff creates a Touchpad Off Lucide icon.
 func TouchpadOff(args ...x.SvgArg) x.Node {

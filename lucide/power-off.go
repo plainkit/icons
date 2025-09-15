@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // PowerOff creates a Power Off Lucide icon.
 func PowerOff(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // CircleEllipsis creates a Circle Ellipsis Lucide icon.
 func CircleEllipsis(args ...x.SvgArg) x.Node {

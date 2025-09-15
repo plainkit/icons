@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Ungroup creates a Ungroup Lucide icon.
 func Ungroup(args ...x.SvgArg) x.Node {

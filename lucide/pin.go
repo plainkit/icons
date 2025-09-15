@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Pin creates a Pin Lucide icon.
 func Pin(args ...x.SvgArg) x.Node {

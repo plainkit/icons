@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // CandyOff creates a Candy Off Lucide icon.
 func CandyOff(args ...x.SvgArg) x.Node {

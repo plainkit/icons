@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // CloudHail creates a Cloud Hail Lucide icon.
 func CloudHail(args ...x.SvgArg) x.Node {

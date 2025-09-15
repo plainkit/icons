@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // ThumbsUp creates a Thumbs Up Lucide icon.
 func ThumbsUp(args ...x.SvgArg) x.Node {

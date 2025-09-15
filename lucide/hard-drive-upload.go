@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // HardDriveUpload creates a Hard Drive Upload Lucide icon.
 func HardDriveUpload(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // ListEnd creates a List End Lucide icon.
 func ListEnd(args ...x.SvgArg) x.Node {

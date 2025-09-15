@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Podcast creates a Podcast Lucide icon.
 func Podcast(args ...x.SvgArg) x.Node {

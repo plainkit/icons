@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // Space creates a Space Lucide icon.
 func Space(args ...x.SvgArg) x.Node {

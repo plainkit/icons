@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/bloxui/blox"
+import x "github.com/plainkit/blox"
 
 // SquareDivide creates a Square Divide Lucide icon.
 func SquareDivide(args ...x.SvgArg) x.Node {
