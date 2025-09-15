@@ -21,7 +21,7 @@ func TestALargeSmall_SVGMatchesReference(t *testing.T) {
 	// Load reference SVG
 	f, err := os.Open("icons/a-large-small.svg")
 	require.NoError(t, err, "open reference SVG")
-	defer func() { _ = f.Close() }()
+	defer f.Close()
 
 	wantNode, err := parseXMLToNode(f)
 	require.NoError(t, err, "parse reference SVG")

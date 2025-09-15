@@ -57,7 +57,7 @@ type childCall struct {
 func main() {
 	iconsDir := flag.String("icons", "icons", "Path to the icons directory containing .svg files")
 	outDir := flag.String("out", ".", "Output directory for generated .go files (defaults to current dir)")
-	overwrite := flag.Bool("overwrite", false, "Overwrite existing Go files if present")
+	overwrite := flag.Bool("overwrite", true, "Overwrite existing Go files if present")
 	only := flag.String("only", "", "Comma-separated list of base icon names (without .svg) to generate; empty for all")
 	flag.Parse()
 

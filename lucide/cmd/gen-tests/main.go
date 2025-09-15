@@ -13,7 +13,7 @@ import (
 
 func main() {
 	dir := flag.String("dir", "lucide", "Path to the lucide directory")
-	overwrite := flag.Bool("overwrite", false, "Overwrite existing test files")
+	overwrite := flag.Bool("overwrite", true, "Overwrite existing test files")
 	flag.Parse()
 
 	// Resolve directory to absolute path for clarity
