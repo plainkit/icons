@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Shuffle creates a Shuffle Lucide icon.
 func Shuffle(args ...x.SvgArg) x.Node {

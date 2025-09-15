@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // PencilOff creates a Pencil Off Lucide icon.
 func PencilOff(args ...x.SvgArg) x.Node {

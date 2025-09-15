@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // LampDesk creates a Lamp Desk Lucide icon.
 func LampDesk(args ...x.SvgArg) x.Node {

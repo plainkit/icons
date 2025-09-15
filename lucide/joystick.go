@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Joystick creates a Joystick Lucide icon.
 func Joystick(args ...x.SvgArg) x.Node {

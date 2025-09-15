@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // RollerCoaster creates a Roller Coaster Lucide icon.
 func RollerCoaster(args ...x.SvgArg) x.Node {

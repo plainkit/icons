@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // GitCompareArrows creates a Git Compare Arrows Lucide icon.
 func GitCompareArrows(args ...x.SvgArg) x.Node {

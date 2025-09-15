@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // TicketCheck creates a Ticket Check Lucide icon.
 func TicketCheck(args ...x.SvgArg) x.Node {

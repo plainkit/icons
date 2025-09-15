@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // CircleCheckBig creates a Circle Check Big Lucide icon.
 func CircleCheckBig(args ...x.SvgArg) x.Node {

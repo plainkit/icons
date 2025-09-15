@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // HatGlasses creates a Hat Glasses Lucide icon.
 func HatGlasses(args ...x.SvgArg) x.Node {

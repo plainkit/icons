@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Copyright creates a Copyright Lucide icon.
 func Copyright(args ...x.SvgArg) x.Node {

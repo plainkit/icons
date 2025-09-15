@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Hammer creates a Hammer Lucide icon.
 func Hammer(args ...x.SvgArg) x.Node {

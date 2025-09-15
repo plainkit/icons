@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // ClipboardType creates a Clipboard Type Lucide icon.
 func ClipboardType(args ...x.SvgArg) x.Node {

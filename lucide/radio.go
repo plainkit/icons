@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Radio creates a Radio Lucide icon.
 func Radio(args ...x.SvgArg) x.Node {

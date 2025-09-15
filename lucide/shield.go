@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Shield creates a Shield Lucide icon.
 func Shield(args ...x.SvgArg) x.Node {

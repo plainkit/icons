@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // GitGraph creates a Git Graph Lucide icon.
 func GitGraph(args ...x.SvgArg) x.Node {

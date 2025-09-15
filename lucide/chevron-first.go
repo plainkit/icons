@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // ChevronFirst creates a Chevron First Lucide icon.
 func ChevronFirst(args ...x.SvgArg) x.Node {

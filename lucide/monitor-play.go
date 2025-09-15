@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // MonitorPlay creates a Monitor Play Lucide icon.
 func MonitorPlay(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // UserRoundCheck creates a User Round Check Lucide icon.
 func UserRoundCheck(args ...x.SvgArg) x.Node {

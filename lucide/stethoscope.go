@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Stethoscope creates a Stethoscope Lucide icon.
 func Stethoscope(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // EarOff creates a Ear Off Lucide icon.
 func EarOff(args ...x.SvgArg) x.Node {

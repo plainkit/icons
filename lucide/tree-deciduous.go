@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // TreeDeciduous creates a Tree Deciduous Lucide icon.
 func TreeDeciduous(args ...x.SvgArg) x.Node {

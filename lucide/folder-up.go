@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // FolderUp creates a Folder Up Lucide icon.
 func FolderUp(args ...x.SvgArg) x.Node {

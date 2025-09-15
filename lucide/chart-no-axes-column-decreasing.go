@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // ChartNoAxesColumnDecreasing creates a Chart No Axes Column Decreasing Lucide icon.
 func ChartNoAxesColumnDecreasing(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // CalendarSearch creates a Calendar Search Lucide icon.
 func CalendarSearch(args ...x.SvgArg) x.Node {

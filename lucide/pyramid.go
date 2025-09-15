@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Pyramid creates a Pyramid Lucide icon.
 func Pyramid(args ...x.SvgArg) x.Node {

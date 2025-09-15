@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // BookmarkX creates a Bookmark X Lucide icon.
 func BookmarkX(args ...x.SvgArg) x.Node {

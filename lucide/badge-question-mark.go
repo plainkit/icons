@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // BadgeQuestionMark creates a Badge Question Mark Lucide icon.
 func BadgeQuestionMark(args ...x.SvgArg) x.Node {

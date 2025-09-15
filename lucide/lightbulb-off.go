@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // LightbulbOff creates a Lightbulb Off Lucide icon.
 func LightbulbOff(args ...x.SvgArg) x.Node {

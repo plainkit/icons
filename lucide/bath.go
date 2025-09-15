@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Bath creates a Bath Lucide icon.
 func Bath(args ...x.SvgArg) x.Node {

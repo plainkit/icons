@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Fan creates a Fan Lucide icon.
 func Fan(args ...x.SvgArg) x.Node {

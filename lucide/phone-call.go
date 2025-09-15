@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // PhoneCall creates a Phone Call Lucide icon.
 func PhoneCall(args ...x.SvgArg) x.Node {

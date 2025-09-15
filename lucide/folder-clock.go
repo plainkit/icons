@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // FolderClock creates a Folder Clock Lucide icon.
 func FolderClock(args ...x.SvgArg) x.Node {

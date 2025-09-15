@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // ImagePlay creates a Image Play Lucide icon.
 func ImagePlay(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Puzzle creates a Puzzle Lucide icon.
 func Puzzle(args ...x.SvgArg) x.Node {

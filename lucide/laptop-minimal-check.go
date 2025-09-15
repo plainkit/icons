@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // LaptopMinimalCheck creates a Laptop Minimal Check Lucide icon.
 func LaptopMinimalCheck(args ...x.SvgArg) x.Node {

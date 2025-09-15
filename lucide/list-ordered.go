@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // ListOrdered creates a List Ordered Lucide icon.
 func ListOrdered(args ...x.SvgArg) x.Node {

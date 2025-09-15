@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // BowArrow creates a Bow Arrow Lucide icon.
 func BowArrow(args ...x.SvgArg) x.Node {

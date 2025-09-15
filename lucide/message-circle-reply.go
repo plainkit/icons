@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // MessageCircleReply creates a Message Circle Reply Lucide icon.
 func MessageCircleReply(args ...x.SvgArg) x.Node {

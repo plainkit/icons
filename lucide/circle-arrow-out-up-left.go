@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // CircleArrowOutUpLeft creates a Circle Arrow Out Up Left Lucide icon.
 func CircleArrowOutUpLeft(args ...x.SvgArg) x.Node {

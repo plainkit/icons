@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // ListIndentDecrease creates a List Indent Decrease Lucide icon.
 func ListIndentDecrease(args ...x.SvgArg) x.Node {

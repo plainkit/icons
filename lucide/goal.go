@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Goal creates a Goal Lucide icon.
 func Goal(args ...x.SvgArg) x.Node {

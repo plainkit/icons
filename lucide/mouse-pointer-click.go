@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // MousePointerClick creates a Mouse Pointer Click Lucide icon.
 func MousePointerClick(args ...x.SvgArg) x.Node {

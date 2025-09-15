@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // SquarePlay creates a Square Play Lucide icon.
 func SquarePlay(args ...x.SvgArg) x.Node {

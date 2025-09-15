@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // SquaresExclude creates a Squares Exclude Lucide icon.
 func SquaresExclude(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Tablets creates a Tablets Lucide icon.
 func Tablets(args ...x.SvgArg) x.Node {

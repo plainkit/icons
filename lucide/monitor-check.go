@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // MonitorCheck creates a Monitor Check Lucide icon.
 func MonitorCheck(args ...x.SvgArg) x.Node {

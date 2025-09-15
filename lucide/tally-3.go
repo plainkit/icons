@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Tally3 creates a Tally 3 Lucide icon.
 func Tally3(args ...x.SvgArg) x.Node {

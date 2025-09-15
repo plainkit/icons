@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Store creates a Store Lucide icon.
 func Store(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // CalendarSync creates a Calendar Sync Lucide icon.
 func CalendarSync(args ...x.SvgArg) x.Node {

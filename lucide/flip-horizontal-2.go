@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // FlipHorizontal2 creates a Flip Horizontal 2 Lucide icon.
 func FlipHorizontal2(args ...x.SvgArg) x.Node {

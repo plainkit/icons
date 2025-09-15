@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Radius creates a Radius Lucide icon.
 func Radius(args ...x.SvgArg) x.Node {

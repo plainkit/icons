@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // GripVertical creates a Grip Vertical Lucide icon.
 func GripVertical(args ...x.SvgArg) x.Node {

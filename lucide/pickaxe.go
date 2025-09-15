@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Pickaxe creates a Pickaxe Lucide icon.
 func Pickaxe(args ...x.SvgArg) x.Node {

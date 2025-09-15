@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Router creates a Router Lucide icon.
 func Router(args ...x.SvgArg) x.Node {

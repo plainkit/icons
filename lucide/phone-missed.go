@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // PhoneMissed creates a Phone Missed Lucide icon.
 func PhoneMissed(args ...x.SvgArg) x.Node {

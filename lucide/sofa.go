@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Sofa creates a Sofa Lucide icon.
 func Sofa(args ...x.SvgArg) x.Node {

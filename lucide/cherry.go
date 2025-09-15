@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Cherry creates a Cherry Lucide icon.
 func Cherry(args ...x.SvgArg) x.Node {

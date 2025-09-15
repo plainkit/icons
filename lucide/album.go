@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Album creates a Album Lucide icon.
 func Album(args ...x.SvgArg) x.Node {

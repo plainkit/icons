@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // SendHorizontal creates a Send Horizontal Lucide icon.
 func SendHorizontal(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // SquircleDashed creates a Squircle Dashed Lucide icon.
 func SquircleDashed(args ...x.SvgArg) x.Node {

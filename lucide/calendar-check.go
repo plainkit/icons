@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // CalendarCheck creates a Calendar Check Lucide icon.
 func CalendarCheck(args ...x.SvgArg) x.Node {

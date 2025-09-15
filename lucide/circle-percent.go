@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // CirclePercent creates a Circle Percent Lucide icon.
 func CirclePercent(args ...x.SvgArg) x.Node {

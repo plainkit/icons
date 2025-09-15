@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Shapes creates a Shapes Lucide icon.
 func Shapes(args ...x.SvgArg) x.Node {

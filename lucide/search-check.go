@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // SearchCheck creates a Search Check Lucide icon.
 func SearchCheck(args ...x.SvgArg) x.Node {

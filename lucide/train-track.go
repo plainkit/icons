@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // TrainTrack creates a Train Track Lucide icon.
 func TrainTrack(args ...x.SvgArg) x.Node {

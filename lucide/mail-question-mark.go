@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // MailQuestionMark creates a Mail Question Mark Lucide icon.
 func MailQuestionMark(args ...x.SvgArg) x.Node {

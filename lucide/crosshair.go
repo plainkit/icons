@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Crosshair creates a Crosshair Lucide icon.
 func Crosshair(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Unlink creates a Unlink Lucide icon.
 func Unlink(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Frown creates a Frown Lucide icon.
 func Frown(args ...x.SvgArg) x.Node {

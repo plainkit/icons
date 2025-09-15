@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // CircleStop creates a Circle Stop Lucide icon.
 func CircleStop(args ...x.SvgArg) x.Node {

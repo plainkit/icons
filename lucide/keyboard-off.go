@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // KeyboardOff creates a Keyboard Off Lucide icon.
 func KeyboardOff(args ...x.SvgArg) x.Node {

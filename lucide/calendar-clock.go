@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // CalendarClock creates a Calendar Clock Lucide icon.
 func CalendarClock(args ...x.SvgArg) x.Node {

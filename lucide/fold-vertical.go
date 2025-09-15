@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // FoldVertical creates a Fold Vertical Lucide icon.
 func FoldVertical(args ...x.SvgArg) x.Node {

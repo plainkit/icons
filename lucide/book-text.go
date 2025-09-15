@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // BookText creates a Book Text Lucide icon.
 func BookText(args ...x.SvgArg) x.Node {

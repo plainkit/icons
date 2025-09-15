@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Microchip creates a Microchip Lucide icon.
 func Microchip(args ...x.SvgArg) x.Node {

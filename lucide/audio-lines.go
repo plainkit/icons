@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // AudioLines creates a Audio Lines Lucide icon.
 func AudioLines(args ...x.SvgArg) x.Node {

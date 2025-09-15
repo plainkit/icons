@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // BadgeCent creates a Badge Cent Lucide icon.
 func BadgeCent(args ...x.SvgArg) x.Node {

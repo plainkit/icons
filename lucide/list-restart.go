@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // ListRestart creates a List Restart Lucide icon.
 func ListRestart(args ...x.SvgArg) x.Node {

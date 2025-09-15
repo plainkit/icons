@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Navigation creates a Navigation Lucide icon.
 func Navigation(args ...x.SvgArg) x.Node {

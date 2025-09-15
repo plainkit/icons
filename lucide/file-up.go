@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // FileUp creates a File Up Lucide icon.
 func FileUp(args ...x.SvgArg) x.Node {

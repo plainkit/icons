@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Rabbit creates a Rabbit Lucide icon.
 func Rabbit(args ...x.SvgArg) x.Node {

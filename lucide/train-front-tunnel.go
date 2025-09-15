@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // TrainFrontTunnel creates a Train Front Tunnel Lucide icon.
 func TrainFrontTunnel(args ...x.SvgArg) x.Node {

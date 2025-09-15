@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // TreePine creates a Tree Pine Lucide icon.
 func TreePine(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // CircleDot creates a Circle Dot Lucide icon.
 func CircleDot(args ...x.SvgArg) x.Node {

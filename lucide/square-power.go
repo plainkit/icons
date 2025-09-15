@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // SquarePower creates a Square Power Lucide icon.
 func SquarePower(args ...x.SvgArg) x.Node {

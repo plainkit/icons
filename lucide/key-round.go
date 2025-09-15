@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // KeyRound creates a Key Round Lucide icon.
 func KeyRound(args ...x.SvgArg) x.Node {

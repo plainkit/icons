@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // SwatchBook creates a Swatch Book Lucide icon.
 func SwatchBook(args ...x.SvgArg) x.Node {

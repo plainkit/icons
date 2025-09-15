@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // CircleQuestionMark creates a Circle Question Mark Lucide icon.
 func CircleQuestionMark(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Backpack creates a Backpack Lucide icon.
 func Backpack(args ...x.SvgArg) x.Node {

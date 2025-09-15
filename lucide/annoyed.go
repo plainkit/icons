@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Annoyed creates a Annoyed Lucide icon.
 func Annoyed(args ...x.SvgArg) x.Node {

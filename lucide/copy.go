@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Copy creates a Copy Lucide icon.
 func Copy(args ...x.SvgArg) x.Node {

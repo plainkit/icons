@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Coffee creates a Coffee Lucide icon.
 func Coffee(args ...x.SvgArg) x.Node {

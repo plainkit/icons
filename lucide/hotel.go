@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Hotel creates a Hotel Lucide icon.
 func Hotel(args ...x.SvgArg) x.Node {

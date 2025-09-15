@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // HandHelping creates a Hand Helping Lucide icon.
 func HandHelping(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // MonitorPause creates a Monitor Pause Lucide icon.
 func MonitorPause(args ...x.SvgArg) x.Node {

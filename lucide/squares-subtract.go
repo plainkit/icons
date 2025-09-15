@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // SquaresSubtract creates a Squares Subtract Lucide icon.
 func SquaresSubtract(args ...x.SvgArg) x.Node {

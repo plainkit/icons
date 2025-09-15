@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // FlagOff creates a Flag Off Lucide icon.
 func FlagOff(args ...x.SvgArg) x.Node {

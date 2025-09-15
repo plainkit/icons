@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Undo creates a Undo Lucide icon.
 func Undo(args ...x.SvgArg) x.Node {

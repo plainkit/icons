@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // BrickWallFire creates a Brick Wall Fire Lucide icon.
 func BrickWallFire(args ...x.SvgArg) x.Node {

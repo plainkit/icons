@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // ArrowBigDown creates a Arrow Big Down Lucide icon.
 func ArrowBigDown(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // FlipVertical creates a Flip Vertical Lucide icon.
 func FlipVertical(args ...x.SvgArg) x.Node {

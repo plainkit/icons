@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Sun creates a Sun Lucide icon.
 func Sun(args ...x.SvgArg) x.Node {

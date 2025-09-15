@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Spool creates a Spool Lucide icon.
 func Spool(args ...x.SvgArg) x.Node {

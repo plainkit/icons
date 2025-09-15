@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // EllipsisVertical creates a Ellipsis Vertical Lucide icon.
 func EllipsisVertical(args ...x.SvgArg) x.Node {

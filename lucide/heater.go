@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Heater creates a Heater Lucide icon.
 func Heater(args ...x.SvgArg) x.Node {

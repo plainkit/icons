@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // RussianRuble creates a Russian Ruble Lucide icon.
 func RussianRuble(args ...x.SvgArg) x.Node {

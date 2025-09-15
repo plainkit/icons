@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // PackageOpen creates a Package Open Lucide icon.
 func PackageOpen(args ...x.SvgArg) x.Node {

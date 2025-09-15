@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Split creates a Split Lucide icon.
 func Split(args ...x.SvgArg) x.Node {

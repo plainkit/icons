@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // SignalZero creates a Signal Zero Lucide icon.
 func SignalZero(args ...x.SvgArg) x.Node {

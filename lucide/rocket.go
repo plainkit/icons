@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Rocket creates a Rocket Lucide icon.
 func Rocket(args ...x.SvgArg) x.Node {

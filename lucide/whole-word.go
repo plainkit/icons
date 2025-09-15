@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // WholeWord creates a Whole Word Lucide icon.
 func WholeWord(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // FolderInput creates a Folder Input Lucide icon.
 func FolderInput(args ...x.SvgArg) x.Node {

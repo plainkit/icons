@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // CircleUser creates a Circle User Lucide icon.
 func CircleUser(args ...x.SvgArg) x.Node {

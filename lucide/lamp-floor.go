@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // LampFloor creates a Lamp Floor Lucide icon.
 func LampFloor(args ...x.SvgArg) x.Node {

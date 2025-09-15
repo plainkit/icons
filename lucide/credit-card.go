@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // CreditCard creates a Credit Card Lucide icon.
 func CreditCard(args ...x.SvgArg) x.Node {

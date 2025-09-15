@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Music3 creates a Music 3 Lucide icon.
 func Music3(args ...x.SvgArg) x.Node {

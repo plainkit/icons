@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // FlaskConical creates a Flask Conical Lucide icon.
 func FlaskConical(args ...x.SvgArg) x.Node {

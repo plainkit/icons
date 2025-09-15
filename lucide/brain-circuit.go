@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // BrainCircuit creates a Brain Circuit Lucide icon.
 func BrainCircuit(args ...x.SvgArg) x.Node {

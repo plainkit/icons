@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Crop creates a Crop Lucide icon.
 func Crop(args ...x.SvgArg) x.Node {

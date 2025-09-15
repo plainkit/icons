@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Workflow creates a Workflow Lucide icon.
 func Workflow(args ...x.SvgArg) x.Node {

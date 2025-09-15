@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // CigaretteOff creates a Cigarette Off Lucide icon.
 func CigaretteOff(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Shell creates a Shell Lucide icon.
 func Shell(args ...x.SvgArg) x.Node {

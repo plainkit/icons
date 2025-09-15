@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Move3d creates a Move 3d Lucide icon.
 func Move3d(args ...x.SvgArg) x.Node {

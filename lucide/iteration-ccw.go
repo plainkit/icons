@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // IterationCcw creates a Iteration Ccw Lucide icon.
 func IterationCcw(args ...x.SvgArg) x.Node {

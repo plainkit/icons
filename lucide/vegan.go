@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Vegan creates a Vegan Lucide icon.
 func Vegan(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // UnfoldHorizontal creates a Unfold Horizontal Lucide icon.
 func UnfoldHorizontal(args ...x.SvgArg) x.Node {

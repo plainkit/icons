@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // ArrowDownLeft creates a Arrow Down Left Lucide icon.
 func ArrowDownLeft(args ...x.SvgArg) x.Node {

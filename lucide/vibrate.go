@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Vibrate creates a Vibrate Lucide icon.
 func Vibrate(args ...x.SvgArg) x.Node {

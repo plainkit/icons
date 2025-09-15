@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // CarTaxiFront creates a Car Taxi Front Lucide icon.
 func CarTaxiFront(args ...x.SvgArg) x.Node {

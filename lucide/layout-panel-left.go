@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // LayoutPanelLeft creates a Layout Panel Left Lucide icon.
 func LayoutPanelLeft(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Waves creates a Waves Lucide icon.
 func Waves(args ...x.SvgArg) x.Node {

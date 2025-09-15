@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // FileHeart creates a File Heart Lucide icon.
 func FileHeart(args ...x.SvgArg) x.Node {

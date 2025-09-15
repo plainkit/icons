@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // ListTree creates a List Tree Lucide icon.
 func ListTree(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // ShieldCheck creates a Shield Check Lucide icon.
 func ShieldCheck(args ...x.SvgArg) x.Node {

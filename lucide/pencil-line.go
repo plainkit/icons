@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // PencilLine creates a Pencil Line Lucide icon.
 func PencilLine(args ...x.SvgArg) x.Node {

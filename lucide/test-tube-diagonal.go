@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // TestTubeDiagonal creates a Test Tube Diagonal Lucide icon.
 func TestTubeDiagonal(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // FlagTriangleRight creates a Flag Triangle Right Lucide icon.
 func FlagTriangleRight(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // ChartNoAxesGantt creates a Chart No Axes Gantt Lucide icon.
 func ChartNoAxesGantt(args ...x.SvgArg) x.Node {

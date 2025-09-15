@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // CirclePlay creates a Circle Play Lucide icon.
 func CirclePlay(args ...x.SvgArg) x.Node {

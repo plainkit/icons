@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Dam creates a Dam Lucide icon.
 func Dam(args ...x.SvgArg) x.Node {

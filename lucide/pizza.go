@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Pizza creates a Pizza Lucide icon.
 func Pizza(args ...x.SvgArg) x.Node {

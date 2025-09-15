@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // BrickWall creates a Brick Wall Lucide icon.
 func BrickWall(args ...x.SvgArg) x.Node {

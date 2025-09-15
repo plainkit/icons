@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // ClockAlert creates a Clock Alert Lucide icon.
 func ClockAlert(args ...x.SvgArg) x.Node {

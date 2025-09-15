@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // PanelBottom creates a Panel Bottom Lucide icon.
 func PanelBottom(args ...x.SvgArg) x.Node {

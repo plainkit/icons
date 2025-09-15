@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // CircuitBoard creates a Circuit Board Lucide icon.
 func CircuitBoard(args ...x.SvgArg) x.Node {

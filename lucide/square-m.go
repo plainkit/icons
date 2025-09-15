@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // SquareM creates a Square M Lucide icon.
 func SquareM(args ...x.SvgArg) x.Node {

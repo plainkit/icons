@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // AlignVerticalDistributeCenter creates a Align Vertical Distribute Center Lucide icon.
 func AlignVerticalDistributeCenter(args ...x.SvgArg) x.Node {

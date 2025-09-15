@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Option creates a Option Lucide icon.
 func Option(args ...x.SvgArg) x.Node {

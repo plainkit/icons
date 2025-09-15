@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // FileVideoCamera creates a File Video Camera Lucide icon.
 func FileVideoCamera(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // AlignHorizontalJustifyStart creates a Align Horizontal Justify Start Lucide icon.
 func AlignHorizontalJustifyStart(args ...x.SvgArg) x.Node {

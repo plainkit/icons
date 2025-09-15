@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Nut creates a Nut Lucide icon.
 func Nut(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Medal creates a Medal Lucide icon.
 func Medal(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Parentheses creates a Parentheses Lucide icon.
 func Parentheses(args ...x.SvgArg) x.Node {

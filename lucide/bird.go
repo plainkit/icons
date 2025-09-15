@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Bird creates a Bird Lucide icon.
 func Bird(args ...x.SvgArg) x.Node {

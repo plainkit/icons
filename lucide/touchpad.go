@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Touchpad creates a Touchpad Lucide icon.
 func Touchpad(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Loader creates a Loader Lucide icon.
 func Loader(args ...x.SvgArg) x.Node {

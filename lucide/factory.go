@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Factory creates a Factory Lucide icon.
 func Factory(args ...x.SvgArg) x.Node {

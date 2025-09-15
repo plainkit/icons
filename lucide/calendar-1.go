@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Calendar1 creates a Calendar 1 Lucide icon.
 func Calendar1(args ...x.SvgArg) x.Node {

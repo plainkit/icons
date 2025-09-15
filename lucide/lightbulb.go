@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Lightbulb creates a Lightbulb Lucide icon.
 func Lightbulb(args ...x.SvgArg) x.Node {

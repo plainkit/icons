@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Pentagon creates a Pentagon Lucide icon.
 func Pentagon(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // SquareCheckBig creates a Square Check Big Lucide icon.
 func SquareCheckBig(args ...x.SvgArg) x.Node {

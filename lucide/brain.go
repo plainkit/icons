@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Brain creates a Brain Lucide icon.
 func Brain(args ...x.SvgArg) x.Node {

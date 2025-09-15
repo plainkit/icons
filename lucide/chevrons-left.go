@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // ChevronsLeft creates a Chevrons Left Lucide icon.
 func ChevronsLeft(args ...x.SvgArg) x.Node {

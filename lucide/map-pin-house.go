@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // MapPinHouse creates a Map Pin House Lucide icon.
 func MapPinHouse(args ...x.SvgArg) x.Node {

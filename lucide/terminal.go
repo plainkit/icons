@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Terminal creates a Terminal Lucide icon.
 func Terminal(args ...x.SvgArg) x.Node {

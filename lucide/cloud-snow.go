@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // CloudSnow creates a Cloud Snow Lucide icon.
 func CloudSnow(args ...x.SvgArg) x.Node {

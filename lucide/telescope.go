@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Telescope creates a Telescope Lucide icon.
 func Telescope(args ...x.SvgArg) x.Node {

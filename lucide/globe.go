@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Globe creates a Globe Lucide icon.
 func Globe(args ...x.SvgArg) x.Node {

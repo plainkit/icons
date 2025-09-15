@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // VolumeX creates a Volume X Lucide icon.
 func VolumeX(args ...x.SvgArg) x.Node {

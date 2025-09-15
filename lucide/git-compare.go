@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // GitCompare creates a Git Compare Lucide icon.
 func GitCompare(args ...x.SvgArg) x.Node {

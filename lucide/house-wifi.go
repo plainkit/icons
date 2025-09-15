@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // HouseWifi creates a House Wifi Lucide icon.
 func HouseWifi(args ...x.SvgArg) x.Node {

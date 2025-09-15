@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // ThermometerSnowflake creates a Thermometer Snowflake Lucide icon.
 func ThermometerSnowflake(args ...x.SvgArg) x.Node {

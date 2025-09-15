@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Vote creates a Vote Lucide icon.
 func Vote(args ...x.SvgArg) x.Node {

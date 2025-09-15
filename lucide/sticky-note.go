@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // StickyNote creates a Sticky Note Lucide icon.
 func StickyNote(args ...x.SvgArg) x.Node {

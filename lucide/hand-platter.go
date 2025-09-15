@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // HandPlatter creates a Hand Platter Lucide icon.
 func HandPlatter(args ...x.SvgArg) x.Node {

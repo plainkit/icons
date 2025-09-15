@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Mail creates a Mail Lucide icon.
 func Mail(args ...x.SvgArg) x.Node {

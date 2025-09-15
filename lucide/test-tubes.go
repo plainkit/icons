@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // TestTubes creates a Test Tubes Lucide icon.
 func TestTubes(args ...x.SvgArg) x.Node {

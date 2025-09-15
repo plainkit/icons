@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // ChartBarIncreasing creates a Chart Bar Increasing Lucide icon.
 func ChartBarIncreasing(args ...x.SvgArg) x.Node {

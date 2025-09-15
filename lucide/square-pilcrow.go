@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // SquarePilcrow creates a Square Pilcrow Lucide icon.
 func SquarePilcrow(args ...x.SvgArg) x.Node {

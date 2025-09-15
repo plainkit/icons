@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // ClipboardClock creates a Clipboard Clock Lucide icon.
 func ClipboardClock(args ...x.SvgArg) x.Node {

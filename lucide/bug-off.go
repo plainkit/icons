@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // BugOff creates a Bug Off Lucide icon.
 func BugOff(args ...x.SvgArg) x.Node {

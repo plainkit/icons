@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // ChartSpline creates a Chart Spline Lucide icon.
 func ChartSpline(args ...x.SvgArg) x.Node {

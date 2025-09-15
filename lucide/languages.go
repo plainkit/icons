@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Languages creates a Languages Lucide icon.
 func Languages(args ...x.SvgArg) x.Node {

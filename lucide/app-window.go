@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // AppWindow creates a App Window Lucide icon.
 func AppWindow(args ...x.SvgArg) x.Node {

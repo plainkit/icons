@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // BriefcaseBusiness creates a Briefcase Business Lucide icon.
 func BriefcaseBusiness(args ...x.SvgArg) x.Node {

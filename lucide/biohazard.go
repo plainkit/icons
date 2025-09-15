@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Biohazard creates a Biohazard Lucide icon.
 func Biohazard(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // CalendarArrowDown creates a Calendar Arrow Down Lucide icon.
 func CalendarArrowDown(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Grid2x2 creates a Grid 2x2 Lucide icon.
 func Grid2x2(args ...x.SvgArg) x.Node {

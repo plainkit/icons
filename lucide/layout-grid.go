@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // LayoutGrid creates a Layout Grid Lucide icon.
 func LayoutGrid(args ...x.SvgArg) x.Node {

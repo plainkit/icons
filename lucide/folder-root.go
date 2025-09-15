@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // FolderRoot creates a Folder Root Lucide icon.
 func FolderRoot(args ...x.SvgArg) x.Node {

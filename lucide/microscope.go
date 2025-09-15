@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Microscope creates a Microscope Lucide icon.
 func Microscope(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // CalendarRange creates a Calendar Range Lucide icon.
 func CalendarRange(args ...x.SvgArg) x.Node {

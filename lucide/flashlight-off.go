@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // FlashlightOff creates a Flashlight Off Lucide icon.
 func FlashlightOff(args ...x.SvgArg) x.Node {

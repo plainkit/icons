@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // CirclePause creates a Circle Pause Lucide icon.
 func CirclePause(args ...x.SvgArg) x.Node {

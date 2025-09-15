@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Feather creates a Feather Lucide icon.
 func Feather(args ...x.SvgArg) x.Node {

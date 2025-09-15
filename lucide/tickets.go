@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Tickets creates a Tickets Lucide icon.
 func Tickets(args ...x.SvgArg) x.Node {

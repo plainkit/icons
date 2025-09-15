@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // FolderOutput creates a Folder Output Lucide icon.
 func FolderOutput(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // CalendarFold creates a Calendar Fold Lucide icon.
 func CalendarFold(args ...x.SvgArg) x.Node {

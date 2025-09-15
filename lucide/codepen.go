@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Codepen creates a Codepen Lucide icon.
 func Codepen(args ...x.SvgArg) x.Node {

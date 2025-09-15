@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // ShieldOff creates a Shield Off Lucide icon.
 func ShieldOff(args ...x.SvgArg) x.Node {

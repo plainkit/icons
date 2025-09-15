@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Reply creates a Reply Lucide icon.
 func Reply(args ...x.SvgArg) x.Node {

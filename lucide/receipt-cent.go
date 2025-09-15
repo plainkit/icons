@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // ReceiptCent creates a Receipt Cent Lucide icon.
 func ReceiptCent(args ...x.SvgArg) x.Node {

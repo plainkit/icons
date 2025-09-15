@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Brush creates a Brush Lucide icon.
 func Brush(args ...x.SvgArg) x.Node {

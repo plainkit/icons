@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Trash creates a Trash Lucide icon.
 func Trash(args ...x.SvgArg) x.Node {

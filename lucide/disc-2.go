@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Disc2 creates a Disc 2 Lucide icon.
 func Disc2(args ...x.SvgArg) x.Node {

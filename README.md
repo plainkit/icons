@@ -1,11 +1,11 @@
 # Plain Lucide Icons
 
-Type‑safe Lucide SVG icons for Go, built on top of `github.com/plainkit/blox`. Each icon is a simple Go function that returns a `blox.Component`, so you compose icons directly in your views with zero runtime templating.
+Type‑safe Lucide SVG icons for Go, built on top of `github.com/plainkit/html`. Each icon is a simple Go function that returns a `blox.Component`, so you compose icons directly in your views with zero runtime templating.
 
 ## Install
 
 ```
-go get github.com/plainkit/blox
+go get github.com/plainkit/html
 go get github.com/plainkit/lucide
 ```
 
@@ -16,7 +16,7 @@ package main
 
 import (
     "fmt"
-    x "github.com/plainkit/blox"
+    x "github.com/plainkit/html"
     "github.com/plainkit/lucide"
 )
 

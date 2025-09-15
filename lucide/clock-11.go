@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Clock11 creates a Clock 11 Lucide icon.
 func Clock11(args ...x.SvgArg) x.Node {

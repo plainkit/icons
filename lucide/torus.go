@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Torus creates a Torus Lucide icon.
 func Torus(args ...x.SvgArg) x.Node {

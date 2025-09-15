@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Section creates a Section Lucide icon.
 func Section(args ...x.SvgArg) x.Node {

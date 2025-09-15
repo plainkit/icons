@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Vault creates a Vault Lucide icon.
 func Vault(args ...x.SvgArg) x.Node {

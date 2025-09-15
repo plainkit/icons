@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Gavel creates a Gavel Lucide icon.
 func Gavel(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // BusFront creates a Bus Front Lucide icon.
 func BusFront(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Tag creates a Tag Lucide icon.
 func Tag(args ...x.SvgArg) x.Node {

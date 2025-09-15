@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // HandMetal creates a Hand Metal Lucide icon.
 func HandMetal(args ...x.SvgArg) x.Node {

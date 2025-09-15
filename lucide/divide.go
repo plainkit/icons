@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Divide creates a Divide Lucide icon.
 func Divide(args ...x.SvgArg) x.Node {

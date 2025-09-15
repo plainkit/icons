@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // UserRoundSearch creates a User Round Search Lucide icon.
 func UserRoundSearch(args ...x.SvgArg) x.Node {

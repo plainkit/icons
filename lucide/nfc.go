@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Nfc creates a Nfc Lucide icon.
 func Nfc(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // ScissorsLineDashed creates a Scissors Line Dashed Lucide icon.
 func ScissorsLineDashed(args ...x.SvgArg) x.Node {

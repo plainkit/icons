@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // FileClock creates a File Clock Lucide icon.
 func FileClock(args ...x.SvgArg) x.Node {

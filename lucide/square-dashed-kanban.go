@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // SquareDashedKanban creates a Square Dashed Kanban Lucide icon.
 func SquareDashedKanban(args ...x.SvgArg) x.Node {

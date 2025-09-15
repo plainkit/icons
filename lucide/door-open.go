@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // DoorOpen creates a Door Open Lucide icon.
 func DoorOpen(args ...x.SvgArg) x.Node {

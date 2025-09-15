@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // ListIndentIncrease creates a List Indent Increase Lucide icon.
 func ListIndentIncrease(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Webcam creates a Webcam Lucide icon.
 func Webcam(args ...x.SvgArg) x.Node {

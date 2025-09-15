@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Salad creates a Salad Lucide icon.
 func Salad(args ...x.SvgArg) x.Node {

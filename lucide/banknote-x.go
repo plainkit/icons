@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // BanknoteX creates a Banknote X Lucide icon.
 func BanknoteX(args ...x.SvgArg) x.Node {

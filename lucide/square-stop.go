@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // SquareStop creates a Square Stop Lucide icon.
 func SquareStop(args ...x.SvgArg) x.Node {

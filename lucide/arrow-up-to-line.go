@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // ArrowUpToLine creates a Arrow Up To Line Lucide icon.
 func ArrowUpToLine(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Brackets creates a Brackets Lucide icon.
 func Brackets(args ...x.SvgArg) x.Node {

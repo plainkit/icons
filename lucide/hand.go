@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Hand creates a Hand Lucide icon.
 func Hand(args ...x.SvgArg) x.Node {

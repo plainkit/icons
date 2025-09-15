@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // MoveUp creates a Move Up Lucide icon.
 func MoveUp(args ...x.SvgArg) x.Node {

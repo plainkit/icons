@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // CaseSensitive creates a Case Sensitive Lucide icon.
 func CaseSensitive(args ...x.SvgArg) x.Node {

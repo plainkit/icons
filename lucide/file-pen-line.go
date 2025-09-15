@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // FilePenLine creates a File Pen Line Lucide icon.
 func FilePenLine(args ...x.SvgArg) x.Node {

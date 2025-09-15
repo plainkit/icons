@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Columns2 creates a Columns 2 Lucide icon.
 func Columns2(args ...x.SvgArg) x.Node {

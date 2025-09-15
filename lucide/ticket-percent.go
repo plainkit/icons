@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // TicketPercent creates a Ticket Percent Lucide icon.
 func TicketPercent(args ...x.SvgArg) x.Node {

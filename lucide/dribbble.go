@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Dribbble creates a Dribbble Lucide icon.
 func Dribbble(args ...x.SvgArg) x.Node {

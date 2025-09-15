@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Diff creates a Diff Lucide icon.
 func Diff(args ...x.SvgArg) x.Node {

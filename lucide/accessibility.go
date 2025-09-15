@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Accessibility creates a Accessibility Lucide icon.
 func Accessibility(args ...x.SvgArg) x.Node {

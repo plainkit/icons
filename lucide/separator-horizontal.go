@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // SeparatorHorizontal creates a Separator Horizontal Lucide icon.
 func SeparatorHorizontal(args ...x.SvgArg) x.Node {

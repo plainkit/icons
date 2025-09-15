@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Spline creates a Spline Lucide icon.
 func Spline(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Delete creates a Delete Lucide icon.
 func Delete(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Meh creates a Meh Lucide icon.
 func Meh(args ...x.SvgArg) x.Node {

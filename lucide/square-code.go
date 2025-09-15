@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // SquareCode creates a Square Code Lucide icon.
 func SquareCode(args ...x.SvgArg) x.Node {

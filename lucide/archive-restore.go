@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // ArchiveRestore creates a Archive Restore Lucide icon.
 func ArchiveRestore(args ...x.SvgArg) x.Node {

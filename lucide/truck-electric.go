@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // TruckElectric creates a Truck Electric Lucide icon.
 func TruckElectric(args ...x.SvgArg) x.Node {

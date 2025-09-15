@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // CassetteTape creates a Cassette Tape Lucide icon.
 func CassetteTape(args ...x.SvgArg) x.Node {

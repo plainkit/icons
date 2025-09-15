@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Codesandbox creates a Codesandbox Lucide icon.
 func Codesandbox(args ...x.SvgArg) x.Node {

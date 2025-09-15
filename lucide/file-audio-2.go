@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // FileAudio2 creates a File Audio 2 Lucide icon.
 func FileAudio2(args ...x.SvgArg) x.Node {

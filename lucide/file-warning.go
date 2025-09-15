@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // FileWarning creates a File Warning Lucide icon.
 func FileWarning(args ...x.SvgArg) x.Node {

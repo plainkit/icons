@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Maximize2 creates a Maximize 2 Lucide icon.
 func Maximize2(args ...x.SvgArg) x.Node {

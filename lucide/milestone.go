@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Milestone creates a Milestone Lucide icon.
 func Milestone(args ...x.SvgArg) x.Node {

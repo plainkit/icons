@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Bubbles creates a Bubbles Lucide icon.
 func Bubbles(args ...x.SvgArg) x.Node {

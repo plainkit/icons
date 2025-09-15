@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // GitPullRequestArrow creates a Git Pull Request Arrow Lucide icon.
 func GitPullRequestArrow(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // BadgeIndianRupee creates a Badge Indian Rupee Lucide icon.
 func BadgeIndianRupee(args ...x.SvgArg) x.Node {

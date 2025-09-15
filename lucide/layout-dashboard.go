@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // LayoutDashboard creates a Layout Dashboard Lucide icon.
 func LayoutDashboard(args ...x.SvgArg) x.Node {

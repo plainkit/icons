@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // FerrisWheel creates a Ferris Wheel Lucide icon.
 func FerrisWheel(args ...x.SvgArg) x.Node {

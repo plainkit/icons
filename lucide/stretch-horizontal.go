@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // StretchHorizontal creates a Stretch Horizontal Lucide icon.
 func StretchHorizontal(args ...x.SvgArg) x.Node {

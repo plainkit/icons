@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // MarsStroke creates a Mars Stroke Lucide icon.
 func MarsStroke(args ...x.SvgArg) x.Node {

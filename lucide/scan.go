@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Scan creates a Scan Lucide icon.
 func Scan(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // WifiPen creates a Wifi Pen Lucide icon.
 func WifiPen(args ...x.SvgArg) x.Node {

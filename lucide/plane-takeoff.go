@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // PlaneTakeoff creates a Plane Takeoff Lucide icon.
 func PlaneTakeoff(args ...x.SvgArg) x.Node {

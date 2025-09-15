@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Blend creates a Blend Lucide icon.
 func Blend(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Command creates a Command Lucide icon.
 func Command(args ...x.SvgArg) x.Node {

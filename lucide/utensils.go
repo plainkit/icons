@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Utensils creates a Utensils Lucide icon.
 func Utensils(args ...x.SvgArg) x.Node {

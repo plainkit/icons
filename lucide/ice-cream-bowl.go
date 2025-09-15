@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // IceCreamBowl creates a Ice Cream Bowl Lucide icon.
 func IceCreamBowl(args ...x.SvgArg) x.Node {

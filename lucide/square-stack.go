@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // SquareStack creates a Square Stack Lucide icon.
 func SquareStack(args ...x.SvgArg) x.Node {

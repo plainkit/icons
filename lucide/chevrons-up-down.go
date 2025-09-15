@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // ChevronsUpDown creates a Chevrons Up Down Lucide icon.
 func ChevronsUpDown(args ...x.SvgArg) x.Node {

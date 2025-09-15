@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Dumbbell creates a Dumbbell Lucide icon.
 func Dumbbell(args ...x.SvgArg) x.Node {

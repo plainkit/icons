@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // GitBranch creates a Git Branch Lucide icon.
 func GitBranch(args ...x.SvgArg) x.Node {

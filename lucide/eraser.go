@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Eraser creates a Eraser Lucide icon.
 func Eraser(args ...x.SvgArg) x.Node {

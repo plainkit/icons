@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // CloudSun creates a Cloud Sun Lucide icon.
 func CloudSun(args ...x.SvgArg) x.Node {

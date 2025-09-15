@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Usb creates a Usb Lucide icon.
 func Usb(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // CloudOff creates a Cloud Off Lucide icon.
 func CloudOff(args ...x.SvgArg) x.Node {

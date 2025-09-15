@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // TextAlignEnd creates a Text Align End Lucide icon.
 func TextAlignEnd(args ...x.SvgArg) x.Node {

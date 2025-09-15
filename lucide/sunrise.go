@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Sunrise creates a Sunrise Lucide icon.
 func Sunrise(args ...x.SvgArg) x.Node {

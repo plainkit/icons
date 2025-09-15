@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Strikethrough creates a Strikethrough Lucide icon.
 func Strikethrough(args ...x.SvgArg) x.Node {

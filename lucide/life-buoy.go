@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // LifeBuoy creates a Life Buoy Lucide icon.
 func LifeBuoy(args ...x.SvgArg) x.Node {

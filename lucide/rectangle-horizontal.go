@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // RectangleHorizontal creates a Rectangle Horizontal Lucide icon.
 func RectangleHorizontal(args ...x.SvgArg) x.Node {

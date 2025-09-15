@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Kanban creates a Kanban Lucide icon.
 func Kanban(args ...x.SvgArg) x.Node {

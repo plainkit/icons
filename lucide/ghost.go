@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Ghost creates a Ghost Lucide icon.
 func Ghost(args ...x.SvgArg) x.Node {

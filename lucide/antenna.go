@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Antenna creates a Antenna Lucide icon.
 func Antenna(args ...x.SvgArg) x.Node {

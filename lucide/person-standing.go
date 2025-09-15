@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // PersonStanding creates a Person Standing Lucide icon.
 func PersonStanding(args ...x.SvgArg) x.Node {

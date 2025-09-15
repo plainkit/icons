@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // SignalHigh creates a Signal High Lucide icon.
 func SignalHigh(args ...x.SvgArg) x.Node {

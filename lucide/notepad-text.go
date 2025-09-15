@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // NotepadText creates a Notepad Text Lucide icon.
 func NotepadText(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Repeat creates a Repeat Lucide icon.
 func Repeat(args ...x.SvgArg) x.Node {

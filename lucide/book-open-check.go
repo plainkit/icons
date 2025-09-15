@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // BookOpenCheck creates a Book Open Check Lucide icon.
 func BookOpenCheck(args ...x.SvgArg) x.Node {

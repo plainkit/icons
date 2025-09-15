@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // GitCommitHorizontal creates a Git Commit Horizontal Lucide icon.
 func GitCommitHorizontal(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Instagram creates a Instagram Lucide icon.
 func Instagram(args ...x.SvgArg) x.Node {

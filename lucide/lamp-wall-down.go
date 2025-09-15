@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // LampWallDown creates a Lamp Wall Down Lucide icon.
 func LampWallDown(args ...x.SvgArg) x.Node {

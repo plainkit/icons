@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Amphora creates a Amphora Lucide icon.
 func Amphora(args ...x.SvgArg) x.Node {

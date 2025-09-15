@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Milk creates a Milk Lucide icon.
 func Milk(args ...x.SvgArg) x.Node {

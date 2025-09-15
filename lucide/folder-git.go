@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // FolderGit creates a Folder Git Lucide icon.
 func FolderGit(args ...x.SvgArg) x.Node {

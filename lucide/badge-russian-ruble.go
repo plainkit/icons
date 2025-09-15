@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // BadgeRussianRuble creates a Badge Russian Ruble Lucide icon.
 func BadgeRussianRuble(args ...x.SvgArg) x.Node {

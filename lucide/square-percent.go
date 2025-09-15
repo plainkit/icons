@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // SquarePercent creates a Square Percent Lucide icon.
 func SquarePercent(args ...x.SvgArg) x.Node {

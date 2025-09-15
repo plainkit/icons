@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Shovel creates a Shovel Lucide icon.
 func Shovel(args ...x.SvgArg) x.Node {

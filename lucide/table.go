@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Table creates a Table Lucide icon.
 func Table(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Captions creates a Captions Lucide icon.
 func Captions(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // SaveAll creates a Save All Lucide icon.
 func SaveAll(args ...x.SvgArg) x.Node {

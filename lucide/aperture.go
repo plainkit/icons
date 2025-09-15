@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Aperture creates a Aperture Lucide icon.
 func Aperture(args ...x.SvgArg) x.Node {

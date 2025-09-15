@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Building creates a Building Lucide icon.
 func Building(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // CircleFadingPlus creates a Circle Fading Plus Lucide icon.
 func CircleFadingPlus(args ...x.SvgArg) x.Node {

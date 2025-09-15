@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Redo2 creates a Redo 2 Lucide icon.
 func Redo2(args ...x.SvgArg) x.Node {

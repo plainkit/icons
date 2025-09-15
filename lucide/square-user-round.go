@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // SquareUserRound creates a Square User Round Lucide icon.
 func SquareUserRound(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Dot creates a Dot Lucide icon.
 func Dot(args ...x.SvgArg) x.Node {

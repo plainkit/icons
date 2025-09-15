@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // SquareChartGantt creates a Square Chart Gantt Lucide icon.
 func SquareChartGantt(args ...x.SvgArg) x.Node {

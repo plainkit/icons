@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Youtube creates a Youtube Lucide icon.
 func Youtube(args ...x.SvgArg) x.Node {

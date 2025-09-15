@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // ClipboardMinus creates a Clipboard Minus Lucide icon.
 func ClipboardMinus(args ...x.SvgArg) x.Node {

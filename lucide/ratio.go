@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Ratio creates a Ratio Lucide icon.
 func Ratio(args ...x.SvgArg) x.Node {

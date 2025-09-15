@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // ClockArrowUp creates a Clock Arrow Up Lucide icon.
 func ClockArrowUp(args ...x.SvgArg) x.Node {

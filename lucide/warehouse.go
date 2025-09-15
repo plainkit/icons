@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Warehouse creates a Warehouse Lucide icon.
 func Warehouse(args ...x.SvgArg) x.Node {

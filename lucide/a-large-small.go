@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // ALargeSmall creates a A Large Small Lucide icon.
 func ALargeSmall(args ...x.SvgArg) x.Node {

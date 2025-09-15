@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // CircleFadingArrowUp creates a Circle Fading Arrow Up Lucide icon.
 func CircleFadingArrowUp(args ...x.SvgArg) x.Node {

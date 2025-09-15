@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // CircleGauge creates a Circle Gauge Lucide icon.
 func CircleGauge(args ...x.SvgArg) x.Node {

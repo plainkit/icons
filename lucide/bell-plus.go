@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // BellPlus creates a Bell Plus Lucide icon.
 func BellPlus(args ...x.SvgArg) x.Node {

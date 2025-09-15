@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // WifiOff creates a Wifi Off Lucide icon.
 func WifiOff(args ...x.SvgArg) x.Node {

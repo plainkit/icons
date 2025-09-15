@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Wand creates a Wand Lucide icon.
 func Wand(args ...x.SvgArg) x.Node {

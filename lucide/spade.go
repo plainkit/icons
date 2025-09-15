@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Spade creates a Spade Lucide icon.
 func Spade(args ...x.SvgArg) x.Node {

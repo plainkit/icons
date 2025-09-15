@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // BookUser creates a Book User Lucide icon.
 func BookUser(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Projector creates a Projector Lucide icon.
 func Projector(args ...x.SvgArg) x.Node {

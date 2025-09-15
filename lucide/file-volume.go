@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // FileVolume creates a File Volume Lucide icon.
 func FileVolume(args ...x.SvgArg) x.Node {

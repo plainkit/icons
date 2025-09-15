@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // ContactRound creates a Contact Round Lucide icon.
 func ContactRound(args ...x.SvgArg) x.Node {

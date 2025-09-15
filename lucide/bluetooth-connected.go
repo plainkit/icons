@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // BluetoothConnected creates a Bluetooth Connected Lucide icon.
 func BluetoothConnected(args ...x.SvgArg) x.Node {

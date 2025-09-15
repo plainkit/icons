@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Video creates a Video Lucide icon.
 func Video(args ...x.SvgArg) x.Node {

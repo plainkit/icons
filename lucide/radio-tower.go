@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // RadioTower creates a Radio Tower Lucide icon.
 func RadioTower(args ...x.SvgArg) x.Node {

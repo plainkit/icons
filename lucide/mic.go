@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Mic creates a Mic Lucide icon.
 func Mic(args ...x.SvgArg) x.Node {

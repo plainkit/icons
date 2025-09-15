@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // GraduationCap creates a Graduation Cap Lucide icon.
 func GraduationCap(args ...x.SvgArg) x.Node {

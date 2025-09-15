@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // CornerDownRight creates a Corner Down Right Lucide icon.
 func CornerDownRight(args ...x.SvgArg) x.Node {

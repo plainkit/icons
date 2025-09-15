@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Anvil creates a Anvil Lucide icon.
 func Anvil(args ...x.SvgArg) x.Node {

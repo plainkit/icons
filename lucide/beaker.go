@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Beaker creates a Beaker Lucide icon.
 func Beaker(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Database creates a Database Lucide icon.
 func Database(args ...x.SvgArg) x.Node {

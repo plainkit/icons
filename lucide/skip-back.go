@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // SkipBack creates a Skip Back Lucide icon.
 func SkipBack(args ...x.SvgArg) x.Node {

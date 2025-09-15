@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Megaphone creates a Megaphone Lucide icon.
 func Megaphone(args ...x.SvgArg) x.Node {

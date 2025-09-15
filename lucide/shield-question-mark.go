@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // ShieldQuestionMark creates a Shield Question Mark Lucide icon.
 func ShieldQuestionMark(args ...x.SvgArg) x.Node {

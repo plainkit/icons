@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // DollarSign creates a Dollar Sign Lucide icon.
 func DollarSign(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // BatteryWarning creates a Battery Warning Lucide icon.
 func BatteryWarning(args ...x.SvgArg) x.Node {

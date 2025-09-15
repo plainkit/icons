@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Blocks creates a Blocks Lucide icon.
 func Blocks(args ...x.SvgArg) x.Node {

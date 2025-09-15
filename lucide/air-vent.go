@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // AirVent creates a Air Vent Lucide icon.
 func AirVent(args ...x.SvgArg) x.Node {

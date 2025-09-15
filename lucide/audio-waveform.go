@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // AudioWaveform creates a Audio Waveform Lucide icon.
 func AudioWaveform(args ...x.SvgArg) x.Node {

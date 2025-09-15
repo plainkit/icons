@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Axis3d creates a Axis 3d Lucide icon.
 func Axis3d(args ...x.SvgArg) x.Node {

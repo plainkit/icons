@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	x "github.com/plainkit/blox"
+	x "github.com/plainkit/html"
 	"github.com/stretchr/testify/require"
 )
 

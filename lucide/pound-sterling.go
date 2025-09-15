@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // PoundSterling creates a Pound Sterling Lucide icon.
 func PoundSterling(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // ClipboardPenLine creates a Clipboard Pen Line Lucide icon.
 func ClipboardPenLine(args ...x.SvgArg) x.Node {

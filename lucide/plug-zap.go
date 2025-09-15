@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // PlugZap creates a Plug Zap Lucide icon.
 func PlugZap(args ...x.SvgArg) x.Node {

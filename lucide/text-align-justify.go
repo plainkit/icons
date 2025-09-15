@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // TextAlignJustify creates a Text Align Justify Lucide icon.
 func TextAlignJustify(args ...x.SvgArg) x.Node {

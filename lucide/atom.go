@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Atom creates a Atom Lucide icon.
 func Atom(args ...x.SvgArg) x.Node {

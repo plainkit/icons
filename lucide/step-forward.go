@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // StepForward creates a Step Forward Lucide icon.
 func StepForward(args ...x.SvgArg) x.Node {

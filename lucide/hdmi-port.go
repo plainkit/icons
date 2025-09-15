@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // HdmiPort creates a Hdmi Port Lucide icon.
 func HdmiPort(args ...x.SvgArg) x.Node {

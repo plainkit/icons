@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // FileKey2 creates a File Key 2 Lucide icon.
 func FileKey2(args ...x.SvgArg) x.Node {

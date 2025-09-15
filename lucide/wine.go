@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Wine creates a Wine Lucide icon.
 func Wine(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Bolt creates a Bolt Lucide icon.
 func Bolt(args ...x.SvgArg) x.Node {

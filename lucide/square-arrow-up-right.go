@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // SquareArrowUpRight creates a Square Arrow Up Right Lucide icon.
 func SquareArrowUpRight(args ...x.SvgArg) x.Node {

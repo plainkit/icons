@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Asterisk creates a Asterisk Lucide icon.
 func Asterisk(args ...x.SvgArg) x.Node {

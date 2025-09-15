@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Check creates a Check Lucide icon.
 func Check(args ...x.SvgArg) x.Node {

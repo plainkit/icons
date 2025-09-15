@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Bandage creates a Bandage Lucide icon.
 func Bandage(args ...x.SvgArg) x.Node {

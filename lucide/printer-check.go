@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // PrinterCheck creates a Printer Check Lucide icon.
 func PrinterCheck(args ...x.SvgArg) x.Node {

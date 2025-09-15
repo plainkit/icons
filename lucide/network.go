@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Network creates a Network Lucide icon.
 func Network(args ...x.SvgArg) x.Node {

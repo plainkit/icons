@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // SquareChevronUp creates a Square Chevron Up Lucide icon.
 func SquareChevronUp(args ...x.SvgArg) x.Node {

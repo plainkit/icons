@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // ClipboardPaste creates a Clipboard Paste Lucide icon.
 func ClipboardPaste(args ...x.SvgArg) x.Node {

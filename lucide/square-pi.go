@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // SquarePi creates a Square Pi Lucide icon.
 func SquarePi(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Fullscreen creates a Fullscreen Lucide icon.
 func Fullscreen(args ...x.SvgArg) x.Node {

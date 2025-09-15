@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Grape creates a Grape Lucide icon.
 func Grape(args ...x.SvgArg) x.Node {

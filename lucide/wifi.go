@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Wifi creates a Wifi Lucide icon.
 func Wifi(args ...x.SvgArg) x.Node {

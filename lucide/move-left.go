@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // MoveLeft creates a Move Left Lucide icon.
 func MoveLeft(args ...x.SvgArg) x.Node {

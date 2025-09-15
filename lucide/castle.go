@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Castle creates a Castle Lucide icon.
 func Castle(args ...x.SvgArg) x.Node {

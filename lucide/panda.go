@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Panda creates a Panda Lucide icon.
 func Panda(args ...x.SvgArg) x.Node {

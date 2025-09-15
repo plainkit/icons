@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // FileChartPie creates a File Chart Pie Lucide icon.
 func FileChartPie(args ...x.SvgArg) x.Node {

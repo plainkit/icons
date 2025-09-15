@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // BatteryCharging creates a Battery Charging Lucide icon.
 func BatteryCharging(args ...x.SvgArg) x.Node {

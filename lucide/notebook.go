@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Notebook creates a Notebook Lucide icon.
 func Notebook(args ...x.SvgArg) x.Node {

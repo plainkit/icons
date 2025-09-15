@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Subscript creates a Subscript Lucide icon.
 func Subscript(args ...x.SvgArg) x.Node {

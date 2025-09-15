@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Refrigerator creates a Refrigerator Lucide icon.
 func Refrigerator(args ...x.SvgArg) x.Node {

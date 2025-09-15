@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Link2Off creates a Link 2 Off Lucide icon.
 func Link2Off(args ...x.SvgArg) x.Node {

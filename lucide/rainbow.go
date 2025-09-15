@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Rainbow creates a Rainbow Lucide icon.
 func Rainbow(args ...x.SvgArg) x.Node {

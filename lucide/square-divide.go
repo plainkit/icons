@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // SquareDivide creates a Square Divide Lucide icon.
 func SquareDivide(args ...x.SvgArg) x.Node {

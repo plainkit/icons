@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Hash creates a Hash Lucide icon.
 func Hash(args ...x.SvgArg) x.Node {

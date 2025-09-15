@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Club creates a Club Lucide icon.
 func Club(args ...x.SvgArg) x.Node {

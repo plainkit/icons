@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // CableCar creates a Cable Car Lucide icon.
 func CableCar(args ...x.SvgArg) x.Node {

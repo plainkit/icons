@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Underline creates a Underline Lucide icon.
 func Underline(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // RectangleVertical creates a Rectangle Vertical Lucide icon.
 func RectangleVertical(args ...x.SvgArg) x.Node {

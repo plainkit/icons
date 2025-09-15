@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // BotMessageSquare creates a Bot Message Square Lucide icon.
 func BotMessageSquare(args ...x.SvgArg) x.Node {

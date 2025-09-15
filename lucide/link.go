@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Link creates a Link Lucide icon.
 func Link(args ...x.SvgArg) x.Node {

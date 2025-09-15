@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Focus creates a Focus Lucide icon.
 func Focus(args ...x.SvgArg) x.Node {

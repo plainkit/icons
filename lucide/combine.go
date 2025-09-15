@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Combine creates a Combine Lucide icon.
 func Combine(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Tangent creates a Tangent Lucide icon.
 func Tangent(args ...x.SvgArg) x.Node {

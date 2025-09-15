@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // LoaderCircle creates a Loader Circle Lucide icon.
 func LoaderCircle(args ...x.SvgArg) x.Node {

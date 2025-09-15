@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // View creates a View Lucide icon.
 func View(args ...x.SvgArg) x.Node {

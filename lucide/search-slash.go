@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // SearchSlash creates a Search Slash Lucide icon.
 func SearchSlash(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // BriefcaseMedical creates a Briefcase Medical Lucide icon.
 func BriefcaseMedical(args ...x.SvgArg) x.Node {

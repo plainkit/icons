@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // LayoutTemplate creates a Layout Template Lucide icon.
 func LayoutTemplate(args ...x.SvgArg) x.Node {

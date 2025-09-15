@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Cctv creates a Cctv Lucide icon.
 func Cctv(args ...x.SvgArg) x.Node {

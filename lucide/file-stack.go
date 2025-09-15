@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // FileStack creates a File Stack Lucide icon.
 func FileStack(args ...x.SvgArg) x.Node {

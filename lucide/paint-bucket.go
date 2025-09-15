@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // PaintBucket creates a Paint Bucket Lucide icon.
 func PaintBucket(args ...x.SvgArg) x.Node {

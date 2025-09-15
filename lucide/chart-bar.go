@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // ChartBar creates a Chart Bar Lucide icon.
 func ChartBar(args ...x.SvgArg) x.Node {

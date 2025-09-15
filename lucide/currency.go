@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Currency creates a Currency Lucide icon.
 func Currency(args ...x.SvgArg) x.Node {

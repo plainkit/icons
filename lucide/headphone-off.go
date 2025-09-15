@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // HeadphoneOff creates a Headphone Off Lucide icon.
 func HeadphoneOff(args ...x.SvgArg) x.Node {

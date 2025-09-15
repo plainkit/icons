@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // TextInitial creates a Text Initial Lucide icon.
 func TextInitial(args ...x.SvgArg) x.Node {

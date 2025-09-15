@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Forward creates a Forward Lucide icon.
 func Forward(args ...x.SvgArg) x.Node {

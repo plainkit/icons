@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // MapPinMinusInside creates a Map Pin Minus Inside Lucide icon.
 func MapPinMinusInside(args ...x.SvgArg) x.Node {

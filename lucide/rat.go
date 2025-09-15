@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Rat creates a Rat Lucide icon.
 func Rat(args ...x.SvgArg) x.Node {

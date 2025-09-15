@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Slash creates a Slash Lucide icon.
 func Slash(args ...x.SvgArg) x.Node {

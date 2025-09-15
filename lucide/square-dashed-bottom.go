@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // SquareDashedBottom creates a Square Dashed Bottom Lucide icon.
 func SquareDashedBottom(args ...x.SvgArg) x.Node {

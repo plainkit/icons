@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Flashlight creates a Flashlight Lucide icon.
 func Flashlight(args ...x.SvgArg) x.Component {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Fuel creates a Fuel Lucide icon.
 func Fuel(args ...x.SvgArg) x.Node {

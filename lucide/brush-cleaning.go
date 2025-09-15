@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // BrushCleaning creates a Brush Cleaning Lucide icon.
 func BrushCleaning(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // GlassWater creates a Glass Water Lucide icon.
 func GlassWater(args ...x.SvgArg) x.Node {

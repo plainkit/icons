@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // SlidersVertical creates a Sliders Vertical Lucide icon.
 func SlidersVertical(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // CheckLine creates a Check Line Lucide icon.
 func CheckLine(args ...x.SvgArg) x.Node {

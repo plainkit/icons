@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // CircleParkingOff creates a Circle Parking Off Lucide icon.
 func CircleParkingOff(args ...x.SvgArg) x.Node {

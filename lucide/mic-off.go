@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // MicOff creates a Mic Off Lucide icon.
 func MicOff(args ...x.SvgArg) x.Node {

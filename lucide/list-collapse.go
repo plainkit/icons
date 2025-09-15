@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // ListCollapse creates a List Collapse Lucide icon.
 func ListCollapse(args ...x.SvgArg) x.Node {

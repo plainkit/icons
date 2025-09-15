@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // FolderTree creates a Folder Tree Lucide icon.
 func FolderTree(args ...x.SvgArg) x.Node {

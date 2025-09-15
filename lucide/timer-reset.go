@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // TimerReset creates a Timer Reset Lucide icon.
 func TimerReset(args ...x.SvgArg) x.Node {

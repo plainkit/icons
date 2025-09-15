@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Rose creates a Rose Lucide icon.
 func Rose(args ...x.SvgArg) x.Node {

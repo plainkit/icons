@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // FolderPen creates a Folder Pen Lucide icon.
 func FolderPen(args ...x.SvgArg) x.Node {

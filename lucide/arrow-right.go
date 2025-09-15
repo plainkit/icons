@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // ArrowRight creates a Arrow Right Lucide icon.
 func ArrowRight(args ...x.SvgArg) x.Node {

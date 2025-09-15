@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Skull creates a Skull Lucide icon.
 func Skull(args ...x.SvgArg) x.Node {

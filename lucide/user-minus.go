@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // UserMinus creates a User Minus Lucide icon.
 func UserMinus(args ...x.SvgArg) x.Node {

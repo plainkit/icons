@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // EqualNot creates a Equal Not Lucide icon.
 func EqualNot(args ...x.SvgArg) x.Node {

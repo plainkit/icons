@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // PhoneForwarded creates a Phone Forwarded Lucide icon.
 func PhoneForwarded(args ...x.SvgArg) x.Node {

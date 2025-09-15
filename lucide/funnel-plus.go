@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // FunnelPlus creates a Funnel Plus Lucide icon.
 func FunnelPlus(args ...x.SvgArg) x.Node {

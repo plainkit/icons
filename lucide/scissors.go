@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Scissors creates a Scissors Lucide icon.
 func Scissors(args ...x.SvgArg) x.Node {

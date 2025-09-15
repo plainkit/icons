@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // AlignCenterHorizontal creates a Align Center Horizontal Lucide icon.
 func AlignCenterHorizontal(args ...x.SvgArg) x.Node {

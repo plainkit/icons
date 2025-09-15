@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // TramFront creates a Tram Front Lucide icon.
 func TramFront(args ...x.SvgArg) x.Node {

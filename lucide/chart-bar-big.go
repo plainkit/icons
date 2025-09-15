@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // ChartBarBig creates a Chart Bar Big Lucide icon.
 func ChartBarBig(args ...x.SvgArg) x.Node {

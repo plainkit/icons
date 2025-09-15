@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // BadgeSwissFranc creates a Badge Swiss Franc Lucide icon.
 func BadgeSwissFranc(args ...x.SvgArg) x.Node {

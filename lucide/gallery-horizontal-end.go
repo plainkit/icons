@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // GalleryHorizontalEnd creates a Gallery Horizontal End Lucide icon.
 func GalleryHorizontalEnd(args ...x.SvgArg) x.Node {

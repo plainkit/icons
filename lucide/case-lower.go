@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // CaseLower creates a Case Lower Lucide icon.
 func CaseLower(args ...x.SvgArg) x.Node {

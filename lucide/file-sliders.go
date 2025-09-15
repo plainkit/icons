@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // FileSliders creates a File Sliders Lucide icon.
 func FileSliders(args ...x.SvgArg) x.Node {

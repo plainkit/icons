@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // WashingMachine creates a Washing Machine Lucide icon.
 func WashingMachine(args ...x.SvgArg) x.Node {

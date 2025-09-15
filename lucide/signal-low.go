@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // SignalLow creates a Signal Low Lucide icon.
 func SignalLow(args ...x.SvgArg) x.Node {

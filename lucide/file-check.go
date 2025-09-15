@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // FileCheck creates a File Check Lucide icon.
 func FileCheck(args ...x.SvgArg) x.Node {

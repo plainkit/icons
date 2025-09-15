@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // CloudMoonRain creates a Cloud Moon Rain Lucide icon.
 func CloudMoonRain(args ...x.SvgArg) x.Node {

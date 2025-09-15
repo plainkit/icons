@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // ShowerHead creates a Shower Head Lucide icon.
 func ShowerHead(args ...x.SvgArg) x.Node {

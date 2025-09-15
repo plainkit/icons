@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // ShieldBan creates a Shield Ban Lucide icon.
 func ShieldBan(args ...x.SvgArg) x.Node {

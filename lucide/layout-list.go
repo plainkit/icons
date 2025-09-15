@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // LayoutList creates a Layout List Lucide icon.
 func LayoutList(args ...x.SvgArg) x.Node {

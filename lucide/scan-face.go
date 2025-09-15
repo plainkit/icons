@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // ScanFace creates a Scan Face Lucide icon.
 func ScanFace(args ...x.SvgArg) x.Node {

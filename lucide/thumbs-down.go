@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // ThumbsDown creates a Thumbs Down Lucide icon.
 func ThumbsDown(args ...x.SvgArg) x.Node {

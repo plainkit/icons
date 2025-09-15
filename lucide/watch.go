@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Watch creates a Watch Lucide icon.
 func Watch(args ...x.SvgArg) x.Node {

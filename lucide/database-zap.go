@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // DatabaseZap creates a Database Zap Lucide icon.
 func DatabaseZap(args ...x.SvgArg) x.Node {

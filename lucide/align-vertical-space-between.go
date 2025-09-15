@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // AlignVerticalSpaceBetween creates a Align Vertical Space Between Lucide icon.
 func AlignVerticalSpaceBetween(args ...x.SvgArg) x.Node {

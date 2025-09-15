@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // MessageSquareLock creates a Message Square Lock Lucide icon.
 func MessageSquareLock(args ...x.SvgArg) x.Node {

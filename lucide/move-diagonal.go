@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // MoveDiagonal creates a Move Diagonal Lucide icon.
 func MoveDiagonal(args ...x.SvgArg) x.Node {

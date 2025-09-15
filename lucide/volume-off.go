@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // VolumeOff creates a Volume Off Lucide icon.
 func VolumeOff(args ...x.SvgArg) x.Node {

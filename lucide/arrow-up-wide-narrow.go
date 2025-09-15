@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // ArrowUpWideNarrow creates a Arrow Up Wide Narrow Lucide icon.
 func ArrowUpWideNarrow(args ...x.SvgArg) x.Node {

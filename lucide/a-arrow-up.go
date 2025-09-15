@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // AArrowUp creates a A Arrow Up Lucide icon.
 func AArrowUp(args ...x.SvgArg) x.Node {

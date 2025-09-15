@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // FolderX creates a Folder X Lucide icon.
 func FolderX(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Sticker creates a Sticker Lucide icon.
 func Sticker(args ...x.SvgArg) x.Node {

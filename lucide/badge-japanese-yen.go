@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // BadgeJapaneseYen creates a Badge Japanese Yen Lucide icon.
 func BadgeJapaneseYen(args ...x.SvgArg) x.Node {

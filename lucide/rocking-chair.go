@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // RockingChair creates a Rocking Chair Lucide icon.
 func RockingChair(args ...x.SvgArg) x.Node {

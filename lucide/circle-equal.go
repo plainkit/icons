@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // CircleEqual creates a Circle Equal Lucide icon.
 func CircleEqual(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // SplinePointer creates a Spline Pointer Lucide icon.
 func SplinePointer(args ...x.SvgArg) x.Node {

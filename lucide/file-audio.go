@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // FileAudio creates a File Audio Lucide icon.
 func FileAudio(args ...x.SvgArg) x.Node {

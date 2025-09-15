@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Logs creates a Logs Lucide icon.
 func Logs(args ...x.SvgArg) x.Node {

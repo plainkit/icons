@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // GalleryThumbnails creates a Gallery Thumbnails Lucide icon.
 func GalleryThumbnails(args ...x.SvgArg) x.Node {

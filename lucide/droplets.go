@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Droplets creates a Droplets Lucide icon.
 func Droplets(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // FileLock creates a File Lock Lucide icon.
 func FileLock(args ...x.SvgArg) x.Node {

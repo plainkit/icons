@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Shrimp creates a Shrimp Lucide icon.
 func Shrimp(args ...x.SvgArg) x.Node {

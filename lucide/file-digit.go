@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // FileDigit creates a File Digit Lucide icon.
 func FileDigit(args ...x.SvgArg) x.Node {

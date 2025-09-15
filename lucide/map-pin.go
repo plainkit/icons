@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // MapPin creates a Map Pin Lucide icon.
 func MapPin(args ...x.SvgArg) x.Node {

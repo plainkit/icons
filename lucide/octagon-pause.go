@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // OctagonPause creates a Octagon Pause Lucide icon.
 func OctagonPause(args ...x.SvgArg) x.Node {

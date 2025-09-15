@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // FileBadge creates a File Badge Lucide icon.
 func FileBadge(args ...x.SvgArg) x.Node {

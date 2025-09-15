@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // SquaresUnite creates a Squares Unite Lucide icon.
 func SquaresUnite(args ...x.SvgArg) x.Node {

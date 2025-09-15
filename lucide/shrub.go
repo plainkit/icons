@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Shrub creates a Shrub Lucide icon.
 func Shrub(args ...x.SvgArg) x.Node {

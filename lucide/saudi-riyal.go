@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // SaudiRiyal creates a Saudi Riyal Lucide icon.
 func SaudiRiyal(args ...x.SvgArg) x.Node {

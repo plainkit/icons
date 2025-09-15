@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // FileChartColumnIncreasing creates a File Chart Column Increasing Lucide icon.
 func FileChartColumnIncreasing(args ...x.SvgArg) x.Node {

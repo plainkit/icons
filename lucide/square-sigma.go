@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // SquareSigma creates a Square Sigma Lucide icon.
 func SquareSigma(args ...x.SvgArg) x.Node {

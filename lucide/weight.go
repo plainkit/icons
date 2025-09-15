@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Weight creates a Weight Lucide icon.
 func Weight(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // FolderSync creates a Folder Sync Lucide icon.
 func FolderSync(args ...x.SvgArg) x.Node {

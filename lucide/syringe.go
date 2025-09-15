@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Syringe creates a Syringe Lucide icon.
 func Syringe(args ...x.SvgArg) x.Node {

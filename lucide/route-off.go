@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // RouteOff creates a Route Off Lucide icon.
 func RouteOff(args ...x.SvgArg) x.Node {

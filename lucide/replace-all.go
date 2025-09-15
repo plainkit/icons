@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // ReplaceAll creates a Replace All Lucide icon.
 func ReplaceAll(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // SquareSquare creates a Square Square Lucide icon.
 func SquareSquare(args ...x.SvgArg) x.Node {

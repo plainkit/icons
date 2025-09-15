@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // ImagePlus creates a Image Plus Lucide icon.
 func ImagePlus(args ...x.SvgArg) x.Node {

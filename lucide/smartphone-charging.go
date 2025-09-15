@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // SmartphoneCharging creates a Smartphone Charging Lucide icon.
 func SmartphoneCharging(args ...x.SvgArg) x.Node {

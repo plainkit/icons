@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Flame creates a Flame Lucide icon.
 func Flame(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Martini creates a Martini Lucide icon.
 func Martini(args ...x.SvgArg) x.Node {

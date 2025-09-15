@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // VenusAndMars creates a Venus And Mars Lucide icon.
 func VenusAndMars(args ...x.SvgArg) x.Node {

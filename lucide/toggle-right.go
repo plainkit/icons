@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // ToggleRight creates a Toggle Right Lucide icon.
 func ToggleRight(args ...x.SvgArg) x.Node {

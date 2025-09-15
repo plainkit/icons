@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // EyeOff creates a Eye Off Lucide icon.
 func EyeOff(args ...x.SvgArg) x.Node {

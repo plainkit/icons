@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // TypeOutline creates a Type Outline Lucide icon.
 func TypeOutline(args ...x.SvgArg) x.Node {

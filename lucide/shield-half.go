@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // ShieldHalf creates a Shield Half Lucide icon.
 func ShieldHalf(args ...x.SvgArg) x.Node {

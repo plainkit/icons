@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Download creates a Download Lucide icon.
 func Download(args ...x.SvgArg) x.Node {

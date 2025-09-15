@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // CalendarHeart creates a Calendar Heart Lucide icon.
 func CalendarHeart(args ...x.SvgArg) x.Node {

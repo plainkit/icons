@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // UserLock creates a User Lock Lucide icon.
 func UserLock(args ...x.SvgArg) x.Node {

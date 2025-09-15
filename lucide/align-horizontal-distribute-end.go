@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // AlignHorizontalDistributeEnd creates a Align Horizontal Distribute End Lucide icon.
 func AlignHorizontalDistributeEnd(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // DnaOff creates a Dna Off Lucide icon.
 func DnaOff(args ...x.SvgArg) x.Node {

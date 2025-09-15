@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // ArchiveX creates a Archive X Lucide icon.
 func ArchiveX(args ...x.SvgArg) x.Node {

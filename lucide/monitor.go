@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Monitor creates a Monitor Lucide icon.
 func Monitor(args ...x.SvgArg) x.Node {

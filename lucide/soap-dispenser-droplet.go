@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // SoapDispenserDroplet creates a Soap Dispenser Droplet Lucide icon.
 func SoapDispenserDroplet(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Rows4 creates a Rows 4 Lucide icon.
 func Rows4(args ...x.SvgArg) x.Node {

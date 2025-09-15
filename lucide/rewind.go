@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Rewind creates a Rewind Lucide icon.
 func Rewind(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Clover creates a Clover Lucide icon.
 func Clover(args ...x.SvgArg) x.Node {

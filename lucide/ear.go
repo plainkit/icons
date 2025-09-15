@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Ear creates a Ear Lucide icon.
 func Ear(args ...x.SvgArg) x.Node {

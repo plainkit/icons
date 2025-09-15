@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Barcode creates a Barcode Lucide icon.
 func Barcode(args ...x.SvgArg) x.Node {

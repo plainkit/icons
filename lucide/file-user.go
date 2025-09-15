@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // FileUser creates a File User Lucide icon.
 func FileUser(args ...x.SvgArg) x.Node {

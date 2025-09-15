@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // TriangleAlert creates a Triangle Alert Lucide icon.
 func TriangleAlert(args ...x.SvgArg) x.Node {

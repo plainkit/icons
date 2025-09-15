@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // CreativeCommons creates a Creative Commons Lucide icon.
 func CreativeCommons(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // HandCoins creates a Hand Coins Lucide icon.
 func HandCoins(args ...x.SvgArg) x.Node {

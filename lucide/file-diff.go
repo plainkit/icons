@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // FileDiff creates a File Diff Lucide icon.
 func FileDiff(args ...x.SvgArg) x.Node {

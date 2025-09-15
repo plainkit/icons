@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Swords creates a Swords Lucide icon.
 func Swords(args ...x.SvgArg) x.Node {

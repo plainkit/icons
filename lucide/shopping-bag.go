@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // ShoppingBag creates a Shopping Bag Lucide icon.
 func ShoppingBag(args ...x.SvgArg) x.Node {

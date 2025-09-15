@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Citrus creates a Citrus Lucide icon.
 func Citrus(args ...x.SvgArg) x.Node {

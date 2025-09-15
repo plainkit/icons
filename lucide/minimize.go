@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Minimize creates a Minimize Lucide icon.
 func Minimize(args ...x.SvgArg) x.Node {

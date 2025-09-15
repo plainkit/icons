@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // MessageCircleDashed creates a Message Circle Dashed Lucide icon.
 func MessageCircleDashed(args ...x.SvgArg) x.Node {

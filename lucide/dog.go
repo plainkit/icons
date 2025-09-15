@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Dog creates a Dog Lucide icon.
 func Dog(args ...x.SvgArg) x.Node {

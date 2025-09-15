@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // GlobeLock creates a Globe Lock Lucide icon.
 func GlobeLock(args ...x.SvgArg) x.Node {

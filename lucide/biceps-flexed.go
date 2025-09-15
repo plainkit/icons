@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // BicepsFlexed creates a Biceps Flexed Lucide icon.
 func BicepsFlexed(args ...x.SvgArg) x.Node {

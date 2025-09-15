@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Volleyball creates a Volleyball Lucide icon.
 func Volleyball(args ...x.SvgArg) x.Node {

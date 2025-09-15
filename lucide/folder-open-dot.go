@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // FolderOpenDot creates a Folder Open Dot Lucide icon.
 func FolderOpenDot(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // ThermometerSun creates a Thermometer Sun Lucide icon.
 func ThermometerSun(args ...x.SvgArg) x.Node {

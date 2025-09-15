@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // SquareParkingOff creates a Square Parking Off Lucide icon.
 func SquareParkingOff(args ...x.SvgArg) x.Node {

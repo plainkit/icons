@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // LandPlot creates a Land Plot Lucide icon.
 func LandPlot(args ...x.SvgArg) x.Node {

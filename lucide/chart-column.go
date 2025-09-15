@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // ChartColumn creates a Chart Column Lucide icon.
 func ChartColumn(args ...x.SvgArg) x.Node {

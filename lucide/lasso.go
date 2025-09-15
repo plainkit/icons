@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Lasso creates a Lasso Lucide icon.
 func Lasso(args ...x.SvgArg) x.Node {

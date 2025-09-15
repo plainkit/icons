@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Church creates a Church Lucide icon.
 func Church(args ...x.SvgArg) x.Node {

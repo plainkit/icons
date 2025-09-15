@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Percent creates a Percent Lucide icon.
 func Percent(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // ListTodo creates a List Todo Lucide icon.
 func ListTodo(args ...x.SvgArg) x.Node {

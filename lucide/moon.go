@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Moon creates a Moon Lucide icon.
 func Moon(args ...x.SvgArg) x.Node {

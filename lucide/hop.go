@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Hop creates a Hop Lucide icon.
 func Hop(args ...x.SvgArg) x.Node {

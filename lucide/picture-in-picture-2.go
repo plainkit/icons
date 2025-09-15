@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // PictureInPicture2 creates a Picture In Picture 2 Lucide icon.
 func PictureInPicture2(args ...x.SvgArg) x.Node {

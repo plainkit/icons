@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // SaveOff creates a Save Off Lucide icon.
 func SaveOff(args ...x.SvgArg) x.Node {

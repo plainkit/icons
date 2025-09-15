@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // SatelliteDish creates a Satellite Dish Lucide icon.
 func SatelliteDish(args ...x.SvgArg) x.Node {

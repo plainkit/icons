@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // ChartNoAxesColumn creates a Chart No Axes Column Lucide icon.
 func ChartNoAxesColumn(args ...x.SvgArg) x.Node {

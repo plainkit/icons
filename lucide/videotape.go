@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Videotape creates a Videotape Lucide icon.
 func Videotape(args ...x.SvgArg) x.Node {

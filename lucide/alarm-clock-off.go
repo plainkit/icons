@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // AlarmClockOff creates a Alarm Clock Off Lucide icon.
 func AlarmClockOff(args ...x.SvgArg) x.Node {

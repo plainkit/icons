@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // BellRing creates a Bell Ring Lucide icon.
 func BellRing(args ...x.SvgArg) x.Node {

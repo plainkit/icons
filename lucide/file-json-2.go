@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // FileJson2 creates a File Json 2 Lucide icon.
 func FileJson2(args ...x.SvgArg) x.Node {

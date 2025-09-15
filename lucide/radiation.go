@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Radiation creates a Radiation Lucide icon.
 func Radiation(args ...x.SvgArg) x.Node {

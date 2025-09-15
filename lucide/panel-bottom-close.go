@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // PanelBottomClose creates a Panel Bottom Close Lucide icon.
 func PanelBottomClose(args ...x.SvgArg) x.Node {

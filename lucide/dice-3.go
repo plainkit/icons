@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Dice3 creates a Dice 3 Lucide icon.
 func Dice3(args ...x.SvgArg) x.Node {

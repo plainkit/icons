@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // EvCharger creates a Ev Charger Lucide icon.
 func EvCharger(args ...x.SvgArg) x.Node {

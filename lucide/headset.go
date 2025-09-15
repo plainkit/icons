@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Headset creates a Headset Lucide icon.
 func Headset(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // ChartNoAxesCombined creates a Chart No Axes Combined Lucide icon.
 func ChartNoAxesCombined(args ...x.SvgArg) x.Node {

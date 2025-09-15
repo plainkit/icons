@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // CloudAlert creates a Cloud Alert Lucide icon.
 func CloudAlert(args ...x.SvgArg) x.Node {

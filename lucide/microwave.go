@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Microwave creates a Microwave Lucide icon.
 func Microwave(args ...x.SvgArg) x.Node {

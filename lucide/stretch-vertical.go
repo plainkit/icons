@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // StretchVertical creates a Stretch Vertical Lucide icon.
 func StretchVertical(args ...x.SvgArg) x.Node {

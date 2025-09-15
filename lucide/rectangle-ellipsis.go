@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // RectangleEllipsis creates a Rectangle Ellipsis Lucide icon.
 func RectangleEllipsis(args ...x.SvgArg) x.Node {

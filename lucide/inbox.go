@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Inbox creates a Inbox Lucide icon.
 func Inbox(args ...x.SvgArg) x.Node {

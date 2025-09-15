@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Hexagon creates a Hexagon Lucide icon.
 func Hexagon(args ...x.SvgArg) x.Node {

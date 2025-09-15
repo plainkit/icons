@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // PcCase creates a Pc Case Lucide icon.
 func PcCase(args ...x.SvgArg) x.Node {

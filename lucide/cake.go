@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Cake creates a Cake Lucide icon.
 func Cake(args ...x.SvgArg) x.Node {

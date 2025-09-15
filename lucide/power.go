@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Power creates a Power Lucide icon.
 func Power(args ...x.SvgArg) x.Node {

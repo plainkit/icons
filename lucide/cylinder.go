@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Cylinder creates a Cylinder Lucide icon.
 func Cylinder(args ...x.SvgArg) x.Node {

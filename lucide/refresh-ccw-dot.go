@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // RefreshCcwDot creates a Refresh Ccw Dot Lucide icon.
 func RefreshCcwDot(args ...x.SvgArg) x.Node {

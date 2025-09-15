@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Glasses creates a Glasses Lucide icon.
 func Glasses(args ...x.SvgArg) x.Node {

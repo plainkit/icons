@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Ambulance creates a Ambulance Lucide icon.
 func Ambulance(args ...x.SvgArg) x.Node {

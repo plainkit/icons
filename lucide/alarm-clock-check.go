@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // AlarmClockCheck creates a Alarm Clock Check Lucide icon.
 func AlarmClockCheck(args ...x.SvgArg) x.Node {

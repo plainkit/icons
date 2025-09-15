@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // CircleStar creates a Circle Star Lucide icon.
 func CircleStar(args ...x.SvgArg) x.Node {

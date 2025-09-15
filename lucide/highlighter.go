@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Highlighter creates a Highlighter Lucide icon.
 func Highlighter(args ...x.SvgArg) x.Node {

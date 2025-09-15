@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // ParkingMeter creates a Parking Meter Lucide icon.
 func ParkingMeter(args ...x.SvgArg) x.Node {

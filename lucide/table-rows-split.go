@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // TableRowsSplit creates a Table Rows Split Lucide icon.
 func TableRowsSplit(args ...x.SvgArg) x.Node {

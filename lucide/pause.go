@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Pause creates a Pause Lucide icon.
 func Pause(args ...x.SvgArg) x.Node {

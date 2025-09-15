@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // CloudFog creates a Cloud Fog Lucide icon.
 func CloudFog(args ...x.SvgArg) x.Node {

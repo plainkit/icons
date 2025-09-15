@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Bitcoin creates a Bitcoin Lucide icon.
 func Bitcoin(args ...x.SvgArg) x.Node {

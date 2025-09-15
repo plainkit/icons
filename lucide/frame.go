@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Frame creates a Frame Lucide icon.
 func Frame(args ...x.SvgArg) x.Node {

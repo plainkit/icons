@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // PanelTopOpen creates a Panel Top Open Lucide icon.
 func PanelTopOpen(args ...x.SvgArg) x.Node {

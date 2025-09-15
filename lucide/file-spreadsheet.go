@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // FileSpreadsheet creates a File Spreadsheet Lucide icon.
 func FileSpreadsheet(args ...x.SvgArg) x.Node {

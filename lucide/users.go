@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Users creates a Users Lucide icon.
 func Users(args ...x.SvgArg) x.Node {

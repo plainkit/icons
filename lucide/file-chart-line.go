@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // FileChartLine creates a File Chart Line Lucide icon.
 func FileChartLine(args ...x.SvgArg) x.Node {

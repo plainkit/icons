@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // CaseUpper creates a Case Upper Lucide icon.
 func CaseUpper(args ...x.SvgArg) x.Node {

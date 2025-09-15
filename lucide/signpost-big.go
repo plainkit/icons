@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // SignpostBig creates a Signpost Big Lucide icon.
 func SignpostBig(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // BadgeTurkishLira creates a Badge Turkish Lira Lucide icon.
 func BadgeTurkishLira(args ...x.SvgArg) x.Node {

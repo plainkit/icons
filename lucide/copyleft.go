@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Copyleft creates a Copyleft Lucide icon.
 func Copyleft(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // FolderCog creates a Folder Cog Lucide icon.
 func FolderCog(args ...x.SvgArg) x.Node {

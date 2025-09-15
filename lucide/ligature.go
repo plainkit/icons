@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Ligature creates a Ligature Lucide icon.
 func Ligature(args ...x.SvgArg) x.Node {

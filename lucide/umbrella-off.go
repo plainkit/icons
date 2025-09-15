@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // UmbrellaOff creates a Umbrella Off Lucide icon.
 func UmbrellaOff(args ...x.SvgArg) x.Node {

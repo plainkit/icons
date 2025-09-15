@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Scaling creates a Scaling Lucide icon.
 func Scaling(args ...x.SvgArg) x.Node {

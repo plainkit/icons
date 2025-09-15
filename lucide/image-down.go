@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // ImageDown creates a Image Down Lucide icon.
 func ImageDown(args ...x.SvgArg) x.Node {

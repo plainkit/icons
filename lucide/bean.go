@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Bean creates a Bean Lucide icon.
 func Bean(args ...x.SvgArg) x.Node {

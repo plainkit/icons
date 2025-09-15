@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // CircleAlert creates a Circle Alert Lucide icon.
 func CircleAlert(args ...x.SvgArg) x.Node {

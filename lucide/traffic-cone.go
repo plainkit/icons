@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // TrafficCone creates a Traffic Cone Lucide icon.
 func TrafficCone(args ...x.SvgArg) x.Node {

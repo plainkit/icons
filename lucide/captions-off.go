@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // CaptionsOff creates a Captions Off Lucide icon.
 func CaptionsOff(args ...x.SvgArg) x.Node {

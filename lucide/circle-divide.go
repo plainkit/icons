@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // CircleDivide creates a Circle Divide Lucide icon.
 func CircleDivide(args ...x.SvgArg) x.Node {

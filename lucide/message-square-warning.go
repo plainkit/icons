@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // MessageSquareWarning creates a Message Square Warning Lucide icon.
 func MessageSquareWarning(args ...x.SvgArg) x.Node {

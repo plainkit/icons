@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Gift creates a Gift Lucide icon.
 func Gift(args ...x.SvgArg) x.Node {

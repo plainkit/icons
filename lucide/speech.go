@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Speech creates a Speech Lucide icon.
 func Speech(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // FolderCode creates a Folder Code Lucide icon.
 func FolderCode(args ...x.SvgArg) x.Node {

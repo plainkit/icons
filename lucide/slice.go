@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Slice creates a Slice Lucide icon.
 func Slice(args ...x.SvgArg) x.Node {

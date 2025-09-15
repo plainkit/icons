@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Binary creates a Binary Lucide icon.
 func Binary(args ...x.SvgArg) x.Node {

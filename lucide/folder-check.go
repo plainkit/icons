@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // FolderCheck creates a Folder Check Lucide icon.
 func FolderCheck(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // ArrowLeftFromLine creates a Arrow Left From Line Lucide icon.
 func ArrowLeftFromLine(args ...x.SvgArg) x.Node {

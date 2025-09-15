@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // ListPlus creates a List Plus Lucide icon.
 func ListPlus(args ...x.SvgArg) x.Node {

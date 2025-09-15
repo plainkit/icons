@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Settings creates a Settings Lucide icon.
 func Settings(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Footprints creates a Footprints Lucide icon.
 func Footprints(args ...x.SvgArg) x.Node {

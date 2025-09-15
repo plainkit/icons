@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // LocateFixed creates a Locate Fixed Lucide icon.
 func LocateFixed(args ...x.SvgArg) x.Node {

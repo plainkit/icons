@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // BatteryMedium creates a Battery Medium Lucide icon.
 func BatteryMedium(args ...x.SvgArg) x.Node {

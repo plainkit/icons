@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // NonBinary creates a Non Binary Lucide icon.
 func NonBinary(args ...x.SvgArg) x.Node {

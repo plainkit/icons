@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Caravan creates a Caravan Lucide icon.
 func Caravan(args ...x.SvgArg) x.Node {

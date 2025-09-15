@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Gem creates a Gem Lucide icon.
 func Gem(args ...x.SvgArg) x.Node {

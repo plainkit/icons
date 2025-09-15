@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // TimerOff creates a Timer Off Lucide icon.
 func TimerOff(args ...x.SvgArg) x.Node {

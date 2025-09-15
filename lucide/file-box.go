@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // FileBox creates a File Box Lucide icon.
 func FileBox(args ...x.SvgArg) x.Node {

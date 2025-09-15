@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // PiggyBank creates a Piggy Bank Lucide icon.
 func PiggyBank(args ...x.SvgArg) x.Node {

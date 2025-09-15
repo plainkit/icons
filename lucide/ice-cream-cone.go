@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // IceCreamCone creates a Ice Cream Cone Lucide icon.
 func IceCreamCone(args ...x.SvgArg) x.Node {

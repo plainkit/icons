@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // FolderMinus creates a Folder Minus Lucide icon.
 func FolderMinus(args ...x.SvgArg) x.Node {

@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // Lollipop creates a Lollipop Lucide icon.
 func Lollipop(args ...x.SvgArg) x.Node {

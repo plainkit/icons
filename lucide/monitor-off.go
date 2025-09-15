@@ -1,6 +1,6 @@
 package lucide
 
-import x "github.com/plainkit/blox"
+import x "github.com/plainkit/html"
 
 // MonitorOff creates a Monitor Off Lucide icon.
 func MonitorOff(args ...x.SvgArg) x.Node {
