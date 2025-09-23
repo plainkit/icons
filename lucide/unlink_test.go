@@ -21,7 +21,7 @@ func TestUnlink_SVGMatchesReference(t *testing.T) {
 	// Load reference SVG
 	f, err := os.Open("icons/unlink.svg")
 	require.NoError(t, err, "open reference SVG")
-	defer f.Close()
+	defer func() { _ = f.Close() }()
 
 	wantNode, err := parseXMLToNode(f)
 	require.NoError(t, err, "parse reference SVG")
