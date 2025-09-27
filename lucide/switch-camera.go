@@ -1,16 +1,18 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // SwitchCamera creates a Switch Camera Lucide icon.
-func SwitchCamera(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-switch-camera", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M11 19H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h5"))),
-		x.Child(x.Path(x.D("M13 5h7a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-5"))),
-		x.Child(x.Circle(x.Cx("12"), x.Cy("12"), x.R("3"))),
-		x.Child(x.Path(x.D("m18 22-3-3 3-3"))),
-		x.Child(x.Path(x.D("m6 2 3 3-3 3"))),
-	)
-	return x.Svg(svgArgs...)
+func SwitchCamera(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-switch-camera", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M11 19H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h5"))),
+		html.Child(html.SvgPath(html.AD("M13 5h7a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-5"))),
+		html.Child(html.SvgCircle(html.ACx("12"), html.ACy("12"), html.AR("3"))),
+		html.Child(html.SvgPath(html.AD("m18 22-3-3 3-3"))),
+		html.Child(html.SvgPath(html.AD("m6 2 3 3-3 3"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

@@ -1,16 +1,18 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // ListChecks creates a List Checks Lucide icon.
-func ListChecks(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-list-checks", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M13 5h8"))),
-		x.Child(x.Path(x.D("M13 12h8"))),
-		x.Child(x.Path(x.D("M13 19h8"))),
-		x.Child(x.Path(x.D("m3 17 2 2 4-4"))),
-		x.Child(x.Path(x.D("m3 7 2 2 4-4"))),
-	)
-	return x.Svg(svgArgs...)
+func ListChecks(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-list-checks", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M13 5h8"))),
+		html.Child(html.SvgPath(html.AD("M13 12h8"))),
+		html.Child(html.SvgPath(html.AD("M13 19h8"))),
+		html.Child(html.SvgPath(html.AD("m3 17 2 2 4-4"))),
+		html.Child(html.SvgPath(html.AD("m3 7 2 2 4-4"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

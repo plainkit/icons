@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Voicemail creates a Voicemail Lucide icon.
-func Voicemail(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-voicemail", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Circle(x.Cx("6"), x.Cy("12"), x.R("4"))),
-		x.Child(x.Circle(x.Cx("18"), x.Cy("12"), x.R("4"))),
-		x.Child(x.Line(x.X1("6"), x.X2("18"), x.Y1("16"), x.Y2("16"))),
-	)
-	return x.Svg(svgArgs...)
+func Voicemail(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-voicemail", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgCircle(html.ACx("6"), html.ACy("12"), html.AR("4"))),
+		html.Child(html.SvgCircle(html.ACx("18"), html.ACy("12"), html.AR("4"))),
+		html.Child(html.SvgLine(html.AX1("6"), html.AX2("18"), html.AY1("16"), html.AY2("16"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

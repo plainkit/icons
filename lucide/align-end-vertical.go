@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // AlignEndVertical creates a Align End Vertical Lucide icon.
-func AlignEndVertical(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-align-end-vertical", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Rect(x.RectWidth("16"), x.RectHeight("6"), x.X("2"), x.Y("4"), x.Rx("2"))),
-		x.Child(x.Rect(x.RectWidth("9"), x.RectHeight("6"), x.X("9"), x.Y("14"), x.Rx("2"))),
-		x.Child(x.Path(x.D("M22 22V2"))),
-	)
-	return x.Svg(svgArgs...)
+func AlignEndVertical(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-align-end-vertical", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgRect(html.AWidth("16"), html.AHeight("6"), html.AX("2"), html.AY("4"), html.ARx("2"))),
+		html.Child(html.SvgRect(html.AWidth("9"), html.AHeight("6"), html.AX("9"), html.AY("14"), html.ARx("2"))),
+		html.Child(html.SvgPath(html.AD("M22 22V2"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

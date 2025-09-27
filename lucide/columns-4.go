@@ -1,15 +1,17 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Columns4 creates a Columns 4 Lucide icon.
-func Columns4(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-columns-4", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Rect(x.RectWidth("18"), x.RectHeight("18"), x.X("3"), x.Y("3"), x.Rx("2"))),
-		x.Child(x.Path(x.D("M7.5 3v18"))),
-		x.Child(x.Path(x.D("M12 3v18"))),
-		x.Child(x.Path(x.D("M16.5 3v18"))),
-	)
-	return x.Svg(svgArgs...)
+func Columns4(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-columns-4", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgRect(html.AWidth("18"), html.AHeight("18"), html.AX("3"), html.AY("3"), html.ARx("2"))),
+		html.Child(html.SvgPath(html.AD("M7.5 3v18"))),
+		html.Child(html.SvgPath(html.AD("M12 3v18"))),
+		html.Child(html.SvgPath(html.AD("M16.5 3v18"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

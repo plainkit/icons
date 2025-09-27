@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Timer creates a Timer Lucide icon.
-func Timer(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-timer", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Line(x.X1("10"), x.X2("14"), x.Y1("2"), x.Y2("2"))),
-		x.Child(x.Line(x.X1("12"), x.X2("15"), x.Y1("14"), x.Y2("11"))),
-		x.Child(x.Circle(x.Cx("12"), x.Cy("14"), x.R("8"))),
-	)
-	return x.Svg(svgArgs...)
+func Timer(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-timer", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgLine(html.AX1("10"), html.AX2("14"), html.AY1("2"), html.AY2("2"))),
+		html.Child(html.SvgLine(html.AX1("12"), html.AX2("15"), html.AY1("14"), html.AY2("11"))),
+		html.Child(html.SvgCircle(html.ACx("12"), html.ACy("14"), html.AR("8"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

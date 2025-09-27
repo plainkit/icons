@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // LogOut creates a Log Out Lucide icon.
-func LogOut(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-log-out", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("m16 17 5-5-5-5"))),
-		x.Child(x.Path(x.D("M21 12H9"))),
-		x.Child(x.Path(x.D("M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"))),
-	)
-	return x.Svg(svgArgs...)
+func LogOut(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-log-out", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("m16 17 5-5-5-5"))),
+		html.Child(html.SvgPath(html.AD("M21 12H9"))),
+		html.Child(html.SvgPath(html.AD("M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

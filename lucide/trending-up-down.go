@@ -1,15 +1,17 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // TrendingUpDown creates a Trending Up Down Lucide icon.
-func TrendingUpDown(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-trending-up-down", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M14.828 14.828 21 21"))),
-		x.Child(x.Path(x.D("M21 16v5h-5"))),
-		x.Child(x.Path(x.D("m21 3-9 9-4-4-6 6"))),
-		x.Child(x.Path(x.D("M21 8V3h-5"))),
-	)
-	return x.Svg(svgArgs...)
+func TrendingUpDown(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-trending-up-down", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M14.828 14.828 21 21"))),
+		html.Child(html.SvgPath(html.AD("M21 16v5h-5"))),
+		html.Child(html.SvgPath(html.AD("m21 3-9 9-4-4-6 6"))),
+		html.Child(html.SvgPath(html.AD("M21 8V3h-5"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

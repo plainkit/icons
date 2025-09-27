@@ -1,13 +1,15 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Blend creates a Blend Lucide icon.
-func Blend(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-blend", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Circle(x.Cx("9"), x.Cy("9"), x.R("7"))),
-		x.Child(x.Circle(x.Cx("15"), x.Cy("15"), x.R("7"))),
-	)
-	return x.Svg(svgArgs...)
+func Blend(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-blend", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgCircle(html.ACx("9"), html.ACy("9"), html.AR("7"))),
+		html.Child(html.SvgCircle(html.ACx("15"), html.ACy("15"), html.AR("7"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

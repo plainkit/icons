@@ -1,15 +1,17 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Laugh creates a Laugh Lucide icon.
-func Laugh(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-laugh", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Circle(x.Cx("12"), x.Cy("12"), x.R("10"))),
-		x.Child(x.Path(x.D("M18 13a6 6 0 0 1-6 5 6 6 0 0 1-6-5h12Z"))),
-		x.Child(x.Line(x.X1("9"), x.X2("9.01"), x.Y1("9"), x.Y2("9"))),
-		x.Child(x.Line(x.X1("15"), x.X2("15.01"), x.Y1("9"), x.Y2("9"))),
-	)
-	return x.Svg(svgArgs...)
+func Laugh(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-laugh", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgCircle(html.ACx("12"), html.ACy("12"), html.AR("10"))),
+		html.Child(html.SvgPath(html.AD("M18 13a6 6 0 0 1-6 5 6 6 0 0 1-6-5h12Z"))),
+		html.Child(html.SvgLine(html.AX1("9"), html.AX2("9.01"), html.AY1("9"), html.AY2("9"))),
+		html.Child(html.SvgLine(html.AX1("15"), html.AX2("15.01"), html.AY1("9"), html.AY2("9"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

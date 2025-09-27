@@ -1,13 +1,15 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // CircleCheckBig creates a Circle Check Big Lucide icon.
-func CircleCheckBig(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-circle-check-big", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M21.801 10A10 10 0 1 1 17 3.335"))),
-		x.Child(x.Path(x.D("m9 11 3 3L22 4"))),
-	)
-	return x.Svg(svgArgs...)
+func CircleCheckBig(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-circle-check-big", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M21.801 10A10 10 0 1 1 17 3.335"))),
+		html.Child(html.SvgPath(html.AD("m9 11 3 3L22 4"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

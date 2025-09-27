@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // SearchCheck creates a Search Check Lucide icon.
-func SearchCheck(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-search-check", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("m8 11 2 2 4-4"))),
-		x.Child(x.Circle(x.Cx("11"), x.Cy("11"), x.R("8"))),
-		x.Child(x.Path(x.D("m21 21-4.3-4.3"))),
-	)
-	return x.Svg(svgArgs...)
+func SearchCheck(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-search-check", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("m8 11 2 2 4-4"))),
+		html.Child(html.SvgCircle(html.ACx("11"), html.ACy("11"), html.AR("8"))),
+		html.Child(html.SvgPath(html.AD("m21 21-4.3-4.3"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

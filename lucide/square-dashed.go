@@ -1,23 +1,25 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // SquareDashed creates a Square Dashed Lucide icon.
-func SquareDashed(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-square-dashed", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M5 3a2 2 0 0 0-2 2"))),
-		x.Child(x.Path(x.D("M19 3a2 2 0 0 1 2 2"))),
-		x.Child(x.Path(x.D("M21 19a2 2 0 0 1-2 2"))),
-		x.Child(x.Path(x.D("M5 21a2 2 0 0 1-2-2"))),
-		x.Child(x.Path(x.D("M9 3h1"))),
-		x.Child(x.Path(x.D("M9 21h1"))),
-		x.Child(x.Path(x.D("M14 3h1"))),
-		x.Child(x.Path(x.D("M14 21h1"))),
-		x.Child(x.Path(x.D("M3 9v1"))),
-		x.Child(x.Path(x.D("M21 9v1"))),
-		x.Child(x.Path(x.D("M3 14v1"))),
-		x.Child(x.Path(x.D("M21 14v1"))),
-	)
-	return x.Svg(svgArgs...)
+func SquareDashed(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-square-dashed", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M5 3a2 2 0 0 0-2 2"))),
+		html.Child(html.SvgPath(html.AD("M19 3a2 2 0 0 1 2 2"))),
+		html.Child(html.SvgPath(html.AD("M21 19a2 2 0 0 1-2 2"))),
+		html.Child(html.SvgPath(html.AD("M5 21a2 2 0 0 1-2-2"))),
+		html.Child(html.SvgPath(html.AD("M9 3h1"))),
+		html.Child(html.SvgPath(html.AD("M9 21h1"))),
+		html.Child(html.SvgPath(html.AD("M14 3h1"))),
+		html.Child(html.SvgPath(html.AD("M14 21h1"))),
+		html.Child(html.SvgPath(html.AD("M3 9v1"))),
+		html.Child(html.SvgPath(html.AD("M21 9v1"))),
+		html.Child(html.SvgPath(html.AD("M3 14v1"))),
+		html.Child(html.SvgPath(html.AD("M21 14v1"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

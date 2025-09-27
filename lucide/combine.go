@@ -1,17 +1,19 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Combine creates a Combine Lucide icon.
-func Combine(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-combine", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M10 18H5a3 3 0 0 1-3-3v-1"))),
-		x.Child(x.Path(x.D("M14 2a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2"))),
-		x.Child(x.Path(x.D("M20 2a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2"))),
-		x.Child(x.Path(x.D("m7 21 3-3-3-3"))),
-		x.Child(x.Rect(x.RectWidth("8"), x.RectHeight("8"), x.X("14"), x.Y("14"), x.Rx("2"))),
-		x.Child(x.Rect(x.RectWidth("8"), x.RectHeight("8"), x.X("2"), x.Y("2"), x.Rx("2"))),
-	)
-	return x.Svg(svgArgs...)
+func Combine(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-combine", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M10 18H5a3 3 0 0 1-3-3v-1"))),
+		html.Child(html.SvgPath(html.AD("M14 2a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2"))),
+		html.Child(html.SvgPath(html.AD("M20 2a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2"))),
+		html.Child(html.SvgPath(html.AD("m7 21 3-3-3-3"))),
+		html.Child(html.SvgRect(html.AWidth("8"), html.AHeight("8"), html.AX("14"), html.AY("14"), html.ARx("2"))),
+		html.Child(html.SvgRect(html.AWidth("8"), html.AHeight("8"), html.AX("2"), html.AY("2"), html.ARx("2"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

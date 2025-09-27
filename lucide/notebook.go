@@ -1,17 +1,19 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Notebook creates a Notebook Lucide icon.
-func Notebook(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-notebook", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M2 6h4"))),
-		x.Child(x.Path(x.D("M2 10h4"))),
-		x.Child(x.Path(x.D("M2 14h4"))),
-		x.Child(x.Path(x.D("M2 18h4"))),
-		x.Child(x.Rect(x.RectWidth("16"), x.RectHeight("20"), x.X("4"), x.Y("2"), x.Rx("2"))),
-		x.Child(x.Path(x.D("M16 2v20"))),
-	)
-	return x.Svg(svgArgs...)
+func Notebook(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-notebook", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M2 6h4"))),
+		html.Child(html.SvgPath(html.AD("M2 10h4"))),
+		html.Child(html.SvgPath(html.AD("M2 14h4"))),
+		html.Child(html.SvgPath(html.AD("M2 18h4"))),
+		html.Child(html.SvgRect(html.AWidth("16"), html.AHeight("20"), html.AX("4"), html.AY("2"), html.ARx("2"))),
+		html.Child(html.SvgPath(html.AD("M16 2v20"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

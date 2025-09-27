@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // MoveVertical creates a Move Vertical Lucide icon.
-func MoveVertical(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-move-vertical", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M12 2v20"))),
-		x.Child(x.Path(x.D("m8 18 4 4 4-4"))),
-		x.Child(x.Path(x.D("m8 6 4-4 4 4"))),
-	)
-	return x.Svg(svgArgs...)
+func MoveVertical(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-move-vertical", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M12 2v20"))),
+		html.Child(html.SvgPath(html.AD("m8 18 4 4 4-4"))),
+		html.Child(html.SvgPath(html.AD("m8 6 4-4 4 4"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

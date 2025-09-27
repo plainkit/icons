@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // CloudAlert creates a Cloud Alert Lucide icon.
-func CloudAlert(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-cloud-alert", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M12 12v4"))),
-		x.Child(x.Path(x.D("M12 20h.01"))),
-		x.Child(x.Path(x.D("M17 18h.5a1 1 0 0 0 0-9h-1.79A7 7 0 1 0 7 17.708"))),
-	)
-	return x.Svg(svgArgs...)
+func CloudAlert(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-cloud-alert", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M12 12v4"))),
+		html.Child(html.SvgPath(html.AD("M12 20h.01"))),
+		html.Child(html.SvgPath(html.AD("M17 18h.5a1 1 0 0 0 0-9h-1.79A7 7 0 1 0 7 17.708"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

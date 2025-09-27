@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // WifiHigh creates a Wifi High Lucide icon.
-func WifiHigh(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-wifi-high", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M12 20h.01"))),
-		x.Child(x.Path(x.D("M5 12.859a10 10 0 0 1 14 0"))),
-		x.Child(x.Path(x.D("M8.5 16.429a5 5 0 0 1 7 0"))),
-	)
-	return x.Svg(svgArgs...)
+func WifiHigh(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-wifi-high", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M12 20h.01"))),
+		html.Child(html.SvgPath(html.AD("M5 12.859a10 10 0 0 1 14 0"))),
+		html.Child(html.SvgPath(html.AD("M8.5 16.429a5 5 0 0 1 7 0"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

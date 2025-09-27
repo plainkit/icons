@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Divide creates a Divide Lucide icon.
-func Divide(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-divide", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Circle(x.Cx("12"), x.Cy("6"), x.R("1"))),
-		x.Child(x.Line(x.X1("5"), x.X2("19"), x.Y1("12"), x.Y2("12"))),
-		x.Child(x.Circle(x.Cx("12"), x.Cy("18"), x.R("1"))),
-	)
-	return x.Svg(svgArgs...)
+func Divide(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-divide", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgCircle(html.ACx("12"), html.ACy("6"), html.AR("1"))),
+		html.Child(html.SvgLine(html.AX1("5"), html.AX2("19"), html.AY1("12"), html.AY2("12"))),
+		html.Child(html.SvgCircle(html.ACx("12"), html.ACy("18"), html.AR("1"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

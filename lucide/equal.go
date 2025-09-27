@@ -1,13 +1,15 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Equal creates a Equal Lucide icon.
-func Equal(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-equal", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Line(x.X1("5"), x.X2("19"), x.Y1("9"), x.Y2("9"))),
-		x.Child(x.Line(x.X1("5"), x.X2("19"), x.Y1("15"), x.Y2("15"))),
-	)
-	return x.Svg(svgArgs...)
+func Equal(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-equal", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgLine(html.AX1("5"), html.AX2("19"), html.AY1("9"), html.AY2("9"))),
+		html.Child(html.SvgLine(html.AX1("5"), html.AX2("19"), html.AY1("15"), html.AY2("15"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

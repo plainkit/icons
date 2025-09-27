@@ -1,21 +1,23 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // ShipWheel creates a Ship Wheel Lucide icon.
-func ShipWheel(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-ship-wheel", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Circle(x.Cx("12"), x.Cy("12"), x.R("8"))),
-		x.Child(x.Path(x.D("M12 2v7.5"))),
-		x.Child(x.Path(x.D("m19 5-5.23 5.23"))),
-		x.Child(x.Path(x.D("M22 12h-7.5"))),
-		x.Child(x.Path(x.D("m19 19-5.23-5.23"))),
-		x.Child(x.Path(x.D("M12 14.5V22"))),
-		x.Child(x.Path(x.D("M10.23 13.77 5 19"))),
-		x.Child(x.Path(x.D("M9.5 12H2"))),
-		x.Child(x.Path(x.D("M10.23 10.23 5 5"))),
-		x.Child(x.Circle(x.Cx("12"), x.Cy("12"), x.R("2.5"))),
-	)
-	return x.Svg(svgArgs...)
+func ShipWheel(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-ship-wheel", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgCircle(html.ACx("12"), html.ACy("12"), html.AR("8"))),
+		html.Child(html.SvgPath(html.AD("M12 2v7.5"))),
+		html.Child(html.SvgPath(html.AD("m19 5-5.23 5.23"))),
+		html.Child(html.SvgPath(html.AD("M22 12h-7.5"))),
+		html.Child(html.SvgPath(html.AD("m19 19-5.23-5.23"))),
+		html.Child(html.SvgPath(html.AD("M12 14.5V22"))),
+		html.Child(html.SvgPath(html.AD("M10.23 13.77 5 19"))),
+		html.Child(html.SvgPath(html.AD("M9.5 12H2"))),
+		html.Child(html.SvgPath(html.AD("M10.23 10.23 5 5"))),
+		html.Child(html.SvgCircle(html.ACx("12"), html.ACy("12"), html.AR("2.5"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

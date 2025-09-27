@@ -1,13 +1,15 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // CheckCheck creates a Check Check Lucide icon.
-func CheckCheck(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-check-check", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M18 6 7 17l-5-5"))),
-		x.Child(x.Path(x.D("m22 10-7.5 7.5L13 16"))),
-	)
-	return x.Svg(svgArgs...)
+func CheckCheck(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-check-check", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M18 6 7 17l-5-5"))),
+		html.Child(html.SvgPath(html.AD("m22 10-7.5 7.5L13 16"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

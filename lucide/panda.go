@@ -1,17 +1,19 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Panda creates a Panda Lucide icon.
-func Panda(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-panda", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M11.25 17.25h1.5L12 18z"))),
-		x.Child(x.Path(x.D("m15 12 2 2"))),
-		x.Child(x.Path(x.D("M18 6.5a.5.5 0 0 0-.5-.5"))),
-		x.Child(x.Path(x.D("M20.69 9.67a4.5 4.5 0 1 0-7.04-5.5 8.35 8.35 0 0 0-3.3 0 4.5 4.5 0 1 0-7.04 5.5C2.49 11.2 2 12.88 2 14.5 2 19.47 6.48 22 12 22s10-2.53 10-7.5c0-1.62-.48-3.3-1.3-4.83"))),
-		x.Child(x.Path(x.D("M6 6.5a.495.495 0 0 1 .5-.5"))),
-		x.Child(x.Path(x.D("m9 12-2 2"))),
-	)
-	return x.Svg(svgArgs...)
+func Panda(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-panda", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M11.25 17.25h1.5L12 18z"))),
+		html.Child(html.SvgPath(html.AD("m15 12 2 2"))),
+		html.Child(html.SvgPath(html.AD("M18 6.5a.5.5 0 0 0-.5-.5"))),
+		html.Child(html.SvgPath(html.AD("M20.69 9.67a4.5 4.5 0 1 0-7.04-5.5 8.35 8.35 0 0 0-3.3 0 4.5 4.5 0 1 0-7.04 5.5C2.49 11.2 2 12.88 2 14.5 2 19.47 6.48 22 12 22s10-2.53 10-7.5c0-1.62-.48-3.3-1.3-4.83"))),
+		html.Child(html.SvgPath(html.AD("M6 6.5a.495.495 0 0 1 .5-.5"))),
+		html.Child(html.SvgPath(html.AD("m9 12-2 2"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

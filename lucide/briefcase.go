@@ -1,13 +1,15 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Briefcase creates a Briefcase Lucide icon.
-func Briefcase(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-briefcase", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"))),
-		x.Child(x.Rect(x.RectWidth("20"), x.RectHeight("14"), x.X("2"), x.Y("6"), x.Rx("2"))),
-	)
-	return x.Svg(svgArgs...)
+func Briefcase(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-briefcase", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"))),
+		html.Child(html.SvgRect(html.AWidth("20"), html.AHeight("14"), html.AX("2"), html.AY("6"), html.ARx("2"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

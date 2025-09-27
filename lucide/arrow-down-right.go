@@ -1,13 +1,15 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // ArrowDownRight creates a Arrow Down Right Lucide icon.
-func ArrowDownRight(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-arrow-down-right", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("m7 7 10 10"))),
-		x.Child(x.Path(x.D("M17 7v10H7"))),
-	)
-	return x.Svg(svgArgs...)
+func ArrowDownRight(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-arrow-down-right", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("m7 7 10 10"))),
+		html.Child(html.SvgPath(html.AD("M17 7v10H7"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

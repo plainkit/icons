@@ -1,13 +1,15 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Eclipse creates a Eclipse Lucide icon.
-func Eclipse(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-eclipse", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Circle(x.Cx("12"), x.Cy("12"), x.R("10"))),
-		x.Child(x.Path(x.D("M12 2a7 7 0 1 0 10 10"))),
-	)
-	return x.Svg(svgArgs...)
+func Eclipse(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-eclipse", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgCircle(html.ACx("12"), html.ACy("12"), html.AR("10"))),
+		html.Child(html.SvgPath(html.AD("M12 2a7 7 0 1 0 10 10"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

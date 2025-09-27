@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // ChartBarBig creates a Chart Bar Big Lucide icon.
-func ChartBarBig(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-chart-bar-big", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M3 3v16a2 2 0 0 0 2 2h16"))),
-		x.Child(x.Rect(x.RectWidth("9"), x.RectHeight("4"), x.X("7"), x.Y("13"), x.Rx("1"))),
-		x.Child(x.Rect(x.RectWidth("12"), x.RectHeight("4"), x.X("7"), x.Y("5"), x.Rx("1"))),
-	)
-	return x.Svg(svgArgs...)
+func ChartBarBig(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-chart-bar-big", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M3 3v16a2 2 0 0 0 2 2h16"))),
+		html.Child(html.SvgRect(html.AWidth("9"), html.AHeight("4"), html.AX("7"), html.AY("13"), html.ARx("1"))),
+		html.Child(html.SvgRect(html.AWidth("12"), html.AHeight("4"), html.AX("7"), html.AY("5"), html.ARx("1"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

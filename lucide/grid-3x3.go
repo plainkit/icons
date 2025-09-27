@@ -1,16 +1,18 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Grid3x3 creates a Grid 3x3 Lucide icon.
-func Grid3x3(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-grid-3x3", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Rect(x.RectWidth("18"), x.RectHeight("18"), x.X("3"), x.Y("3"), x.Rx("2"))),
-		x.Child(x.Path(x.D("M3 9h18"))),
-		x.Child(x.Path(x.D("M3 15h18"))),
-		x.Child(x.Path(x.D("M9 3v18"))),
-		x.Child(x.Path(x.D("M15 3v18"))),
-	)
-	return x.Svg(svgArgs...)
+func Grid3x3(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-grid-3x3", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgRect(html.AWidth("18"), html.AHeight("18"), html.AX("3"), html.AY("3"), html.ARx("2"))),
+		html.Child(html.SvgPath(html.AD("M3 9h18"))),
+		html.Child(html.SvgPath(html.AD("M3 15h18"))),
+		html.Child(html.SvgPath(html.AD("M9 3v18"))),
+		html.Child(html.SvgPath(html.AD("M15 3v18"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

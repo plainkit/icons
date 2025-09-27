@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // NavigationOff creates a Navigation Off Lucide icon.
-func NavigationOff(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-navigation-off", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M8.43 8.43 3 11l8 2 2 8 2.57-5.43"))),
-		x.Child(x.Path(x.D("M17.39 11.73 22 2l-9.73 4.61"))),
-		x.Child(x.Line(x.X1("2"), x.X2("22"), x.Y1("2"), x.Y2("22"))),
-	)
-	return x.Svg(svgArgs...)
+func NavigationOff(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-navigation-off", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M8.43 8.43 3 11l8 2 2 8 2.57-5.43"))),
+		html.Child(html.SvgPath(html.AD("M17.39 11.73 22 2l-9.73 4.61"))),
+		html.Child(html.SvgLine(html.AX1("2"), html.AX2("22"), html.AY1("2"), html.AY2("22"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

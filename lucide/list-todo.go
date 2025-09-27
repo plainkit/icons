@@ -1,16 +1,18 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // ListTodo creates a List Todo Lucide icon.
-func ListTodo(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-list-todo", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M13 5h8"))),
-		x.Child(x.Path(x.D("M13 12h8"))),
-		x.Child(x.Path(x.D("M13 19h8"))),
-		x.Child(x.Path(x.D("m3 17 2 2 4-4"))),
-		x.Child(x.Rect(x.RectWidth("6"), x.RectHeight("6"), x.X("3"), x.Y("4"), x.Rx("1"))),
-	)
-	return x.Svg(svgArgs...)
+func ListTodo(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-list-todo", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M13 5h8"))),
+		html.Child(html.SvgPath(html.AD("M13 12h8"))),
+		html.Child(html.SvgPath(html.AD("M13 19h8"))),
+		html.Child(html.SvgPath(html.AD("m3 17 2 2 4-4"))),
+		html.Child(html.SvgRect(html.AWidth("6"), html.AHeight("6"), html.AX("3"), html.AY("4"), html.ARx("1"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // FolderSearch creates a Folder Search Lucide icon.
-func FolderSearch(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-folder-search", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M10.7 20H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H20a2 2 0 0 1 2 2v4.1"))),
-		x.Child(x.Path(x.D("m21 21-1.9-1.9"))),
-		x.Child(x.Circle(x.Cx("17"), x.Cy("17"), x.R("3"))),
-	)
-	return x.Svg(svgArgs...)
+func FolderSearch(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-folder-search", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M10.7 20H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H20a2 2 0 0 1 2 2v4.1"))),
+		html.Child(html.SvgPath(html.AD("m21 21-1.9-1.9"))),
+		html.Child(html.SvgCircle(html.ACx("17"), html.ACy("17"), html.AR("3"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

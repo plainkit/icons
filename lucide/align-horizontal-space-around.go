@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // AlignHorizontalSpaceAround creates a Align Horizontal Space Around Lucide icon.
-func AlignHorizontalSpaceAround(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-align-horizontal-space-around", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Rect(x.RectWidth("6"), x.RectHeight("10"), x.X("9"), x.Y("7"), x.Rx("2"))),
-		x.Child(x.Path(x.D("M4 22V2"))),
-		x.Child(x.Path(x.D("M20 22V2"))),
-	)
-	return x.Svg(svgArgs...)
+func AlignHorizontalSpaceAround(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-align-horizontal-space-around", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgRect(html.AWidth("6"), html.AHeight("10"), html.AX("9"), html.AY("7"), html.ARx("2"))),
+		html.Child(html.SvgPath(html.AD("M4 22V2"))),
+		html.Child(html.SvgPath(html.AD("M20 22V2"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

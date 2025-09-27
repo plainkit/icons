@@ -1,16 +1,18 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Network creates a Network Lucide icon.
-func Network(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-network", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Rect(x.RectWidth("6"), x.RectHeight("6"), x.X("16"), x.Y("16"), x.Rx("1"))),
-		x.Child(x.Rect(x.RectWidth("6"), x.RectHeight("6"), x.X("2"), x.Y("16"), x.Rx("1"))),
-		x.Child(x.Rect(x.RectWidth("6"), x.RectHeight("6"), x.X("9"), x.Y("2"), x.Rx("1"))),
-		x.Child(x.Path(x.D("M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3"))),
-		x.Child(x.Path(x.D("M12 12V8"))),
-	)
-	return x.Svg(svgArgs...)
+func Network(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-network", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgRect(html.AWidth("6"), html.AHeight("6"), html.AX("16"), html.AY("16"), html.ARx("1"))),
+		html.Child(html.SvgRect(html.AWidth("6"), html.AHeight("6"), html.AX("2"), html.AY("16"), html.ARx("1"))),
+		html.Child(html.SvgRect(html.AWidth("6"), html.AHeight("6"), html.AX("9"), html.AY("2"), html.ARx("1"))),
+		html.Child(html.SvgPath(html.AD("M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3"))),
+		html.Child(html.SvgPath(html.AD("M12 12V8"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

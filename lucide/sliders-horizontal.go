@@ -1,20 +1,22 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // SlidersHorizontal creates a Sliders Horizontal Lucide icon.
-func SlidersHorizontal(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-sliders-horizontal", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M10 5H3"))),
-		x.Child(x.Path(x.D("M12 19H3"))),
-		x.Child(x.Path(x.D("M14 3v4"))),
-		x.Child(x.Path(x.D("M16 17v4"))),
-		x.Child(x.Path(x.D("M21 12h-9"))),
-		x.Child(x.Path(x.D("M21 19h-5"))),
-		x.Child(x.Path(x.D("M21 5h-7"))),
-		x.Child(x.Path(x.D("M8 10v4"))),
-		x.Child(x.Path(x.D("M8 12H3"))),
-	)
-	return x.Svg(svgArgs...)
+func SlidersHorizontal(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-sliders-horizontal", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M10 5H3"))),
+		html.Child(html.SvgPath(html.AD("M12 19H3"))),
+		html.Child(html.SvgPath(html.AD("M14 3v4"))),
+		html.Child(html.SvgPath(html.AD("M16 17v4"))),
+		html.Child(html.SvgPath(html.AD("M21 12h-9"))),
+		html.Child(html.SvgPath(html.AD("M21 19h-5"))),
+		html.Child(html.SvgPath(html.AD("M21 5h-7"))),
+		html.Child(html.SvgPath(html.AD("M8 10v4"))),
+		html.Child(html.SvgPath(html.AD("M8 12H3"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

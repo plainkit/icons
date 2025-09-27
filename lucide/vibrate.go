@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Vibrate creates a Vibrate Lucide icon.
-func Vibrate(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-vibrate", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("m2 8 2 2-2 2 2 2-2 2"))),
-		x.Child(x.Path(x.D("m22 8-2 2 2 2-2 2 2 2"))),
-		x.Child(x.Rect(x.RectWidth("8"), x.RectHeight("14"), x.X("8"), x.Y("5"), x.Rx("1"))),
-	)
-	return x.Svg(svgArgs...)
+func Vibrate(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-vibrate", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("m2 8 2 2-2 2 2 2-2 2"))),
+		html.Child(html.SvgPath(html.AD("m22 8-2 2 2 2-2 2 2 2"))),
+		html.Child(html.SvgRect(html.AWidth("8"), html.AHeight("14"), html.AX("8"), html.AY("5"), html.ARx("1"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

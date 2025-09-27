@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Linkedin creates a Linkedin Lucide icon.
-func Linkedin(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-linkedin", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"))),
-		x.Child(x.Rect(x.RectWidth("4"), x.RectHeight("12"), x.X("2"), x.Y("9"))),
-		x.Child(x.Circle(x.Cx("4"), x.Cy("4"), x.R("2"))),
-	)
-	return x.Svg(svgArgs...)
+func Linkedin(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-linkedin", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"))),
+		html.Child(html.SvgRect(html.AWidth("4"), html.AHeight("12"), html.AX("2"), html.AY("9"))),
+		html.Child(html.SvgCircle(html.ACx("4"), html.ACy("4"), html.AR("2"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

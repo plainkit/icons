@@ -1,15 +1,17 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // CircleDivide creates a Circle Divide Lucide icon.
-func CircleDivide(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-circle-divide", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Line(x.X1("8"), x.X2("16"), x.Y1("12"), x.Y2("12"))),
-		x.Child(x.Line(x.X1("12"), x.X2("12"), x.Y1("16"), x.Y2("16"))),
-		x.Child(x.Line(x.X1("12"), x.X2("12"), x.Y1("8"), x.Y2("8"))),
-		x.Child(x.Circle(x.Cx("12"), x.Cy("12"), x.R("10"))),
-	)
-	return x.Svg(svgArgs...)
+func CircleDivide(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-circle-divide", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgLine(html.AX1("8"), html.AX2("16"), html.AY1("12"), html.AY2("12"))),
+		html.Child(html.SvgLine(html.AX1("12"), html.AX2("12"), html.AY1("16"), html.AY2("16"))),
+		html.Child(html.SvgLine(html.AX1("12"), html.AX2("12"), html.AY1("8"), html.AY2("8"))),
+		html.Child(html.SvgCircle(html.ACx("12"), html.ACy("12"), html.AR("10"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

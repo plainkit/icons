@@ -1,18 +1,20 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // BoomBox creates a Boom Box Lucide icon.
-func BoomBox(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-boom-box", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M4 9V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4"))),
-		x.Child(x.Path(x.D("M8 8v1"))),
-		x.Child(x.Path(x.D("M12 8v1"))),
-		x.Child(x.Path(x.D("M16 8v1"))),
-		x.Child(x.Rect(x.RectWidth("20"), x.RectHeight("12"), x.X("2"), x.Y("9"), x.Rx("2"))),
-		x.Child(x.Circle(x.Cx("8"), x.Cy("15"), x.R("2"))),
-		x.Child(x.Circle(x.Cx("16"), x.Cy("15"), x.R("2"))),
-	)
-	return x.Svg(svgArgs...)
+func BoomBox(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-boom-box", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M4 9V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4"))),
+		html.Child(html.SvgPath(html.AD("M8 8v1"))),
+		html.Child(html.SvgPath(html.AD("M12 8v1"))),
+		html.Child(html.SvgPath(html.AD("M16 8v1"))),
+		html.Child(html.SvgRect(html.AWidth("20"), html.AHeight("12"), html.AX("2"), html.AY("9"), html.ARx("2"))),
+		html.Child(html.SvgCircle(html.ACx("8"), html.ACy("15"), html.AR("2"))),
+		html.Child(html.SvgCircle(html.ACx("16"), html.ACy("15"), html.AR("2"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

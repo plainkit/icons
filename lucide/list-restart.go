@@ -1,16 +1,18 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // ListRestart creates a List Restart Lucide icon.
-func ListRestart(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-list-restart", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M21 5H3"))),
-		x.Child(x.Path(x.D("M7 12H3"))),
-		x.Child(x.Path(x.D("M7 19H3"))),
-		x.Child(x.Path(x.D("M12 18a5 5 0 0 0 9-3 4.5 4.5 0 0 0-4.5-4.5c-1.33 0-2.54.54-3.41 1.41L11 14"))),
-		x.Child(x.Path(x.D("M11 10v4h4"))),
-	)
-	return x.Svg(svgArgs...)
+func ListRestart(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-list-restart", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M21 5H3"))),
+		html.Child(html.SvgPath(html.AD("M7 12H3"))),
+		html.Child(html.SvgPath(html.AD("M7 19H3"))),
+		html.Child(html.SvgPath(html.AD("M12 18a5 5 0 0 0 9-3 4.5 4.5 0 0 0-4.5-4.5c-1.33 0-2.54.54-3.41 1.41L11 14"))),
+		html.Child(html.SvgPath(html.AD("M11 10v4h4"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

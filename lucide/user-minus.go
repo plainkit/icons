@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // UserMinus creates a User Minus Lucide icon.
-func UserMinus(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-user-minus", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"))),
-		x.Child(x.Circle(x.Cx("9"), x.Cy("7"), x.R("4"))),
-		x.Child(x.Line(x.X1("22"), x.X2("16"), x.Y1("11"), x.Y2("11"))),
-	)
-	return x.Svg(svgArgs...)
+func UserMinus(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-user-minus", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"))),
+		html.Child(html.SvgCircle(html.ACx("9"), html.ACy("7"), html.AR("4"))),
+		html.Child(html.SvgLine(html.AX1("22"), html.AX2("16"), html.AY1("11"), html.AY2("11"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

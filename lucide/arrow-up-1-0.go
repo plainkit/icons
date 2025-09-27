@@ -1,16 +1,18 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // ArrowUp10 creates a Arrow Up 1 0 Lucide icon.
-func ArrowUp10(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-arrow-up-1-0", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("m3 8 4-4 4 4"))),
-		x.Child(x.Path(x.D("M7 4v16"))),
-		x.Child(x.Path(x.D("M17 10V4h-2"))),
-		x.Child(x.Path(x.D("M15 10h4"))),
-		x.Child(x.Rect(x.RectWidth("4"), x.RectHeight("6"), x.X("15"), x.Y("14"), x.Ry("2"))),
-	)
-	return x.Svg(svgArgs...)
+func ArrowUp10(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-arrow-up-1-0", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("m3 8 4-4 4 4"))),
+		html.Child(html.SvgPath(html.AD("M7 4v16"))),
+		html.Child(html.SvgPath(html.AD("M17 10V4h-2"))),
+		html.Child(html.SvgPath(html.AD("M15 10h4"))),
+		html.Child(html.SvgRect(html.AWidth("4"), html.AHeight("6"), html.AX("15"), html.AY("14"), html.ARy("2"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

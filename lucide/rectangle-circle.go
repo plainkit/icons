@@ -1,13 +1,15 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // RectangleCircle creates a Rectangle Circle Lucide icon.
-func RectangleCircle(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-rectangle-circle", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M14 4v16H3a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1z"))),
-		x.Child(x.Circle(x.Cx("14"), x.Cy("12"), x.R("8"))),
-	)
-	return x.Svg(svgArgs...)
+func RectangleCircle(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-rectangle-circle", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M14 4v16H3a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1z"))),
+		html.Child(html.SvgCircle(html.ACx("14"), html.ACy("12"), html.AR("8"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

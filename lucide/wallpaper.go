@@ -1,16 +1,18 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Wallpaper creates a Wallpaper Lucide icon.
-func Wallpaper(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-wallpaper", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M12 17v4"))),
-		x.Child(x.Path(x.D("M8 21h8"))),
-		x.Child(x.Path(x.D("m9 17 6.1-6.1a2 2 0 0 1 2.81.01L22 15"))),
-		x.Child(x.Circle(x.Cx("8"), x.Cy("9"), x.R("2"))),
-		x.Child(x.Rect(x.RectWidth("20"), x.RectHeight("14"), x.X("2"), x.Y("3"), x.Rx("2"))),
-	)
-	return x.Svg(svgArgs...)
+func Wallpaper(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-wallpaper", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M12 17v4"))),
+		html.Child(html.SvgPath(html.AD("M8 21h8"))),
+		html.Child(html.SvgPath(html.AD("m9 17 6.1-6.1a2 2 0 0 1 2.81.01L22 15"))),
+		html.Child(html.SvgCircle(html.ACx("8"), html.ACy("9"), html.AR("2"))),
+		html.Child(html.SvgRect(html.AWidth("20"), html.AHeight("14"), html.AX("2"), html.AY("3"), html.ARx("2"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

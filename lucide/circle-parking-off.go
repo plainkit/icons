@@ -1,17 +1,19 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // CircleParkingOff creates a Circle Parking Off Lucide icon.
-func CircleParkingOff(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-circle-parking-off", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M12.656 7H13a3 3 0 0 1 2.984 3.307"))),
-		x.Child(x.Path(x.D("M13 13H9"))),
-		x.Child(x.Path(x.D("M19.071 19.071A1 1 0 0 1 4.93 4.93"))),
-		x.Child(x.Path(x.D("m2 2 20 20"))),
-		x.Child(x.Path(x.D("M8.357 2.687a10 10 0 0 1 12.956 12.956"))),
-		x.Child(x.Path(x.D("M9 17V9"))),
-	)
-	return x.Svg(svgArgs...)
+func CircleParkingOff(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-circle-parking-off", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M12.656 7H13a3 3 0 0 1 2.984 3.307"))),
+		html.Child(html.SvgPath(html.AD("M13 13H9"))),
+		html.Child(html.SvgPath(html.AD("M19.071 19.071A1 1 0 0 1 4.93 4.93"))),
+		html.Child(html.SvgPath(html.AD("m2 2 20 20"))),
+		html.Child(html.SvgPath(html.AD("M8.357 2.687a10 10 0 0 1 12.956 12.956"))),
+		html.Child(html.SvgPath(html.AD("M9 17V9"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

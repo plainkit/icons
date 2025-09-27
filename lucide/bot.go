@@ -1,17 +1,19 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Bot creates a Bot Lucide icon.
-func Bot(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-bot", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M12 8V4H8"))),
-		x.Child(x.Rect(x.RectWidth("16"), x.RectHeight("12"), x.X("4"), x.Y("8"), x.Rx("2"))),
-		x.Child(x.Path(x.D("M2 14h2"))),
-		x.Child(x.Path(x.D("M20 14h2"))),
-		x.Child(x.Path(x.D("M15 13v2"))),
-		x.Child(x.Path(x.D("M9 13v2"))),
-	)
-	return x.Svg(svgArgs...)
+func Bot(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-bot", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M12 8V4H8"))),
+		html.Child(html.SvgRect(html.AWidth("16"), html.AHeight("12"), html.AX("4"), html.AY("8"), html.ARx("2"))),
+		html.Child(html.SvgPath(html.AD("M2 14h2"))),
+		html.Child(html.SvgPath(html.AD("M20 14h2"))),
+		html.Child(html.SvgPath(html.AD("M15 13v2"))),
+		html.Child(html.SvgPath(html.AD("M9 13v2"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

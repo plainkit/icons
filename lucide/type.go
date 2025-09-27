@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Type creates a Type Lucide icon.
-func Type(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-type", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M12 4v16"))),
-		x.Child(x.Path(x.D("M4 7V5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2"))),
-		x.Child(x.Path(x.D("M9 20h6"))),
-	)
-	return x.Svg(svgArgs...)
+func Type(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-type", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M12 4v16"))),
+		html.Child(html.SvgPath(html.AD("M4 7V5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2"))),
+		html.Child(html.SvgPath(html.AD("M9 20h6"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // ArrowRightFromLine creates a Arrow Right From Line Lucide icon.
-func ArrowRightFromLine(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-arrow-right-from-line", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M3 5v14"))),
-		x.Child(x.Path(x.D("M21 12H7"))),
-		x.Child(x.Path(x.D("m15 18 6-6-6-6"))),
-	)
-	return x.Svg(svgArgs...)
+func ArrowRightFromLine(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-arrow-right-from-line", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M3 5v14"))),
+		html.Child(html.SvgPath(html.AD("M21 12H7"))),
+		html.Child(html.SvgPath(html.AD("m15 18 6-6-6-6"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

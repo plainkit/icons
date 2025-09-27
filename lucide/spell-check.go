@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // SpellCheck creates a Spell Check Lucide icon.
-func SpellCheck(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-spell-check", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("m6 16 6-12 6 12"))),
-		x.Child(x.Path(x.D("M8 12h8"))),
-		x.Child(x.Path(x.D("m16 20 2 2 4-4"))),
-	)
-	return x.Svg(svgArgs...)
+func SpellCheck(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-spell-check", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("m6 16 6-12 6 12"))),
+		html.Child(html.SvgPath(html.AD("M8 12h8"))),
+		html.Child(html.SvgPath(html.AD("m16 20 2 2 4-4"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

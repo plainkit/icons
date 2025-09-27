@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Flashlight creates a Flashlight Lucide icon.
-func Flashlight(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-flashlight", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M18 6c0 2-2 2-2 4v10a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2V10c0-2-2-2-2-4V2h12z"))),
-		x.Child(x.Line(x.X1("6"), x.X2("18"), x.Y1("6"), x.Y2("6"))),
-		x.Child(x.Line(x.X1("12"), x.X2("12"), x.Y1("12"), x.Y2("12"))),
-	)
-	return x.Svg(svgArgs...)
+func Flashlight(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-flashlight", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M18 6c0 2-2 2-2 4v10a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2V10c0-2-2-2-2-4V2h12z"))),
+		html.Child(html.SvgLine(html.AX1("6"), html.AX2("18"), html.AY1("6"), html.AY2("6"))),
+		html.Child(html.SvgLine(html.AX1("12"), html.AX2("12"), html.AY1("12"), html.AY2("12"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

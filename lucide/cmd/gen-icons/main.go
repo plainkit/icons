@@ -166,7 +166,7 @@ func parseSVGChildren(path string) ([]childCall, error) {
 			name := local(se.Name)
 			if name == "svg" {
 				inSVG = true
-				// ignore root attributes; buildLucideArgs handles defaults
+				// ignore root attributes; withLucideDefaults handles defaults
 				continue
 			}
 			if !inSVG {
@@ -204,68 +204,68 @@ func makeChildCall(elem string, attrs []xml.Attr) childCall {
 	switch elem {
 	case "path":
 		if v, ok := m["d"]; ok {
-			args = append(args, fmt.Sprintf("x.D(\"%s\")", escapeString(collapseWS(v))))
+			args = append(args, fmt.Sprintf("html.AD(\"%s\")", escapeString(collapseWS(v))))
 		}
 	case "line":
 		// Follow common ordering seen in repo: X1, X2, Y1, Y2
 		if v, ok := m["x1"]; ok {
-			args = append(args, fmt.Sprintf("x.X1(\"%s\")", escapeString(v)))
+			args = append(args, fmt.Sprintf("html.AX1(\"%s\")", escapeString(v)))
 		}
 		if v, ok := m["x2"]; ok {
-			args = append(args, fmt.Sprintf("x.X2(\"%s\")", escapeString(v)))
+			args = append(args, fmt.Sprintf("html.AX2(\"%s\")", escapeString(v)))
 		}
 		if v, ok := m["y1"]; ok {
-			args = append(args, fmt.Sprintf("x.Y1(\"%s\")", escapeString(v)))
+			args = append(args, fmt.Sprintf("html.AY1(\"%s\")", escapeString(v)))
 		}
 		if v, ok := m["y2"]; ok {
-			args = append(args, fmt.Sprintf("x.Y2(\"%s\")", escapeString(v)))
+			args = append(args, fmt.Sprintf("html.AY2(\"%s\")", escapeString(v)))
 		}
 	case "rect":
 		// Use RectWidth/RectHeight then X/Y then Rx/Ry if present
 		if v, ok := m["width"]; ok {
-			args = append(args, fmt.Sprintf("x.RectWidth(\"%s\")", escapeString(v)))
+			args = append(args, fmt.Sprintf("html.AWidth(\"%s\")", escapeString(v)))
 		}
 		if v, ok := m["height"]; ok {
-			args = append(args, fmt.Sprintf("x.RectHeight(\"%s\")", escapeString(v)))
+			args = append(args, fmt.Sprintf("html.AHeight(\"%s\")", escapeString(v)))
 		}
 		if v, ok := m["x"]; ok {
-			args = append(args, fmt.Sprintf("x.X(\"%s\")", escapeString(v)))
+			args = append(args, fmt.Sprintf("html.AX(\"%s\")", escapeString(v)))
 		}
 		if v, ok := m["y"]; ok {
-			args = append(args, fmt.Sprintf("x.Y(\"%s\")", escapeString(v)))
+			args = append(args, fmt.Sprintf("html.AY(\"%s\")", escapeString(v)))
 		}
 		if v, ok := m["rx"]; ok {
-			args = append(args, fmt.Sprintf("x.Rx(\"%s\")", escapeString(v)))
+			args = append(args, fmt.Sprintf("html.ARx(\"%s\")", escapeString(v)))
 		}
 		if v, ok := m["ry"]; ok {
-			args = append(args, fmt.Sprintf("x.Ry(\"%s\")", escapeString(v)))
+			args = append(args, fmt.Sprintf("html.ARy(\"%s\")", escapeString(v)))
 		}
 	case "circle":
 		if v, ok := m["cx"]; ok {
-			args = append(args, fmt.Sprintf("x.Cx(\"%s\")", escapeString(v)))
+			args = append(args, fmt.Sprintf("html.ACx(\"%s\")", escapeString(v)))
 		}
 		if v, ok := m["cy"]; ok {
-			args = append(args, fmt.Sprintf("x.Cy(\"%s\")", escapeString(v)))
+			args = append(args, fmt.Sprintf("html.ACy(\"%s\")", escapeString(v)))
 		}
 		if v, ok := m["r"]; ok {
-			args = append(args, fmt.Sprintf("x.R(\"%s\")", escapeString(v)))
+			args = append(args, fmt.Sprintf("html.AR(\"%s\")", escapeString(v)))
 		}
 	case "ellipse":
 		if v, ok := m["cx"]; ok {
-			args = append(args, fmt.Sprintf("x.EllipseCx(\"%s\")", escapeString(v)))
+			args = append(args, fmt.Sprintf("html.ACx(\"%s\")", escapeString(v)))
 		}
 		if v, ok := m["cy"]; ok {
-			args = append(args, fmt.Sprintf("x.EllipseCy(\"%s\")", escapeString(v)))
+			args = append(args, fmt.Sprintf("html.ACy(\"%s\")", escapeString(v)))
 		}
 		if v, ok := m["rx"]; ok {
-			args = append(args, fmt.Sprintf("x.EllipseRx(\"%s\")", escapeString(v)))
+			args = append(args, fmt.Sprintf("html.ARx(\"%s\")", escapeString(v)))
 		}
 		if v, ok := m["ry"]; ok {
-			args = append(args, fmt.Sprintf("x.EllipseRy(\"%s\")", escapeString(v)))
+			args = append(args, fmt.Sprintf("html.ARy(\"%s\")", escapeString(v)))
 		}
 	case "polyline", "polygon":
 		if v, ok := m["points"]; ok {
-			args = append(args, fmt.Sprintf("x.Points(\"%s\")", escapeString(collapseWS(v))))
+			args = append(args, fmt.Sprintf("html.APoints(\"%s\")", escapeString(collapseWS(v))))
 		}
 	}
 
@@ -279,7 +279,7 @@ func makeChildCall(elem string, attrs []xml.Attr) childCall {
 	for _, k := range keys {
 		if v, ok := m[k]; ok {
 			helper := paintAndMore[k]
-			args = append(args, fmt.Sprintf("x.%s(\"%s\")", helper, escapeString(collapseWS(v))))
+			args = append(args, fmt.Sprintf("html.A%s(\"%s\")", helper, escapeString(collapseWS(v))))
 		}
 	}
 
@@ -318,26 +318,34 @@ func toElemCall(elem string) string {
 func renderIconFile(funcName, docTitle, className string, children []childCall) string {
 	var b bytes.Buffer
 	b.WriteString("package lucide\n\n")
-	b.WriteString("import x \"github.com/plainkit/html\"\n\n")
+	b.WriteString("import (\n")
+	b.WriteString("\thtml \"github.com/plainkit/html\"\n")
+	b.WriteString(")\n\n")
 	fmt.Fprintf(&b, "// %s creates a %s Lucide icon.\n", funcName, docTitle)
-	fmt.Fprintf(&b, "func %s(args ...x.SvgArg) x.Node {\n", funcName)
-	fmt.Fprintf(&b, "\tsvgArgs := buildLucideArgs(\"%s\", args)\n", className)
-	b.WriteString("\tsvgArgs = append(svgArgs,\n")
-	for _, c := range children {
-		// x.Child(x.<Elem>(<args>)),
-		b.WriteString("\t\tx.Child(x.")
-		b.WriteString(c.elem)
-		b.WriteString("(")
-		for i, a := range c.attrCalls {
-			if i > 0 {
-				b.WriteString(", ")
+	fmt.Fprintf(&b, "func %s(args ...html.SvgArg) html.Node {\n", funcName)
+
+	if len(children) == 0 {
+		// No children - just use defaults
+		fmt.Fprintf(&b, "\treturn html.Svg(withLucideDefaults(\"%s\", args)...)\n", className)
+	} else {
+		// Build slice with defaults + children
+		fmt.Fprintf(&b, "\tsvgArgs := withLucideDefaults(\"%s\", args)\n", className)
+		b.WriteString("\tchildren := []html.SvgArg{\n")
+		for _, c := range children {
+			b.WriteString("\t\thtml.Child(html.Svg")
+			b.WriteString(c.elem)
+			b.WriteString("(")
+			for i, a := range c.attrCalls {
+				if i > 0 {
+					b.WriteString(", ")
+				}
+				b.WriteString(a)
 			}
-			b.WriteString(a)
+			b.WriteString(")),\n")
 		}
-		b.WriteString(")),\n")
+		b.WriteString("\t}\n")
+		b.WriteString("\treturn html.Svg(append(svgArgs, children...)...)\n")
 	}
-	b.WriteString("\t)\n")
-	b.WriteString("\treturn x.Svg(svgArgs...)\n")
 	b.WriteString("}\n")
 	return b.String()
 }

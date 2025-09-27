@@ -1,17 +1,19 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // FlaskConicalOff creates a Flask Conical Off Lucide icon.
-func FlaskConicalOff(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-flask-conical-off", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M10 2v2.343"))),
-		x.Child(x.Path(x.D("M14 2v6.343"))),
-		x.Child(x.Path(x.D("m2 2 20 20"))),
-		x.Child(x.Path(x.D("M20 20a2 2 0 0 1-2 2H6a2 2 0 0 1-1.755-2.96l5.227-9.563"))),
-		x.Child(x.Path(x.D("M6.453 15H15"))),
-		x.Child(x.Path(x.D("M8.5 2h7"))),
-	)
-	return x.Svg(svgArgs...)
+func FlaskConicalOff(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-flask-conical-off", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M10 2v2.343"))),
+		html.Child(html.SvgPath(html.AD("M14 2v6.343"))),
+		html.Child(html.SvgPath(html.AD("m2 2 20 20"))),
+		html.Child(html.SvgPath(html.AD("M20 20a2 2 0 0 1-2 2H6a2 2 0 0 1-1.755-2.96l5.227-9.563"))),
+		html.Child(html.SvgPath(html.AD("M6.453 15H15"))),
+		html.Child(html.SvgPath(html.AD("M8.5 2h7"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

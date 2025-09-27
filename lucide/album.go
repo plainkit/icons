@@ -1,13 +1,15 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Album creates a Album Lucide icon.
-func Album(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-album", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Rect(x.RectWidth("18"), x.RectHeight("18"), x.X("3"), x.Y("3"), x.Rx("2"), x.Ry("2"))),
-		x.Child(x.Polyline(x.Points("11 3 11 11 14 8 17 11 17 3"))),
-	)
-	return x.Svg(svgArgs...)
+func Album(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-album", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgRect(html.AWidth("18"), html.AHeight("18"), html.AX("3"), html.AY("3"), html.ARx("2"), html.ARy("2"))),
+		html.Child(html.SvgPolyline(html.APoints("11 3 11 11 14 8 17 11 17 3"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

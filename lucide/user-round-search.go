@@ -1,15 +1,17 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // UserRoundSearch creates a User Round Search Lucide icon.
-func UserRoundSearch(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-user-round-search", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Circle(x.Cx("10"), x.Cy("8"), x.R("5"))),
-		x.Child(x.Path(x.D("M2 21a8 8 0 0 1 10.434-7.62"))),
-		x.Child(x.Circle(x.Cx("18"), x.Cy("18"), x.R("3"))),
-		x.Child(x.Path(x.D("m22 22-1.9-1.9"))),
-	)
-	return x.Svg(svgArgs...)
+func UserRoundSearch(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-user-round-search", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgCircle(html.ACx("10"), html.ACy("8"), html.AR("5"))),
+		html.Child(html.SvgPath(html.AD("M2 21a8 8 0 0 1 10.434-7.62"))),
+		html.Child(html.SvgCircle(html.ACx("18"), html.ACy("18"), html.AR("3"))),
+		html.Child(html.SvgPath(html.AD("m22 22-1.9-1.9"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

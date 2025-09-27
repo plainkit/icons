@@ -1,18 +1,20 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Aperture creates a Aperture Lucide icon.
-func Aperture(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-aperture", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Circle(x.Cx("12"), x.Cy("12"), x.R("10"))),
-		x.Child(x.Path(x.D("m14.31 8 5.74 9.94"))),
-		x.Child(x.Path(x.D("M9.69 8h11.48"))),
-		x.Child(x.Path(x.D("m7.38 12 5.74-9.94"))),
-		x.Child(x.Path(x.D("M9.69 16 3.95 6.06"))),
-		x.Child(x.Path(x.D("M14.31 16H2.83"))),
-		x.Child(x.Path(x.D("m16.62 12-5.74 9.94"))),
-	)
-	return x.Svg(svgArgs...)
+func Aperture(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-aperture", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgCircle(html.ACx("12"), html.ACy("12"), html.AR("10"))),
+		html.Child(html.SvgPath(html.AD("m14.31 8 5.74 9.94"))),
+		html.Child(html.SvgPath(html.AD("M9.69 8h11.48"))),
+		html.Child(html.SvgPath(html.AD("m7.38 12 5.74-9.94"))),
+		html.Child(html.SvgPath(html.AD("M9.69 16 3.95 6.06"))),
+		html.Child(html.SvgPath(html.AD("M14.31 16H2.83"))),
+		html.Child(html.SvgPath(html.AD("m16.62 12-5.74 9.94"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

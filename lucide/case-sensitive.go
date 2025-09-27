@@ -1,15 +1,17 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // CaseSensitive creates a Case Sensitive Lucide icon.
-func CaseSensitive(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-case-sensitive", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("m2 16 4.039-9.69a.5.5 0 0 1 .923 0L11 16"))),
-		x.Child(x.Path(x.D("M22 9v7"))),
-		x.Child(x.Path(x.D("M3.304 13h6.392"))),
-		x.Child(x.Circle(x.Cx("18.5"), x.Cy("12.5"), x.R("3.5"))),
-	)
-	return x.Svg(svgArgs...)
+func CaseSensitive(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-case-sensitive", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("m2 16 4.039-9.69a.5.5 0 0 1 .923 0L11 16"))),
+		html.Child(html.SvgPath(html.AD("M22 9v7"))),
+		html.Child(html.SvgPath(html.AD("M3.304 13h6.392"))),
+		html.Child(html.SvgCircle(html.ACx("18.5"), html.ACy("12.5"), html.AR("3.5"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

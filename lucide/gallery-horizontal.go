@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // GalleryHorizontal creates a Gallery Horizontal Lucide icon.
-func GalleryHorizontal(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-gallery-horizontal", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M2 3v18"))),
-		x.Child(x.Rect(x.RectWidth("12"), x.RectHeight("18"), x.X("6"), x.Y("3"), x.Rx("2"))),
-		x.Child(x.Path(x.D("M22 3v18"))),
-	)
-	return x.Svg(svgArgs...)
+func GalleryHorizontal(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-gallery-horizontal", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M2 3v18"))),
+		html.Child(html.SvgRect(html.AWidth("12"), html.AHeight("18"), html.AX("6"), html.AY("3"), html.ARx("2"))),
+		html.Child(html.SvgPath(html.AD("M22 3v18"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

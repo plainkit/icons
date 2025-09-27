@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // GalleryVerticalEnd creates a Gallery Vertical End Lucide icon.
-func GalleryVerticalEnd(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-gallery-vertical-end", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M7 2h10"))),
-		x.Child(x.Path(x.D("M5 6h14"))),
-		x.Child(x.Rect(x.RectWidth("18"), x.RectHeight("12"), x.X("3"), x.Y("10"), x.Rx("2"))),
-	)
-	return x.Svg(svgArgs...)
+func GalleryVerticalEnd(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-gallery-vertical-end", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M7 2h10"))),
+		html.Child(html.SvgPath(html.AD("M5 6h14"))),
+		html.Child(html.SvgRect(html.AWidth("18"), html.AHeight("12"), html.AX("3"), html.AY("10"), html.ARx("2"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

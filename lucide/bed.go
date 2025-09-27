@@ -1,15 +1,17 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Bed creates a Bed Lucide icon.
-func Bed(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-bed", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M2 4v16"))),
-		x.Child(x.Path(x.D("M2 8h18a2 2 0 0 1 2 2v10"))),
-		x.Child(x.Path(x.D("M2 17h20"))),
-		x.Child(x.Path(x.D("M6 8v9"))),
-	)
-	return x.Svg(svgArgs...)
+func Bed(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-bed", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M2 4v16"))),
+		html.Child(html.SvgPath(html.AD("M2 8h18a2 2 0 0 1 2 2v10"))),
+		html.Child(html.SvgPath(html.AD("M2 17h20"))),
+		html.Child(html.SvgPath(html.AD("M6 8v9"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

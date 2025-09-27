@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Share creates a Share Lucide icon.
-func Share(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-share", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M12 2v13"))),
-		x.Child(x.Path(x.D("m16 6-4-4-4 4"))),
-		x.Child(x.Path(x.D("M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"))),
-	)
-	return x.Svg(svgArgs...)
+func Share(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-share", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M12 2v13"))),
+		html.Child(html.SvgPath(html.AD("m16 6-4-4-4 4"))),
+		html.Child(html.SvgPath(html.AD("M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

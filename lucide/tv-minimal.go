@@ -1,13 +1,15 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // TvMinimal creates a Tv Minimal Lucide icon.
-func TvMinimal(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-tv-minimal", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M7 21h10"))),
-		x.Child(x.Rect(x.RectWidth("20"), x.RectHeight("14"), x.X("2"), x.Y("3"), x.Rx("2"))),
-	)
-	return x.Svg(svgArgs...)
+func TvMinimal(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-tv-minimal", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M7 21h10"))),
+		html.Child(html.SvgRect(html.AWidth("20"), html.AHeight("14"), html.AX("2"), html.AY("3"), html.ARx("2"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

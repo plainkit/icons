@@ -1,13 +1,15 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // ArrowRight creates a Arrow Right Lucide icon.
-func ArrowRight(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-arrow-right", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M5 12h14"))),
-		x.Child(x.Path(x.D("m12 5 7 7-7 7"))),
-	)
-	return x.Svg(svgArgs...)
+func ArrowRight(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-arrow-right", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M5 12h14"))),
+		html.Child(html.SvgPath(html.AD("m12 5 7 7-7 7"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

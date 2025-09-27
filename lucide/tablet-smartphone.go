@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // TabletSmartphone creates a Tablet Smartphone Lucide icon.
-func TabletSmartphone(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-tablet-smartphone", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Rect(x.RectWidth("10"), x.RectHeight("14"), x.X("3"), x.Y("8"), x.Rx("2"))),
-		x.Child(x.Path(x.D("M5 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2h-2.4"))),
-		x.Child(x.Path(x.D("M8 18h.01"))),
-	)
-	return x.Svg(svgArgs...)
+func TabletSmartphone(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-tablet-smartphone", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgRect(html.AWidth("10"), html.AHeight("14"), html.AX("3"), html.AY("8"), html.ARx("2"))),
+		html.Child(html.SvgPath(html.AD("M5 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2h-2.4"))),
+		html.Child(html.SvgPath(html.AD("M8 18h.01"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

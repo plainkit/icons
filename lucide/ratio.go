@@ -1,13 +1,15 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Ratio creates a Ratio Lucide icon.
-func Ratio(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-ratio", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Rect(x.RectWidth("12"), x.RectHeight("20"), x.X("6"), x.Y("2"), x.Rx("2"))),
-		x.Child(x.Rect(x.RectWidth("20"), x.RectHeight("12"), x.X("2"), x.Y("6"), x.Rx("2"))),
-	)
-	return x.Svg(svgArgs...)
+func Ratio(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-ratio", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgRect(html.AWidth("12"), html.AHeight("20"), html.AX("6"), html.AY("2"), html.ARx("2"))),
+		html.Child(html.SvgRect(html.AWidth("20"), html.AHeight("12"), html.AX("2"), html.AY("6"), html.ARx("2"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

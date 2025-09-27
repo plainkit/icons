@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // ChartNoAxesColumn creates a Chart No Axes Column Lucide icon.
-func ChartNoAxesColumn(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-chart-no-axes-column", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M5 21v-6"))),
-		x.Child(x.Path(x.D("M12 21V3"))),
-		x.Child(x.Path(x.D("M19 21V9"))),
-	)
-	return x.Svg(svgArgs...)
+func ChartNoAxesColumn(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-chart-no-axes-column", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M5 21v-6"))),
+		html.Child(html.SvgPath(html.AD("M12 21V3"))),
+		html.Child(html.SvgPath(html.AD("M19 21V9"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

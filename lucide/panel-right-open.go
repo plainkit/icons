@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // PanelRightOpen creates a Panel Right Open Lucide icon.
-func PanelRightOpen(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-panel-right-open", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Rect(x.RectWidth("18"), x.RectHeight("18"), x.X("3"), x.Y("3"), x.Rx("2"))),
-		x.Child(x.Path(x.D("M15 3v18"))),
-		x.Child(x.Path(x.D("m10 15-3-3 3-3"))),
-	)
-	return x.Svg(svgArgs...)
+func PanelRightOpen(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-panel-right-open", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgRect(html.AWidth("18"), html.AHeight("18"), html.AX("3"), html.AY("3"), html.ARx("2"))),
+		html.Child(html.SvgPath(html.AD("M15 3v18"))),
+		html.Child(html.SvgPath(html.AD("m10 15-3-3 3-3"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

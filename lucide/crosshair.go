@@ -1,16 +1,18 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Crosshair creates a Crosshair Lucide icon.
-func Crosshair(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-crosshair", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Circle(x.Cx("12"), x.Cy("12"), x.R("10"))),
-		x.Child(x.Line(x.X1("22"), x.X2("18"), x.Y1("12"), x.Y2("12"))),
-		x.Child(x.Line(x.X1("6"), x.X2("2"), x.Y1("12"), x.Y2("12"))),
-		x.Child(x.Line(x.X1("12"), x.X2("12"), x.Y1("6"), x.Y2("2"))),
-		x.Child(x.Line(x.X1("12"), x.X2("12"), x.Y1("22"), x.Y2("18"))),
-	)
-	return x.Svg(svgArgs...)
+func Crosshair(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-crosshair", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgCircle(html.ACx("12"), html.ACy("12"), html.AR("10"))),
+		html.Child(html.SvgLine(html.AX1("22"), html.AX2("18"), html.AY1("12"), html.AY2("12"))),
+		html.Child(html.SvgLine(html.AX1("6"), html.AX2("2"), html.AY1("12"), html.AY2("12"))),
+		html.Child(html.SvgLine(html.AX1("12"), html.AX2("12"), html.AY1("6"), html.AY2("2"))),
+		html.Child(html.SvgLine(html.AX1("12"), html.AX2("12"), html.AY1("22"), html.AY2("18"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

@@ -1,15 +1,17 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // ChartColumn creates a Chart Column Lucide icon.
-func ChartColumn(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-chart-column", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M3 3v16a2 2 0 0 0 2 2h16"))),
-		x.Child(x.Path(x.D("M18 17V9"))),
-		x.Child(x.Path(x.D("M13 17V5"))),
-		x.Child(x.Path(x.D("M8 17v-3"))),
-	)
-	return x.Svg(svgArgs...)
+func ChartColumn(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-chart-column", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M3 3v16a2 2 0 0 0 2 2h16"))),
+		html.Child(html.SvgPath(html.AD("M18 17V9"))),
+		html.Child(html.SvgPath(html.AD("M13 17V5"))),
+		html.Child(html.SvgPath(html.AD("M8 17v-3"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

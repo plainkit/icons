@@ -1,13 +1,15 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // X creates a X Lucide icon.
-func X(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-x", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M18 6 6 18"))),
-		x.Child(x.Path(x.D("m6 6 12 12"))),
-	)
-	return x.Svg(svgArgs...)
+func X(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-x", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M18 6 6 18"))),
+		html.Child(html.SvgPath(html.AD("m6 6 12 12"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // BetweenVerticalStart creates a Between Vertical Start Lucide icon.
-func BetweenVerticalStart(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-between-vertical-start", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Rect(x.RectWidth("7"), x.RectHeight("13"), x.X("3"), x.Y("8"), x.Rx("1"))),
-		x.Child(x.Path(x.D("m15 2-3 3-3-3"))),
-		x.Child(x.Rect(x.RectWidth("7"), x.RectHeight("13"), x.X("14"), x.Y("8"), x.Rx("1"))),
-	)
-	return x.Svg(svgArgs...)
+func BetweenVerticalStart(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-between-vertical-start", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgRect(html.AWidth("7"), html.AHeight("13"), html.AX("3"), html.AY("8"), html.ARx("1"))),
+		html.Child(html.SvgPath(html.AD("m15 2-3 3-3-3"))),
+		html.Child(html.SvgRect(html.AWidth("7"), html.AHeight("13"), html.AX("14"), html.AY("8"), html.ARx("1"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

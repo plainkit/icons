@@ -1,15 +1,17 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Bike creates a Bike Lucide icon.
-func Bike(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-bike", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Circle(x.Cx("18.5"), x.Cy("17.5"), x.R("3.5"))),
-		x.Child(x.Circle(x.Cx("5.5"), x.Cy("17.5"), x.R("3.5"))),
-		x.Child(x.Circle(x.Cx("15"), x.Cy("5"), x.R("1"))),
-		x.Child(x.Path(x.D("M12 17.5V14l-3-3 4-3 2 3h2"))),
-	)
-	return x.Svg(svgArgs...)
+func Bike(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-bike", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgCircle(html.ACx("18.5"), html.ACy("17.5"), html.AR("3.5"))),
+		html.Child(html.SvgCircle(html.ACx("5.5"), html.ACy("17.5"), html.AR("3.5"))),
+		html.Child(html.SvgCircle(html.ACx("15"), html.ACy("5"), html.AR("1"))),
+		html.Child(html.SvgPath(html.AD("M12 17.5V14l-3-3 4-3 2 3h2"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

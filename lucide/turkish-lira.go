@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // TurkishLira creates a Turkish Lira Lucide icon.
-func TurkishLira(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-turkish-lira", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M15 4 5 9"))),
-		x.Child(x.Path(x.D("m15 8.5-10 5"))),
-		x.Child(x.Path(x.D("M18 12a9 9 0 0 1-9 9V3"))),
-	)
-	return x.Svg(svgArgs...)
+func TurkishLira(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-turkish-lira", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M15 4 5 9"))),
+		html.Child(html.SvgPath(html.AD("m15 8.5-10 5"))),
+		html.Child(html.SvgPath(html.AD("M18 12a9 9 0 0 1-9 9V3"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

@@ -1,15 +1,17 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // SquareKanban creates a Square Kanban Lucide icon.
-func SquareKanban(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-square-kanban", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Rect(x.RectWidth("18"), x.RectHeight("18"), x.X("3"), x.Y("3"), x.Rx("2"))),
-		x.Child(x.Path(x.D("M8 7v7"))),
-		x.Child(x.Path(x.D("M12 7v4"))),
-		x.Child(x.Path(x.D("M16 7v9"))),
-	)
-	return x.Svg(svgArgs...)
+func SquareKanban(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-square-kanban", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgRect(html.AWidth("18"), html.AHeight("18"), html.AX("3"), html.AY("3"), html.ARx("2"))),
+		html.Child(html.SvgPath(html.AD("M8 7v7"))),
+		html.Child(html.SvgPath(html.AD("M12 7v4"))),
+		html.Child(html.SvgPath(html.AD("M16 7v9"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

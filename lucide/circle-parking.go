@@ -1,13 +1,15 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // CircleParking creates a Circle Parking Lucide icon.
-func CircleParking(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-circle-parking", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Circle(x.Cx("12"), x.Cy("12"), x.R("10"))),
-		x.Child(x.Path(x.D("M9 17V7h4a3 3 0 0 1 0 6H9"))),
-	)
-	return x.Svg(svgArgs...)
+func CircleParking(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-circle-parking", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgCircle(html.ACx("12"), html.ACy("12"), html.AR("10"))),
+		html.Child(html.SvgPath(html.AD("M9 17V7h4a3 3 0 0 1 0 6H9"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

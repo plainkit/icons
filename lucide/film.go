@@ -1,19 +1,21 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Film creates a Film Lucide icon.
-func Film(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-film", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Rect(x.RectWidth("18"), x.RectHeight("18"), x.X("3"), x.Y("3"), x.Rx("2"))),
-		x.Child(x.Path(x.D("M7 3v18"))),
-		x.Child(x.Path(x.D("M3 7.5h4"))),
-		x.Child(x.Path(x.D("M3 12h18"))),
-		x.Child(x.Path(x.D("M3 16.5h4"))),
-		x.Child(x.Path(x.D("M17 3v18"))),
-		x.Child(x.Path(x.D("M17 7.5h4"))),
-		x.Child(x.Path(x.D("M17 16.5h4"))),
-	)
-	return x.Svg(svgArgs...)
+func Film(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-film", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgRect(html.AWidth("18"), html.AHeight("18"), html.AX("3"), html.AY("3"), html.ARx("2"))),
+		html.Child(html.SvgPath(html.AD("M7 3v18"))),
+		html.Child(html.SvgPath(html.AD("M3 7.5h4"))),
+		html.Child(html.SvgPath(html.AD("M3 12h18"))),
+		html.Child(html.SvgPath(html.AD("M3 16.5h4"))),
+		html.Child(html.SvgPath(html.AD("M17 3v18"))),
+		html.Child(html.SvgPath(html.AD("M17 7.5h4"))),
+		html.Child(html.SvgPath(html.AD("M17 16.5h4"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

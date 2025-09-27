@@ -1,15 +1,17 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // GitBranch creates a Git Branch Lucide icon.
-func GitBranch(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-git-branch", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Line(x.X1("6"), x.X2("6"), x.Y1("3"), x.Y2("15"))),
-		x.Child(x.Circle(x.Cx("18"), x.Cy("6"), x.R("3"))),
-		x.Child(x.Circle(x.Cx("6"), x.Cy("18"), x.R("3"))),
-		x.Child(x.Path(x.D("M18 9a9 9 0 0 1-9 9"))),
-	)
-	return x.Svg(svgArgs...)
+func GitBranch(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-git-branch", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgLine(html.AX1("6"), html.AX2("6"), html.AY1("3"), html.AY2("15"))),
+		html.Child(html.SvgCircle(html.ACx("18"), html.ACy("6"), html.AR("3"))),
+		html.Child(html.SvgCircle(html.ACx("6"), html.ACy("18"), html.AR("3"))),
+		html.Child(html.SvgPath(html.AD("M18 9a9 9 0 0 1-9 9"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

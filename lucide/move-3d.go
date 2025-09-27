@@ -1,15 +1,17 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Move3d creates a Move 3d Lucide icon.
-func Move3d(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-move-3d", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M5 3v16h16"))),
-		x.Child(x.Path(x.D("m5 19 6-6"))),
-		x.Child(x.Path(x.D("m2 6 3-3 3 3"))),
-		x.Child(x.Path(x.D("m18 16 3 3-3 3"))),
-	)
-	return x.Svg(svgArgs...)
+func Move3d(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-move-3d", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M5 3v16h16"))),
+		html.Child(html.SvgPath(html.AD("m5 19 6-6"))),
+		html.Child(html.SvgPath(html.AD("m2 6 3-3 3 3"))),
+		html.Child(html.SvgPath(html.AD("m18 16 3 3-3 3"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

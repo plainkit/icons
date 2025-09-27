@@ -1,13 +1,15 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // StretchVertical creates a Stretch Vertical Lucide icon.
-func StretchVertical(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-stretch-vertical", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Rect(x.RectWidth("6"), x.RectHeight("20"), x.X("4"), x.Y("2"), x.Rx("2"))),
-		x.Child(x.Rect(x.RectWidth("6"), x.RectHeight("20"), x.X("14"), x.Y("2"), x.Rx("2"))),
-	)
-	return x.Svg(svgArgs...)
+func StretchVertical(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-stretch-vertical", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgRect(html.AWidth("6"), html.AHeight("20"), html.AX("4"), html.AY("2"), html.ARx("2"))),
+		html.Child(html.SvgRect(html.AWidth("6"), html.AHeight("20"), html.AX("14"), html.AY("2"), html.ARx("2"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

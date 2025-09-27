@@ -1,15 +1,17 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // PawPrint creates a Paw Print Lucide icon.
-func PawPrint(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-paw-print", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Circle(x.Cx("11"), x.Cy("4"), x.R("2"))),
-		x.Child(x.Circle(x.Cx("18"), x.Cy("8"), x.R("2"))),
-		x.Child(x.Circle(x.Cx("20"), x.Cy("16"), x.R("2"))),
-		x.Child(x.Path(x.D("M9 10a5 5 0 0 1 5 5v3.5a3.5 3.5 0 0 1-6.84 1.045Q6.52 17.48 4.46 16.84A3.5 3.5 0 0 1 5.5 10Z"))),
-	)
-	return x.Svg(svgArgs...)
+func PawPrint(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-paw-print", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgCircle(html.ACx("11"), html.ACy("4"), html.AR("2"))),
+		html.Child(html.SvgCircle(html.ACx("18"), html.ACy("8"), html.AR("2"))),
+		html.Child(html.SvgCircle(html.ACx("20"), html.ACy("16"), html.AR("2"))),
+		html.Child(html.SvgPath(html.AD("M9 10a5 5 0 0 1 5 5v3.5a3.5 3.5 0 0 1-6.84 1.045Q6.52 17.48 4.46 16.84A3.5 3.5 0 0 1 5.5 10Z"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

@@ -1,15 +1,17 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Hash creates a Hash Lucide icon.
-func Hash(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-hash", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Line(x.X1("4"), x.X2("20"), x.Y1("9"), x.Y2("9"))),
-		x.Child(x.Line(x.X1("4"), x.X2("20"), x.Y1("15"), x.Y2("15"))),
-		x.Child(x.Line(x.X1("10"), x.X2("8"), x.Y1("3"), x.Y2("21"))),
-		x.Child(x.Line(x.X1("16"), x.X2("14"), x.Y1("3"), x.Y2("21"))),
-	)
-	return x.Svg(svgArgs...)
+func Hash(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-hash", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgLine(html.AX1("4"), html.AX2("20"), html.AY1("9"), html.AY2("9"))),
+		html.Child(html.SvgLine(html.AX1("4"), html.AX2("20"), html.AY1("15"), html.AY2("15"))),
+		html.Child(html.SvgLine(html.AX1("10"), html.AX2("8"), html.AY1("3"), html.AY2("21"))),
+		html.Child(html.SvgLine(html.AX1("16"), html.AX2("14"), html.AY1("3"), html.AY2("21"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

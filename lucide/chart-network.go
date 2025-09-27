@@ -1,18 +1,20 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // ChartNetwork creates a Chart Network Lucide icon.
-func ChartNetwork(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-chart-network", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("m13.11 7.664 1.78 2.672"))),
-		x.Child(x.Path(x.D("m14.162 12.788-3.324 1.424"))),
-		x.Child(x.Path(x.D("m20 4-6.06 1.515"))),
-		x.Child(x.Path(x.D("M3 3v16a2 2 0 0 0 2 2h16"))),
-		x.Child(x.Circle(x.Cx("12"), x.Cy("6"), x.R("2"))),
-		x.Child(x.Circle(x.Cx("16"), x.Cy("12"), x.R("2"))),
-		x.Child(x.Circle(x.Cx("9"), x.Cy("15"), x.R("2"))),
-	)
-	return x.Svg(svgArgs...)
+func ChartNetwork(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-chart-network", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("m13.11 7.664 1.78 2.672"))),
+		html.Child(html.SvgPath(html.AD("m14.162 12.788-3.324 1.424"))),
+		html.Child(html.SvgPath(html.AD("m20 4-6.06 1.515"))),
+		html.Child(html.SvgPath(html.AD("M3 3v16a2 2 0 0 0 2 2h16"))),
+		html.Child(html.SvgCircle(html.ACx("12"), html.ACy("6"), html.AR("2"))),
+		html.Child(html.SvgCircle(html.ACx("16"), html.ACy("12"), html.AR("2"))),
+		html.Child(html.SvgCircle(html.ACx("9"), html.ACy("15"), html.AR("2"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

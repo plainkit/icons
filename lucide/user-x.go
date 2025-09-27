@@ -1,15 +1,17 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // UserX creates a User X Lucide icon.
-func UserX(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-user-x", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"))),
-		x.Child(x.Circle(x.Cx("9"), x.Cy("7"), x.R("4"))),
-		x.Child(x.Line(x.X1("17"), x.X2("22"), x.Y1("8"), x.Y2("13"))),
-		x.Child(x.Line(x.X1("22"), x.X2("17"), x.Y1("8"), x.Y2("13"))),
-	)
-	return x.Svg(svgArgs...)
+func UserX(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-user-x", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"))),
+		html.Child(html.SvgCircle(html.ACx("9"), html.ACy("7"), html.AR("4"))),
+		html.Child(html.SvgLine(html.AX1("17"), html.AX2("22"), html.AY1("8"), html.AY2("13"))),
+		html.Child(html.SvgLine(html.AX1("22"), html.AX2("17"), html.AY1("8"), html.AY2("13"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

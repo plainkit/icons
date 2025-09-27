@@ -1,20 +1,22 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Keyboard creates a Keyboard Lucide icon.
-func Keyboard(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-keyboard", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M10 8h.01"))),
-		x.Child(x.Path(x.D("M12 12h.01"))),
-		x.Child(x.Path(x.D("M14 8h.01"))),
-		x.Child(x.Path(x.D("M16 12h.01"))),
-		x.Child(x.Path(x.D("M18 8h.01"))),
-		x.Child(x.Path(x.D("M6 8h.01"))),
-		x.Child(x.Path(x.D("M7 16h10"))),
-		x.Child(x.Path(x.D("M8 12h.01"))),
-		x.Child(x.Rect(x.RectWidth("20"), x.RectHeight("16"), x.X("2"), x.Y("4"), x.Rx("2"))),
-	)
-	return x.Svg(svgArgs...)
+func Keyboard(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-keyboard", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M10 8h.01"))),
+		html.Child(html.SvgPath(html.AD("M12 12h.01"))),
+		html.Child(html.SvgPath(html.AD("M14 8h.01"))),
+		html.Child(html.SvgPath(html.AD("M16 12h.01"))),
+		html.Child(html.SvgPath(html.AD("M18 8h.01"))),
+		html.Child(html.SvgPath(html.AD("M6 8h.01"))),
+		html.Child(html.SvgPath(html.AD("M7 16h10"))),
+		html.Child(html.SvgPath(html.AD("M8 12h.01"))),
+		html.Child(html.SvgRect(html.AWidth("20"), html.AHeight("16"), html.AX("2"), html.AY("4"), html.ARx("2"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

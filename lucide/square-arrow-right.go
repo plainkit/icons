@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // SquareArrowRight creates a Square Arrow Right Lucide icon.
-func SquareArrowRight(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-square-arrow-right", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Rect(x.RectWidth("18"), x.RectHeight("18"), x.X("3"), x.Y("3"), x.Rx("2"))),
-		x.Child(x.Path(x.D("M8 12h8"))),
-		x.Child(x.Path(x.D("m12 16 4-4-4-4"))),
-	)
-	return x.Svg(svgArgs...)
+func SquareArrowRight(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-square-arrow-right", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgRect(html.AWidth("18"), html.AHeight("18"), html.AX("3"), html.AY("3"), html.ARx("2"))),
+		html.Child(html.SvgPath(html.AD("M8 12h8"))),
+		html.Child(html.SvgPath(html.AD("m12 16 4-4-4-4"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

@@ -1,25 +1,27 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Cpu creates a Cpu Lucide icon.
-func Cpu(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-cpu", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M12 20v2"))),
-		x.Child(x.Path(x.D("M12 2v2"))),
-		x.Child(x.Path(x.D("M17 20v2"))),
-		x.Child(x.Path(x.D("M17 2v2"))),
-		x.Child(x.Path(x.D("M2 12h2"))),
-		x.Child(x.Path(x.D("M2 17h2"))),
-		x.Child(x.Path(x.D("M2 7h2"))),
-		x.Child(x.Path(x.D("M20 12h2"))),
-		x.Child(x.Path(x.D("M20 17h2"))),
-		x.Child(x.Path(x.D("M20 7h2"))),
-		x.Child(x.Path(x.D("M7 20v2"))),
-		x.Child(x.Path(x.D("M7 2v2"))),
-		x.Child(x.Rect(x.RectWidth("16"), x.RectHeight("16"), x.X("4"), x.Y("4"), x.Rx("2"))),
-		x.Child(x.Rect(x.RectWidth("8"), x.RectHeight("8"), x.X("8"), x.Y("8"), x.Rx("1"))),
-	)
-	return x.Svg(svgArgs...)
+func Cpu(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-cpu", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M12 20v2"))),
+		html.Child(html.SvgPath(html.AD("M12 2v2"))),
+		html.Child(html.SvgPath(html.AD("M17 20v2"))),
+		html.Child(html.SvgPath(html.AD("M17 2v2"))),
+		html.Child(html.SvgPath(html.AD("M2 12h2"))),
+		html.Child(html.SvgPath(html.AD("M2 17h2"))),
+		html.Child(html.SvgPath(html.AD("M2 7h2"))),
+		html.Child(html.SvgPath(html.AD("M20 12h2"))),
+		html.Child(html.SvgPath(html.AD("M20 17h2"))),
+		html.Child(html.SvgPath(html.AD("M20 7h2"))),
+		html.Child(html.SvgPath(html.AD("M7 20v2"))),
+		html.Child(html.SvgPath(html.AD("M7 2v2"))),
+		html.Child(html.SvgRect(html.AWidth("16"), html.AHeight("16"), html.AX("4"), html.AY("4"), html.ARx("2"))),
+		html.Child(html.SvgRect(html.AWidth("8"), html.AHeight("8"), html.AX("8"), html.AY("8"), html.ARx("1"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

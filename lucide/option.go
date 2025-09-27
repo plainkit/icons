@@ -1,13 +1,15 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Option creates a Option Lucide icon.
-func Option(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-option", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M3 3h6l6 18h6"))),
-		x.Child(x.Path(x.D("M14 3h7"))),
-	)
-	return x.Svg(svgArgs...)
+func Option(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-option", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M3 3h6l6 18h6"))),
+		html.Child(html.SvgPath(html.AD("M14 3h7"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

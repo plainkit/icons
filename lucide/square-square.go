@@ -1,13 +1,15 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // SquareSquare creates a Square Square Lucide icon.
-func SquareSquare(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-square-square", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Rect(x.RectWidth("18"), x.RectHeight("18"), x.X("3"), x.Y("3"), x.Rx("2"))),
-		x.Child(x.Rect(x.RectWidth("8"), x.RectHeight("8"), x.X("8"), x.Y("8"), x.Rx("1"))),
-	)
-	return x.Svg(svgArgs...)
+func SquareSquare(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-square-square", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgRect(html.AWidth("18"), html.AHeight("18"), html.AX("3"), html.AY("3"), html.ARx("2"))),
+		html.Child(html.SvgRect(html.AWidth("8"), html.AHeight("8"), html.AX("8"), html.AY("8"), html.ARx("1"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

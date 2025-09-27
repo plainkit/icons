@@ -1,16 +1,18 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // PilcrowLeft creates a Pilcrow Left Lucide icon.
-func PilcrowLeft(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-pilcrow-left", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M14 3v11"))),
-		x.Child(x.Path(x.D("M14 9h-3a3 3 0 0 1 0-6h9"))),
-		x.Child(x.Path(x.D("M18 3v11"))),
-		x.Child(x.Path(x.D("M22 18H2l4-4"))),
-		x.Child(x.Path(x.D("m6 22-4-4"))),
-	)
-	return x.Svg(svgArgs...)
+func PilcrowLeft(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-pilcrow-left", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M14 3v11"))),
+		html.Child(html.SvgPath(html.AD("M14 9h-3a3 3 0 0 1 0-6h9"))),
+		html.Child(html.SvgPath(html.AD("M18 3v11"))),
+		html.Child(html.SvgPath(html.AD("M22 18H2l4-4"))),
+		html.Child(html.SvgPath(html.AD("m6 22-4-4"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // SquareTerminal creates a Square Terminal Lucide icon.
-func SquareTerminal(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-square-terminal", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("m7 11 2-2-2-2"))),
-		x.Child(x.Path(x.D("M11 13h4"))),
-		x.Child(x.Rect(x.RectWidth("18"), x.RectHeight("18"), x.X("3"), x.Y("3"), x.Rx("2"), x.Ry("2"))),
-	)
-	return x.Svg(svgArgs...)
+func SquareTerminal(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-square-terminal", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("m7 11 2-2-2-2"))),
+		html.Child(html.SvgPath(html.AD("M11 13h4"))),
+		html.Child(html.SvgRect(html.AWidth("18"), html.AHeight("18"), html.AX("3"), html.AY("3"), html.ARx("2"), html.ARy("2"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

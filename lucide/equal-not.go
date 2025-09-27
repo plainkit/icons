@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // EqualNot creates a Equal Not Lucide icon.
-func EqualNot(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-equal-not", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Line(x.X1("5"), x.X2("19"), x.Y1("9"), x.Y2("9"))),
-		x.Child(x.Line(x.X1("5"), x.X2("19"), x.Y1("15"), x.Y2("15"))),
-		x.Child(x.Line(x.X1("19"), x.X2("5"), x.Y1("5"), x.Y2("19"))),
-	)
-	return x.Svg(svgArgs...)
+func EqualNot(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-equal-not", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgLine(html.AX1("5"), html.AX2("19"), html.AY1("9"), html.AY2("9"))),
+		html.Child(html.SvgLine(html.AX1("5"), html.AX2("19"), html.AY1("15"), html.AY2("15"))),
+		html.Child(html.SvgLine(html.AX1("19"), html.AX2("5"), html.AY1("5"), html.AY2("19"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

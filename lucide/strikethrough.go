@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Strikethrough creates a Strikethrough Lucide icon.
-func Strikethrough(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-strikethrough", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M16 4H9a3 3 0 0 0-2.83 4"))),
-		x.Child(x.Path(x.D("M14 12a4 4 0 0 1 0 8H6"))),
-		x.Child(x.Line(x.X1("4"), x.X2("20"), x.Y1("12"), x.Y2("12"))),
-	)
-	return x.Svg(svgArgs...)
+func Strikethrough(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-strikethrough", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M16 4H9a3 3 0 0 0-2.83 4"))),
+		html.Child(html.SvgPath(html.AD("M14 12a4 4 0 0 1 0 8H6"))),
+		html.Child(html.SvgLine(html.AX1("4"), html.AX2("20"), html.AY1("12"), html.AY2("12"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

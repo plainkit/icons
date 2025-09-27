@@ -1,12 +1,14 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // SignalZero creates a Signal Zero Lucide icon.
-func SignalZero(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-signal-zero", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M2 20h.01"))),
-	)
-	return x.Svg(svgArgs...)
+func SignalZero(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-signal-zero", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M2 20h.01"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

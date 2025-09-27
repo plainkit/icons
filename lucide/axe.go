@@ -1,13 +1,15 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Axe creates a Axe Lucide icon.
-func Axe(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-axe", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("m14 12-8.381 8.38a1 1 0 0 1-3.001-3L11 9"))),
-		x.Child(x.Path(x.D("M15 15.5a.5.5 0 0 0 .5.5A6.5 6.5 0 0 0 22 9.5a.5.5 0 0 0-.5-.5h-1.672a2 2 0 0 1-1.414-.586l-5.062-5.062a1.205 1.205 0 0 0-1.704 0L9.352 5.648a1.205 1.205 0 0 0 0 1.704l5.062 5.062A2 2 0 0 1 15 13.828z"))),
-	)
-	return x.Svg(svgArgs...)
+func Axe(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-axe", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("m14 12-8.381 8.38a1 1 0 0 1-3.001-3L11 9"))),
+		html.Child(html.SvgPath(html.AD("M15 15.5a.5.5 0 0 0 .5.5A6.5 6.5 0 0 0 22 9.5a.5.5 0 0 0-.5-.5h-1.672a2 2 0 0 1-1.414-.586l-5.062-5.062a1.205 1.205 0 0 0-1.704 0L9.352 5.648a1.205 1.205 0 0 0 0 1.704l5.062 5.062A2 2 0 0 1 15 13.828z"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

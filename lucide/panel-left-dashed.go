@@ -1,16 +1,18 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // PanelLeftDashed creates a Panel Left Dashed Lucide icon.
-func PanelLeftDashed(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-panel-left-dashed", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Rect(x.RectWidth("18"), x.RectHeight("18"), x.X("3"), x.Y("3"), x.Rx("2"))),
-		x.Child(x.Path(x.D("M9 14v1"))),
-		x.Child(x.Path(x.D("M9 19v2"))),
-		x.Child(x.Path(x.D("M9 3v2"))),
-		x.Child(x.Path(x.D("M9 9v1"))),
-	)
-	return x.Svg(svgArgs...)
+func PanelLeftDashed(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-panel-left-dashed", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgRect(html.AWidth("18"), html.AHeight("18"), html.AX("3"), html.AY("3"), html.ARx("2"))),
+		html.Child(html.SvgPath(html.AD("M9 14v1"))),
+		html.Child(html.SvgPath(html.AD("M9 19v2"))),
+		html.Child(html.SvgPath(html.AD("M9 3v2"))),
+		html.Child(html.SvgPath(html.AD("M9 9v1"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

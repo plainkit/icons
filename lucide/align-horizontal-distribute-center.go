@@ -1,17 +1,19 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // AlignHorizontalDistributeCenter creates a Align Horizontal Distribute Center Lucide icon.
-func AlignHorizontalDistributeCenter(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-align-horizontal-distribute-center", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Rect(x.RectWidth("6"), x.RectHeight("14"), x.X("4"), x.Y("5"), x.Rx("2"))),
-		x.Child(x.Rect(x.RectWidth("6"), x.RectHeight("10"), x.X("14"), x.Y("7"), x.Rx("2"))),
-		x.Child(x.Path(x.D("M17 22v-5"))),
-		x.Child(x.Path(x.D("M17 7V2"))),
-		x.Child(x.Path(x.D("M7 22v-3"))),
-		x.Child(x.Path(x.D("M7 5V2"))),
-	)
-	return x.Svg(svgArgs...)
+func AlignHorizontalDistributeCenter(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-align-horizontal-distribute-center", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgRect(html.AWidth("6"), html.AHeight("14"), html.AX("4"), html.AY("5"), html.ARx("2"))),
+		html.Child(html.SvgRect(html.AWidth("6"), html.AHeight("10"), html.AX("14"), html.AY("7"), html.ARx("2"))),
+		html.Child(html.SvgPath(html.AD("M17 22v-5"))),
+		html.Child(html.SvgPath(html.AD("M17 7V2"))),
+		html.Child(html.SvgPath(html.AD("M7 22v-3"))),
+		html.Child(html.SvgPath(html.AD("M7 5V2"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

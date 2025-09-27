@@ -1,12 +1,14 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // WifiZero creates a Wifi Zero Lucide icon.
-func WifiZero(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-wifi-zero", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M12 20h.01"))),
-	)
-	return x.Svg(svgArgs...)
+func WifiZero(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-wifi-zero", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M12 20h.01"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

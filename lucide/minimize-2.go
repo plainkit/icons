@@ -1,15 +1,17 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Minimize2 creates a Minimize 2 Lucide icon.
-func Minimize2(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-minimize-2", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("m14 10 7-7"))),
-		x.Child(x.Path(x.D("M20 10h-6V4"))),
-		x.Child(x.Path(x.D("m3 21 7-7"))),
-		x.Child(x.Path(x.D("M4 14h6v6"))),
-	)
-	return x.Svg(svgArgs...)
+func Minimize2(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-minimize-2", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("m14 10 7-7"))),
+		html.Child(html.SvgPath(html.AD("M20 10h-6V4"))),
+		html.Child(html.SvgPath(html.AD("m3 21 7-7"))),
+		html.Child(html.SvgPath(html.AD("M4 14h6v6"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

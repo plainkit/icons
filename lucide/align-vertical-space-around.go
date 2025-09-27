@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // AlignVerticalSpaceAround creates a Align Vertical Space Around Lucide icon.
-func AlignVerticalSpaceAround(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-align-vertical-space-around", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Rect(x.RectWidth("10"), x.RectHeight("6"), x.X("7"), x.Y("9"), x.Rx("2"))),
-		x.Child(x.Path(x.D("M22 20H2"))),
-		x.Child(x.Path(x.D("M22 4H2"))),
-	)
-	return x.Svg(svgArgs...)
+func AlignVerticalSpaceAround(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-align-vertical-space-around", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgRect(html.AWidth("10"), html.AHeight("6"), html.AX("7"), html.AY("9"), html.ARx("2"))),
+		html.Child(html.SvgPath(html.AD("M22 20H2"))),
+		html.Child(html.SvgPath(html.AD("M22 4H2"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

@@ -1,15 +1,17 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // CircleEllipsis creates a Circle Ellipsis Lucide icon.
-func CircleEllipsis(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-circle-ellipsis", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Circle(x.Cx("12"), x.Cy("12"), x.R("10"))),
-		x.Child(x.Path(x.D("M17 12h.01"))),
-		x.Child(x.Path(x.D("M12 12h.01"))),
-		x.Child(x.Path(x.D("M7 12h.01"))),
-	)
-	return x.Svg(svgArgs...)
+func CircleEllipsis(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-circle-ellipsis", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgCircle(html.ACx("12"), html.ACy("12"), html.AR("10"))),
+		html.Child(html.SvgPath(html.AD("M17 12h.01"))),
+		html.Child(html.SvgPath(html.AD("M12 12h.01"))),
+		html.Child(html.SvgPath(html.AD("M7 12h.01"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

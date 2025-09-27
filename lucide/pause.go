@@ -1,13 +1,15 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Pause creates a Pause Lucide icon.
-func Pause(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-pause", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Rect(x.RectWidth("5"), x.RectHeight("18"), x.X("14"), x.Y("3"), x.Rx("1"))),
-		x.Child(x.Rect(x.RectWidth("5"), x.RectHeight("18"), x.X("5"), x.Y("3"), x.Rx("1"))),
-	)
-	return x.Svg(svgArgs...)
+func Pause(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-pause", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgRect(html.AWidth("5"), html.AHeight("18"), html.AX("14"), html.AY("3"), html.ARx("1"))),
+		html.Child(html.SvgRect(html.AWidth("5"), html.AHeight("18"), html.AX("5"), html.AY("3"), html.ARx("1"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

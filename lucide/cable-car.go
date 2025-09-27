@@ -1,19 +1,21 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // CableCar creates a Cable Car Lucide icon.
-func CableCar(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-cable-car", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M10 3h.01"))),
-		x.Child(x.Path(x.D("M14 2h.01"))),
-		x.Child(x.Path(x.D("m2 9 20-5"))),
-		x.Child(x.Path(x.D("M12 12V6.5"))),
-		x.Child(x.Rect(x.RectWidth("16"), x.RectHeight("10"), x.X("4"), x.Y("12"), x.Rx("3"))),
-		x.Child(x.Path(x.D("M9 12v5"))),
-		x.Child(x.Path(x.D("M15 12v5"))),
-		x.Child(x.Path(x.D("M4 17h16"))),
-	)
-	return x.Svg(svgArgs...)
+func CableCar(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-cable-car", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M10 3h.01"))),
+		html.Child(html.SvgPath(html.AD("M14 2h.01"))),
+		html.Child(html.SvgPath(html.AD("m2 9 20-5"))),
+		html.Child(html.SvgPath(html.AD("M12 12V6.5"))),
+		html.Child(html.SvgRect(html.AWidth("16"), html.AHeight("10"), html.AX("4"), html.AY("12"), html.ARx("3"))),
+		html.Child(html.SvgPath(html.AD("M9 12v5"))),
+		html.Child(html.SvgPath(html.AD("M15 12v5"))),
+		html.Child(html.SvgPath(html.AD("M4 17h16"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

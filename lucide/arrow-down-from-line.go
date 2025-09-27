@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // ArrowDownFromLine creates a Arrow Down From Line Lucide icon.
-func ArrowDownFromLine(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-arrow-down-from-line", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M19 3H5"))),
-		x.Child(x.Path(x.D("M12 21V7"))),
-		x.Child(x.Path(x.D("m6 15 6 6 6-6"))),
-	)
-	return x.Svg(svgArgs...)
+func ArrowDownFromLine(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-arrow-down-from-line", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M19 3H5"))),
+		html.Child(html.SvgPath(html.AD("M12 21V7"))),
+		html.Child(html.SvgPath(html.AD("m6 15 6 6 6-6"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

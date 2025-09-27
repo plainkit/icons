@@ -1,16 +1,18 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // ChartColumnStacked creates a Chart Column Stacked Lucide icon.
-func ChartColumnStacked(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-chart-column-stacked", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M11 13H7"))),
-		x.Child(x.Path(x.D("M19 9h-4"))),
-		x.Child(x.Path(x.D("M3 3v16a2 2 0 0 0 2 2h16"))),
-		x.Child(x.Rect(x.RectWidth("4"), x.RectHeight("12"), x.X("15"), x.Y("5"), x.Rx("1"))),
-		x.Child(x.Rect(x.RectWidth("4"), x.RectHeight("9"), x.X("7"), x.Y("8"), x.Rx("1"))),
-	)
-	return x.Svg(svgArgs...)
+func ChartColumnStacked(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-chart-column-stacked", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M11 13H7"))),
+		html.Child(html.SvgPath(html.AD("M19 9h-4"))),
+		html.Child(html.SvgPath(html.AD("M3 3v16a2 2 0 0 0 2 2h16"))),
+		html.Child(html.SvgRect(html.AWidth("4"), html.AHeight("12"), html.AX("15"), html.AY("5"), html.ARx("1"))),
+		html.Child(html.SvgRect(html.AWidth("4"), html.AHeight("9"), html.AX("7"), html.AY("8"), html.ARx("1"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

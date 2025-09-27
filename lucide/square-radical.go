@@ -1,13 +1,15 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // SquareRadical creates a Square Radical Lucide icon.
-func SquareRadical(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-square-radical", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M7 12h2l2 5 2-10h4"))),
-		x.Child(x.Rect(x.RectWidth("18"), x.RectHeight("18"), x.X("3"), x.Y("3"), x.Rx("2"))),
-	)
-	return x.Svg(svgArgs...)
+func SquareRadical(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-square-radical", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M7 12h2l2 5 2-10h4"))),
+		html.Child(html.SvgRect(html.AWidth("18"), html.AHeight("18"), html.AX("3"), html.AY("3"), html.ARx("2"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

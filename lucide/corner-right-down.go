@@ -1,13 +1,15 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // CornerRightDown creates a Corner Right Down Lucide icon.
-func CornerRightDown(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-corner-right-down", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("m10 15 5 5 5-5"))),
-		x.Child(x.Path(x.D("M4 4h7a4 4 0 0 1 4 4v12"))),
-	)
-	return x.Svg(svgArgs...)
+func CornerRightDown(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-corner-right-down", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("m10 15 5 5 5-5"))),
+		html.Child(html.SvgPath(html.AD("M4 4h7a4 4 0 0 1 4 4v12"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

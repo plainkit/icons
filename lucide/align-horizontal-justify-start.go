@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // AlignHorizontalJustifyStart creates a Align Horizontal Justify Start Lucide icon.
-func AlignHorizontalJustifyStart(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-align-horizontal-justify-start", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Rect(x.RectWidth("6"), x.RectHeight("14"), x.X("6"), x.Y("5"), x.Rx("2"))),
-		x.Child(x.Rect(x.RectWidth("6"), x.RectHeight("10"), x.X("16"), x.Y("7"), x.Rx("2"))),
-		x.Child(x.Path(x.D("M2 2v20"))),
-	)
-	return x.Svg(svgArgs...)
+func AlignHorizontalJustifyStart(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-align-horizontal-justify-start", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgRect(html.AWidth("6"), html.AHeight("14"), html.AX("6"), html.AY("5"), html.ARx("2"))),
+		html.Child(html.SvgRect(html.AWidth("6"), html.AHeight("10"), html.AX("16"), html.AY("7"), html.ARx("2"))),
+		html.Child(html.SvgPath(html.AD("M2 2v20"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

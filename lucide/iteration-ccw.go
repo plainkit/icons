@@ -1,13 +1,15 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // IterationCcw creates a Iteration Ccw Lucide icon.
-func IterationCcw(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-iteration-ccw", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("m16 14 4 4-4 4"))),
-		x.Child(x.Path(x.D("M20 10a8 8 0 1 0-8 8h8"))),
-	)
-	return x.Svg(svgArgs...)
+func IterationCcw(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-iteration-ccw", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("m16 14 4 4-4 4"))),
+		html.Child(html.SvgPath(html.AD("M20 10a8 8 0 1 0-8 8h8"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

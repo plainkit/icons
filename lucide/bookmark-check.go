@@ -1,13 +1,15 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // BookmarkCheck creates a Bookmark Check Lucide icon.
-func BookmarkCheck(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-bookmark-check", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2Z"))),
-		x.Child(x.Path(x.D("m9 10 2 2 4-4"))),
-	)
-	return x.Svg(svgArgs...)
+func BookmarkCheck(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-bookmark-check", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2Z"))),
+		html.Child(html.SvgPath(html.AD("m9 10 2 2 4-4"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

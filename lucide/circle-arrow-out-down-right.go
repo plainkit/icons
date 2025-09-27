@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // CircleArrowOutDownRight creates a Circle Arrow Out Down Right Lucide icon.
-func CircleArrowOutDownRight(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-circle-arrow-out-down-right", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M12 22a10 10 0 1 1 10-10"))),
-		x.Child(x.Path(x.D("M22 22 12 12"))),
-		x.Child(x.Path(x.D("M22 16v6h-6"))),
-	)
-	return x.Svg(svgArgs...)
+func CircleArrowOutDownRight(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-circle-arrow-out-down-right", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M12 22a10 10 0 1 1 10-10"))),
+		html.Child(html.SvgPath(html.AD("M22 22 12 12"))),
+		html.Child(html.SvgPath(html.AD("M22 16v6h-6"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

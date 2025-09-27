@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // ListFilter creates a List Filter Lucide icon.
-func ListFilter(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-list-filter", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M2 5h20"))),
-		x.Child(x.Path(x.D("M6 12h12"))),
-		x.Child(x.Path(x.D("M9 19h6"))),
-	)
-	return x.Svg(svgArgs...)
+func ListFilter(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-list-filter", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M2 5h20"))),
+		html.Child(html.SvgPath(html.AD("M6 12h12"))),
+		html.Child(html.SvgPath(html.AD("M9 19h6"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

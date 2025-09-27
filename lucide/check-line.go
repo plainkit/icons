@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // CheckLine creates a Check Line Lucide icon.
-func CheckLine(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-check-line", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M20 4L9 15"))),
-		x.Child(x.Path(x.D("M21 19L3 19"))),
-		x.Child(x.Path(x.D("M9 15L4 10"))),
-	)
-	return x.Svg(svgArgs...)
+func CheckLine(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-check-line", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M20 4L9 15"))),
+		html.Child(html.SvgPath(html.AD("M21 19L3 19"))),
+		html.Child(html.SvgPath(html.AD("M9 15L4 10"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

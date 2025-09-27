@@ -1,17 +1,19 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // LocateFixed creates a Locate Fixed Lucide icon.
-func LocateFixed(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-locate-fixed", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Line(x.X1("2"), x.X2("5"), x.Y1("12"), x.Y2("12"))),
-		x.Child(x.Line(x.X1("19"), x.X2("22"), x.Y1("12"), x.Y2("12"))),
-		x.Child(x.Line(x.X1("12"), x.X2("12"), x.Y1("2"), x.Y2("5"))),
-		x.Child(x.Line(x.X1("12"), x.X2("12"), x.Y1("19"), x.Y2("22"))),
-		x.Child(x.Circle(x.Cx("12"), x.Cy("12"), x.R("7"))),
-		x.Child(x.Circle(x.Cx("12"), x.Cy("12"), x.R("3"))),
-	)
-	return x.Svg(svgArgs...)
+func LocateFixed(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-locate-fixed", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgLine(html.AX1("2"), html.AX2("5"), html.AY1("12"), html.AY2("12"))),
+		html.Child(html.SvgLine(html.AX1("19"), html.AX2("22"), html.AY1("12"), html.AY2("12"))),
+		html.Child(html.SvgLine(html.AX1("12"), html.AX2("12"), html.AY1("2"), html.AY2("5"))),
+		html.Child(html.SvgLine(html.AX1("12"), html.AX2("12"), html.AY1("19"), html.AY2("22"))),
+		html.Child(html.SvgCircle(html.ACx("12"), html.ACy("12"), html.AR("7"))),
+		html.Child(html.SvgCircle(html.ACx("12"), html.ACy("12"), html.AR("3"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // CircleArrowDown creates a Circle Arrow Down Lucide icon.
-func CircleArrowDown(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-circle-arrow-down", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Circle(x.Cx("12"), x.Cy("12"), x.R("10"))),
-		x.Child(x.Path(x.D("M12 8v8"))),
-		x.Child(x.Path(x.D("m8 12 4 4 4-4"))),
-	)
-	return x.Svg(svgArgs...)
+func CircleArrowDown(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-circle-arrow-down", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgCircle(html.ACx("12"), html.ACy("12"), html.AR("10"))),
+		html.Child(html.SvgPath(html.AD("M12 8v8"))),
+		html.Child(html.SvgPath(html.AD("m8 12 4 4 4-4"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

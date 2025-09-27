@@ -1,13 +1,15 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // ChevronsLeftRight creates a Chevrons Left Right Lucide icon.
-func ChevronsLeftRight(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-chevrons-left-right", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("m9 7-5 5 5 5"))),
-		x.Child(x.Path(x.D("m15 7 5 5-5 5"))),
-	)
-	return x.Svg(svgArgs...)
+func ChevronsLeftRight(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-chevrons-left-right", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("m9 7-5 5 5 5"))),
+		html.Child(html.SvgPath(html.AD("m15 7 5 5-5 5"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

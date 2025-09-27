@@ -1,17 +1,19 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // GripHorizontal creates a Grip Horizontal Lucide icon.
-func GripHorizontal(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-grip-horizontal", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Circle(x.Cx("12"), x.Cy("9"), x.R("1"))),
-		x.Child(x.Circle(x.Cx("19"), x.Cy("9"), x.R("1"))),
-		x.Child(x.Circle(x.Cx("5"), x.Cy("9"), x.R("1"))),
-		x.Child(x.Circle(x.Cx("12"), x.Cy("15"), x.R("1"))),
-		x.Child(x.Circle(x.Cx("19"), x.Cy("15"), x.R("1"))),
-		x.Child(x.Circle(x.Cx("5"), x.Cy("15"), x.R("1"))),
-	)
-	return x.Svg(svgArgs...)
+func GripHorizontal(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-grip-horizontal", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgCircle(html.ACx("12"), html.ACy("9"), html.AR("1"))),
+		html.Child(html.SvgCircle(html.ACx("19"), html.ACy("9"), html.AR("1"))),
+		html.Child(html.SvgCircle(html.ACx("5"), html.ACy("9"), html.AR("1"))),
+		html.Child(html.SvgCircle(html.ACx("12"), html.ACy("15"), html.AR("1"))),
+		html.Child(html.SvgCircle(html.ACx("19"), html.ACy("15"), html.AR("1"))),
+		html.Child(html.SvgCircle(html.ACx("5"), html.ACy("15"), html.AR("1"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

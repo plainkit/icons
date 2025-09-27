@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Touchpad creates a Touchpad Lucide icon.
-func Touchpad(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-touchpad", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Rect(x.RectWidth("20"), x.RectHeight("16"), x.X("2"), x.Y("4"), x.Rx("2"))),
-		x.Child(x.Path(x.D("M2 14h20"))),
-		x.Child(x.Path(x.D("M12 20v-6"))),
-	)
-	return x.Svg(svgArgs...)
+func Touchpad(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-touchpad", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgRect(html.AWidth("20"), html.AHeight("16"), html.AX("2"), html.AY("4"), html.ARx("2"))),
+		html.Child(html.SvgPath(html.AD("M2 14h20"))),
+		html.Child(html.SvgPath(html.AD("M12 20v-6"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

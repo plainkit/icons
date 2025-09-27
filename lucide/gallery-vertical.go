@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // GalleryVertical creates a Gallery Vertical Lucide icon.
-func GalleryVertical(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-gallery-vertical", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M3 2h18"))),
-		x.Child(x.Rect(x.RectWidth("18"), x.RectHeight("12"), x.X("3"), x.Y("6"), x.Rx("2"))),
-		x.Child(x.Path(x.D("M3 22h18"))),
-	)
-	return x.Svg(svgArgs...)
+func GalleryVertical(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-gallery-vertical", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M3 2h18"))),
+		html.Child(html.SvgRect(html.AWidth("18"), html.AHeight("12"), html.AX("3"), html.AY("6"), html.ARx("2"))),
+		html.Child(html.SvgPath(html.AD("M3 22h18"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

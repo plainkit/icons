@@ -1,16 +1,18 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Dog creates a Dog Lucide icon.
-func Dog(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-dog", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M11.25 16.25h1.5L12 17z"))),
-		x.Child(x.Path(x.D("M16 14v.5"))),
-		x.Child(x.Path(x.D("M4.42 11.247A13.152 13.152 0 0 0 4 14.556C4 18.728 7.582 21 12 21s8-2.272 8-6.444a11.702 11.702 0 0 0-.493-3.309"))),
-		x.Child(x.Path(x.D("M8 14v.5"))),
-		x.Child(x.Path(x.D("M8.5 8.5c-.384 1.05-1.083 2.028-2.344 2.5-1.931.722-3.576-.297-3.656-1-.113-.994 1.177-6.53 4-7 1.923-.321 3.651.845 3.651 2.235A7.497 7.497 0 0 1 14 5.277c0-1.39 1.844-2.598 3.767-2.277 2.823.47 4.113 6.006 4 7-.08.703-1.725 1.722-3.656 1-1.261-.472-1.855-1.45-2.239-2.5"))),
-	)
-	return x.Svg(svgArgs...)
+func Dog(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-dog", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M11.25 16.25h1.5L12 17z"))),
+		html.Child(html.SvgPath(html.AD("M16 14v.5"))),
+		html.Child(html.SvgPath(html.AD("M4.42 11.247A13.152 13.152 0 0 0 4 14.556C4 18.728 7.582 21 12 21s8-2.272 8-6.444a11.702 11.702 0 0 0-.493-3.309"))),
+		html.Child(html.SvgPath(html.AD("M8 14v.5"))),
+		html.Child(html.SvgPath(html.AD("M8.5 8.5c-.384 1.05-1.083 2.028-2.344 2.5-1.931.722-3.576-.297-3.656-1-.113-.994 1.177-6.53 4-7 1.923-.321 3.651.845 3.651 2.235A7.497 7.497 0 0 1 14 5.277c0-1.39 1.844-2.598 3.767-2.277 2.823.47 4.113 6.006 4 7-.08.703-1.725 1.722-3.656 1-1.261-.472-1.855-1.45-2.239-2.5"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

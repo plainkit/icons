@@ -1,17 +1,19 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // FileArchive creates a File Archive Lucide icon.
-func FileArchive(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-file-archive", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M10 12v-1"))),
-		x.Child(x.Path(x.D("M10 18v-2"))),
-		x.Child(x.Path(x.D("M10 7V6"))),
-		x.Child(x.Path(x.D("M14 2v4a2 2 0 0 0 2 2h4"))),
-		x.Child(x.Path(x.D("M15.5 22H18a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v16a2 2 0 0 0 .274 1.01"))),
-		x.Child(x.Circle(x.Cx("10"), x.Cy("20"), x.R("2"))),
-	)
-	return x.Svg(svgArgs...)
+func FileArchive(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-file-archive", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M10 12v-1"))),
+		html.Child(html.SvgPath(html.AD("M10 18v-2"))),
+		html.Child(html.SvgPath(html.AD("M10 7V6"))),
+		html.Child(html.SvgPath(html.AD("M14 2v4a2 2 0 0 0 2 2h4"))),
+		html.Child(html.SvgPath(html.AD("M15.5 22H18a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v16a2 2 0 0 0 .274 1.01"))),
+		html.Child(html.SvgCircle(html.ACx("10"), html.ACy("20"), html.AR("2"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

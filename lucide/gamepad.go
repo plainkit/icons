@@ -1,16 +1,18 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Gamepad creates a Gamepad Lucide icon.
-func Gamepad(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-gamepad", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Line(x.X1("6"), x.X2("10"), x.Y1("12"), x.Y2("12"))),
-		x.Child(x.Line(x.X1("8"), x.X2("8"), x.Y1("10"), x.Y2("14"))),
-		x.Child(x.Line(x.X1("15"), x.X2("15.01"), x.Y1("13"), x.Y2("13"))),
-		x.Child(x.Line(x.X1("18"), x.X2("18.01"), x.Y1("11"), x.Y2("11"))),
-		x.Child(x.Rect(x.RectWidth("20"), x.RectHeight("12"), x.X("2"), x.Y("6"), x.Rx("2"))),
-	)
-	return x.Svg(svgArgs...)
+func Gamepad(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-gamepad", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgLine(html.AX1("6"), html.AX2("10"), html.AY1("12"), html.AY2("12"))),
+		html.Child(html.SvgLine(html.AX1("8"), html.AX2("8"), html.AY1("10"), html.AY2("14"))),
+		html.Child(html.SvgLine(html.AX1("15"), html.AX2("15.01"), html.AY1("13"), html.AY2("13"))),
+		html.Child(html.SvgLine(html.AX1("18"), html.AX2("18.01"), html.AY1("11"), html.AY2("11"))),
+		html.Child(html.SvgRect(html.AWidth("20"), html.AHeight("12"), html.AX("2"), html.AY("6"), html.ARx("2"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

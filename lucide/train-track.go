@@ -1,18 +1,20 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // TrainTrack creates a Train Track Lucide icon.
-func TrainTrack(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-train-track", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M2 17 17 2"))),
-		x.Child(x.Path(x.D("m2 14 8 8"))),
-		x.Child(x.Path(x.D("m5 11 8 8"))),
-		x.Child(x.Path(x.D("m8 8 8 8"))),
-		x.Child(x.Path(x.D("m11 5 8 8"))),
-		x.Child(x.Path(x.D("m14 2 8 8"))),
-		x.Child(x.Path(x.D("M7 22 22 7"))),
-	)
-	return x.Svg(svgArgs...)
+func TrainTrack(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-train-track", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M2 17 17 2"))),
+		html.Child(html.SvgPath(html.AD("m2 14 8 8"))),
+		html.Child(html.SvgPath(html.AD("m5 11 8 8"))),
+		html.Child(html.SvgPath(html.AD("m8 8 8 8"))),
+		html.Child(html.SvgPath(html.AD("m11 5 8 8"))),
+		html.Child(html.SvgPath(html.AD("m14 2 8 8"))),
+		html.Child(html.SvgPath(html.AD("M7 22 22 7"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

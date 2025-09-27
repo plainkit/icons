@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // SquarePause creates a Square Pause Lucide icon.
-func SquarePause(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-square-pause", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Rect(x.RectWidth("18"), x.RectHeight("18"), x.X("3"), x.Y("3"), x.Rx("2"))),
-		x.Child(x.Line(x.X1("10"), x.X2("10"), x.Y1("15"), x.Y2("9"))),
-		x.Child(x.Line(x.X1("14"), x.X2("14"), x.Y1("15"), x.Y2("9"))),
-	)
-	return x.Svg(svgArgs...)
+func SquarePause(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-square-pause", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgRect(html.AWidth("18"), html.AHeight("18"), html.AX("3"), html.AY("3"), html.ARx("2"))),
+		html.Child(html.SvgLine(html.AX1("10"), html.AX2("10"), html.AY1("15"), html.AY2("9"))),
+		html.Child(html.SvgLine(html.AX1("14"), html.AX2("14"), html.AY1("15"), html.AY2("9"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

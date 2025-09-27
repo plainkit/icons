@@ -1,15 +1,17 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // GeorgianLari creates a Georgian Lari Lucide icon.
-func GeorgianLari(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-georgian-lari", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M11.5 21a7.5 7.5 0 1 1 7.35-9"))),
-		x.Child(x.Path(x.D("M13 12V3"))),
-		x.Child(x.Path(x.D("M4 21h16"))),
-		x.Child(x.Path(x.D("M9 12V3"))),
-	)
-	return x.Svg(svgArgs...)
+func GeorgianLari(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-georgian-lari", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M11.5 21a7.5 7.5 0 1 1 7.35-9"))),
+		html.Child(html.SvgPath(html.AD("M13 12V3"))),
+		html.Child(html.SvgPath(html.AD("M4 21h16"))),
+		html.Child(html.SvgPath(html.AD("M9 12V3"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

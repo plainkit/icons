@@ -1,16 +1,18 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Focus creates a Focus Lucide icon.
-func Focus(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-focus", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Circle(x.Cx("12"), x.Cy("12"), x.R("3"))),
-		x.Child(x.Path(x.D("M3 7V5a2 2 0 0 1 2-2h2"))),
-		x.Child(x.Path(x.D("M17 3h2a2 2 0 0 1 2 2v2"))),
-		x.Child(x.Path(x.D("M21 17v2a2 2 0 0 1-2 2h-2"))),
-		x.Child(x.Path(x.D("M7 21H5a2 2 0 0 1-2-2v-2"))),
-	)
-	return x.Svg(svgArgs...)
+func Focus(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-focus", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgCircle(html.ACx("12"), html.ACy("12"), html.AR("3"))),
+		html.Child(html.SvgPath(html.AD("M3 7V5a2 2 0 0 1 2-2h2"))),
+		html.Child(html.SvgPath(html.AD("M17 3h2a2 2 0 0 1 2 2v2"))),
+		html.Child(html.SvgPath(html.AD("M21 17v2a2 2 0 0 1-2 2h-2"))),
+		html.Child(html.SvgPath(html.AD("M7 21H5a2 2 0 0 1-2-2v-2"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

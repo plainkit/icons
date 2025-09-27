@@ -1,15 +1,17 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // AppWindow creates a App Window Lucide icon.
-func AppWindow(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-app-window", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Rect(x.RectWidth("20"), x.RectHeight("16"), x.X("2"), x.Y("4"), x.Rx("2"))),
-		x.Child(x.Path(x.D("M10 4v4"))),
-		x.Child(x.Path(x.D("M2 8h20"))),
-		x.Child(x.Path(x.D("M6 4v4"))),
-	)
-	return x.Svg(svgArgs...)
+func AppWindow(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-app-window", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgRect(html.AWidth("20"), html.AHeight("16"), html.AX("2"), html.AY("4"), html.ARx("2"))),
+		html.Child(html.SvgPath(html.AD("M10 4v4"))),
+		html.Child(html.SvgPath(html.AD("M2 8h20"))),
+		html.Child(html.SvgPath(html.AD("M6 4v4"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

@@ -1,15 +1,17 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Speaker creates a Speaker Lucide icon.
-func Speaker(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-speaker", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Rect(x.RectWidth("16"), x.RectHeight("20"), x.X("4"), x.Y("2"), x.Rx("2"))),
-		x.Child(x.Path(x.D("M12 6h.01"))),
-		x.Child(x.Circle(x.Cx("12"), x.Cy("14"), x.R("4"))),
-		x.Child(x.Path(x.D("M12 14h.01"))),
-	)
-	return x.Svg(svgArgs...)
+func Speaker(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-speaker", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgRect(html.AWidth("16"), html.AHeight("20"), html.AX("4"), html.AY("2"), html.ARx("2"))),
+		html.Child(html.SvgPath(html.AD("M12 6h.01"))),
+		html.Child(html.SvgCircle(html.ACx("12"), html.ACy("14"), html.AR("4"))),
+		html.Child(html.SvgPath(html.AD("M12 14h.01"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

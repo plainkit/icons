@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // GitCommitHorizontal creates a Git Commit Horizontal Lucide icon.
-func GitCommitHorizontal(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-git-commit-horizontal", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Circle(x.Cx("12"), x.Cy("12"), x.R("3"))),
-		x.Child(x.Line(x.X1("3"), x.X2("9"), x.Y1("12"), x.Y2("12"))),
-		x.Child(x.Line(x.X1("15"), x.X2("21"), x.Y1("12"), x.Y2("12"))),
-	)
-	return x.Svg(svgArgs...)
+func GitCommitHorizontal(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-git-commit-horizontal", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgCircle(html.ACx("12"), html.ACy("12"), html.AR("3"))),
+		html.Child(html.SvgLine(html.AX1("3"), html.AX2("9"), html.AY1("12"), html.AY2("12"))),
+		html.Child(html.SvgLine(html.AX1("15"), html.AX2("21"), html.AY1("12"), html.AY2("12"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

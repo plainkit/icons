@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // ArrowUpToLine creates a Arrow Up To Line Lucide icon.
-func ArrowUpToLine(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-arrow-up-to-line", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M5 3h14"))),
-		x.Child(x.Path(x.D("m18 13-6-6-6 6"))),
-		x.Child(x.Path(x.D("M12 7v14"))),
-	)
-	return x.Svg(svgArgs...)
+func ArrowUpToLine(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-arrow-up-to-line", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M5 3h14"))),
+		html.Child(html.SvgPath(html.AD("m18 13-6-6-6 6"))),
+		html.Child(html.SvgPath(html.AD("M12 7v14"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

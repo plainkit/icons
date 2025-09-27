@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Music creates a Music Lucide icon.
-func Music(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-music", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M9 18V5l12-2v13"))),
-		x.Child(x.Circle(x.Cx("6"), x.Cy("18"), x.R("3"))),
-		x.Child(x.Circle(x.Cx("18"), x.Cy("16"), x.R("3"))),
-	)
-	return x.Svg(svgArgs...)
+func Music(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-music", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M9 18V5l12-2v13"))),
+		html.Child(html.SvgCircle(html.ACx("6"), html.ACy("18"), html.AR("3"))),
+		html.Child(html.SvgCircle(html.ACx("18"), html.ACy("16"), html.AR("3"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

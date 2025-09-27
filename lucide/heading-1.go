@@ -1,15 +1,17 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Heading1 creates a Heading 1 Lucide icon.
-func Heading1(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-heading-1", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M4 12h8"))),
-		x.Child(x.Path(x.D("M4 18V6"))),
-		x.Child(x.Path(x.D("M12 18V6"))),
-		x.Child(x.Path(x.D("m17 12 3-2v8"))),
-	)
-	return x.Svg(svgArgs...)
+func Heading1(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-heading-1", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M4 12h8"))),
+		html.Child(html.SvgPath(html.AD("M4 18V6"))),
+		html.Child(html.SvgPath(html.AD("M12 18V6"))),
+		html.Child(html.SvgPath(html.AD("m17 12 3-2v8"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

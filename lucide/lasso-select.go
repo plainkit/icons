@@ -1,16 +1,18 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // LassoSelect creates a Lasso Select Lucide icon.
-func LassoSelect(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-lasso-select", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M7 22a5 5 0 0 1-2-4"))),
-		x.Child(x.Path(x.D("M7 16.93c.96.43 1.96.74 2.99.91"))),
-		x.Child(x.Path(x.D("M3.34 14A6.8 6.8 0 0 1 2 10c0-4.42 4.48-8 10-8s10 3.58 10 8a7.19 7.19 0 0 1-.33 2"))),
-		x.Child(x.Path(x.D("M5 18a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"))),
-		x.Child(x.Path(x.D("M14.33 22h-.09a.35.35 0 0 1-.24-.32v-10a.34.34 0 0 1 .33-.34c.08 0 .15.03.21.08l7.34 6a.33.33 0 0 1-.21.59h-4.49l-2.57 3.85a.35.35 0 0 1-.28.14z"))),
-	)
-	return x.Svg(svgArgs...)
+func LassoSelect(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-lasso-select", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M7 22a5 5 0 0 1-2-4"))),
+		html.Child(html.SvgPath(html.AD("M7 16.93c.96.43 1.96.74 2.99.91"))),
+		html.Child(html.SvgPath(html.AD("M3.34 14A6.8 6.8 0 0 1 2 10c0-4.42 4.48-8 10-8s10 3.58 10 8a7.19 7.19 0 0 1-.33 2"))),
+		html.Child(html.SvgPath(html.AD("M5 18a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"))),
+		html.Child(html.SvgPath(html.AD("M14.33 22h-.09a.35.35 0 0 1-.24-.32v-10a.34.34 0 0 1 .33-.34c.08 0 .15.03.21.08l7.34 6a.33.33 0 0 1-.21.59h-4.49l-2.57 3.85a.35.35 0 0 1-.28.14z"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

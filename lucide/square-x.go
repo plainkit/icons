@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // SquareX creates a Square X Lucide icon.
-func SquareX(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-square-x", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Rect(x.RectWidth("18"), x.RectHeight("18"), x.X("3"), x.Y("3"), x.Rx("2"), x.Ry("2"))),
-		x.Child(x.Path(x.D("m15 9-6 6"))),
-		x.Child(x.Path(x.D("m9 9 6 6"))),
-	)
-	return x.Svg(svgArgs...)
+func SquareX(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-square-x", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgRect(html.AWidth("18"), html.AHeight("18"), html.AX("3"), html.AY("3"), html.ARx("2"), html.ARy("2"))),
+		html.Child(html.SvgPath(html.AD("m15 9-6 6"))),
+		html.Child(html.SvgPath(html.AD("m9 9 6 6"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

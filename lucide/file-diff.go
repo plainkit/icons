@@ -1,15 +1,17 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // FileDiff creates a File Diff Lucide icon.
-func FileDiff(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-file-diff", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"))),
-		x.Child(x.Path(x.D("M9 10h6"))),
-		x.Child(x.Path(x.D("M12 13V7"))),
-		x.Child(x.Path(x.D("M9 17h6"))),
-	)
-	return x.Svg(svgArgs...)
+func FileDiff(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-file-diff", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"))),
+		html.Child(html.SvgPath(html.AD("M9 10h6"))),
+		html.Child(html.SvgPath(html.AD("M12 13V7"))),
+		html.Child(html.SvgPath(html.AD("M9 17h6"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Mic creates a Mic Lucide icon.
-func Mic(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-mic", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M12 19v3"))),
-		x.Child(x.Path(x.D("M19 10v2a7 7 0 0 1-14 0v-2"))),
-		x.Child(x.Rect(x.RectWidth("6"), x.RectHeight("13"), x.X("9"), x.Y("2"), x.Rx("3"))),
-	)
-	return x.Svg(svgArgs...)
+func Mic(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-mic", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M12 19v3"))),
+		html.Child(html.SvgPath(html.AD("M19 10v2a7 7 0 0 1-14 0v-2"))),
+		html.Child(html.SvgRect(html.AWidth("6"), html.AHeight("13"), html.AX("9"), html.AY("2"), html.ARx("3"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

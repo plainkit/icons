@@ -1,13 +1,15 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Torus creates a Torus Lucide icon.
-func Torus(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-torus", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Ellipse(x.EllipseCx("12"), x.EllipseCy("11"), x.EllipseRx("3"), x.EllipseRy("2"))),
-		x.Child(x.Ellipse(x.EllipseCx("12"), x.EllipseCy("12.5"), x.EllipseRx("10"), x.EllipseRy("8.5"))),
-	)
-	return x.Svg(svgArgs...)
+func Torus(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-torus", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgEllipse(html.ACx("12"), html.ACy("11"), html.ARx("3"), html.ARy("2"))),
+		html.Child(html.SvgEllipse(html.ACx("12"), html.ACy("12.5"), html.ARx("10"), html.ARy("8.5"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

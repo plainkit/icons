@@ -1,16 +1,18 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // ScanLine creates a Scan Line Lucide icon.
-func ScanLine(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-scan-line", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M3 7V5a2 2 0 0 1 2-2h2"))),
-		x.Child(x.Path(x.D("M17 3h2a2 2 0 0 1 2 2v2"))),
-		x.Child(x.Path(x.D("M21 17v2a2 2 0 0 1-2 2h-2"))),
-		x.Child(x.Path(x.D("M7 21H5a2 2 0 0 1-2-2v-2"))),
-		x.Child(x.Path(x.D("M7 12h10"))),
-	)
-	return x.Svg(svgArgs...)
+func ScanLine(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-scan-line", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M3 7V5a2 2 0 0 1 2-2h2"))),
+		html.Child(html.SvgPath(html.AD("M17 3h2a2 2 0 0 1 2 2v2"))),
+		html.Child(html.SvgPath(html.AD("M21 17v2a2 2 0 0 1-2 2h-2"))),
+		html.Child(html.SvgPath(html.AD("M7 21H5a2 2 0 0 1-2-2v-2"))),
+		html.Child(html.SvgPath(html.AD("M7 12h10"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

@@ -1,13 +1,15 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // UserRound creates a User Round Lucide icon.
-func UserRound(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-user-round", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Circle(x.Cx("12"), x.Cy("8"), x.R("5"))),
-		x.Child(x.Path(x.D("M20 21a8 8 0 0 0-16 0"))),
-	)
-	return x.Svg(svgArgs...)
+func UserRound(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-user-round", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgCircle(html.ACx("12"), html.ACy("8"), html.AR("5"))),
+		html.Child(html.SvgPath(html.AD("M20 21a8 8 0 0 0-16 0"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

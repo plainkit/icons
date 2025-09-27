@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // SeparatorHorizontal creates a Separator Horizontal Lucide icon.
-func SeparatorHorizontal(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-separator-horizontal", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("m16 16-4 4-4-4"))),
-		x.Child(x.Path(x.D("M3 12h18"))),
-		x.Child(x.Path(x.D("m8 8 4-4 4 4"))),
-	)
-	return x.Svg(svgArgs...)
+func SeparatorHorizontal(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-separator-horizontal", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("m16 16-4 4-4-4"))),
+		html.Child(html.SvgPath(html.AD("M3 12h18"))),
+		html.Child(html.SvgPath(html.AD("m8 8 4-4 4 4"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

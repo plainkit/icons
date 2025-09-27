@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Mars creates a Mars Lucide icon.
-func Mars(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-mars", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M16 3h5v5"))),
-		x.Child(x.Path(x.D("m21 3-6.75 6.75"))),
-		x.Child(x.Circle(x.Cx("10"), x.Cy("14"), x.R("6"))),
-	)
-	return x.Svg(svgArgs...)
+func Mars(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-mars", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M16 3h5v5"))),
+		html.Child(html.SvgPath(html.AD("m21 3-6.75 6.75"))),
+		html.Child(html.SvgCircle(html.ACx("10"), html.ACy("14"), html.AR("6"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // BluetoothConnected creates a Bluetooth Connected Lucide icon.
-func BluetoothConnected(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-bluetooth-connected", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("m7 7 10 10-5 5V2l5 5L7 17"))),
-		x.Child(x.Line(x.X1("18"), x.X2("21"), x.Y1("12"), x.Y2("12"))),
-		x.Child(x.Line(x.X1("3"), x.X2("6"), x.Y1("12"), x.Y2("12"))),
-	)
-	return x.Svg(svgArgs...)
+func BluetoothConnected(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-bluetooth-connected", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("m7 7 10 10-5 5V2l5 5L7 17"))),
+		html.Child(html.SvgLine(html.AX1("18"), html.AX2("21"), html.AY1("12"), html.AY2("12"))),
+		html.Child(html.SvgLine(html.AX1("3"), html.AX2("6"), html.AY1("12"), html.AY2("12"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

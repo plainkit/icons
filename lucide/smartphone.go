@@ -1,13 +1,15 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Smartphone creates a Smartphone Lucide icon.
-func Smartphone(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-smartphone", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Rect(x.RectWidth("14"), x.RectHeight("20"), x.X("5"), x.Y("2"), x.Rx("2"), x.Ry("2"))),
-		x.Child(x.Path(x.D("M12 18h.01"))),
-	)
-	return x.Svg(svgArgs...)
+func Smartphone(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-smartphone", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgRect(html.AWidth("14"), html.AHeight("20"), html.AX("5"), html.AY("2"), html.ARx("2"), html.ARy("2"))),
+		html.Child(html.SvgPath(html.AD("M12 18h.01"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

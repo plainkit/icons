@@ -1,13 +1,15 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // CreditCard creates a Credit Card Lucide icon.
-func CreditCard(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-credit-card", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Rect(x.RectWidth("20"), x.RectHeight("14"), x.X("2"), x.Y("5"), x.Rx("2"))),
-		x.Child(x.Line(x.X1("2"), x.X2("22"), x.Y1("10"), x.Y2("10"))),
-	)
-	return x.Svg(svgArgs...)
+func CreditCard(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-credit-card", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgRect(html.AWidth("20"), html.AHeight("14"), html.AX("2"), html.AY("5"), html.ARx("2"))),
+		html.Child(html.SvgLine(html.AX1("2"), html.AX2("22"), html.AY1("10"), html.AY2("10"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

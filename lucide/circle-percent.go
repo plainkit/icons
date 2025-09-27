@@ -1,15 +1,17 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // CirclePercent creates a Circle Percent Lucide icon.
-func CirclePercent(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-circle-percent", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Circle(x.Cx("12"), x.Cy("12"), x.R("10"))),
-		x.Child(x.Path(x.D("m15 9-6 6"))),
-		x.Child(x.Path(x.D("M9 9h.01"))),
-		x.Child(x.Path(x.D("M15 15h.01"))),
-	)
-	return x.Svg(svgArgs...)
+func CirclePercent(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-circle-percent", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgCircle(html.ACx("12"), html.ACy("12"), html.AR("10"))),
+		html.Child(html.SvgPath(html.AD("m15 9-6 6"))),
+		html.Child(html.SvgPath(html.AD("M9 9h.01"))),
+		html.Child(html.SvgPath(html.AD("M15 15h.01"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

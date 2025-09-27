@@ -1,15 +1,17 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // LayoutDashboard creates a Layout Dashboard Lucide icon.
-func LayoutDashboard(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-layout-dashboard", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Rect(x.RectWidth("7"), x.RectHeight("9"), x.X("3"), x.Y("3"), x.Rx("1"))),
-		x.Child(x.Rect(x.RectWidth("7"), x.RectHeight("5"), x.X("14"), x.Y("3"), x.Rx("1"))),
-		x.Child(x.Rect(x.RectWidth("7"), x.RectHeight("9"), x.X("14"), x.Y("12"), x.Rx("1"))),
-		x.Child(x.Rect(x.RectWidth("7"), x.RectHeight("5"), x.X("3"), x.Y("16"), x.Rx("1"))),
-	)
-	return x.Svg(svgArgs...)
+func LayoutDashboard(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-layout-dashboard", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgRect(html.AWidth("7"), html.AHeight("9"), html.AX("3"), html.AY("3"), html.ARx("1"))),
+		html.Child(html.SvgRect(html.AWidth("7"), html.AHeight("5"), html.AX("14"), html.AY("3"), html.ARx("1"))),
+		html.Child(html.SvgRect(html.AWidth("7"), html.AHeight("9"), html.AX("14"), html.AY("12"), html.ARx("1"))),
+		html.Child(html.SvgRect(html.AWidth("7"), html.AHeight("5"), html.AX("3"), html.AY("16"), html.ARx("1"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

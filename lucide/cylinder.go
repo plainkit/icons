@@ -1,13 +1,15 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Cylinder creates a Cylinder Lucide icon.
-func Cylinder(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-cylinder", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Ellipse(x.EllipseCx("12"), x.EllipseCy("5"), x.EllipseRx("9"), x.EllipseRy("3"))),
-		x.Child(x.Path(x.D("M3 5v14a9 3 0 0 0 18 0V5"))),
-	)
-	return x.Svg(svgArgs...)
+func Cylinder(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-cylinder", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgEllipse(html.ACx("12"), html.ACy("5"), html.ARx("9"), html.ARy("3"))),
+		html.Child(html.SvgPath(html.AD("M3 5v14a9 3 0 0 0 18 0V5"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

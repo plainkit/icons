@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // SquareArrowDownLeft creates a Square Arrow Down Left Lucide icon.
-func SquareArrowDownLeft(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-square-arrow-down-left", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Rect(x.RectWidth("18"), x.RectHeight("18"), x.X("3"), x.Y("3"), x.Rx("2"))),
-		x.Child(x.Path(x.D("m16 8-8 8"))),
-		x.Child(x.Path(x.D("M16 16H8V8"))),
-	)
-	return x.Svg(svgArgs...)
+func SquareArrowDownLeft(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-square-arrow-down-left", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgRect(html.AWidth("18"), html.AHeight("18"), html.AX("3"), html.AY("3"), html.ARx("2"))),
+		html.Child(html.SvgPath(html.AD("m16 8-8 8"))),
+		html.Child(html.SvgPath(html.AD("M16 16H8V8"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Monitor creates a Monitor Lucide icon.
-func Monitor(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-monitor", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Rect(x.RectWidth("20"), x.RectHeight("14"), x.X("2"), x.Y("3"), x.Rx("2"))),
-		x.Child(x.Line(x.X1("8"), x.X2("16"), x.Y1("21"), x.Y2("21"))),
-		x.Child(x.Line(x.X1("12"), x.X2("12"), x.Y1("17"), x.Y2("21"))),
-	)
-	return x.Svg(svgArgs...)
+func Monitor(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-monitor", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgRect(html.AWidth("20"), html.AHeight("14"), html.AX("2"), html.AY("3"), html.ARx("2"))),
+		html.Child(html.SvgLine(html.AX1("8"), html.AX2("16"), html.AY1("21"), html.AY2("21"))),
+		html.Child(html.SvgLine(html.AX1("12"), html.AX2("12"), html.AY1("17"), html.AY2("21"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

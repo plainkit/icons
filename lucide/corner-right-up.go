@@ -1,13 +1,15 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // CornerRightUp creates a Corner Right Up Lucide icon.
-func CornerRightUp(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-corner-right-up", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("m10 9 5-5 5 5"))),
-		x.Child(x.Path(x.D("M4 20h7a4 4 0 0 0 4-4V4"))),
-	)
-	return x.Svg(svgArgs...)
+func CornerRightUp(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-corner-right-up", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("m10 9 5-5 5 5"))),
+		html.Child(html.SvgPath(html.AD("M4 20h7a4 4 0 0 0 4-4V4"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

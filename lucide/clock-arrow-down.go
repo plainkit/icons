@@ -1,15 +1,17 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // ClockArrowDown creates a Clock Arrow Down Lucide icon.
-func ClockArrowDown(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-clock-arrow-down", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M12 6v6l2 1"))),
-		x.Child(x.Path(x.D("M12.337 21.994a10 10 0 1 1 9.588-8.767"))),
-		x.Child(x.Path(x.D("m14 18 4 4 4-4"))),
-		x.Child(x.Path(x.D("M18 14v8"))),
-	)
-	return x.Svg(svgArgs...)
+func ClockArrowDown(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-clock-arrow-down", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M12 6v6l2 1"))),
+		html.Child(html.SvgPath(html.AD("M12.337 21.994a10 10 0 1 1 9.588-8.767"))),
+		html.Child(html.SvgPath(html.AD("m14 18 4 4 4-4"))),
+		html.Child(html.SvgPath(html.AD("M18 14v8"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

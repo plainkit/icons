@@ -1,15 +1,17 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Computer creates a Computer Lucide icon.
-func Computer(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-computer", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Rect(x.RectWidth("14"), x.RectHeight("8"), x.X("5"), x.Y("2"), x.Rx("2"))),
-		x.Child(x.Rect(x.RectWidth("20"), x.RectHeight("8"), x.X("2"), x.Y("14"), x.Rx("2"))),
-		x.Child(x.Path(x.D("M6 18h2"))),
-		x.Child(x.Path(x.D("M12 18h6"))),
-	)
-	return x.Svg(svgArgs...)
+func Computer(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-computer", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgRect(html.AWidth("14"), html.AHeight("8"), html.AX("5"), html.AY("2"), html.ARx("2"))),
+		html.Child(html.SvgRect(html.AWidth("20"), html.AHeight("8"), html.AX("2"), html.AY("14"), html.ARx("2"))),
+		html.Child(html.SvgPath(html.AD("M6 18h2"))),
+		html.Child(html.SvgPath(html.AD("M12 18h6"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

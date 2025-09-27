@@ -1,13 +1,15 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // MoveDownLeft creates a Move Down Left Lucide icon.
-func MoveDownLeft(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-move-down-left", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M11 19H5V13"))),
-		x.Child(x.Path(x.D("M19 5L5 19"))),
-	)
-	return x.Svg(svgArgs...)
+func MoveDownLeft(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-move-down-left", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M11 19H5V13"))),
+		html.Child(html.SvgPath(html.AD("M19 5L5 19"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

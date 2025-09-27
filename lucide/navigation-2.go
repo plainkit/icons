@@ -1,12 +1,14 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Navigation2 creates a Navigation 2 Lucide icon.
-func Navigation2(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-navigation-2", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Polygon(x.Points("12 2 19 21 12 17 5 21 12 2"))),
-	)
-	return x.Svg(svgArgs...)
+func Navigation2(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-navigation-2", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPolygon(html.APoints("12 2 19 21 12 17 5 21 12 2"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

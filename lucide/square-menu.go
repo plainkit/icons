@@ -1,15 +1,17 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // SquareMenu creates a Square Menu Lucide icon.
-func SquareMenu(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-square-menu", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Rect(x.RectWidth("18"), x.RectHeight("18"), x.X("3"), x.Y("3"), x.Rx("2"))),
-		x.Child(x.Path(x.D("M7 8h10"))),
-		x.Child(x.Path(x.D("M7 12h10"))),
-		x.Child(x.Path(x.D("M7 16h10"))),
-	)
-	return x.Svg(svgArgs...)
+func SquareMenu(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-square-menu", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgRect(html.AWidth("18"), html.AHeight("18"), html.AX("3"), html.AY("3"), html.ARx("2"))),
+		html.Child(html.SvgPath(html.AD("M7 8h10"))),
+		html.Child(html.SvgPath(html.AD("M7 12h10"))),
+		html.Child(html.SvgPath(html.AD("M7 16h10"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

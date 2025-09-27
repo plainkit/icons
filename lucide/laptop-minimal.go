@@ -1,13 +1,15 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // LaptopMinimal creates a Laptop Minimal Lucide icon.
-func LaptopMinimal(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-laptop-minimal", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Rect(x.RectWidth("18"), x.RectHeight("12"), x.X("3"), x.Y("4"), x.Rx("2"), x.Ry("2"))),
-		x.Child(x.Line(x.X1("2"), x.X2("22"), x.Y1("20"), x.Y2("20"))),
-	)
-	return x.Svg(svgArgs...)
+func LaptopMinimal(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-laptop-minimal", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgRect(html.AWidth("18"), html.AHeight("12"), html.AX("3"), html.AY("4"), html.ARx("2"), html.ARy("2"))),
+		html.Child(html.SvgLine(html.AX1("2"), html.AX2("22"), html.AY1("20"), html.AY2("20"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

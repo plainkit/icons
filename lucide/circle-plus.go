@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // CirclePlus creates a Circle Plus Lucide icon.
-func CirclePlus(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-circle-plus", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Circle(x.Cx("12"), x.Cy("12"), x.R("10"))),
-		x.Child(x.Path(x.D("M8 12h8"))),
-		x.Child(x.Path(x.D("M12 8v8"))),
-	)
-	return x.Svg(svgArgs...)
+func CirclePlus(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-circle-plus", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgCircle(html.ACx("12"), html.ACy("12"), html.AR("10"))),
+		html.Child(html.SvgPath(html.AD("M8 12h8"))),
+		html.Child(html.SvgPath(html.AD("M12 8v8"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

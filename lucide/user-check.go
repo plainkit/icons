@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // UserCheck creates a User Check Lucide icon.
-func UserCheck(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-user-check", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("m16 11 2 2 4-4"))),
-		x.Child(x.Path(x.D("M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"))),
-		x.Child(x.Circle(x.Cx("9"), x.Cy("7"), x.R("4"))),
-	)
-	return x.Svg(svgArgs...)
+func UserCheck(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-user-check", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("m16 11 2 2 4-4"))),
+		html.Child(html.SvgPath(html.AD("M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"))),
+		html.Child(html.SvgCircle(html.ACx("9"), html.ACy("7"), html.AR("4"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

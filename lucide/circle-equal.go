@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // CircleEqual creates a Circle Equal Lucide icon.
-func CircleEqual(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-circle-equal", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M7 10h10"))),
-		x.Child(x.Path(x.D("M7 14h10"))),
-		x.Child(x.Circle(x.Cx("12"), x.Cy("12"), x.R("10"))),
-	)
-	return x.Svg(svgArgs...)
+func CircleEqual(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-circle-equal", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M7 10h10"))),
+		html.Child(html.SvgPath(html.AD("M7 14h10"))),
+		html.Child(html.SvgCircle(html.ACx("12"), html.ACy("12"), html.AR("10"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

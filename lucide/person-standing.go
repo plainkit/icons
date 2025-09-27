@@ -1,15 +1,17 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // PersonStanding creates a Person Standing Lucide icon.
-func PersonStanding(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-person-standing", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Circle(x.Cx("12"), x.Cy("5"), x.R("1"))),
-		x.Child(x.Path(x.D("m9 20 3-6 3 6"))),
-		x.Child(x.Path(x.D("m6 8 6 2 6-2"))),
-		x.Child(x.Path(x.D("M12 10v4"))),
-	)
-	return x.Svg(svgArgs...)
+func PersonStanding(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-person-standing", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgCircle(html.ACx("12"), html.ACy("5"), html.AR("1"))),
+		html.Child(html.SvgPath(html.AD("m9 20 3-6 3 6"))),
+		html.Child(html.SvgPath(html.AD("m6 8 6 2 6-2"))),
+		html.Child(html.SvgPath(html.AD("M12 10v4"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

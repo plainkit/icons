@@ -1,17 +1,19 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // CalendarPlus2 creates a Calendar Plus 2 Lucide icon.
-func CalendarPlus2(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-calendar-plus-2", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M8 2v4"))),
-		x.Child(x.Path(x.D("M16 2v4"))),
-		x.Child(x.Rect(x.RectWidth("18"), x.RectHeight("18"), x.X("3"), x.Y("4"), x.Rx("2"))),
-		x.Child(x.Path(x.D("M3 10h18"))),
-		x.Child(x.Path(x.D("M10 16h4"))),
-		x.Child(x.Path(x.D("M12 14v4"))),
-	)
-	return x.Svg(svgArgs...)
+func CalendarPlus2(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-calendar-plus-2", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M8 2v4"))),
+		html.Child(html.SvgPath(html.AD("M16 2v4"))),
+		html.Child(html.SvgRect(html.AWidth("18"), html.AHeight("18"), html.AX("3"), html.AY("4"), html.ARx("2"))),
+		html.Child(html.SvgPath(html.AD("M3 10h18"))),
+		html.Child(html.SvgPath(html.AD("M10 16h4"))),
+		html.Child(html.SvgPath(html.AD("M12 14v4"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

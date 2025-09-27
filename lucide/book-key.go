@@ -1,16 +1,18 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // BookKey creates a Book Key Lucide icon.
-func BookKey(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-book-key", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("m19 3 1 1"))),
-		x.Child(x.Path(x.D("m20 2-4.5 4.5"))),
-		x.Child(x.Path(x.D("M20 7.898V21a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"))),
-		x.Child(x.Path(x.D("M4 19.5v-15A2.5 2.5 0 0 1 6.5 2h7.844"))),
-		x.Child(x.Circle(x.Cx("14"), x.Cy("8"), x.R("2"))),
-	)
-	return x.Svg(svgArgs...)
+func BookKey(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-book-key", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("m19 3 1 1"))),
+		html.Child(html.SvgPath(html.AD("m20 2-4.5 4.5"))),
+		html.Child(html.SvgPath(html.AD("M20 7.898V21a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"))),
+		html.Child(html.SvgPath(html.AD("M4 19.5v-15A2.5 2.5 0 0 1 6.5 2h7.844"))),
+		html.Child(html.SvgCircle(html.ACx("14"), html.ACy("8"), html.AR("2"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

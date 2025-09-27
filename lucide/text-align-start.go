@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // TextAlignStart creates a Text Align Start Lucide icon.
-func TextAlignStart(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-text-align-start", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M21 5H3"))),
-		x.Child(x.Path(x.D("M15 12H3"))),
-		x.Child(x.Path(x.D("M17 19H3"))),
-	)
-	return x.Svg(svgArgs...)
+func TextAlignStart(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-text-align-start", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M21 5H3"))),
+		html.Child(html.SvgPath(html.AD("M15 12H3"))),
+		html.Child(html.SvgPath(html.AD("M17 19H3"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Dice2 creates a Dice 2 Lucide icon.
-func Dice2(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-dice-2", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Rect(x.RectWidth("18"), x.RectHeight("18"), x.X("3"), x.Y("3"), x.Rx("2"), x.Ry("2"))),
-		x.Child(x.Path(x.D("M15 9h.01"))),
-		x.Child(x.Path(x.D("M9 15h.01"))),
-	)
-	return x.Svg(svgArgs...)
+func Dice2(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-dice-2", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgRect(html.AWidth("18"), html.AHeight("18"), html.AX("3"), html.AY("3"), html.ARx("2"), html.ARy("2"))),
+		html.Child(html.SvgPath(html.AD("M15 9h.01"))),
+		html.Child(html.SvgPath(html.AD("M9 15h.01"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

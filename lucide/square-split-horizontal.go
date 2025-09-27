@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // SquareSplitHorizontal creates a Square Split Horizontal Lucide icon.
-func SquareSplitHorizontal(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-square-split-horizontal", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M8 19H5c-1 0-2-1-2-2V7c0-1 1-2 2-2h3"))),
-		x.Child(x.Path(x.D("M16 5h3c1 0 2 1 2 2v10c0 1-1 2-2 2h-3"))),
-		x.Child(x.Line(x.X1("12"), x.X2("12"), x.Y1("4"), x.Y2("20"))),
-	)
-	return x.Svg(svgArgs...)
+func SquareSplitHorizontal(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-square-split-horizontal", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M8 19H5c-1 0-2-1-2-2V7c0-1 1-2 2-2h3"))),
+		html.Child(html.SvgPath(html.AD("M16 5h3c1 0 2 1 2 2v10c0 1-1 2-2 2h-3"))),
+		html.Child(html.SvgLine(html.AX1("12"), html.AX2("12"), html.AY1("4"), html.AY2("20"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

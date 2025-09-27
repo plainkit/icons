@@ -1,12 +1,14 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // ChevronLeft creates a Chevron Left Lucide icon.
-func ChevronLeft(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-chevron-left", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("m15 18-6-6 6-6"))),
-	)
-	return x.Svg(svgArgs...)
+func ChevronLeft(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-chevron-left", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("m15 18-6-6 6-6"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

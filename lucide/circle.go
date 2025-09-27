@@ -1,12 +1,14 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Circle creates a Circle Lucide icon.
-func Circle(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-circle", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Circle(x.Cx("12"), x.Cy("12"), x.R("10"))),
-	)
-	return x.Svg(svgArgs...)
+func Circle(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-circle", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgCircle(html.ACx("12"), html.ACy("12"), html.AR("10"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

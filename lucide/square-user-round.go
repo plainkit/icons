@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // SquareUserRound creates a Square User Round Lucide icon.
-func SquareUserRound(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-square-user-round", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M18 21a6 6 0 0 0-12 0"))),
-		x.Child(x.Circle(x.Cx("12"), x.Cy("11"), x.R("4"))),
-		x.Child(x.Rect(x.RectWidth("18"), x.RectHeight("18"), x.X("3"), x.Y("3"), x.Rx("2"))),
-	)
-	return x.Svg(svgArgs...)
+func SquareUserRound(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-square-user-round", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M18 21a6 6 0 0 0-12 0"))),
+		html.Child(html.SvgCircle(html.ACx("12"), html.ACy("11"), html.AR("4"))),
+		html.Child(html.SvgRect(html.AWidth("18"), html.AHeight("18"), html.AX("3"), html.AY("3"), html.ARx("2"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

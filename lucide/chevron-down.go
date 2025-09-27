@@ -1,12 +1,14 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // ChevronDown creates a Chevron Down Lucide icon.
-func ChevronDown(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-chevron-down", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("m6 9 6 6 6-6"))),
-	)
-	return x.Svg(svgArgs...)
+func ChevronDown(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-chevron-down", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("m6 9 6 6 6-6"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

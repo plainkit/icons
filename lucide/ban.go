@@ -1,13 +1,15 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Ban creates a Ban Lucide icon.
-func Ban(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-ban", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M4.929 4.929 19.07 19.071"))),
-		x.Child(x.Circle(x.Cx("12"), x.Cy("12"), x.R("10"))),
-	)
-	return x.Svg(svgArgs...)
+func Ban(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-ban", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M4.929 4.929 19.07 19.071"))),
+		html.Child(html.SvgCircle(html.ACx("12"), html.ACy("12"), html.AR("10"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

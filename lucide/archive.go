@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Archive creates a Archive Lucide icon.
-func Archive(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-archive", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Rect(x.RectWidth("20"), x.RectHeight("5"), x.X("2"), x.Y("3"), x.Rx("1"))),
-		x.Child(x.Path(x.D("M4 8v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8"))),
-		x.Child(x.Path(x.D("M10 12h4"))),
-	)
-	return x.Svg(svgArgs...)
+func Archive(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-archive", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgRect(html.AWidth("20"), html.AHeight("5"), html.AX("2"), html.AY("3"), html.ARx("1"))),
+		html.Child(html.SvgPath(html.AD("M4 8v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8"))),
+		html.Child(html.SvgPath(html.AD("M10 12h4"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

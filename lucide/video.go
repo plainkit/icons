@@ -1,13 +1,15 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Video creates a Video Lucide icon.
-func Video(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-video", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"))),
-		x.Child(x.Rect(x.RectWidth("14"), x.RectHeight("12"), x.X("2"), x.Y("6"), x.Rx("2"))),
-	)
-	return x.Svg(svgArgs...)
+func Video(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-video", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"))),
+		html.Child(html.SvgRect(html.AWidth("14"), html.AHeight("12"), html.AX("2"), html.AY("6"), html.ARx("2"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

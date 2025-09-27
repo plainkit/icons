@@ -1,15 +1,17 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // PoundSterling creates a Pound Sterling Lucide icon.
-func PoundSterling(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-pound-sterling", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M18 7c0-5.333-8-5.333-8 0"))),
-		x.Child(x.Path(x.D("M10 7v14"))),
-		x.Child(x.Path(x.D("M6 21h12"))),
-		x.Child(x.Path(x.D("M6 13h10"))),
-	)
-	return x.Svg(svgArgs...)
+func PoundSterling(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-pound-sterling", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M18 7c0-5.333-8-5.333-8 0"))),
+		html.Child(html.SvgPath(html.AD("M10 7v14"))),
+		html.Child(html.SvgPath(html.AD("M6 21h12"))),
+		html.Child(html.SvgPath(html.AD("M6 13h10"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

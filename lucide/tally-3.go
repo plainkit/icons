@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Tally3 creates a Tally 3 Lucide icon.
-func Tally3(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-tally-3", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M4 4v16"))),
-		x.Child(x.Path(x.D("M9 4v16"))),
-		x.Child(x.Path(x.D("M14 4v16"))),
-	)
-	return x.Svg(svgArgs...)
+func Tally3(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-tally-3", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M4 4v16"))),
+		html.Child(html.SvgPath(html.AD("M9 4v16"))),
+		html.Child(html.SvgPath(html.AD("M14 4v16"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

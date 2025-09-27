@@ -1,16 +1,18 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // ListX creates a List X Lucide icon.
-func ListX(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-list-x", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M16 5H3"))),
-		x.Child(x.Path(x.D("M11 12H3"))),
-		x.Child(x.Path(x.D("M16 19H3"))),
-		x.Child(x.Path(x.D("m15.5 9.5 5 5"))),
-		x.Child(x.Path(x.D("m20.5 9.5-5 5"))),
-	)
-	return x.Svg(svgArgs...)
+func ListX(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-list-x", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M16 5H3"))),
+		html.Child(html.SvgPath(html.AD("M11 12H3"))),
+		html.Child(html.SvgPath(html.AD("M16 19H3"))),
+		html.Child(html.SvgPath(html.AD("m15.5 9.5 5 5"))),
+		html.Child(html.SvgPath(html.AD("m20.5 9.5-5 5"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

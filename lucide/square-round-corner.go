@@ -1,13 +1,15 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // SquareRoundCorner creates a Square Round Corner Lucide icon.
-func SquareRoundCorner(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-square-round-corner", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M21 11a8 8 0 0 0-8-8"))),
-		x.Child(x.Path(x.D("M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"))),
-	)
-	return x.Svg(svgArgs...)
+func SquareRoundCorner(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-square-round-corner", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M21 11a8 8 0 0 0-8-8"))),
+		html.Child(html.SvgPath(html.AD("M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

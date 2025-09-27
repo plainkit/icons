@@ -1,15 +1,17 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Frame creates a Frame Lucide icon.
-func Frame(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-frame", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Line(x.X1("22"), x.X2("2"), x.Y1("6"), x.Y2("6"))),
-		x.Child(x.Line(x.X1("22"), x.X2("2"), x.Y1("18"), x.Y2("18"))),
-		x.Child(x.Line(x.X1("6"), x.X2("6"), x.Y1("2"), x.Y2("22"))),
-		x.Child(x.Line(x.X1("18"), x.X2("18"), x.Y1("2"), x.Y2("22"))),
-	)
-	return x.Svg(svgArgs...)
+func Frame(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-frame", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgLine(html.AX1("22"), html.AX2("2"), html.AY1("6"), html.AY2("6"))),
+		html.Child(html.SvgLine(html.AX1("22"), html.AX2("2"), html.AY1("18"), html.AY2("18"))),
+		html.Child(html.SvgLine(html.AX1("6"), html.AX2("6"), html.AY1("2"), html.AY2("22"))),
+		html.Child(html.SvgLine(html.AX1("18"), html.AX2("18"), html.AY1("2"), html.AY2("22"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

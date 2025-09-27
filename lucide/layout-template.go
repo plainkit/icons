@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // LayoutTemplate creates a Layout Template Lucide icon.
-func LayoutTemplate(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-layout-template", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Rect(x.RectWidth("18"), x.RectHeight("7"), x.X("3"), x.Y("3"), x.Rx("1"))),
-		x.Child(x.Rect(x.RectWidth("9"), x.RectHeight("7"), x.X("3"), x.Y("14"), x.Rx("1"))),
-		x.Child(x.Rect(x.RectWidth("5"), x.RectHeight("7"), x.X("16"), x.Y("14"), x.Rx("1"))),
-	)
-	return x.Svg(svgArgs...)
+func LayoutTemplate(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-layout-template", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgRect(html.AWidth("18"), html.AHeight("7"), html.AX("3"), html.AY("3"), html.ARx("1"))),
+		html.Child(html.SvgRect(html.AWidth("9"), html.AHeight("7"), html.AX("3"), html.AY("14"), html.ARx("1"))),
+		html.Child(html.SvgRect(html.AWidth("5"), html.AHeight("7"), html.AX("16"), html.AY("14"), html.ARx("1"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

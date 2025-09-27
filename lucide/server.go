@@ -1,15 +1,17 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Server creates a Server Lucide icon.
-func Server(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-server", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Rect(x.RectWidth("20"), x.RectHeight("8"), x.X("2"), x.Y("2"), x.Rx("2"), x.Ry("2"))),
-		x.Child(x.Rect(x.RectWidth("20"), x.RectHeight("8"), x.X("2"), x.Y("14"), x.Rx("2"), x.Ry("2"))),
-		x.Child(x.Line(x.X1("6"), x.X2("6.01"), x.Y1("6"), x.Y2("6"))),
-		x.Child(x.Line(x.X1("6"), x.X2("6.01"), x.Y1("18"), x.Y2("18"))),
-	)
-	return x.Svg(svgArgs...)
+func Server(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-server", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgRect(html.AWidth("20"), html.AHeight("8"), html.AX("2"), html.AY("2"), html.ARx("2"), html.ARy("2"))),
+		html.Child(html.SvgRect(html.AWidth("20"), html.AHeight("8"), html.AX("2"), html.AY("14"), html.ARx("2"), html.ARy("2"))),
+		html.Child(html.SvgLine(html.AX1("6"), html.AX2("6.01"), html.AY1("6"), html.AY2("6"))),
+		html.Child(html.SvgLine(html.AX1("6"), html.AX2("6.01"), html.AY1("18"), html.AY2("18"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

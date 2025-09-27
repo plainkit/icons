@@ -1,16 +1,18 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // BatteryFull creates a Battery Full Lucide icon.
-func BatteryFull(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-battery-full", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M10 10v4"))),
-		x.Child(x.Path(x.D("M14 10v4"))),
-		x.Child(x.Path(x.D("M22 14v-4"))),
-		x.Child(x.Path(x.D("M6 10v4"))),
-		x.Child(x.Rect(x.RectWidth("16"), x.RectHeight("12"), x.X("2"), x.Y("6"), x.Rx("2"))),
-	)
-	return x.Svg(svgArgs...)
+func BatteryFull(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-battery-full", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M10 10v4"))),
+		html.Child(html.SvgPath(html.AD("M14 10v4"))),
+		html.Child(html.SvgPath(html.AD("M22 14v-4"))),
+		html.Child(html.SvgPath(html.AD("M6 10v4"))),
+		html.Child(html.SvgRect(html.AWidth("16"), html.AHeight("12"), html.AX("2"), html.AY("6"), html.ARx("2"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

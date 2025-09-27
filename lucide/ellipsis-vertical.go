@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // EllipsisVertical creates a Ellipsis Vertical Lucide icon.
-func EllipsisVertical(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-ellipsis-vertical", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Circle(x.Cx("12"), x.Cy("12"), x.R("1"))),
-		x.Child(x.Circle(x.Cx("12"), x.Cy("5"), x.R("1"))),
-		x.Child(x.Circle(x.Cx("12"), x.Cy("19"), x.R("1"))),
-	)
-	return x.Svg(svgArgs...)
+func EllipsisVertical(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-ellipsis-vertical", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgCircle(html.ACx("12"), html.ACy("12"), html.AR("1"))),
+		html.Child(html.SvgCircle(html.ACx("12"), html.ACy("5"), html.AR("1"))),
+		html.Child(html.SvgCircle(html.ACx("12"), html.ACy("19"), html.AR("1"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

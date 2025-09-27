@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // ArrowUpFromLine creates a Arrow Up From Line Lucide icon.
-func ArrowUpFromLine(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-arrow-up-from-line", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("m18 9-6-6-6 6"))),
-		x.Child(x.Path(x.D("M12 3v14"))),
-		x.Child(x.Path(x.D("M5 21h14"))),
-	)
-	return x.Svg(svgArgs...)
+func ArrowUpFromLine(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-arrow-up-from-line", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("m18 9-6-6-6 6"))),
+		html.Child(html.SvgPath(html.AD("M12 3v14"))),
+		html.Child(html.SvgPath(html.AD("M5 21h14"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

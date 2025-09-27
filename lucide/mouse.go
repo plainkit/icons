@@ -1,13 +1,15 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Mouse creates a Mouse Lucide icon.
-func Mouse(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-mouse", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Rect(x.RectWidth("14"), x.RectHeight("20"), x.X("5"), x.Y("2"), x.Rx("7"))),
-		x.Child(x.Path(x.D("M12 6v4"))),
-	)
-	return x.Svg(svgArgs...)
+func Mouse(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-mouse", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgRect(html.AWidth("14"), html.AHeight("20"), html.AX("5"), html.AY("2"), html.ARx("7"))),
+		html.Child(html.SvgPath(html.AD("M12 6v4"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

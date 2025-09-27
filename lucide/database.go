@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Database creates a Database Lucide icon.
-func Database(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-database", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Ellipse(x.EllipseCx("12"), x.EllipseCy("5"), x.EllipseRx("9"), x.EllipseRy("3"))),
-		x.Child(x.Path(x.D("M3 5V19A9 3 0 0 0 21 19V5"))),
-		x.Child(x.Path(x.D("M3 12A9 3 0 0 0 21 12"))),
-	)
-	return x.Svg(svgArgs...)
+func Database(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-database", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgEllipse(html.ACx("12"), html.ACy("5"), html.ARx("9"), html.ARy("3"))),
+		html.Child(html.SvgPath(html.AD("M3 5V19A9 3 0 0 0 21 19V5"))),
+		html.Child(html.SvgPath(html.AD("M3 12A9 3 0 0 0 21 12"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

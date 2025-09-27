@@ -1,17 +1,19 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Group creates a Group Lucide icon.
-func Group(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-group", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M3 7V5c0-1.1.9-2 2-2h2"))),
-		x.Child(x.Path(x.D("M17 3h2c1.1 0 2 .9 2 2v2"))),
-		x.Child(x.Path(x.D("M21 17v2c0 1.1-.9 2-2 2h-2"))),
-		x.Child(x.Path(x.D("M7 21H5c-1.1 0-2-.9-2-2v-2"))),
-		x.Child(x.Rect(x.RectWidth("7"), x.RectHeight("5"), x.X("7"), x.Y("7"), x.Rx("1"))),
-		x.Child(x.Rect(x.RectWidth("7"), x.RectHeight("5"), x.X("10"), x.Y("12"), x.Rx("1"))),
-	)
-	return x.Svg(svgArgs...)
+func Group(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-group", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M3 7V5c0-1.1.9-2 2-2h2"))),
+		html.Child(html.SvgPath(html.AD("M17 3h2c1.1 0 2 .9 2 2v2"))),
+		html.Child(html.SvgPath(html.AD("M21 17v2c0 1.1-.9 2-2 2h-2"))),
+		html.Child(html.SvgPath(html.AD("M7 21H5c-1.1 0-2-.9-2-2v-2"))),
+		html.Child(html.SvgRect(html.AWidth("7"), html.AHeight("5"), html.AX("7"), html.AY("7"), html.ARx("1"))),
+		html.Child(html.SvgRect(html.AWidth("7"), html.AHeight("5"), html.AX("10"), html.AY("12"), html.ARx("1"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

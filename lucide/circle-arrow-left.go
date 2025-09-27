@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // CircleArrowLeft creates a Circle Arrow Left Lucide icon.
-func CircleArrowLeft(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-circle-arrow-left", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Circle(x.Cx("12"), x.Cy("12"), x.R("10"))),
-		x.Child(x.Path(x.D("m12 8-4 4 4 4"))),
-		x.Child(x.Path(x.D("M16 12H8"))),
-	)
-	return x.Svg(svgArgs...)
+func CircleArrowLeft(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-circle-arrow-left", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgCircle(html.ACx("12"), html.ACy("12"), html.AR("10"))),
+		html.Child(html.SvgPath(html.AD("m12 8-4 4 4 4"))),
+		html.Child(html.SvgPath(html.AD("M16 12H8"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

@@ -1,18 +1,20 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // CarTaxiFront creates a Car Taxi Front Lucide icon.
-func CarTaxiFront(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-car-taxi-front", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M10 2h4"))),
-		x.Child(x.Path(x.D("m21 8-2 2-1.5-3.7A2 2 0 0 0 15.646 5H8.4a2 2 0 0 0-1.903 1.257L5 10 3 8"))),
-		x.Child(x.Path(x.D("M7 14h.01"))),
-		x.Child(x.Path(x.D("M17 14h.01"))),
-		x.Child(x.Rect(x.RectWidth("18"), x.RectHeight("8"), x.X("3"), x.Y("10"), x.Rx("2"))),
-		x.Child(x.Path(x.D("M5 18v2"))),
-		x.Child(x.Path(x.D("M19 18v2"))),
-	)
-	return x.Svg(svgArgs...)
+func CarTaxiFront(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-car-taxi-front", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M10 2h4"))),
+		html.Child(html.SvgPath(html.AD("m21 8-2 2-1.5-3.7A2 2 0 0 0 15.646 5H8.4a2 2 0 0 0-1.903 1.257L5 10 3 8"))),
+		html.Child(html.SvgPath(html.AD("M7 14h.01"))),
+		html.Child(html.SvgPath(html.AD("M17 14h.01"))),
+		html.Child(html.SvgRect(html.AWidth("18"), html.AHeight("8"), html.AX("3"), html.AY("10"), html.ARx("2"))),
+		html.Child(html.SvgPath(html.AD("M5 18v2"))),
+		html.Child(html.SvgPath(html.AD("M19 18v2"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

@@ -1,18 +1,20 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Bandage creates a Bandage Lucide icon.
-func Bandage(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-bandage", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M10 10.01h.01"))),
-		x.Child(x.Path(x.D("M10 14.01h.01"))),
-		x.Child(x.Path(x.D("M14 10.01h.01"))),
-		x.Child(x.Path(x.D("M14 14.01h.01"))),
-		x.Child(x.Path(x.D("M18 6v11.5"))),
-		x.Child(x.Path(x.D("M6 6v12"))),
-		x.Child(x.Rect(x.RectWidth("20"), x.RectHeight("12"), x.X("2"), x.Y("6"), x.Rx("2"))),
-	)
-	return x.Svg(svgArgs...)
+func Bandage(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-bandage", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M10 10.01h.01"))),
+		html.Child(html.SvgPath(html.AD("M10 14.01h.01"))),
+		html.Child(html.SvgPath(html.AD("M14 10.01h.01"))),
+		html.Child(html.SvgPath(html.AD("M14 14.01h.01"))),
+		html.Child(html.SvgPath(html.AD("M18 6v11.5"))),
+		html.Child(html.SvgPath(html.AD("M6 6v12"))),
+		html.Child(html.SvgRect(html.AWidth("20"), html.AHeight("12"), html.AX("2"), html.AY("6"), html.ARx("2"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

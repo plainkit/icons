@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Layers creates a Layers Lucide icon.
-func Layers(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-layers", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"))),
-		x.Child(x.Path(x.D("M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"))),
-		x.Child(x.Path(x.D("M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"))),
-	)
-	return x.Svg(svgArgs...)
+func Layers(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-layers", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"))),
+		html.Child(html.SvgPath(html.AD("M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"))),
+		html.Child(html.SvgPath(html.AD("M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

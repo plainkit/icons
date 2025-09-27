@@ -1,15 +1,17 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // AArrowDown creates a A Arrow Down Lucide icon.
-func AArrowDown(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-a-arrow-down", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("m14 12 4 4 4-4"))),
-		x.Child(x.Path(x.D("M18 16V7"))),
-		x.Child(x.Path(x.D("m2 16 4.039-9.69a.5.5 0 0 1 .923 0L11 16"))),
-		x.Child(x.Path(x.D("M3.304 13h6.392"))),
-	)
-	return x.Svg(svgArgs...)
+func AArrowDown(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-a-arrow-down", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("m14 12 4 4 4-4"))),
+		html.Child(html.SvgPath(html.AD("M18 16V7"))),
+		html.Child(html.SvgPath(html.AD("m2 16 4.039-9.69a.5.5 0 0 1 .923 0L11 16"))),
+		html.Child(html.SvgPath(html.AD("M3.304 13h6.392"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

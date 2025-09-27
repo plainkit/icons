@@ -1,15 +1,17 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Sword creates a Sword Lucide icon.
-func Sword(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-sword", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Polyline(x.Points("14.5 17.5 3 6 3 3 6 3 17.5 14.5"))),
-		x.Child(x.Line(x.X1("13"), x.X2("19"), x.Y1("19"), x.Y2("13"))),
-		x.Child(x.Line(x.X1("16"), x.X2("20"), x.Y1("16"), x.Y2("20"))),
-		x.Child(x.Line(x.X1("19"), x.X2("21"), x.Y1("21"), x.Y2("19"))),
-	)
-	return x.Svg(svgArgs...)
+func Sword(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-sword", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPolyline(html.APoints("14.5 17.5 3 6 3 3 6 3 17.5 14.5"))),
+		html.Child(html.SvgLine(html.AX1("13"), html.AX2("19"), html.AY1("19"), html.AY2("13"))),
+		html.Child(html.SvgLine(html.AX1("16"), html.AX2("20"), html.AY1("16"), html.AY2("20"))),
+		html.Child(html.SvgLine(html.AX1("19"), html.AX2("21"), html.AY1("21"), html.AY2("19"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

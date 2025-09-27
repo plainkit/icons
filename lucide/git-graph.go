@@ -1,17 +1,19 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // GitGraph creates a Git Graph Lucide icon.
-func GitGraph(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-git-graph", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Circle(x.Cx("5"), x.Cy("6"), x.R("3"))),
-		x.Child(x.Path(x.D("M5 9v6"))),
-		x.Child(x.Circle(x.Cx("5"), x.Cy("18"), x.R("3"))),
-		x.Child(x.Path(x.D("M12 3v18"))),
-		x.Child(x.Circle(x.Cx("19"), x.Cy("6"), x.R("3"))),
-		x.Child(x.Path(x.D("M16 15.7A9 9 0 0 0 19 9"))),
-	)
-	return x.Svg(svgArgs...)
+func GitGraph(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-git-graph", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgCircle(html.ACx("5"), html.ACy("6"), html.AR("3"))),
+		html.Child(html.SvgPath(html.AD("M5 9v6"))),
+		html.Child(html.SvgCircle(html.ACx("5"), html.ACy("18"), html.AR("3"))),
+		html.Child(html.SvgPath(html.AD("M12 3v18"))),
+		html.Child(html.SvgCircle(html.ACx("19"), html.ACy("6"), html.AR("3"))),
+		html.Child(html.SvgPath(html.AD("M16 15.7A9 9 0 0 0 19 9"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

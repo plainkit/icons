@@ -1,16 +1,18 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Scissors creates a Scissors Lucide icon.
-func Scissors(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-scissors", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Circle(x.Cx("6"), x.Cy("6"), x.R("3"))),
-		x.Child(x.Path(x.D("M8.12 8.12 12 12"))),
-		x.Child(x.Path(x.D("M20 4 8.12 15.88"))),
-		x.Child(x.Circle(x.Cx("6"), x.Cy("18"), x.R("3"))),
-		x.Child(x.Path(x.D("M14.8 14.8 20 20"))),
-	)
-	return x.Svg(svgArgs...)
+func Scissors(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-scissors", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgCircle(html.ACx("6"), html.ACy("6"), html.AR("3"))),
+		html.Child(html.SvgPath(html.AD("M8.12 8.12 12 12"))),
+		html.Child(html.SvgPath(html.AD("M20 4 8.12 15.88"))),
+		html.Child(html.SvgCircle(html.ACx("6"), html.ACy("18"), html.AR("3"))),
+		html.Child(html.SvgPath(html.AD("M14.8 14.8 20 20"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

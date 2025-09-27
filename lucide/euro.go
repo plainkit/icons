@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Euro creates a Euro Lucide icon.
-func Euro(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-euro", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M4 10h12"))),
-		x.Child(x.Path(x.D("M4 14h9"))),
-		x.Child(x.Path(x.D("M19 6a7.7 7.7 0 0 0-5.2-2A7.9 7.9 0 0 0 6 12c0 4.4 3.5 8 7.8 8 2 0 3.8-.8 5.2-2"))),
-	)
-	return x.Svg(svgArgs...)
+func Euro(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-euro", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M4 10h12"))),
+		html.Child(html.SvgPath(html.AD("M4 14h9"))),
+		html.Child(html.SvgPath(html.AD("M19 6a7.7 7.7 0 0 0-5.2-2A7.9 7.9 0 0 0 6 12c0 4.4 3.5 8 7.8 8 2 0 3.8-.8 5.2-2"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

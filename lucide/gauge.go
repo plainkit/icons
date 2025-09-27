@@ -1,13 +1,15 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Gauge creates a Gauge Lucide icon.
-func Gauge(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-gauge", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("m12 14 4-4"))),
-		x.Child(x.Path(x.D("M3.34 19a10 10 0 1 1 17.32 0"))),
-	)
-	return x.Svg(svgArgs...)
+func Gauge(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-gauge", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("m12 14 4-4"))),
+		html.Child(html.SvgPath(html.AD("M3.34 19a10 10 0 1 1 17.32 0"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

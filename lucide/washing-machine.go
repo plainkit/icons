@@ -1,16 +1,18 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // WashingMachine creates a Washing Machine Lucide icon.
-func WashingMachine(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-washing-machine", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M3 6h3"))),
-		x.Child(x.Path(x.D("M17 6h.01"))),
-		x.Child(x.Rect(x.RectWidth("18"), x.RectHeight("20"), x.X("3"), x.Y("2"), x.Rx("2"))),
-		x.Child(x.Circle(x.Cx("12"), x.Cy("13"), x.R("5"))),
-		x.Child(x.Path(x.D("M12 18a2.5 2.5 0 0 0 0-5 2.5 2.5 0 0 1 0-5"))),
-	)
-	return x.Svg(svgArgs...)
+func WashingMachine(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-washing-machine", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M3 6h3"))),
+		html.Child(html.SvgPath(html.AD("M17 6h.01"))),
+		html.Child(html.SvgRect(html.AWidth("18"), html.AHeight("20"), html.AX("3"), html.AY("2"), html.ARx("2"))),
+		html.Child(html.SvgCircle(html.ACx("12"), html.ACy("13"), html.AR("5"))),
+		html.Child(html.SvgPath(html.AD("M12 18a2.5 2.5 0 0 0 0-5 2.5 2.5 0 0 1 0-5"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

@@ -1,21 +1,23 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Calculator creates a Calculator Lucide icon.
-func Calculator(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-calculator", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Rect(x.RectWidth("16"), x.RectHeight("20"), x.X("4"), x.Y("2"), x.Rx("2"))),
-		x.Child(x.Line(x.X1("8"), x.X2("16"), x.Y1("6"), x.Y2("6"))),
-		x.Child(x.Line(x.X1("16"), x.X2("16"), x.Y1("14"), x.Y2("18"))),
-		x.Child(x.Path(x.D("M16 10h.01"))),
-		x.Child(x.Path(x.D("M12 10h.01"))),
-		x.Child(x.Path(x.D("M8 10h.01"))),
-		x.Child(x.Path(x.D("M12 14h.01"))),
-		x.Child(x.Path(x.D("M8 14h.01"))),
-		x.Child(x.Path(x.D("M12 18h.01"))),
-		x.Child(x.Path(x.D("M8 18h.01"))),
-	)
-	return x.Svg(svgArgs...)
+func Calculator(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-calculator", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgRect(html.AWidth("16"), html.AHeight("20"), html.AX("4"), html.AY("2"), html.ARx("2"))),
+		html.Child(html.SvgLine(html.AX1("8"), html.AX2("16"), html.AY1("6"), html.AY2("6"))),
+		html.Child(html.SvgLine(html.AX1("16"), html.AX2("16"), html.AY1("14"), html.AY2("18"))),
+		html.Child(html.SvgPath(html.AD("M16 10h.01"))),
+		html.Child(html.SvgPath(html.AD("M12 10h.01"))),
+		html.Child(html.SvgPath(html.AD("M8 10h.01"))),
+		html.Child(html.SvgPath(html.AD("M12 14h.01"))),
+		html.Child(html.SvgPath(html.AD("M8 14h.01"))),
+		html.Child(html.SvgPath(html.AD("M12 18h.01"))),
+		html.Child(html.SvgPath(html.AD("M8 18h.01"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

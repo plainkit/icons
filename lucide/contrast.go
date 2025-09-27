@@ -1,13 +1,15 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Contrast creates a Contrast Lucide icon.
-func Contrast(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-contrast", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Circle(x.Cx("12"), x.Cy("12"), x.R("10"))),
-		x.Child(x.Path(x.D("M12 18a6 6 0 0 0 0-12v12z"))),
-	)
-	return x.Svg(svgArgs...)
+func Contrast(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-contrast", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgCircle(html.ACx("12"), html.ACy("12"), html.AR("10"))),
+		html.Child(html.SvgPath(html.AD("M12 18a6 6 0 0 0 0-12v12z"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

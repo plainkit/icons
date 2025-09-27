@@ -1,16 +1,18 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Currency creates a Currency Lucide icon.
-func Currency(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-currency", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Circle(x.Cx("12"), x.Cy("12"), x.R("8"))),
-		x.Child(x.Line(x.X1("3"), x.X2("6"), x.Y1("3"), x.Y2("6"))),
-		x.Child(x.Line(x.X1("21"), x.X2("18"), x.Y1("3"), x.Y2("6"))),
-		x.Child(x.Line(x.X1("3"), x.X2("6"), x.Y1("21"), x.Y2("18"))),
-		x.Child(x.Line(x.X1("21"), x.X2("18"), x.Y1("21"), x.Y2("18"))),
-	)
-	return x.Svg(svgArgs...)
+func Currency(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-currency", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgCircle(html.ACx("12"), html.ACy("12"), html.AR("8"))),
+		html.Child(html.SvgLine(html.AX1("3"), html.AX2("6"), html.AY1("3"), html.AY2("6"))),
+		html.Child(html.SvgLine(html.AX1("21"), html.AX2("18"), html.AY1("3"), html.AY2("6"))),
+		html.Child(html.SvgLine(html.AX1("3"), html.AX2("6"), html.AY1("21"), html.AY2("18"))),
+		html.Child(html.SvgLine(html.AX1("21"), html.AX2("18"), html.AY1("21"), html.AY2("18"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

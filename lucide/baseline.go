@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Baseline creates a Baseline Lucide icon.
-func Baseline(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-baseline", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M4 20h16"))),
-		x.Child(x.Path(x.D("m6 16 6-12 6 12"))),
-		x.Child(x.Path(x.D("M8 12h8"))),
-	)
-	return x.Svg(svgArgs...)
+func Baseline(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-baseline", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M4 20h16"))),
+		html.Child(html.SvgPath(html.AD("m6 16 6-12 6 12"))),
+		html.Child(html.SvgPath(html.AD("M8 12h8"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

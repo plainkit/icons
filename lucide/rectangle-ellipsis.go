@@ -1,15 +1,17 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // RectangleEllipsis creates a Rectangle Ellipsis Lucide icon.
-func RectangleEllipsis(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-rectangle-ellipsis", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Rect(x.RectWidth("20"), x.RectHeight("12"), x.X("2"), x.Y("6"), x.Rx("2"))),
-		x.Child(x.Path(x.D("M12 12h.01"))),
-		x.Child(x.Path(x.D("M17 12h.01"))),
-		x.Child(x.Path(x.D("M7 12h.01"))),
-	)
-	return x.Svg(svgArgs...)
+func RectangleEllipsis(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-rectangle-ellipsis", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgRect(html.AWidth("20"), html.AHeight("12"), html.AX("2"), html.AY("6"), html.ARx("2"))),
+		html.Child(html.SvgPath(html.AD("M12 12h.01"))),
+		html.Child(html.SvgPath(html.AD("M17 12h.01"))),
+		html.Child(html.SvgPath(html.AD("M7 12h.01"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

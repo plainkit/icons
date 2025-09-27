@@ -1,13 +1,15 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Power creates a Power Lucide icon.
-func Power(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-power", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M12 2v10"))),
-		x.Child(x.Path(x.D("M18.4 6.6a9 9 0 1 1-12.77.04"))),
-	)
-	return x.Svg(svgArgs...)
+func Power(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-power", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M12 2v10"))),
+		html.Child(html.SvgPath(html.AD("M18.4 6.6a9 9 0 1 1-12.77.04"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

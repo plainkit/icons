@@ -1,17 +1,19 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // ClockFading creates a Clock Fading Lucide icon.
-func ClockFading(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-clock-fading", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M12 2a10 10 0 0 1 7.38 16.75"))),
-		x.Child(x.Path(x.D("M12 6v6l4 2"))),
-		x.Child(x.Path(x.D("M2.5 8.875a10 10 0 0 0-.5 3"))),
-		x.Child(x.Path(x.D("M2.83 16a10 10 0 0 0 2.43 3.4"))),
-		x.Child(x.Path(x.D("M4.636 5.235a10 10 0 0 1 .891-.857"))),
-		x.Child(x.Path(x.D("M8.644 21.42a10 10 0 0 0 7.631-.38"))),
-	)
-	return x.Svg(svgArgs...)
+func ClockFading(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-clock-fading", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M12 2a10 10 0 0 1 7.38 16.75"))),
+		html.Child(html.SvgPath(html.AD("M12 6v6l4 2"))),
+		html.Child(html.SvgPath(html.AD("M2.5 8.875a10 10 0 0 0-.5 3"))),
+		html.Child(html.SvgPath(html.AD("M2.83 16a10 10 0 0 0 2.43 3.4"))),
+		html.Child(html.SvgPath(html.AD("M4.636 5.235a10 10 0 0 1 .891-.857"))),
+		html.Child(html.SvgPath(html.AD("M8.644 21.42a10 10 0 0 0 7.631-.38"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

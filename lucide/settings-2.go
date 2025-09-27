@@ -1,15 +1,17 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // Settings2 creates a Settings 2 Lucide icon.
-func Settings2(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-settings-2", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M14 17H5"))),
-		x.Child(x.Path(x.D("M19 7h-9"))),
-		x.Child(x.Circle(x.Cx("17"), x.Cy("17"), x.R("3"))),
-		x.Child(x.Circle(x.Cx("7"), x.Cy("7"), x.R("3"))),
-	)
-	return x.Svg(svgArgs...)
+func Settings2(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-settings-2", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M14 17H5"))),
+		html.Child(html.SvgPath(html.AD("M19 7h-9"))),
+		html.Child(html.SvgCircle(html.ACx("17"), html.ACy("17"), html.AR("3"))),
+		html.Child(html.SvgCircle(html.ACx("7"), html.ACy("7"), html.AR("3"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

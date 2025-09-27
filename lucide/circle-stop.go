@@ -1,13 +1,15 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // CircleStop creates a Circle Stop Lucide icon.
-func CircleStop(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-circle-stop", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Circle(x.Cx("12"), x.Cy("12"), x.R("10"))),
-		x.Child(x.Rect(x.RectWidth("6"), x.RectHeight("6"), x.X("9"), x.Y("9"), x.Rx("1"))),
-	)
-	return x.Svg(svgArgs...)
+func CircleStop(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-circle-stop", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgCircle(html.ACx("12"), html.ACy("12"), html.AR("10"))),
+		html.Child(html.SvgRect(html.AWidth("6"), html.AHeight("6"), html.AX("9"), html.AY("9"), html.ARx("1"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

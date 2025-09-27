@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // LaptopMinimalCheck creates a Laptop Minimal Check Lucide icon.
-func LaptopMinimalCheck(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-laptop-minimal-check", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M2 20h20"))),
-		x.Child(x.Path(x.D("m9 10 2 2 4-4"))),
-		x.Child(x.Rect(x.RectWidth("18"), x.RectHeight("12"), x.X("3"), x.Y("4"), x.Rx("2"))),
-	)
-	return x.Svg(svgArgs...)
+func LaptopMinimalCheck(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-laptop-minimal-check", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M2 20h20"))),
+		html.Child(html.SvgPath(html.AD("m9 10 2 2 4-4"))),
+		html.Child(html.SvgRect(html.AWidth("18"), html.AHeight("12"), html.AX("3"), html.AY("4"), html.ARx("2"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

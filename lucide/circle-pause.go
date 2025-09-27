@@ -1,14 +1,16 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // CirclePause creates a Circle Pause Lucide icon.
-func CirclePause(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-circle-pause", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Circle(x.Cx("12"), x.Cy("12"), x.R("10"))),
-		x.Child(x.Line(x.X1("10"), x.X2("10"), x.Y1("15"), x.Y2("9"))),
-		x.Child(x.Line(x.X1("14"), x.X2("14"), x.Y1("15"), x.Y2("9"))),
-	)
-	return x.Svg(svgArgs...)
+func CirclePause(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-circle-pause", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgCircle(html.ACx("12"), html.ACy("12"), html.AR("10"))),
+		html.Child(html.SvgLine(html.AX1("10"), html.AX2("10"), html.AY1("15"), html.AY2("9"))),
+		html.Child(html.SvgLine(html.AX1("14"), html.AX2("14"), html.AY1("15"), html.AY2("9"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

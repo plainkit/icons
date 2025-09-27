@@ -1,13 +1,15 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // RussianRuble creates a Russian Ruble Lucide icon.
-func RussianRuble(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-russian-ruble", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M6 11h8a4 4 0 0 0 0-8H9v18"))),
-		x.Child(x.Path(x.D("M6 15h8"))),
-	)
-	return x.Svg(svgArgs...)
+func RussianRuble(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-russian-ruble", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M6 11h8a4 4 0 0 0 0-8H9v18"))),
+		html.Child(html.SvgPath(html.AD("M6 15h8"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

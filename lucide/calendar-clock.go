@@ -1,17 +1,19 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // CalendarClock creates a Calendar Clock Lucide icon.
-func CalendarClock(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-calendar-clock", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("M16 14v2.2l1.6 1"))),
-		x.Child(x.Path(x.D("M16 2v4"))),
-		x.Child(x.Path(x.D("M21 7.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3.5"))),
-		x.Child(x.Path(x.D("M3 10h5"))),
-		x.Child(x.Path(x.D("M8 2v4"))),
-		x.Child(x.Circle(x.Cx("16"), x.Cy("16"), x.R("6"))),
-	)
-	return x.Svg(svgArgs...)
+func CalendarClock(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-calendar-clock", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("M16 14v2.2l1.6 1"))),
+		html.Child(html.SvgPath(html.AD("M16 2v4"))),
+		html.Child(html.SvgPath(html.AD("M21 7.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3.5"))),
+		html.Child(html.SvgPath(html.AD("M3 10h5"))),
+		html.Child(html.SvgPath(html.AD("M8 2v4"))),
+		html.Child(html.SvgCircle(html.ACx("16"), html.ACy("16"), html.AR("6"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }

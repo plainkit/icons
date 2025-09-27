@@ -1,16 +1,18 @@
 package lucide
 
-import x "github.com/plainkit/html"
+import (
+	html "github.com/plainkit/html"
+)
 
 // ArrowDown01 creates a Arrow Down 0 1 Lucide icon.
-func ArrowDown01(args ...x.SvgArg) x.Node {
-	svgArgs := buildLucideArgs("lucide lucide-arrow-down-0-1", args)
-	svgArgs = append(svgArgs,
-		x.Child(x.Path(x.D("m3 16 4 4 4-4"))),
-		x.Child(x.Path(x.D("M7 20V4"))),
-		x.Child(x.Rect(x.RectWidth("4"), x.RectHeight("6"), x.X("15"), x.Y("4"), x.Ry("2"))),
-		x.Child(x.Path(x.D("M17 20v-6h-2"))),
-		x.Child(x.Path(x.D("M15 20h4"))),
-	)
-	return x.Svg(svgArgs...)
+func ArrowDown01(args ...html.SvgArg) html.Node {
+	svgArgs := withLucideDefaults("lucide lucide-arrow-down-0-1", args)
+	children := []html.SvgArg{
+		html.Child(html.SvgPath(html.AD("m3 16 4 4 4-4"))),
+		html.Child(html.SvgPath(html.AD("M7 20V4"))),
+		html.Child(html.SvgRect(html.AWidth("4"), html.AHeight("6"), html.AX("15"), html.AY("4"), html.ARy("2"))),
+		html.Child(html.SvgPath(html.AD("M17 20v-6h-2"))),
+		html.Child(html.SvgPath(html.AD("M15 20h4"))),
+	}
+	return html.Svg(append(svgArgs, children...)...)
 }
