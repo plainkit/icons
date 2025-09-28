@@ -4,6 +4,13 @@ import (
 	html "github.com/plainkit/html"
 )
 
+type sizeArg string
+
+func (s sizeArg) Apply(attrs *html.SvgAttrs, _ *[]html.Component) {
+	attrs.Width = string(s)
+	attrs.Height = string(s)
+}
+
 // Size creates an icon size argument that sets both width and height to the specified value.
 // This is the preferred way to size Lucide icons uniformly.
 //
@@ -11,11 +18,8 @@ import (
 //
 //	lucide.Heart(lucide.Size("16"))
 //	lucide.Star(lucide.Size("24"), html.AClass("text-yellow-500"))
-func Size(size string) []html.SvgArg {
-	return []html.SvgArg{
-		html.AWidth(size),
-		html.AHeight(size),
-	}
+func Size(size string) html.SvgArg {
+	return sizeArg(size)
 }
 
 // withLucideDefaults constructs SVG arguments with Lucide icon defaults.

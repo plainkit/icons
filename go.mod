@@ -3,7 +3,7 @@ module github.com/plainkit/icons
 go 1.18
 
 require (
-	github.com/plainkit/html v0.12.0
+	github.com/plainkit/html v0.18.0
 	github.com/stretchr/testify v1.11.1
 )
 
