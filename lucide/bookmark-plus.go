@@ -8,9 +8,9 @@ import (
 func BookmarkPlus(args ...html.SvgArg) html.Node {
 	svgArgs := withLucideDefaults("lucide lucide-bookmark-plus", args)
 	children := []html.SvgArg{
-		html.Child(html.SvgPath(html.AD("m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"))),
-		html.Child(html.SvgLine(html.AX1("12"), html.AX2("12"), html.AY1("7"), html.AY2("13"))),
-		html.Child(html.SvgLine(html.AX1("15"), html.AX2("9"), html.AY1("10"), html.AY2("10"))),
+		html.SvgPath(html.AD("m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z")),
+		html.SvgLine(html.AX1("12"), html.AX2("12"), html.AY1("7"), html.AY2("13")),
+		html.SvgLine(html.AX1("15"), html.AX2("9"), html.AY1("10"), html.AY2("10")),
 	}
 	return html.Svg(append(svgArgs, children...)...)
 }

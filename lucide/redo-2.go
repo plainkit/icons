@@ -8,8 +8,8 @@ import (
 func Redo2(args ...html.SvgArg) html.Node {
 	svgArgs := withLucideDefaults("lucide lucide-redo-2", args)
 	children := []html.SvgArg{
-		html.Child(html.SvgPath(html.AD("m15 14 5-5-5-5"))),
-		html.Child(html.SvgPath(html.AD("M20 9H9.5A5.5 5.5 0 0 0 4 14.5A5.5 5.5 0 0 0 9.5 20H13"))),
+		html.SvgPath(html.AD("m15 14 5-5-5-5")),
+		html.SvgPath(html.AD("M20 9H9.5A5.5 5.5 0 0 0 4 14.5A5.5 5.5 0 0 0 9.5 20H13")),
 	}
 	return html.Svg(append(svgArgs, children...)...)
 }

@@ -8,7 +8,7 @@ import (
 func WifiZero(args ...html.SvgArg) html.Node {
 	svgArgs := withLucideDefaults("lucide lucide-wifi-zero", args)
 	children := []html.SvgArg{
-		html.Child(html.SvgPath(html.AD("M12 20h.01"))),
+		html.SvgPath(html.AD("M12 20h.01")),
 	}
 	return html.Svg(append(svgArgs, children...)...)
 }

@@ -8,7 +8,7 @@ import (
 func SignalZero(args ...html.SvgArg) html.Node {
 	svgArgs := withLucideDefaults("lucide lucide-signal-zero", args)
 	children := []html.SvgArg{
-		html.Child(html.SvgPath(html.AD("M2 20h.01"))),
+		html.SvgPath(html.AD("M2 20h.01")),
 	}
 	return html.Svg(append(svgArgs, children...)...)
 }

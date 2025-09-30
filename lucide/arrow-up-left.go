@@ -8,8 +8,8 @@ import (
 func ArrowUpLeft(args ...html.SvgArg) html.Node {
 	svgArgs := withLucideDefaults("lucide lucide-arrow-up-left", args)
 	children := []html.SvgArg{
-		html.Child(html.SvgPath(html.AD("M7 17V7h10"))),
-		html.Child(html.SvgPath(html.AD("M17 17 7 7"))),
+		html.SvgPath(html.AD("M7 17V7h10")),
+		html.SvgPath(html.AD("M17 17 7 7")),
 	}
 	return html.Svg(append(svgArgs, children...)...)
 }

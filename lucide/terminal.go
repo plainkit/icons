@@ -8,8 +8,8 @@ import (
 func Terminal(args ...html.SvgArg) html.Node {
 	svgArgs := withLucideDefaults("lucide lucide-terminal", args)
 	children := []html.SvgArg{
-		html.Child(html.SvgPath(html.AD("M12 19h8"))),
-		html.Child(html.SvgPath(html.AD("m4 17 6-6-6-6"))),
+		html.SvgPath(html.AD("M12 19h8")),
+		html.SvgPath(html.AD("m4 17 6-6-6-6")),
 	}
 	return html.Svg(append(svgArgs, children...)...)
 }

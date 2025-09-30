@@ -8,8 +8,8 @@ import (
 func CornerRightUp(args ...html.SvgArg) html.Node {
 	svgArgs := withLucideDefaults("lucide lucide-corner-right-up", args)
 	children := []html.SvgArg{
-		html.Child(html.SvgPath(html.AD("m10 9 5-5 5 5"))),
-		html.Child(html.SvgPath(html.AD("M4 20h7a4 4 0 0 0 4-4V4"))),
+		html.SvgPath(html.AD("m10 9 5-5 5 5")),
+		html.SvgPath(html.AD("M4 20h7a4 4 0 0 0 4-4V4")),
 	}
 	return html.Svg(append(svgArgs, children...)...)
 }

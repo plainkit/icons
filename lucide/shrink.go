@@ -8,10 +8,10 @@ import (
 func Shrink(args ...html.SvgArg) html.Node {
 	svgArgs := withLucideDefaults("lucide lucide-shrink", args)
 	children := []html.SvgArg{
-		html.Child(html.SvgPath(html.AD("m15 15 6 6m-6-6v4.8m0-4.8h4.8"))),
-		html.Child(html.SvgPath(html.AD("M9 19.8V15m0 0H4.2M9 15l-6 6"))),
-		html.Child(html.SvgPath(html.AD("M15 4.2V9m0 0h4.8M15 9l6-6"))),
-		html.Child(html.SvgPath(html.AD("M9 4.2V9m0 0H4.2M9 9 3 3"))),
+		html.SvgPath(html.AD("m15 15 6 6m-6-6v4.8m0-4.8h4.8")),
+		html.SvgPath(html.AD("M9 19.8V15m0 0H4.2M9 15l-6 6")),
+		html.SvgPath(html.AD("M15 4.2V9m0 0h4.8M15 9l6-6")),
+		html.SvgPath(html.AD("M9 4.2V9m0 0H4.2M9 9 3 3")),
 	}
 	return html.Svg(append(svgArgs, children...)...)
 }

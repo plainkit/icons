@@ -8,8 +8,8 @@ import (
 func Contrast(args ...html.SvgArg) html.Node {
 	svgArgs := withLucideDefaults("lucide lucide-contrast", args)
 	children := []html.SvgArg{
-		html.Child(html.SvgCircle(html.ACx("12"), html.ACy("12"), html.AR("10"))),
-		html.Child(html.SvgPath(html.AD("M12 18a6 6 0 0 0 0-12v12z"))),
+		html.SvgCircle(html.ACx("12"), html.ACy("12"), html.AR("10")),
+		html.SvgPath(html.AD("M12 18a6 6 0 0 0 0-12v12z")),
 	}
 	return html.Svg(append(svgArgs, children...)...)
 }

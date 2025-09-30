@@ -8,7 +8,7 @@ import (
 func ChevronDown(args ...html.SvgArg) html.Node {
 	svgArgs := withLucideDefaults("lucide lucide-chevron-down", args)
 	children := []html.SvgArg{
-		html.Child(html.SvgPath(html.AD("m6 9 6 6 6-6"))),
+		html.SvgPath(html.AD("m6 9 6 6 6-6")),
 	}
 	return html.Svg(append(svgArgs, children...)...)
 }

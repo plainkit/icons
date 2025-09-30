@@ -8,8 +8,8 @@ import (
 func MoveLeft(args ...html.SvgArg) html.Node {
 	svgArgs := withLucideDefaults("lucide lucide-move-left", args)
 	children := []html.SvgArg{
-		html.Child(html.SvgPath(html.AD("M6 8L2 12L6 16"))),
-		html.Child(html.SvgPath(html.AD("M2 12H22"))),
+		html.SvgPath(html.AD("M6 8L2 12L6 16")),
+		html.SvgPath(html.AD("M2 12H22")),
 	}
 	return html.Svg(append(svgArgs, children...)...)
 }

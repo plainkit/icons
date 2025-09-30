@@ -8,8 +8,8 @@ import (
 func UserRound(args ...html.SvgArg) html.Node {
 	svgArgs := withLucideDefaults("lucide lucide-user-round", args)
 	children := []html.SvgArg{
-		html.Child(html.SvgCircle(html.ACx("12"), html.ACy("8"), html.AR("5"))),
-		html.Child(html.SvgPath(html.AD("M20 21a8 8 0 0 0-16 0"))),
+		html.SvgCircle(html.ACx("12"), html.ACy("8"), html.AR("5")),
+		html.SvgPath(html.AD("M20 21a8 8 0 0 0-16 0")),
 	}
 	return html.Svg(append(svgArgs, children...)...)
 }
