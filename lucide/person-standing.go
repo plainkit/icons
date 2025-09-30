@@ -8,10 +8,10 @@ import (
 func PersonStanding(args ...html.SvgArg) html.Node {
 	svgArgs := withLucideDefaults("lucide lucide-person-standing", args)
 	children := []html.SvgArg{
-		html.Child(html.SvgCircle(html.ACx("12"), html.ACy("5"), html.AR("1"))),
-		html.Child(html.SvgPath(html.AD("m9 20 3-6 3 6"))),
-		html.Child(html.SvgPath(html.AD("m6 8 6 2 6-2"))),
-		html.Child(html.SvgPath(html.AD("M12 10v4"))),
+		html.SvgCircle(html.ACx("12"), html.ACy("5"), html.AR("1")),
+		html.SvgPath(html.AD("m9 20 3-6 3 6")),
+		html.SvgPath(html.AD("m6 8 6 2 6-2")),
+		html.SvgPath(html.AD("M12 10v4")),
 	}
 	return html.Svg(append(svgArgs, children...)...)
 }

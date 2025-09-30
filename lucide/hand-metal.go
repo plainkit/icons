@@ -8,10 +8,10 @@ import (
 func HandMetal(args ...html.SvgArg) html.Node {
 	svgArgs := withLucideDefaults("lucide lucide-hand-metal", args)
 	children := []html.SvgArg{
-		html.Child(html.SvgPath(html.AD("M18 12.5V10a2 2 0 0 0-2-2a2 2 0 0 0-2 2v1.4"))),
-		html.Child(html.SvgPath(html.AD("M14 11V9a2 2 0 1 0-4 0v2"))),
-		html.Child(html.SvgPath(html.AD("M10 10.5V5a2 2 0 1 0-4 0v9"))),
-		html.Child(html.SvgPath(html.AD("m7 15-1.76-1.76a2 2 0 0 0-2.83 2.82l3.6 3.6C7.5 21.14 9.2 22 12 22h2a8 8 0 0 0 8-8V7a2 2 0 1 0-4 0v5"))),
+		html.SvgPath(html.AD("M18 12.5V10a2 2 0 0 0-2-2a2 2 0 0 0-2 2v1.4")),
+		html.SvgPath(html.AD("M14 11V9a2 2 0 1 0-4 0v2")),
+		html.SvgPath(html.AD("M10 10.5V5a2 2 0 1 0-4 0v9")),
+		html.SvgPath(html.AD("m7 15-1.76-1.76a2 2 0 0 0-2.83 2.82l3.6 3.6C7.5 21.14 9.2 22 12 22h2a8 8 0 0 0 8-8V7a2 2 0 1 0-4 0v5")),
 	}
 	return html.Svg(append(svgArgs, children...)...)
 }

@@ -8,8 +8,8 @@ import (
 func CircleChevronUp(args ...html.SvgArg) html.Node {
 	svgArgs := withLucideDefaults("lucide lucide-circle-chevron-up", args)
 	children := []html.SvgArg{
-		html.Child(html.SvgCircle(html.ACx("12"), html.ACy("12"), html.AR("10"))),
-		html.Child(html.SvgPath(html.AD("m8 14 4-4 4 4"))),
+		html.SvgCircle(html.ACx("12"), html.ACy("12"), html.AR("10")),
+		html.SvgPath(html.AD("m8 14 4-4 4 4")),
 	}
 	return html.Svg(append(svgArgs, children...)...)
 }

@@ -8,7 +8,7 @@ import (
 func Squircle(args ...html.SvgArg) html.Node {
 	svgArgs := withLucideDefaults("lucide lucide-squircle", args)
 	children := []html.SvgArg{
-		html.Child(html.SvgPath(html.AD("M12 3c7.2 0 9 1.8 9 9s-1.8 9-9 9-9-1.8-9-9 1.8-9 9-9"))),
+		html.SvgPath(html.AD("M12 3c7.2 0 9 1.8 9 9s-1.8 9-9 9-9-1.8-9-9 1.8-9 9-9")),
 	}
 	return html.Svg(append(svgArgs, children...)...)
 }

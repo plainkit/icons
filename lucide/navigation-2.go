@@ -8,7 +8,7 @@ import (
 func Navigation2(args ...html.SvgArg) html.Node {
 	svgArgs := withLucideDefaults("lucide lucide-navigation-2", args)
 	children := []html.SvgArg{
-		html.Child(html.SvgPolygon(html.APoints("12 2 19 21 12 17 5 21 12 2"))),
+		html.SvgPolygon(html.APoints("12 2 19 21 12 17 5 21 12 2")),
 	}
 	return html.Svg(append(svgArgs, children...)...)
 }

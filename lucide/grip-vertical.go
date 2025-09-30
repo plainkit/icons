@@ -8,12 +8,12 @@ import (
 func GripVertical(args ...html.SvgArg) html.Node {
 	svgArgs := withLucideDefaults("lucide lucide-grip-vertical", args)
 	children := []html.SvgArg{
-		html.Child(html.SvgCircle(html.ACx("9"), html.ACy("12"), html.AR("1"))),
-		html.Child(html.SvgCircle(html.ACx("9"), html.ACy("5"), html.AR("1"))),
-		html.Child(html.SvgCircle(html.ACx("9"), html.ACy("19"), html.AR("1"))),
-		html.Child(html.SvgCircle(html.ACx("15"), html.ACy("12"), html.AR("1"))),
-		html.Child(html.SvgCircle(html.ACx("15"), html.ACy("5"), html.AR("1"))),
-		html.Child(html.SvgCircle(html.ACx("15"), html.ACy("19"), html.AR("1"))),
+		html.SvgCircle(html.ACx("9"), html.ACy("12"), html.AR("1")),
+		html.SvgCircle(html.ACx("9"), html.ACy("5"), html.AR("1")),
+		html.SvgCircle(html.ACx("9"), html.ACy("19"), html.AR("1")),
+		html.SvgCircle(html.ACx("15"), html.ACy("12"), html.AR("1")),
+		html.SvgCircle(html.ACx("15"), html.ACy("5"), html.AR("1")),
+		html.SvgCircle(html.ACx("15"), html.ACy("19"), html.AR("1")),
 	}
 	return html.Svg(append(svgArgs, children...)...)
 }

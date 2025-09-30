@@ -8,9 +8,9 @@ import (
 func History(args ...html.SvgArg) html.Node {
 	svgArgs := withLucideDefaults("lucide lucide-history", args)
 	children := []html.SvgArg{
-		html.Child(html.SvgPath(html.AD("M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"))),
-		html.Child(html.SvgPath(html.AD("M3 3v5h5"))),
-		html.Child(html.SvgPath(html.AD("M12 7v5l4 2"))),
+		html.SvgPath(html.AD("M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8")),
+		html.SvgPath(html.AD("M3 3v5h5")),
+		html.SvgPath(html.AD("M12 7v5l4 2")),
 	}
 	return html.Svg(append(svgArgs, children...)...)
 }

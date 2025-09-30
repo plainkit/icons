@@ -8,8 +8,8 @@ import (
 func ChevronsLeft(args ...html.SvgArg) html.Node {
 	svgArgs := withLucideDefaults("lucide lucide-chevrons-left", args)
 	children := []html.SvgArg{
-		html.Child(html.SvgPath(html.AD("m11 17-5-5 5-5"))),
-		html.Child(html.SvgPath(html.AD("m18 17-5-5 5-5"))),
+		html.SvgPath(html.AD("m11 17-5-5 5-5")),
+		html.SvgPath(html.AD("m18 17-5-5 5-5")),
 	}
 	return html.Svg(append(svgArgs, children...)...)
 }

@@ -8,9 +8,9 @@ import (
 func ChartNoAxesGantt(args ...html.SvgArg) html.Node {
 	svgArgs := withLucideDefaults("lucide lucide-chart-no-axes-gantt", args)
 	children := []html.SvgArg{
-		html.Child(html.SvgPath(html.AD("M6 5h12"))),
-		html.Child(html.SvgPath(html.AD("M4 12h10"))),
-		html.Child(html.SvgPath(html.AD("M12 19h8"))),
+		html.SvgPath(html.AD("M6 5h12")),
+		html.SvgPath(html.AD("M4 12h10")),
+		html.SvgPath(html.AD("M12 19h8")),
 	}
 	return html.Svg(append(svgArgs, children...)...)
 }

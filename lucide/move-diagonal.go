@@ -8,9 +8,9 @@ import (
 func MoveDiagonal(args ...html.SvgArg) html.Node {
 	svgArgs := withLucideDefaults("lucide lucide-move-diagonal", args)
 	children := []html.SvgArg{
-		html.Child(html.SvgPath(html.AD("M11 19H5v-6"))),
-		html.Child(html.SvgPath(html.AD("M13 5h6v6"))),
-		html.Child(html.SvgPath(html.AD("M19 5 5 19"))),
+		html.SvgPath(html.AD("M11 19H5v-6")),
+		html.SvgPath(html.AD("M13 5h6v6")),
+		html.SvgPath(html.AD("M19 5 5 19")),
 	}
 	return html.Svg(append(svgArgs, children...)...)
 }
