@@ -8,9 +8,9 @@ import (
 func RailSymbol(args ...html.SvgArg) html.Node {
 	svgArgs := withLucideDefaults("lucide lucide-rail-symbol", args)
 	children := []html.SvgArg{
-		html.Child(html.SvgPath(html.AD("M5 15h14"))),
-		html.Child(html.SvgPath(html.AD("M5 9h14"))),
-		html.Child(html.SvgPath(html.AD("m14 20-5-5 6-6-5-5"))),
+		html.SvgPath(html.AD("M5 15h14")),
+		html.SvgPath(html.AD("M5 9h14")),
+		html.SvgPath(html.AD("m14 20-5-5 6-6-5-5")),
 	}
 	return html.Svg(append(svgArgs, children...)...)
 }

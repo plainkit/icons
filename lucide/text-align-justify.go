@@ -8,9 +8,9 @@ import (
 func TextAlignJustify(args ...html.SvgArg) html.Node {
 	svgArgs := withLucideDefaults("lucide lucide-text-align-justify", args)
 	children := []html.SvgArg{
-		html.Child(html.SvgPath(html.AD("M3 5h18"))),
-		html.Child(html.SvgPath(html.AD("M3 12h18"))),
-		html.Child(html.SvgPath(html.AD("M3 19h18"))),
+		html.SvgPath(html.AD("M3 5h18")),
+		html.SvgPath(html.AD("M3 12h18")),
+		html.SvgPath(html.AD("M3 19h18")),
 	}
 	return html.Svg(append(svgArgs, children...)...)
 }

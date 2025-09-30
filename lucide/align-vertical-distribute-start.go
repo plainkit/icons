@@ -8,10 +8,10 @@ import (
 func AlignVerticalDistributeStart(args ...html.SvgArg) html.Node {
 	svgArgs := withLucideDefaults("lucide lucide-align-vertical-distribute-start", args)
 	children := []html.SvgArg{
-		html.Child(html.SvgRect(html.AWidth("14"), html.AHeight("6"), html.AX("5"), html.AY("14"), html.ARx("2"))),
-		html.Child(html.SvgRect(html.AWidth("10"), html.AHeight("6"), html.AX("7"), html.AY("4"), html.ARx("2"))),
-		html.Child(html.SvgPath(html.AD("M2 14h20"))),
-		html.Child(html.SvgPath(html.AD("M2 4h20"))),
+		html.SvgRect(html.AWidth("14"), html.AHeight("6"), html.AX("5"), html.AY("14"), html.ARx("2")),
+		html.SvgRect(html.AWidth("10"), html.AHeight("6"), html.AX("7"), html.AY("4"), html.ARx("2")),
+		html.SvgPath(html.AD("M2 14h20")),
+		html.SvgPath(html.AD("M2 4h20")),
 	}
 	return html.Svg(append(svgArgs, children...)...)
 }

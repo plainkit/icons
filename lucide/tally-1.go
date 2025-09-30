@@ -8,7 +8,7 @@ import (
 func Tally1(args ...html.SvgArg) html.Node {
 	svgArgs := withLucideDefaults("lucide lucide-tally-1", args)
 	children := []html.SvgArg{
-		html.Child(html.SvgPath(html.AD("M4 4v16"))),
+		html.SvgPath(html.AD("M4 4v16")),
 	}
 	return html.Svg(append(svgArgs, children...)...)
 }

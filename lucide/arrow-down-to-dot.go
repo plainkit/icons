@@ -8,9 +8,9 @@ import (
 func ArrowDownToDot(args ...html.SvgArg) html.Node {
 	svgArgs := withLucideDefaults("lucide lucide-arrow-down-to-dot", args)
 	children := []html.SvgArg{
-		html.Child(html.SvgPath(html.AD("M12 2v14"))),
-		html.Child(html.SvgPath(html.AD("m19 9-7 7-7-7"))),
-		html.Child(html.SvgCircle(html.ACx("12"), html.ACy("21"), html.AR("1"))),
+		html.SvgPath(html.AD("M12 2v14")),
+		html.SvgPath(html.AD("m19 9-7 7-7-7")),
+		html.SvgCircle(html.ACx("12"), html.ACy("21"), html.AR("1")),
 	}
 	return html.Svg(append(svgArgs, children...)...)
 }

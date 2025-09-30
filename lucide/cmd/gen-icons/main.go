@@ -332,7 +332,7 @@ func renderIconFile(funcName, docTitle, className string, children []childCall) 
 		fmt.Fprintf(&b, "\tsvgArgs := withLucideDefaults(\"%s\", args)\n", className)
 		b.WriteString("\tchildren := []html.SvgArg{\n")
 		for _, c := range children {
-			b.WriteString("\t\thtml.Child(html.Svg")
+			b.WriteString("\t\thtml.Svg")
 			b.WriteString(c.elem)
 			b.WriteString("(")
 			for i, a := range c.attrCalls {
@@ -341,7 +341,7 @@ func renderIconFile(funcName, docTitle, className string, children []childCall) 
 				}
 				b.WriteString(a)
 			}
-			b.WriteString(")),\n")
+			b.WriteString("),\n")
 		}
 		b.WriteString("\t}\n")
 		b.WriteString("\treturn html.Svg(append(svgArgs, children...)...)\n")

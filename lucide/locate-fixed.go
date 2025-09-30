@@ -8,12 +8,12 @@ import (
 func LocateFixed(args ...html.SvgArg) html.Node {
 	svgArgs := withLucideDefaults("lucide lucide-locate-fixed", args)
 	children := []html.SvgArg{
-		html.Child(html.SvgLine(html.AX1("2"), html.AX2("5"), html.AY1("12"), html.AY2("12"))),
-		html.Child(html.SvgLine(html.AX1("19"), html.AX2("22"), html.AY1("12"), html.AY2("12"))),
-		html.Child(html.SvgLine(html.AX1("12"), html.AX2("12"), html.AY1("2"), html.AY2("5"))),
-		html.Child(html.SvgLine(html.AX1("12"), html.AX2("12"), html.AY1("19"), html.AY2("22"))),
-		html.Child(html.SvgCircle(html.ACx("12"), html.ACy("12"), html.AR("7"))),
-		html.Child(html.SvgCircle(html.ACx("12"), html.ACy("12"), html.AR("3"))),
+		html.SvgLine(html.AX1("2"), html.AX2("5"), html.AY1("12"), html.AY2("12")),
+		html.SvgLine(html.AX1("19"), html.AX2("22"), html.AY1("12"), html.AY2("12")),
+		html.SvgLine(html.AX1("12"), html.AX2("12"), html.AY1("2"), html.AY2("5")),
+		html.SvgLine(html.AX1("12"), html.AX2("12"), html.AY1("19"), html.AY2("22")),
+		html.SvgCircle(html.ACx("12"), html.ACy("12"), html.AR("7")),
+		html.SvgCircle(html.ACx("12"), html.ACy("12"), html.AR("3")),
 	}
 	return html.Svg(append(svgArgs, children...)...)
 }

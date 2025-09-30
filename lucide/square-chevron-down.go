@@ -8,8 +8,8 @@ import (
 func SquareChevronDown(args ...html.SvgArg) html.Node {
 	svgArgs := withLucideDefaults("lucide lucide-square-chevron-down", args)
 	children := []html.SvgArg{
-		html.Child(html.SvgRect(html.AWidth("18"), html.AHeight("18"), html.AX("3"), html.AY("3"), html.ARx("2"))),
-		html.Child(html.SvgPath(html.AD("m16 10-4 4-4-4"))),
+		html.SvgRect(html.AWidth("18"), html.AHeight("18"), html.AX("3"), html.AY("3"), html.ARx("2")),
+		html.SvgPath(html.AD("m16 10-4 4-4-4")),
 	}
 	return html.Svg(append(svgArgs, children...)...)
 }
